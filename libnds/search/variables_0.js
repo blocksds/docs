@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['address_0',['address',['../structtlf__section__header.html#ac21f8dd9421d54c2890d549352d13289',1,'tlf_section_header']]],
+  ['address_5foverflow_1',['address_overflow',['../structsysVectors.html#ae617fcbaf21d2f05bafafb3fbccb2676',1,'sysVectors']]],
+  ['alarmhour_2',['alarmHour',['../structtPERSONAL__DATA.html#ac19618c583afcd7ff0d1c0d2fff52827',1,'tPERSONAL_DATA']]],
+  ['alarmminute_3',['alarmMinute',['../structtPERSONAL__DATA.html#aa4841ad7c07006dd5c4e7535d4c2bda5',1,'tPERSONAL_DATA']]],
+  ['allocatedsize_4',['allocatedSize',['../structDLDI__INTERFACE.html#afc928177f9b098a59d84658d3604f7d0',1,'DLDI_INTERFACE']]],
+  ['allocbuffer_5',['allocBuffer',['../structOamState.html#a9ce0269dcc79d438a15e76fe99f52527',1,'OamState']]],
+  ['allocbuffersize_6',['allocBufferSize',['../structOamState.html#a6b1f747b763614cadc9efcf0a0e7d1dd',1,'OamState']]],
+  ['alpha_7',['alpha',['../unionSpriteEntry.html#a72a4929343cfa71a44639663ac3a31f1',1,'SpriteEntry']]],
+  ['arm7binarysize_8',['arm7binarySize',['../structsNDSHeader.html#ad25b979c41c6eb8d2f3e5f7738d0fa08',1,'sNDSHeader']]],
+  ['arm7destination_9',['arm7destination',['../structsNDSHeader.html#a0761ea7618a08c445ba220ac4d0b2e35',1,'sNDSHeader']]],
+  ['arm7executeaddress_10',['arm7executeAddress',['../structsNDSHeader.html#aba81a581abbe059aa77ec009ae665132',1,'sNDSHeader']]],
+  ['arm7overlaysize_11',['arm7overlaySize',['../structsNDSHeader.html#a5f0bc8c556b65ca634eb520cbd087f29',1,'sNDSHeader']]],
+  ['arm7overlaysource_12',['arm7overlaySource',['../structsNDSHeader.html#afb65a8cee79d676361929761dce46647',1,'sNDSHeader']]],
+  ['arm7romoffset_13',['arm7romOffset',['../structsNDSHeader.html#a8e35878e88ec6ea437b3fadf96fb4c69',1,'sNDSHeader']]],
+  ['arm9binarysize_14',['arm9binarySize',['../structsNDSHeader.html#a659235c84511f61f68cf99a47dfc35bf',1,'sNDSHeader']]],
+  ['arm9destination_15',['arm9destination',['../structsNDSHeader.html#a4905ab9f50483d5520ffe593f05b09fd',1,'sNDSHeader']]],
+  ['arm9executeaddress_16',['arm9executeAddress',['../structsNDSHeader.html#ad8ef2653d6e2e40987045b4068baf917',1,'sNDSHeader']]],
+  ['arm9overlaysize_17',['arm9overlaySize',['../structsNDSHeader.html#a3d6d3f7619e22f44f2714283349d27cc',1,'sNDSHeader']]],
+  ['arm9overlaysource_18',['arm9overlaySource',['../structsNDSHeader.html#a0e7e090d74499b25978d94d633bde668',1,'sNDSHeader']]],
+  ['arm9romoffset_19',['arm9romOffset',['../structsNDSHeader.html#a04e3fe9a275a775c2695eb0127b70708',1,'sNDSHeader']]],
+  ['arm_5fsp_20',['arm_sp',['../struct____ndsabi__coro__t.html#acc61c80444075fd3f945ef2a127f5f11',1,'__ndsabi_coro_t']]],
+  ['asciioffset_21',['asciiOffset',['../structConsoleFont.html#a676b4b45082d34b8bfbd21d20e0a6444',1,'ConsoleFont']]],
+  ['automode_22',['autoMode',['../structtPERSONAL__DATA.html#a106bb0c793ae2aa4dbcd8005de3a4dbf',1,'tPERSONAL_DATA']]]
+];

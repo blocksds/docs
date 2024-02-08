@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technical information on BlocksDS</title>
+    <link>https://blocksds.github.io/docs/technical/</link>
+    <description>Recent content in Technical information on BlocksDS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://blocksds.github.io/docs/technical/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Filesystem support</title>
+      <link>https://blocksds.github.io/docs/technical/filesystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/technical/filesystem/</guid>
+      <description>1. Introduction BlocksDS supports using standard C functions to access the filesystem. It is possible to use them to access both the SD cards of flashcarts, and the internal SD slot of the DSi. This code is integrated in libnds, so you don&amp;rsquo;t need to do anything special to use it.&#xA;Add the following to your project:&#xA;#include &amp;lt;fat.h&amp;gt; int main(int argc, char *argv[]) { bool init_ok = fatInitDefault(); if (!</description>
+    </item>
+    <item>
+      <title>Memory map</title>
+      <link>https://blocksds.github.io/docs/technical/memory_map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/technical/memory_map/</guid>
+      <description>1. Introduction The DS has several RAM regions that are distributed across its address space. In most cases you don&amp;rsquo;t need to worry about the details, as libnds is set up in a way that covers most use-cases. All you normally need to worry about is how to allocate VRAM to be used by the 2D and 3D engines. However, in some cases it may be needed to understand how everything works.</description>
+    </item>
+    <item>
+      <title>DLDI in ARM7</title>
+      <link>https://blocksds.github.io/docs/technical/dldi_arm7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/technical/dldi_arm7/</guid>
+      <description>1. Introduction DLDI (Dynamically Linked Disc Interface) is an interface designed for homebrew projects to be able to access the memory of flashcarts (usually micro SD cards) in a standardized way. https://www.chishm.com/DLDI/&#xA;In short, when you build an application, the DLDI stub is added to your application. Then you and your users have to patch your application with the DLDI driver your flashcarts. Most flashcarts patch homebrew NDS ROMs, so normally you don&amp;rsquo;t need to worry about it, it just works.</description>
+    </item>
+    <item>
+      <title>Optimization guide</title>
+      <link>https://blocksds.github.io/docs/technical/optimization_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/technical/optimization_guide/</guid>
+      <description>This guide covers some techniques one can use to optimize DS/DSi homebrew with BlocksDS.&#xA;Optimizing CPU usage Measure CPU performance on hardware only! As of writing (May 2024), the most popular emulators are not sufficiently cycle-accurate to provide accurate profiling results; this might lead, at worst, to mistaken optimizations. Avoid using floating point values (float, double). As the DS does not include any hardware for accelerating floating point math, operations on them have to be emulated in software, which is quite costly.</description>
+    </item>
+    <item>
+      <title>Upgrade guide</title>
+      <link>https://blocksds.github.io/docs/technical/updating_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/technical/updating_guide/</guid>
+      <description>Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.&#xA;Please refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.&#xA;Upgrading to BlocksDS 1.3.0 General changes:&#xA;The ConsoleFont struct no longer takes a convertSingleColor argument. For 4bpp uses, it is recommended to instead provide 1bpp font tile data, which will be automatically unpacked to use color indices 0 and 15.</description>
+    </item>
+    <item>
+      <title>Migrating from devkitARM</title>
+      <link>https://blocksds.github.io/docs/technical/devkitarm_porting_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/technical/devkitarm_porting_guide/</guid>
+      <description>1. Introduction In most cases, porting devkitARM projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.&#xA;2. New build system This is the biggest difference between devkitARM and BlocksDS. Makefiles provided by devkitARM are more complicated: they call themselves recursively from the build directory. They also hide a lot of compilation rules from the user, as they are provided by sub-makefiles in the devkitARM system directory.</description>
+    </item>
+    <item>
+      <title>C/C&#43;&#43; support</title>
+      <link>https://blocksds.github.io/docs/technical/libc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/technical/libc/</guid>
+      <description>1. Introduction BlocksDS supports modern C/C++ standard libraries by providing the following libraries:&#xA;picolibc, an embedded-centric fork of the Newlib C library; libstdc++, the GNU C++ library. However, this support includes some platform-specific caveats.&#xA;2. POSIX I/O BlocksDS provides POSIX standard I/O using the tinystdio library, which is part of picolibc. It supports most of the functionality mandated by the C standard, as well as some extensions.&#xA;File I/O (fopen, opendir, etc.</description>
+    </item>
+    <item>
+      <title>Usage notes</title>
+      <link>https://blocksds.github.io/docs/technical/usage_notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/technical/usage_notes/</guid>
+      <description>1. Introduction This is just a list of tips and notes about how to use BlocksDS.&#xA;2. Section annotations in filenames Some projects require specific functions or variables to be placed in specific memory regions. Some functions may also need to be compiled as ARM instead of Thumb, which is the default.&#xA;It is possible to rename your C and C++ source files to affect the whole file. For example, a file named engine.</description>
+    </item>
+  </channel>
+</rss>

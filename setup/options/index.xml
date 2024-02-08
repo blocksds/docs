@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Options on BlocksDS</title>
+    <link>https://blocksds.github.io/docs/setup/options/</link>
+    <description>Recent content in Options on BlocksDS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://blocksds.github.io/docs/setup/options/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows</title>
+      <link>https://blocksds.github.io/docs/setup/options/windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/setup/options/windows/</guid>
+      <description>The following instructions describe how to install BlocksDS on Windows natively. If you want to use it in WSL, follow the instructions for Linux instead.&#xA;You will need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https://wonderful.asie.pl/docs/getting-started/#windows-via-msys2&#xA;Install the ARM toolchain of Wonderful Toolchain:&#xA;wf-pacman -Syu wf-pacman -S toolchain-gcc-arm-none-eabi Now, install BlocksDS itself. For the latest stable version of BlocksDS, run:&#xA;wf-pacman -S thirdparty-blocksds-toolchain To install the documentation and examples you can install:</description>
+    </item>
+    <item>
+      <title>Build from source</title>
+      <link>https://blocksds.github.io/docs/setup/options/from_source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/setup/options/from_source/</guid>
+      <description>This is the option you should use if you want to help develop BlocksDS, or if you want to always use the cutting edge version of BlocksDS.&#xA;You need to install a cross compiler to build applications for NDS. You also need to build a few host tools, including a C/C++ compiler.&#xA;If you&amp;rsquo;re on Ubuntu run the following command:&#xA;sudo apt-get install -y --no-install-recommends build-essential You will also need to install the ARM toolchain of Wonderful Toolchains.</description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>https://blocksds.github.io/docs/setup/options/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/setup/options/docker/</guid>
+      <description>1. Introduction If you&amp;rsquo;re not familiar with Docker, in short, it lets you create containers with predefined images. Containers are something similar to a virtual machine. An image is just the contents of the hard drive of that virtual machine.&#xA;It is very easy to share folders between the docker container and the host. That way you can share your code with the container, build your code from the container, and see the results in the host (so that you can test the result on an emulator or copy it to a flashcart!</description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://blocksds.github.io/docs/setup/options/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/setup/options/linux/</guid>
+      <description>This is the easiest option, but you may not get the latest version of the SDK right away.&#xA;You will also need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https://wonderful.asie.pl/docs/getting-started/#linux&#xA;Now, install the ARM toolchain of Wonderful Toolchains, as well as the BlocksDS packages.&#xA;export PATH=/opt/wonderful/bin:$PATH wf-pacman -Syu wf-pacman -S toolchain-gcc-arm-none-eabi Install the following if you plan to develop binaries for the DSP of the DSi:</description>
+    </item>
+  </channel>
+</rss>

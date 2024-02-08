@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BlocksDS</title>
+    <link>https://blocksds.github.io/docs/introduction/</link>
+    <description>Recent content on BlocksDS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://blocksds.github.io/docs/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>https://blocksds.github.io/docs/introduction/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/introduction/introduction/</guid>
+      <description>This is an SDK to develop applications for Nintendo DS in C or C++.&#xA;1. Goals To create an easy-to-use NDS software development kit based on GCC with as few dependencies as possible, and that supports as many features of the DS and DSi as possible.&#xA;To encourage developers to hack and improve the SDK by letting them have all the source code of the SDK. This also shows how easy it is to build the whole codebase.</description>
+    </item>
+    <item>
+      <title>Changelog</title>
+      <link>https://blocksds.github.io/docs/introduction/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/introduction/changelog/</guid>
+      <description>Version 1.3.1 (2024-07-26) libnds:&#xA;Added memory barriers to libnds functions which remap user-accessible memory. consolePrintChar() has been exposed in the public API. Coupled with internal refactors, this allows using the built-in console without pulling in printf/scanf as a dependency. Fixed function parameters and improved parameters for BIOS RSA functions. Fixed potential memory corruption when micStopRecording() was called twice. Fixed regression in new touchscreen driver on CDC (TWL). Improved documentation for the BIOS CRC-16 calculation function.</description>
+    </item>
+    <item>
+      <title>Getting support</title>
+      <link>https://blocksds.github.io/docs/introduction/support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/introduction/support/</guid>
+      <description>If you want to report any bugs or suggest new features and make sure they aren&amp;rsquo;t forgotten, use the GitHub issue tracker of BlocksDS.&#xA;If you prefer to chat with other developers in real time, the best way is to join the gbadev Discord server, where we hang out. This is a community of GBA game developers, and it has a small section for NDS developent. The NDS is in many ways an upgraded GBA, so most of the discussions about the GBA are still useful.</description>
+    </item>
+    <item>
+      <title>Credits</title>
+      <link>https://blocksds.github.io/docs/introduction/credits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/introduction/credits/</guid>
+      <description>This project wouldn&amp;rsquo;t have been possible without:&#xA;Many thanks to asie for his help and advice, and for Wonderful Toolchain devkitPro picolibc libnds DSWiFi Maxmod (and mmutil) grit GCC make And many others! </description>
+    </item>
+    <item>
+      <title>Licenses</title>
+      <link>https://blocksds.github.io/docs/introduction/licenses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/introduction/licenses/</guid>
+      <description>This document enumerates the components provided by BlocksDS and their licenses. This is useful if you want to release a binary built with BlocksDS and you aren&amp;rsquo;t sure about what copyright notices you need to add.&#xA;DSWiFi This is used in the default ARM7 binary.&#xA;MIT license. Copyright notice required:&#xA;Copyright (C) 2005-2006 Stephen Stair - sgstair@akkit.org libnds This is used in all programs that use the default crts, ARM7 binary, etc.</description>
+    </item>
+  </channel>
+</rss>
