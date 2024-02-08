@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['sassert_0',['sassert',['../sassert_8h.html#a8ce11ad6470d4c831a95eb65b4362c8c',1,'sassert.h']]],
+  ['screen_5fheight_1',['SCREEN_HEIGHT',['../video_8h.html#a6974d08a74da681b3957b2fead2608b8',1,'video.h']]],
+  ['screen_5fwidth_2',['SCREEN_WIDTH',['../video_8h.html#a2cd109632a6dcccaa80b43561b1ab700',1,'video.h']]],
+  ['slot2_5fperipheral_5fextram_3',['SLOT2_PERIPHERAL_EXTRAM',['../slot2_8h.html#aee1cc65694381134208b617fd6e4e8b1',1,'slot2.h']]],
+  ['slot2_5fperipheral_5fface_5fscan_4',['SLOT2_PERIPHERAL_FACE_SCAN',['../slot2_8h.html#aba460ab70c49c3f416f74109cad236fb',1,'slot2.h']]],
+  ['slot2_5fperipheral_5fgps_5franger_5',['SLOT2_PERIPHERAL_GPS_RANGER',['../slot2_8h.html#a4abbadd7473a976426f434efc6035c6c',1,'slot2.h']]],
+  ['slot2_5fperipheral_5fguitar_5fgrip_6',['SLOT2_PERIPHERAL_GUITAR_GRIP',['../slot2_8h.html#a71c554a4b7ab27171d6c03b44182d94b',1,'slot2.h']]],
+  ['slot2_5fperipheral_5fgyro_5fgpio_7',['SLOT2_PERIPHERAL_GYRO_GPIO',['../slot2_8h.html#a43aecf4abb7a1885c0ffd12ba8dd9e51',1,'slot2.h']]],
+  ['slot2_5fperipheral_5fpaddle_8',['SLOT2_PERIPHERAL_PADDLE',['../slot2_8h.html#af0aff907408f44ac1b10092080f18cb5',1,'slot2.h']]],
+  ['slot2_5fperipheral_5fpiano_9',['SLOT2_PERIPHERAL_PIANO',['../slot2_8h.html#a1986c789a374184eed13c1c25dde2d3f',1,'slot2.h']]],
+  ['slot2_5fperipheral_5frumble_5fez_10',['SLOT2_PERIPHERAL_RUMBLE_EZ',['../slot2_8h.html#ac5c3f27e2428cdf79daa727dd960bc0d',1,'slot2.h']]],
+  ['slot2_5fperipheral_5frumble_5fgpio_11',['SLOT2_PERIPHERAL_RUMBLE_GPIO',['../slot2_8h.html#a4c3659746e66bf57f092ec9018422c46',1,'slot2.h']]],
+  ['slot2_5fperipheral_5frumble_5fpak_12',['SLOT2_PERIPHERAL_RUMBLE_PAK',['../slot2_8h.html#ab317199d6ec304dad55eac37a6ca0f75',1,'slot2.h']]],
+  ['slot2_5fperipheral_5fslide_5fmagkid_13',['SLOT2_PERIPHERAL_SLIDE_MAGKID',['../slot2_8h.html#ad775c4598c2c56bfd4ee375844ae5708',1,'slot2.h']]],
+  ['slot2_5fperipheral_5fsolar_5fgpio_14',['SLOT2_PERIPHERAL_SOLAR_GPIO',['../slot2_8h.html#a4cf4bc0290bde267110fdf9dc1405241',1,'slot2.h']]],
+  ['slot2_5fperipheral_5ftilt_15',['SLOT2_PERIPHERAL_TILT',['../slot2_8h.html#a8f51251d2e58f9b34d714fe6a39ca868',1,'slot2.h']]],
+  ['sprite_5fcount_16',['SPRITE_COUNT',['../sprite_8h.html#a3d2424bb60748d72b26b0d3ab2ac670b',1,'sprite.h']]],
+  ['sprite_5fgfx_17',['SPRITE_GFX',['../video_8h.html#ab7648d4e60f206bc916e2536b2a02ffc',1,'video.h']]],
+  ['sprite_5fgfx_5fsub_18',['SPRITE_GFX_SUB',['../video_8h.html#a3766ba1bd5aebc8d1eb190c169edd548',1,'video.h']]],
+  ['sprite_5fpalette_19',['SPRITE_PALETTE',['../video_8h.html#ab33e0211a9f9ee2230010596fefbb655',1,'video.h']]],
+  ['sprite_5fpalette_5fsub_20',['SPRITE_PALETTE_SUB',['../video_8h.html#abf010915231579ba1bfa697cc73b8d84',1,'video.h']]],
+  ['sram_21',['SRAM',['../memory_8h.html#ad1c97617b06af2b0d93bae9642145bda',1,'memory.h']]]
+];

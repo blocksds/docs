@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technical information on BlocksDS</title>
+    <link>https://blocksds.github.io/docs/technical/</link>
+    <description>Recent content in Technical information on BlocksDS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://blocksds.github.io/docs/technical/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Usage notes</title>
+      <link>https://blocksds.github.io/docs/technical/usage_notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/technical/usage_notes/</guid>
+      <description>1. Introduction This is just a list of tips and notes about how to use BlocksDS.
+2. Section annotations in filenames Some projects require specific functions or variables to be placed in specific memory regions. Some functions may also need to be compiled as ARM instead of Thumb, which is the default.
+It is possible to rename your C and C++ source files to affect the whole file. For example, a file named engine.</description>
+    </item>
+    
+    <item>
+      <title>Filesystem support</title>
+      <link>https://blocksds.github.io/docs/technical/filesystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/technical/filesystem/</guid>
+      <description>1. Introduction BlocksDS supports using standard C functions to access the filesystem. It is possible to use them to access both the SD cards of flashcards, and the internal SD slot of the DSi. This code is integrated in libnds, so you don&amp;rsquo;t need to do anything special to use it.
+Add the following to your project:
+#include &amp;lt;fat.h&amp;gt; int main(int argc, char *argv[]) { bool init_ok = fatInitDefault(); if (!</description>
+    </item>
+    
+    <item>
+      <title>DLDI in ARM7</title>
+      <link>https://blocksds.github.io/docs/technical/dldi_arm7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/technical/dldi_arm7/</guid>
+      <description>1. Introduction DLDI (Dynamically Linked Disc Interface) is an interface designed for homebrew projects to be able to access the memory of flashcards (usually micro SD cards) in a standardized way. https://www.chishm.com/DLDI/
+In short, when you build an application, the DLDI stub is added to your application. Then you and your users have to patch your application with the DLDI driver your flashcards. Most flashcards patch homebrew NDS ROMs, so normally you don&amp;rsquo;t need to worry about it, it just works.</description>
+    </item>
+    
+    <item>
+      <title>Exit to loader protocol</title>
+      <link>https://blocksds.github.io/docs/technical/exit_to_loader/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/technical/exit_to_loader/</guid>
+      <description>1. Introduction Normally, the only way to exit a DS application is to switch the console off and turn it on again. It can get annoying to do this if you&amp;rsquo;re, for example, testing many applications. libnds supports a protocol that allows an application loader (such as the menu of a flashcard) to setup an exit routine that allows the application to return to the loader. This is needed because the DS doesn&amp;rsquo;t have an OS, so the protocol is managed manually.</description>
+    </item>
+    
+    <item>
+      <title>devkitARM porting guide</title>
+      <link>https://blocksds.github.io/docs/technical/devkitarm_porting_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/technical/devkitarm_porting_guide/</guid>
+      <description>1. Introduccion Porting devkitARM projects to BlocksDS should be relatively easy in most cases. BlocksDS includes most of the DS libraries that come with devkitARM. The biggest difference is the build system. You will need to replace the Makefile that you have in your project by the one of one of the templates of BlocksDS.
+2. Filesystem libraries While devkitARM uses libfat and libfilesystem, BlocksDS can&amp;rsquo;t. They use the devoptab interface implemented in the newlib fork of devkitARM.</description>
+    </item>
+    
+    <item>
+      <title>Design guide</title>
+      <link>https://blocksds.github.io/docs/technical/design_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/technical/design_guide/</guid>
+      <description>1. Custom build of GCC vs not custom build Building GCC is a long and not-too-easy process that doesn&amp;rsquo;t give you a big advantage over the other approach. It would make setting up the SDK a more fragile process.
+However, in order to take advantage of per-CPU optimizations and to have a robust toolchain, it is required to use a custom build of GCC. For this purpose, BlocksDS relies on Wonderful Toolchain.</description>
+    </item>
+    
+    <item>
+      <title>libc port information</title>
+      <link>https://blocksds.github.io/docs/technical/libc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/technical/libc/</guid>
+      <description>1. Introduction BlocksDS has code to allow libc functions to work on NDS programs. The supported functions are described in this file. Note that they should only be used from ARM9 code, as they aren&amp;rsquo;t supported from the ARM7.
+2. argc and argv For NDS and NDS Lite consoles that run ROMs from a flashcard, the loader needs to support the argv protocol of libnds. If so, argv[0] will hold the path of the NDS file in the SD card of the flashcard.</description>
+    </item>
+    
+  </channel>
+</rss>

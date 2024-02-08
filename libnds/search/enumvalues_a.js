@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['nokey_0',['NOKEY',['../keyboard_8h.html#a0ada92b8263d776ca3c779d2a0e031bca857b1e66d3e3f7d2a4240f630fdf7a36',1,'keyboard.h']]],
+  ['numeric_1',['Numeric',['../keyboard_8h.html#aa45fda05d3607810c6db30b1af3caac9a501a5b4eec70f03e52815d519ccd512d',1,'keyboard.h']]],
+  ['nwram_5fa_5fslot_5fmaster_5farm7_2',['NWRAM_A_SLOT_MASTER_ARM7',['../nwram_8h.html#aea7d8c8225b6b15b386385822efc018fa0ebac5b183aa8ee672255a9362835855',1,'nwram.h']]],
+  ['nwram_5fa_5fslot_5fmaster_5farm9_3',['NWRAM_A_SLOT_MASTER_ARM9',['../nwram_8h.html#aea7d8c8225b6b15b386385822efc018fa19b3854694c4616abd6a8940307de768',1,'nwram.h']]],
+  ['nwram_5fb_5fslot_5fmaster_5farm7_4',['NWRAM_B_SLOT_MASTER_ARM7',['../nwram_8h.html#a0838798ae935a9f808bd36f1e82f9e6da75aabab6d64095eafa785e4de5846c09',1,'nwram.h']]],
+  ['nwram_5fb_5fslot_5fmaster_5farm9_5',['NWRAM_B_SLOT_MASTER_ARM9',['../nwram_8h.html#a0838798ae935a9f808bd36f1e82f9e6da96a93258ac72c58adf959649ab148afc',1,'nwram.h']]],
+  ['nwram_5fb_5fslot_5fmaster_5fdsp_5fcode_6',['NWRAM_B_SLOT_MASTER_DSP_CODE',['../nwram_8h.html#a0838798ae935a9f808bd36f1e82f9e6da2bb96d45c668529506da7d3968793535',1,'nwram.h']]],
+  ['nwram_5fblock_5fa_7',['NWRAM_BLOCK_A',['../nwram_8h.html#a624900ac611d10b04aa9c2083b14236ea95eacd7783c04adddc45308a3fe5f97f',1,'nwram.h']]],
+  ['nwram_5fblock_5fb_8',['NWRAM_BLOCK_B',['../nwram_8h.html#a624900ac611d10b04aa9c2083b14236eae4963dfc91e79e9e19c5be1e35d445a3',1,'nwram.h']]],
+  ['nwram_5fblock_5fc_9',['NWRAM_BLOCK_C',['../nwram_8h.html#a624900ac611d10b04aa9c2083b14236ea287cae22a4e5bb38e1d631583ddad3f1',1,'nwram.h']]],
+  ['nwram_5fblock_5fimage_5fsize_5f128k_10',['NWRAM_BLOCK_IMAGE_SIZE_128K',['../nwram_8h.html#aecec0ce564efdb2e324b810dfa9ad08ca7098648d491713da5a67593c128c6a22',1,'nwram.h']]],
+  ['nwram_5fblock_5fimage_5fsize_5f256k_11',['NWRAM_BLOCK_IMAGE_SIZE_256K',['../nwram_8h.html#aecec0ce564efdb2e324b810dfa9ad08ca6df1e2cc481e8ee8251853ad8f7f181d',1,'nwram.h']]],
+  ['nwram_5fblock_5fimage_5fsize_5f32k_12',['NWRAM_BLOCK_IMAGE_SIZE_32K',['../nwram_8h.html#aecec0ce564efdb2e324b810dfa9ad08ca9e694854664714e37bb085a56150e5b8',1,'nwram.h']]],
+  ['nwram_5fblock_5fimage_5fsize_5f64k_13',['NWRAM_BLOCK_IMAGE_SIZE_64K',['../nwram_8h.html#aecec0ce564efdb2e324b810dfa9ad08ca8b1c6a595441fb832bf8a525a578a4ab',1,'nwram.h']]],
+  ['nwram_5fc_5fslot_5fmaster_5farm7_14',['NWRAM_C_SLOT_MASTER_ARM7',['../nwram_8h.html#aa33c4d0a19864bd743f55fef8baaf335aebb9048bc42175a539f6c75eafcac79e',1,'nwram.h']]],
+  ['nwram_5fc_5fslot_5fmaster_5farm9_15',['NWRAM_C_SLOT_MASTER_ARM9',['../nwram_8h.html#aa33c4d0a19864bd743f55fef8baaf335a8ae72fa4f5b889836ddf0368f61e5b33',1,'nwram.h']]],
+  ['nwram_5fc_5fslot_5fmaster_5fdsp_5fdata_16',['NWRAM_C_SLOT_MASTER_DSP_DATA',['../nwram_8h.html#aa33c4d0a19864bd743f55fef8baaf335a70b03fb26c4da6dd2123771d4c98be09',1,'nwram.h']]]
+];

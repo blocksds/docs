@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BlocksDS</title>
+    <link>https://blocksds.github.io/docs/introduction/</link>
+    <description>Recent content on BlocksDS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://blocksds.github.io/docs/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>https://blocksds.github.io/docs/introduction/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/introduction/introduction/</guid>
+      <description>This is an SDK for Nintendo DS. It builds on the work of several people, and it has the following goals:
+To create an easy-to-use NDS software development kit based on GCC with as few dependencies as possible.
+To encourage developers to hack and improve the SDK by letting them have all the source code of the SDK. This also shows how easy it is to build the whole codebase. The exception is the tolchain, which is non-trivial to build.</description>
+    </item>
+    
+    <item>
+      <title>Credits</title>
+      <link>https://blocksds.github.io/docs/introduction/credits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/introduction/credits/</guid>
+      <description>This project wouldn&amp;rsquo;t have been possible without:
+Many thanks to asie for his help and advice, and for Wonderful Toolchain devkitPro picolibc libnds dswifi maxmod (and mmutil) grit GCC make And many others! </description>
+    </item>
+    
+    <item>
+      <title>Licenses</title>
+      <link>https://blocksds.github.io/docs/introduction/licenses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/introduction/licenses/</guid>
+      <description>This document enumerates the components provided by BlocksDS and their licenses. This is useful if you want to release a binary built with BlocksDS and you aren&amp;rsquo;t sure about what copyright notices you need to add.
+dswifi This is used in the default ARM7 binary.
+MIT license. Copyright notice required:
+Copyright (C) 2005-2006 Stephen Stair - sgstair@akkit.org libnds This is used in all programs that use the default crts, ARM7 binary, etc.</description>
+    </item>
+    
+  </channel>
+</rss>
