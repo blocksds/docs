@@ -65,7 +65,7 @@ It is possible to rename your C and C&#43;&#43; source files to affect the whole
       "url" : "https://blocksds.github.io/docs/technical/usage_notes/",
       "headline": "Usage notes",
       "description": "1. Introduction This is just a list of tips and notes about how to use BlocksDS.\n2. Section annotations in filenames Some projects require specific functions or variables to be placed in specific memory regions. Some functions may also need to be compiled as ARM instead of Thumb, which is the default.\nIt is possible to rename your C and C\u002b\u002b source files to affect the whole file. For example, a file named engine.",
-      "wordCount" : "274",
+      "wordCount" : "272",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1281,20 +1281,21 @@ the section in the second parameter:</p>
     </a>
 </div>
 <p>There are three different layouts provided by BlocksDS that applications can use
-for their ARM7 code. They can be selected by modifying the ARM7 makefile:</p>
+for their ARM7 code. They can be selected by changing the <code>.specs</code> file in the
+ARM7 makefile:</p>
 <ul>
 <li>
-<p>Default: <code>ds_arm7.ld</code> and <code>ds_arm7_crt0.o</code>. It expects all code to be in
-main RAM, and relocates it to IWRAM during boot.</p>
+<p>Default: <code>ds_arm7.specs</code>. It expects all code to be in main RAM, and relocates
+it to IWRAM during boot.</p>
 </li>
 <li>
-<p>IWRAM: <code>ds_arm7_iwram.ld</code> and <code>ds_arm7_iwram_crt0.o</code>. It expects all code
-to be in IWRAM from the start.</p>
+<p>IWRAM: <code>ds_arm7_iwram.specs</code>. It expects all code to be in IWRAM from the
+start.</p>
 </li>
 <li>
-<p>VRAM: <code>ds_arm7_vram.ld</code> and <code>ds_arm7_vram_crt0.o</code>. This option places all
-sections in VRAM (which needs to be configured as ARM7 memory by the ARM9) and
-expects the code to be in VRAM from the start.</p>
+<p>VRAM: <code>ds_arm7_vram.specs</code>. This option places all sections in VRAM (which
+needs to be configured as ARM7 memory by the ARM9) and expects the code to be
+in VRAM from the start.</p>
 </li>
 </ul>
 <p>Note that the IWRAM and VRAM options aren&rsquo;t supported for DSi applications.</p>
@@ -1307,13 +1308,13 @@ expects the code to be in VRAM from the start.</p>
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>They can be selected by changing the <code>.mem</code> file used in the Makefile:</p>
+<p>They can be selected by changing the <code>.specs</code> file used in the Makefile:</p>
 <ul>
 <li>
-<p>DS layout: <code>ds_arm9.mem</code></p>
+<p>DS layout: <code>ds_arm9.specs</code></p>
 </li>
 <li>
-<p>DSi layout: <code>dsi_arm9.mem</code></p>
+<p>DSi layout: <code>dsi_arm9.specs</code></p>
 </li>
 </ul>
 
