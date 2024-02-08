@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['fatoffset_0',['fatOffset',['../structsNDSHeader.html#abcb6381beb38f9d3ca0f4293ce7814c5',1,'sNDSHeader']]],
+  ['fatsize_1',['fatSize',['../structsNDSHeader.html#a53085b1ca8638d0742b3837f9cd5345d',1,'sNDSHeader']]],
+  ['filenameoffset_2',['filenameOffset',['../structsNDSHeader.html#af99513d83c97a0a48766c5a54d2e0fb4',1,'sNDSHeader']]],
+  ['filenamesize_3',['filenameSize',['../structsNDSHeader.html#aa63260a089015997211043ad40990337',1,'sNDSHeader']]],
+  ['fiq_4',['fiq',['../structsysVectors.html#a4fab4a3fc7c73f5106e35cc09d07f41c',1,'sysVectors']]],
+  ['firstfree_5',['firstFree',['../structOamState.html#acc57d40b76ec06cb77344a9e3f30ef22',1,'OamState']]],
+  ['fixsectionsflags_6',['fixSectionsFlags',['../structDLDI__INTERFACE.html#ab33e6e275a8c28ef12b0b2a567b51179',1,'DLDI_INTERFACE']]],
+  ['flags_7',['flags',['../structsNDSHeader.html#a7b84ac2874214c2bc277445b402838db',1,'sNDSHeader']]],
+  ['font_8',['font',['../structPrintConsole.html#ad717d7741f526d595d3103d5a4e28358',1,'PrintConsole']]],
+  ['fontbggfx_9',['fontBgGfx',['../structPrintConsole.html#ab3699fb92cdf575913785ac8791bd428',1,'PrintConsole']]],
+  ['fontbgmap_10',['fontBgMap',['../structPrintConsole.html#afbf082bab0501a3864c6698d93c56973',1,'PrintConsole']]],
+  ['fontcharoffset_11',['fontCharOffset',['../structPrintConsole.html#aa1eabbfa0ad03392f6229315ea95790e',1,'PrintConsole']]],
+  ['fontcurpal_12',['fontCurPal',['../structPrintConsole.html#a4f0b3d2127dbf6de321414e60d4faf20',1,'PrintConsole']]],
+  ['fontpalindex_13',['fontPalIndex',['../structPrintConsole.html#a8f41b9a8e0bd03fd8c3eb444b45c1ed0',1,'PrintConsole']]],
+  ['fragment_5fsize_14',['fragment_size',['../structswiSHA1context.html#a11bd717ec50e2556070f6e06f831124a',1,'swiSHA1context']]],
+  ['friendlyname_15',['friendlyName',['../structDLDI__INTERFACE.html#a27d542ddf0cfc9ed360263da593a550c',1,'DLDI_INTERFACE']]]
+];

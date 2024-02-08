@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setup instructions on BlocksDS</title>
+    <link>https://blocksds.github.io/docs/setup/</link>
+    <description>Recent content in Setup instructions on BlocksDS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://blocksds.github.io/docs/setup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Extra steps</title>
+      <link>https://blocksds.github.io/docs/setup/extra_steps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/setup/extra_steps/</guid>
+      <description>1. Test To test that everything is working, you can try building one of the examples or project templates included in BlocksDS.&#xA;There is a template that lets the programmer write the code for both CPUs of the NDS (rom_combined) and a template that uses the default ARM7 core that comes with Blocks DS and lets the programmer focus on the ARM9 core (rom_arm9). There are also two templates to create static libraries.</description>
+    </item>
+    <item>
+      <title>Additional libraries/tools</title>
+      <link>https://blocksds.github.io/docs/setup/additional_libs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blocksds.github.io/docs/setup/additional_libs/</guid>
+      <description>There are also some libraries and tools that are supported in BlocksDS, but not fully integrated with it. They are listed below.&#xA;Libraries:&#xA;NightFox’s Lib: Library designed to make development of 2D games easy, with support for sprites, backgrounds (even &amp;ldquo;infinite&amp;rdquo; maps), and it also has limited 2D graphics support using the 3D engine.&#xA;Nitro Engine: Library to create 3D applications. It supports dual screen 3D, static and animated models, supports all texture types, and has basic 2D support using the 3D hardware.</description>
+    </item>
+  </channel>
+</rss>

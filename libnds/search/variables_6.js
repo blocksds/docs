@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['g_0',['g',['../structRGB__24.html#af00d6510d77622d83128570e39762ac8',1,'RGB_24']]],
+  ['gamecode_1',['gamecode',['../structsGBAHeader.html#a852e6c12a992f5876c49295610777755',1,'sGBAHeader::gamecode'],['../structsNDSHeader.html#aa44acf92bedd876518b0e586e4d1c1c8',1,'sNDSHeader::gameCode']]],
+  ['gametitle_2',['gameTitle',['../structsNDSHeader.html#acd9308627483035d587c9ff95ff4a7fb',1,'sNDSHeader']]],
+  ['gbalogo_3',['gbaLogo',['../structsNDSHeader.html#a2e24ac00f6db0107edfc39d7e114989d',1,'sNDSHeader']]],
+  ['gbascreen_4',['gbaScreen',['../structtPERSONAL__DATA.html#a1142d6ff0ea3c9d276385e2563e1f992',1,'tPERSONAL_DATA']]],
+  ['getresult_5',['getResult',['../structDecompressionStream.html#addaaef359dbd6d14668c8dbbe0eada0a',1,'DecompressionStream']]],
+  ['getsize_6',['getSize',['../structDecompressionStream.html#aef5bbf3d8e3ab942f2b86f01f14449ca',1,'DecompressionStream']]],
+  ['gfx_7',['gfx',['../structConsoleFont.html#a4dc6997b016c9e05b2bdfbfa9d85f760',1,'ConsoleFont']]],
+  ['gfxattr_8',['gfxAttr',['../structGRFHeader.html#a27a24cf295eb2ac5fe5a64607f1a558f',1,'GRFHeader']]],
+  ['gfxheight_9',['gfxHeight',['../structGRFHeader.html#a5f1777eb4070fef2fa1bce489416bff9',1,'GRFHeader']]],
+  ['gfxindex_10',['gfxIndex',['../unionSpriteEntry.html#ac812b4a16c4c1b8b0d1b57dfc5aa94d0',1,'SpriteEntry']]],
+  ['gfxoffsetstep_11',['gfxOffsetStep',['../structOamState.html#a57ce164f04b8ff8c35c9ca128281f5d0',1,'OamState']]],
+  ['gotend_12',['gotEnd',['../structDLDI__INTERFACE.html#aaac8fb11bcd0c8b3c3d7fdbfa4bfd017',1,'DLDI_INTERFACE']]],
+  ['gotstart_13',['gotStart',['../structDLDI__INTERFACE.html#a6e89364138ed6eb71fe6101ba37f1caa',1,'DLDI_INTERFACE']]],
+  ['grid_5fheight_14',['grid_height',['../structKeyboard.html#a44fa8fe121dac7cdf2163326a618f0fb',1,'Keyboard']]],
+  ['grid_5fwidth_15',['grid_width',['../structKeyboard.html#a7900a968a50615a3afce0d6289996c97',1,'Keyboard']]]
+];

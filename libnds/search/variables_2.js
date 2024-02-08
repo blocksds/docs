@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['calx1_0',['calX1',['../structtPERSONAL__DATA.html#a011304f23ac73d21ac713ef6250a2e28',1,'tPERSONAL_DATA']]],
+  ['calx1px_1',['calX1px',['../structtPERSONAL__DATA.html#afcb48de68fb3fcc7f6c2dcec88e44aa3',1,'tPERSONAL_DATA']]],
+  ['calx2_2',['calX2',['../structtPERSONAL__DATA.html#a6a7c463ee7bb6be9fef14986daa13f89',1,'tPERSONAL_DATA']]],
+  ['calx2px_3',['calX2px',['../structtPERSONAL__DATA.html#a7fe248975a3df9db896c268d82ff3d08',1,'tPERSONAL_DATA']]],
+  ['caly1_4',['calY1',['../structtPERSONAL__DATA.html#aa45412d41848d5700600a4d12f97af30',1,'tPERSONAL_DATA']]],
+  ['caly1px_5',['calY1px',['../structtPERSONAL__DATA.html#a4e8fd684c721234df8cbd295b6f7cd11',1,'tPERSONAL_DATA']]],
+  ['caly2_6',['calY2',['../structtPERSONAL__DATA.html#a7ac4957d315a34a2b7fa4ca06db5f673',1,'tPERSONAL_DATA']]],
+  ['caly2px_7',['calY2px',['../structtPERSONAL__DATA.html#a81d1f8522561ea55bfc9d434552cefd8',1,'tPERSONAL_DATA']]],
+  ['cardcontrol13_8',['cardControl13',['../structsNDSHeader.html#ab90dc36d6181852190e89357e43a32c5',1,'sNDSHeader']]],
+  ['cardcontrolbf_9',['cardControlBF',['../structsNDSHeader.html#a0f7cd341d3a35e52f33bbfd133ae32dd',1,'sNDSHeader']]],
+  ['checksum_10',['checksum',['../structsGBAHeader.html#ad530f49482025065bfa9ce945cc2244a',1,'sGBAHeader']]],
+  ['colormode_11',['colorMode',['../unionSpriteEntry.html#af0778707695d3aa5044b4c27a6523d1c',1,'SpriteEntry']]],
+  ['complement_12',['complement',['../structsGBAHeader.html#a9fe572d37fb76cd4239251282bbc6284',1,'sGBAHeader']]],
+  ['consoleheight_13',['consoleHeight',['../structPrintConsole.html#a771f244cda52c24c2af4878191014957',1,'PrintConsole']]],
+  ['consolewidth_14',['consoleWidth',['../structPrintConsole.html#a6a437539b6034abd52fda7cab40c2bc9',1,'PrintConsole']]],
+  ['control_15',['control',['../structbg__attribute.html#a202638501e109407451181526a891488',1,'bg_attribute']]],
+  ['crc_16',['crc',['../structsNDSBanner.html#a1ba7be5cccf63e2639fc3d036491c39e',1,'sNDSBanner']]],
+  ['cur_5fsize_17',['cur_size',['../structDynamicArray.html#abee0228e3ca1cc2aed369fbd7bb6f0ba',1,'DynamicArray']]],
+  ['cursorx_18',['cursorX',['../structPrintConsole.html#abcad7ee90d50a45a6eadec7f8f5d423e',1,'PrintConsole']]],
+  ['cursory_19',['cursorY',['../structPrintConsole.html#ab22665999911266033a317b1a48998e9',1,'PrintConsole']]]
+];
