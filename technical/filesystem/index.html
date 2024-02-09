@@ -65,7 +65,7 @@ Add the following to your project:
       "url" : "https://blocksds.github.io/docs/technical/filesystem/",
       "headline": "Filesystem support",
       "description": "1. Introduction BlocksDS supports using standard C functions to access the filesystem. It is possible to use them to access both the SD cards of flashcards, and the internal SD slot of the DSi. This code is integrated in libnds, so you don’t need to do anything special to use it.\nAdd the following to your project:\n#include \u003cfat.h\u003e int main(int argc, char *argv[]) { bool init_ok = fatInitDefault(); if (!",
-      "wordCount" : "779",
+      "wordCount" : "749",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1391,10 +1391,7 @@ to the folder that will act as root of your filesystem. If using DeSmuMe with a
 graphical interface, the settings can be found in &ldquo;Config &gt; Slot 1&rdquo;. If using it
 through the command line, run it like this:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">desmume --slot1<span class="o">=</span>R4 --slot1-fat-dir<span class="o">=</span>&lt;path-to-folder&gt; &lt;path-to-rom&gt;.nds
-</span></span></code></pre></div><p>IMPORTANT: Remember that the R4 DLDI driver doesn&rsquo;t have an open source license,
-so don&rsquo;t distribute any binaries patched with this driver. Only distribute the
-unpatched versions of your binaries.</p>
-<div class="flex align-center gdoc-page__anchorwrap">
+</span></span></code></pre></div><div class="flex align-center gdoc-page__anchorwrap">
     <h3 id="nogba"
     >
         no$gba
