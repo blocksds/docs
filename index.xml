@@ -124,6 +124,17 @@ However, in order to take advantage of per-CPU optimizations and to have a robus
     </item>
     
     <item>
+      <title>Changelog</title>
+      <link>https://blocksds.github.io/docs/introduction/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/introduction/changelog/</guid>
+      <description>Version X.X.X (2024-XX-XX) SDK:
+Refactor documentation. It now uses Hugo, and it is available as a static website. Version 0.13.0 (2024-02-01) libnds:
+Breaking change: Refactor input handling in the ARM9. In order to fix a race condition where the touch screen state could be updated between calls to scanKeys() and touchRead() it has become mandatory to call scanKeys() before touchRead(), keyboardGetChar(), keyboardUpdate() and the deprecated touchReadXY(). Most programs are already doing this, but this may break a small number of programs that don&amp;rsquo;t do it.</description>
+    </item>
+    
+    <item>
       <title>Docker</title>
       <link>https://blocksds.github.io/docs/setup/options/docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

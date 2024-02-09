@@ -12,10 +12,11 @@
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="1. Introduccion Porting devkitARM projects to BlocksDS should be relatively easy in most cases. BlocksDS includes most of the DS libraries that come with devkitARM. The biggest difference is the build system. You will need to replace the Makefile that you have in your project by the one of one of the templates of BlocksDS.
-2. Filesystem libraries While devkitARM uses libfat and libfilesystem, BlocksDS can&rsquo;t. They use the devoptab interface implemented in the newlib fork of devkitARM." />
+  <meta name="description" content="Version X.X.X (2024-XX-XX) SDK:
+Refactor documentation. It now uses Hugo, and it is available as a static website. Version 0.13.0 (2024-02-01) libnds:
+Breaking change: Refactor input handling in the ARM9. In order to fix a race condition where the touch screen state could be updated between calls to scanKeys() and touchRead() it has become mandatory to call scanKeys() before touchRead(), keyboardGetChar(), keyboardUpdate() and the deprecated touchReadXY(). Most programs are already doing this, but this may break a small number of programs that don&rsquo;t do it." />
 
-    <title>devkitARM porting guide | BlocksDS</title>
+    <title>Changelog | BlocksDS</title>
 
     <link rel="icon" type="image/svg+xml" href="/docs/favicon/favicon.svg" />
 <link
@@ -36,39 +37,41 @@
     
   <meta
     property="og:title"
-    content="devkitARM porting guide"
+    content="Changelog"
   />
   <meta property="og:site_name" content="BlocksDS" />
-  <meta property="og:description" content="1. Introduccion Porting devkitARM projects to BlocksDS should be relatively easy in most cases. BlocksDS includes most of the DS libraries that come with devkitARM. The biggest difference is the build system. You will need to replace the Makefile that you have in your project by the one of one of the templates of BlocksDS.
-2. Filesystem libraries While devkitARM uses libfat and libfilesystem, BlocksDS can’t. They use the devoptab interface implemented in the newlib fork of devkitARM." />
+  <meta property="og:description" content="Version X.X.X (2024-XX-XX) SDK:
+Refactor documentation. It now uses Hugo, and it is available as a static website. Version 0.13.0 (2024-02-01) libnds:
+Breaking change: Refactor input handling in the ARM9. In order to fix a race condition where the touch screen state could be updated between calls to scanKeys() and touchRead() it has become mandatory to call scanKeys() before touchRead(), keyboardGetChar(), keyboardUpdate() and the deprecated touchReadXY(). Most programs are already doing this, but this may break a small number of programs that don’t do it." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/" />
+<meta property="og:url" content="https://blocksds.github.io/docs/introduction/changelog/" />
 
-<meta property="article:section" content="Technical" />
+<meta property="article:section" content="Introduction" />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="devkitARM porting guide" />
-  <meta name="twitter:description" content="1. Introduccion Porting devkitARM projects to BlocksDS should be relatively easy in most cases. BlocksDS includes most of the DS libraries that come with devkitARM. The biggest difference is the build system. You will need to replace the Makefile that you have in your project by the one of one of the templates of BlocksDS.
-2. Filesystem libraries While devkitARM uses libfat and libfilesystem, BlocksDS can’t. They use the devoptab interface implemented in the newlib fork of devkitARM." />
+<meta name="twitter:title" content="Changelog" />
+  <meta name="twitter:description" content="Version X.X.X (2024-XX-XX) SDK:
+Refactor documentation. It now uses Hugo, and it is available as a static website. Version 0.13.0 (2024-02-01) libnds:
+Breaking change: Refactor input handling in the ARM9. In order to fix a race condition where the touch screen state could be updated between calls to scanKeys() and touchRead() it has become mandatory to call scanKeys() before touchRead(), keyboardGetChar(), keyboardUpdate() and the deprecated touchReadXY(). Most programs are already doing this, but this may break a small number of programs that don’t do it." />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
       "@type": "TechArticle",
-      "articleSection": "Technical",
-      "name": "devkitARM porting guide",
-      "url" : "https://blocksds.github.io/docs/technical/devkitarm_porting_guide/",
-      "headline": "devkitARM porting guide",
-      "description": "1. Introduccion Porting devkitARM projects to BlocksDS should be relatively easy in most cases. BlocksDS includes most of the DS libraries that come with devkitARM. The biggest difference is the build system. You will need to replace the Makefile that you have in your project by the one of one of the templates of BlocksDS.\n2. Filesystem libraries While devkitARM uses libfat and libfilesystem, BlocksDS can’t. They use the devoptab interface implemented in the newlib fork of devkitARM.",
-      "wordCount" : "1121",
+      "articleSection": "Introduction",
+      "name": "Changelog",
+      "url" : "https://blocksds.github.io/docs/introduction/changelog/",
+      "headline": "Changelog",
+      "description": "Version X.X.X (2024-XX-XX) SDK:\nRefactor documentation. It now uses Hugo, and it is available as a static website. Version 0.13.0 (2024-02-01) libnds:\nBreaking change: Refactor input handling in the ARM9. In order to fix a race condition where the touch screen state could be updated between calls to scanKeys() and touchRead() it has become mandatory to call scanKeys() before touchRead(), keyboardGetChar(), keyboardUpdate() and the deprecated touchReadXY(). Most programs are already doing this, but this may break a small number of programs that don’t do it.",
+      "wordCount" : "3740",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://blocksds.github.io/docs/technical/devkitarm_porting_guide/"
+          "@id": "https://blocksds.github.io/docs/introduction/changelog/"
       },
       "copyrightHolder" : "BlocksDS",
       "copyrightYear" : "0001",
@@ -152,7 +155,7 @@
   href="/docs/custom.css"
   media="all"
 />
-  <link href="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/" rel="canonical" type="text/html" />
+  <link href="https://blocksds.github.io/docs/introduction/changelog/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -402,7 +405,7 @@
                 <span class="flex">
                   <a
                     href="/docs/introduction/changelog/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     Changelog
                   </a>
@@ -1106,7 +1109,7 @@
                 <span class="flex">
                   <a
                     href="/docs/technical/devkitarm_porting_guide/"
-                    class="gdoc-nav__entry is-active"
+                    class="gdoc-nav__entry"
                   >
                     devkitARM porting guide
                   </a>
@@ -1236,7 +1239,7 @@
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/docs/' href='/docs/'><span itemprop='name'>BlocksDS Documentation</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/docs/technical/' href='/docs/technical/'><span itemprop='name'>Technical information</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>devkitARM porting guide</span><meta itemprop='position' content='4' /></li>
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/docs/' href='/docs/'><span itemprop='name'>BlocksDS Documentation</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/docs/introduction/' href='/docs/introduction/'><span itemprop='name'>Introduction</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Changelog</span><meta itemprop='position' content='4' /></li>
   
 
   
@@ -1254,202 +1257,1013 @@
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>devkitARM porting guide</h1>
+    <h1>Changelog</h1>
     <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="1-introduccion"
+    <h2 id="version-xxx-2024-xx-xx"
     >
-        1. Introduccion
+        Version X.X.X (2024-XX-XX)
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#1-introduccion" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 1. Introduccion" aria-label="Anchor to: 1. Introduccion" href="#1-introduccion">
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-xxx-2024-xx-xx" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version X.X.X (2024-XX-XX)" aria-label="Anchor to: Version X.X.X (2024-XX-XX)" href="#version-xxx-2024-xx-xx">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>Porting devkitARM projects to BlocksDS should be relatively easy in most cases.
-BlocksDS includes most of the DS libraries that come with devkitARM. The biggest
-difference is the build system. You will need to replace the Makefile that you
-have in your project by the one of one of the templates of BlocksDS.</p>
+<ul>
+<li>
+<p>SDK:</p>
+<ul>
+<li>Refactor documentation. It now uses Hugo, and it is available as a static
+website.</li>
+</ul>
+</li>
+</ul>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="2-filesystem-libraries"
+    <h2 id="version-0130-2024-02-01"
     >
-        2. Filesystem libraries
+        Version 0.13.0 (2024-02-01)
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#2-filesystem-libraries" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 2. Filesystem libraries" aria-label="Anchor to: 2. Filesystem libraries" href="#2-filesystem-libraries">
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-0130-2024-02-01" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.13.0 (2024-02-01)" aria-label="Anchor to: Version 0.13.0 (2024-02-01)" href="#version-0130-2024-02-01">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>While devkitARM uses <code>libfat</code> and <code>libfilesystem</code>, BlocksDS can&rsquo;t. They use the
-<code>devoptab</code> interface implemented in the <code>newlib</code> fork of devkitARM.  BlocksDS
-uses <code>picolibc</code> instead of <code>newlib</code>, and it implements filesystem functions in a
-different way.</p>
-<p>BlocksDS uses <a
+<ul>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Breaking change: Refactor input handling in the ARM9. In order to fix a race
+condition where the touch screen state could be updated between calls to
+<code>scanKeys()</code> and <code>touchRead()</code> it has become mandatory to call
+<code>scanKeys()</code> before <code>touchRead()</code>, <code>keyboardGetChar()</code>,
+<code>keyboardUpdate()</code> and the deprecated <code>touchReadXY()</code>. Most programs
+are already doing this, but this may break a small number of programs that
+don&rsquo;t do it.</li>
+<li>Implemented <code>isHwDebugger()</code>, which returns 1 if the console running the
+code is a hardware debugger, regardless of the DS model and CPU state. This
+is meant to replace <code>swiIsDebugger()</code>, which only works if the cache is
+disabled, and only in DS models (not DSi). The documentation of
+<code>swiIsDebugger()</code> has been updated to mention its limitations.</li>
+<li>Fix Slot-2 tilt API introduced in version 0.11.0, which hadn&rsquo;t been tested
+on hardware. The old <code>peripheralSlot2TiltUpdate()</code> has been replaced by
+<code>peripheralSlot2TiltStart()</code> and <code>peripheralSlot2TiltRead()</code>.</li>
+<li>Implemented <code>utime()</code> and <code>utimes()</code> for changing file modification
+dates.</li>
+<li>Implemented <code>scandir()</code>, <code>alphasort()</code> and <code>versionsort()</code>,</li>
+<li>Fixed <code>statvfs()</code> and <code>fstatvfs()</code> on NitroFS paths and files.</li>
+<li>Added stubs for <code>getwd()</code> and <code>get_current_dir_name()</code>.</li>
+<li>Added stubs for <code>getuid()</code>, <code>getgid()</code>, etc.</li>
+<li>Add helpers to load GRF files generated by grit.</li>
+<li>Reintroduce logic to read Slot-1 cartridges with card commands from the ARM7
+to save CPU cycles on the ARM9.</li>
+<li>The value of the RAM size field in <code>REG_SCFG_EXT</code> in the ARM9 is now set
+to 16 MB or 32 MB instead of being fixed to 32 MB even in retail DSi units.</li>
+<li>Some CP15 defines have been fixed.</li>
+<li>Simplify logic in ARM7 input handler.</li>
+<li>Generate default font from a PNG at build time instead of doing it from a
+preconverted BIN file to make it easier to replace it in the future.</li>
+</ul>
+</li>
+<li>
+<p>grit:</p>
+<ul>
+<li>Added the <code>-D</code> argument, specifying the destination folder for
+non-shared data as a counterpart to <code>-O</code>.</li>
+<li>Fixed a situation in which the first color in an image&rsquo;s palette would be
+used as transparent if the user-provided color (with <code>-gT</code>) was not
+present in the image.</li>
+<li>Breaking change: Fixed GRF file output to properly follow the RIFF chunk
+format. It will also export new information in the file header, like using
+special magic values to specify the formats A3I5, A5I3 and TEX4x4, and
+specifying the number of colors contained in the palette (for 16-bit
+textures it&rsquo;s 0). In order for the new information to fit in the header,
+some fields have been increased in size.</li>
+<li>Fixed palette size calculation for DS textures.</li>
+<li>Improvements to error messages.</li>
+</ul>
+</li>
+<li>
+<p>libxm7:</p>
+<ul>
+<li>Make types <code>XM7_XMModuleHeader_Type</code> and <code>XM7_MODModuleHeader_Type</code>
+private. Developers consider their MOD/XM files as a typeless blob of data,
+they shouldn&rsquo;t need to cast it to anything, the library should do it itself.</li>
+<li>The structs that define the MOD and XM formats have been made private, as
+well as some definitions internal to the player.</li>
+<li>Some defines have been turned into enums, which will help developers and
+IDEs identify what to use in which functions.</li>
+<li>The documentation has been updated.</li>
+</ul>
+</li>
+<li>
+<p>Tests:</p>
+<ul>
+<li>Add test to read DSi SCFG registers to see which DSi features are available
+with the loader that has been used to launch the application.</li>
+<li>Add test to display all configured MPU regions.</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-0120-2023-12-26"
+    >
+        Version 0.12.0 (2023-12-26)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-0120-2023-12-26" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.12.0 (2023-12-26)" aria-label="Anchor to: Version 0.12.0 (2023-12-26)" href="#version-0120-2023-12-26">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Dot and dot-dot entries are now properly emitted in readdir(). In line
+with common software expectations, they mirror standard FAT filesystem
+behaviour, that is are present for all subdirectories. For NitroFS,
+these entries are emulated accordingly.</li>
+<li>The <code>d_ino</code> field in <code>readdir()</code> output is now correctly populated, to
+match <code>stat()</code> and <code>fstat()</code>.</li>
+<li>Added <code>nitroFSOpenById()</code> and <code>nitroFSFopenById()</code> functions, allowing
+opening files directly without paying the cost of a directory lookup.</li>
+<li>Accordingly, NitroFS file systems which contain a FAT table but no FNT
+table can now be opened.</li>
+<li>Optimized <code>glMaterialShinyness()</code>.</li>
+</ul>
+</li>
+<li>
+<p>SDK:</p>
+<ul>
+<li>The default Makefiles have been simplified and now use compiler-provided
+<code>.specs</code> files. In turn, a few additional features have been added:
+<ul>
+<li>Support for picolibc&rsquo;s compiler define-based selection of the printf
+and scanf implementations.</li>
+<li>The <code>__BLOCKSDS__</code> define, which can be used to detect a BlocksDS
+environment during building.</li>
+</ul>
+</li>
+<li>Fixed camera initialization with the default ARM7 binary.</li>
+</ul>
+</li>
+<li>
+<p>grit:</p>
+<ul>
+<li>Added the <code>-ftB</code> argument, which outputs files with <code>.img</code>, <code>.map</code>,
+<code>.meta</code>, <code>.pal</code> extensions, as opposed to <code>.img.bin</code>, <code>.map.bin</code>,
+<code>.meta.bin</code> and <code>.pal.bin</code>.</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-0113-2023-12-04"
+    >
+        Version 0.11.3 (2023-12-04)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-0113-2023-12-04" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.11.3 (2023-12-04)" aria-label="Anchor to: Version 0.11.3 (2023-12-04)" href="#version-0113-2023-12-04">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Added helpers to control microphone power independently from recording.
+This can be used for scenarios in which the DSP is tasked from recording
+microphone input.</li>
+<li>Added helpers and definitions for the DSi GPIO registers.</li>
+<li>Added function to detect availability of NWRAM.</li>
+<li>Fixed <code>atexit()</code> handlers not being called during a normal <code>main()</code>
+return.</li>
+<li>Fixed TSC configuration for enabling 47 kHz input/output in DSi mode.</li>
+<li>Improved error handling in Teak DSP code execution helpers.</li>
+<li>The Teak DSP is now powered off before loading a DSP binary.</li>
+</ul>
+</li>
+<li>
+<p>dswifi:</p>
+<ul>
+<li>Reduced memory usage, especially while Wi-Fi is not initialized.</li>
+</ul>
+</li>
+<li>
+<p>ndstool:</p>
+<ul>
+<li>Breaking: Instead of providing alternate-language banner text using
+<code>-bt5 &quot;Text&quot;</code>, the form <code>-bt 5 &quot;Text&quot;</code> is now required.</li>
+<li>Added support for providing mutliple root directories for building NitroFS
+images. All specified root directories are combined to create the root of
+the file system.</li>
+<li>Fixed <code>-w</code> treating other options as file masks.</li>
+<li>Improved argument handling.</li>
+</ul>
+</li>
+<li>
+<p>SDK:</p>
+<ul>
+<li>Updated compiler flags:
+<ul>
+<li>The superfluous <code>-mtune=arm7tdmi</code> has been removed from ARM7 Makefiles.</li>
+<li><code>-march=armv5te -mtune=arm946e-s</code> has been replaced with
+<code>-mcpu=arm946e-s+nofp</code> in ARM9 Makefiles.</li>
+<li><code>-Wl,--use-blx</code> has been added to ARM9 linker flags. This allows the
+use of the BLX opcode for linking ARM/Thumb code in place of trampolines,
+slightly improving final executable size and performance.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-0112-2023-11-27"
+    >
+        Version 0.11.2 (2023-11-27)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-0112-2023-11-27" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.11.2 (2023-11-27)" aria-label="Anchor to: Version 0.11.2 (2023-11-27)" href="#version-0112-2023-11-27">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Fixed a bug introduced in version 0.11.1 that didn&rsquo;t initialize audio
+hardware correctly in DSi mode.</li>
+<li>Some superfluous audio helpers added in version 0.11.1 have been removed.</li>
+<li>Move libteak to its own repository so that it can be reused by other
+toolchains.</li>
+<li>Modify functions to load DSP binaries to return int instead of bool for more
+flexibility.</li>
+</ul>
+</li>
+<li>
+<p>DSP:</p>
+<ul>
+<li>Move crt0 and linkerscript to libteak repository.</li>
+<li>Preprocess all assembly files, not just the crt0.</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-0111-2023-11-25"
+    >
+        Version 0.11.1 (2023-11-25)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-0111-2023-11-25" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.11.1 (2023-11-25)" aria-label="Anchor to: Version 0.11.1 (2023-11-25)" href="#version-0111-2023-11-25">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Fixed an edge case which could read to invalid small reads/writes to
+DSi/ARM7-controlled removable storage.</li>
+<li>Added helpers to control <code>REG_SNDEXTCNT</code> from the ARM9 (to enable DSP
+audio output to the speakers, for example).</li>
+<li>Some DSP functions have been moved to <code>twl</code> sections to save memory when
+the game runs in a regular DS.</li>
+<li>Wrapped camera functions to prevent crashes when used in NDS mode.</li>
+<li>Change license of DLDI-related files to Zlib with permission from the
+authors.</li>
+<li>Fix Doxygen documentation of peripherals.</li>
+</ul>
+</li>
+<li>
+<p>DSP:</p>
+<ul>
+<li>Added BTDMP helpers to stream audio from the DSP to the speakers. Added an
+example to show how to generate audio from the ARM7 and the DSP at the same
+time.</li>
+<li>Added an example of how to use DMA to transfer data from the DSP memory to
+the ARM9 memory.</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-0110-2023-11-19"
+    >
+        Version 0.11.0 (2023-11-19)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-0110-2023-11-19" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.11.0 (2023-11-19)" aria-label="Anchor to: Version 0.11.0 (2023-11-19)" href="#version-0110-2023-11-19">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>libc:</p>
+<ul>
+<li>Fixed an important regression in <code>memcpy()</code> and <code>memset()</code> implementations.</li>
+</ul>
+</li>
+<li>
+<p>Improved file I/O performance:</p>
+<ul>
+<li>Added support for batch reads and writes of contiguous clusters, improving
+SD card performance for very large sequential reads/writes.</li>
+<li>Added <code>fatInitLookupCacheFile()</code>. This allows opting a file into having a
+special in-memory cache which significantly speeds up file seek operations.</li>
+<li>Provisionally automatically enabled the in-memory cache for NitroFS files.
+If you&rsquo;re experiencing slowdowns, make sure to defragment your SD card -
+this requirement will be loosened in future releases (but it&rsquo;s still a good
+idea).</li>
+<li>Integrated profi200&rsquo;s <a
   class="gdoc-markdown__link"
-  href="http://elm-chan.org/fsw/ff/00index_e.html"
->Elm&rsquo;s FatFs library</a>
-instead. This library has been ported to use the DLDI and DSi internal SD card
-drivers that are provided by <code>libnds</code>.</p>
-<p>In the makefile, you have to remove <code>-lfat</code> and <code>-lfilesystem</code> from <code>LIBS</code>, as
-they don&rsquo;t exist in BlocksDS.</p>
-<p>From the point of view of the source code, you can use the same includes as when
-using <code>libfat</code> and <code>libfilesystem</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;fat.h&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;filesystem.h&gt;</span><span class="cp">
-</span></span></span></code></pre></div><p>They provide <code>fatInitDefault()</code> and <code>nitroFSInit()</code>. They should be compatible
-with the ones in the original libraries. Please, report any behaviour that isn&rsquo;t
-the same. If you need any other fuction, report it as well.</p>
+  href="https://github.com/profi200/dsi_sdmmc"
+>dsi_sdmmc</a>
+driver, improving reliability and performance for reading from and writing
+to the DSi&rsquo;s SD card.</li>
+<li>Optimized unaligned buffer I/O performance for the DSi&rsquo;s SD card.</li>
+<li>Only cluster table/directory-related reads will now be cached by the
+built-in sector cache. This allows better use of this sector cache; one can
+use <code>setvbuf()</code> to enable a larger cache for file I/O.</li>
+<li>Other minor optimizations have been made throughout the code.</li>
+</ul>
+</li>
+<li>
+<p>Added a new Slot-2 API (<code>arm9/peripherals/slot2.h</code>).</p>
+<ul>
+<li>Added support for detecting external RAM cartridges (SuperCard, M3, G6, DS
+Memory Expansion Pak, EZ-Flash variants, EverDrive).</li>
+<li>Added support for enabling and disabling the data cache on the Slot-2 memory
+area. Combined with suitable bus speed detection for these cartridges, this
+allows efficient usage of such an external RAM area.</li>
+<li>Added support for detecting and using the Gyro, Solar and Tilt sensors
+available on various GBA game cartridges.</li>
+<li>Fixed detection of GBA cartridge rumble (WarioWare, Drill Dozer).</li>
+<li>Modify rumble example to show how to use the new API.</li>
+</ul>
+</li>
+<li>
+<p>DLDI:</p>
+<ul>
+<li>Moved the built-in sector cache into unused memory occupied by the reserved
+DLDI driver area. This effectly saves ~20KB of heap RAM for most homebrew.</li>
+<li>The DLDI driver area size can now be changed by defining the <code>__dldi_size</code>
+symbol to a value away from the default of <code>16384</code>, such as <code>8192</code> (if
+your application is highly RAM-constrained - this may break support with
+some cartridges, however) or <code>32768</code> (restores compatibility with MoonShell
+versions at the cost of an additional 16KB of RAM).</li>
+<li>The DLDI driver area is now guaranteed to be close to the beginning of the
+<code>.nds</code> file, which may slightly improve load times.</li>
+</ul>
+</li>
+<li>
+<p>DSP:</p>
+<ul>
+<li>Add BTDMP and ICU helpers.</li>
+<li>Refactor <code>crt0.s</code>.</li>
+<li>Add examples of handling interrupts, including timer interrupts.</li>
+</ul>
+</li>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Rename some cache helpers for consistency.</li>
+<li>Fixed a file handle leak that could occur if <code>nitroFSInit()</code> was pointed to
+an .nds file which does not contain a NitroFS file system.</li>
+<li>Fixed a rare case in which <code>nitroFSInit()</code> could try reading from the GBA
+slot on the DSi, causing an exception.</li>
+<li>Added <code>readFirmwareJEDEC()</code> function to read the ID of the DS firmware flash
+chip. (lifehackerhansol)</li>
+<li>Minor optimizations have been done to <code>readUserSettings()</code>.</li>
+<li>Fixed the <code>NDMA_DST_FIX</code> macro definition.</li>
+</ul>
+</li>
+</ul>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="3-build-system-differences"
+    <h2 id="version-0102-2023-11-11"
     >
-        3. Build system differences
+        Version 0.10.2 (2023-11-11)
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#3-build-system-differences" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 3. Build system differences" aria-label="Anchor to: 3. Build system differences" href="#3-build-system-differences">
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-0102-2023-11-11" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.10.2 (2023-11-11)" aria-label="Anchor to: Version 0.10.2 (2023-11-11)" href="#version-0102-2023-11-11">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>This is the biggest difference between devkitARM and BlocksDS. devkitARM
-Makefiles are very complicated: they call themselves recursively from the build
-directory. They also hide a lot of information from the user: they include
-sub-makefiles in the devkitARM system directory, which has a lot of important
-rules.</p>
-<p>The Makefiles of BlocksDS include all available rules so that it&rsquo;s easy to
-create a new build system based on them (for example, with CMake or Meson). They
-don&rsquo;t use self-recursion, so they are easier to understand.</p>
-<p>As a BlocksDS user you need to edit a few paths and variables, same as with
-devkitARM. Open the Makefile of your devkitARM project and check this part (some
-variables may be missing if you&rsquo;re not using them):</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-make" data-lang="make"><span class="line"><span class="cl"><span class="nv">TARGET</span>      <span class="o">:=</span> <span class="k">$(</span>notdir <span class="k">$(</span>CURDIR<span class="k">))</span>   <span class="c1"># Name of the resulting NDS file</span>
-</span></span><span class="line"><span class="cl"><span class="nv">SOURCES</span>     <span class="o">:=</span> <span class="nb">source</span> source/common  <span class="c1"># Directories with files to compile</span>
-</span></span><span class="line"><span class="cl"><span class="nv">INCLUDES</span>    <span class="o">:=</span> include               <span class="c1"># Directories with files to #include</span>
-</span></span><span class="line"><span class="cl"><span class="nv">GRAPHICS</span>    <span class="o">:=</span> graphics              <span class="c1"># Folder with images and .grit files</span>
-</span></span><span class="line"><span class="cl"><span class="nv">MUSIC</span>       <span class="o">:=</span> audio                 <span class="c1"># Folder with audio files for maxmod</span>
-</span></span><span class="line"><span class="cl"><span class="nv">DATA</span>        <span class="o">:=</span> data                  <span class="c1"># Folder with .bin files</span>
-</span></span><span class="line"><span class="cl"><span class="nv">NITRODATA</span>   <span class="o">:=</span> nitrofs               <span class="c1"># Root of your NitroFS filesystem</span>
-</span></span></code></pre></div><p>Copy the Makefiles from the <code>rom_arm9_only</code> or <code>rom_combined</code> to your project,
-and open it. You have to copy the values to the following part, and leave them
-empty if you aren&rsquo;t using them:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-make" data-lang="make"><span class="line"><span class="cl"><span class="nv">SOURCEDIRS</span>  <span class="o">:=</span> <span class="nb">source</span>
-</span></span><span class="line"><span class="cl"><span class="nv">INCLUDEDIRS</span> <span class="o">:=</span> include
-</span></span><span class="line"><span class="cl"><span class="nv">GFXDIRS</span>     <span class="o">:=</span> graphics
-</span></span><span class="line"><span class="cl"><span class="nv">BINDIRS</span>     <span class="o">:=</span> data
-</span></span><span class="line"><span class="cl"><span class="nv">AUDIODIRS</span>   <span class="o">:=</span> audio
-</span></span><span class="line"><span class="cl"><span class="nv">NITROFSDIR</span>  <span class="o">:=</span> nitrofs
-</span></span></code></pre></div><p>Important note: <code>SOURCEDIRS</code> searches all directories recursively. If you don&rsquo;t
-like this behaviour, go to the <code>SOURCES_S</code>, <code>SOURCES_C</code> and <code>SOURCES_CPP</code> lines
-and add <code>-maxdepth 1</code> to the <code>find</code> command.</p>
-<p>Note that <code>TARGET</code> is not part of this group. The top of the Makefile has this
-other group of variables that you can also set to your own values:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-make" data-lang="make"><span class="line"><span class="cl"><span class="nv">NAME</span>          <span class="o">:=</span> template_arm9     <span class="c1"># Name of the resulting NDS file</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c"># Banner and icon information
-</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="nv">GAME_TITLE</span>    <span class="o">:=</span> Combined ARM7+ARM9 template
-</span></span><span class="line"><span class="cl"><span class="nv">GAME_SUBTITLE</span> <span class="o">:=</span> Built with BlocksDS
-</span></span><span class="line"><span class="cl"><span class="nv">GAME_AUTHOR</span>   <span class="o">:=</span> github.com/blocksds/sdk
-</span></span><span class="line"><span class="cl"><span class="nv">GAME_ICON</span>     <span class="o">:=</span> icon.bmp
-</span></span></code></pre></div><p>Once this has been adapted to your desired values, you will need to link with
-the libraries used by your program.</p>
-<p>This is how it looks like in a devkitARM project:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-make" data-lang="make"><span class="line"><span class="cl"><span class="nv">LIBS</span> <span class="o">:=</span> -ldswifi9 -lmm9 -lnds9 -lfat -lfilesystem
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">LIBDIRS</span> <span class="o">:=</span> <span class="k">$(</span>LIBNDS<span class="k">)</span>
-</span></span></code></pre></div><p>This would be the equivalent in a BlocksDS project:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-make" data-lang="make"><span class="line"><span class="cl"><span class="nv">LIBS</span>    <span class="o">:=</span> -ldswifi9 -lmm9 -lnds9
-</span></span><span class="line"><span class="cl"><span class="nv">LIBDIRS</span> <span class="o">:=</span> <span class="k">$(</span>BLOCKSDS<span class="k">)</span>/libs/dswifi <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>           <span class="k">$(</span>BLOCKSDS<span class="k">)</span>/libs/maxmod <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>           <span class="k">$(</span>BLOCKSDS<span class="k">)</span>/libs/libnds
-</span></span></code></pre></div><p>You can remove the dswifi or maxmod libraries if you aren&rsquo;t using them.</p>
-<p>The reason for this additional complexity with <code>LIBS</code> and <code>LIBDIRS</code> is to allow
-the user as much flexibility as possible when mixing and matching libraries.</p>
+<ul>
+<li>NitroFS: Fix file traversal not working without running a <code>chdir()</code> first.</li>
+</ul>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="4-integer-version-of-stdioh-functions"
+    <h2 id="version-0101-2023-11-11"
     >
-        4. Integer version of stdio.h functions
+        Version 0.10.1 (2023-11-11)
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#4-integer-version-of-stdioh-functions" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 4. Integer version of stdio.h functions" aria-label="Anchor to: 4. Integer version of stdio.h functions" href="#4-integer-version-of-stdioh-functions">
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-0101-2023-11-11" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.10.1 (2023-11-11)" aria-label="Anchor to: Version 0.10.1 (2023-11-11)" href="#version-0101-2023-11-11">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>Functions like <code>iprintf()</code> or <code>siscanf()</code>, provided by <code>newlib</code>,  aren&rsquo;t
-provided by <code>picolibc</code>. Replace any calls to them by the standard names of the
-functions: <code>printf()</code>, <code>sscanf()</code>, etc.</p>
-<p>By default, the build of <code>picolibc</code> of BlocksDS makes <code>printf()</code>, <code>sscanf()</code> and
-similar functions floats and doubles. This is done to increase compatibility
-with any pre-existing code, but it increases the size of the final binaries.</p>
-<p>It is possible to switch to integer-only versions of the functions, and save
-that additional space, by adding the following line to the <code>LDFLAGS</code> of your
-Makefile:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-make" data-lang="make"><span class="line"><span class="cl"><span class="nv">LDFLAGS</span> <span class="o">:=</span> <span class="o">[</span>all other options go here<span class="o">]</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -Wl,--defsym<span class="o">=</span><span class="nv">vfprintf</span><span class="o">=</span>__i_vfprintf -Wl,--defsym<span class="o">=</span><span class="nv">vfscanf</span><span class="o">=</span>__i_vfscanf
-</span></span></code></pre></div><p>For more information: <a
+<ul>
+<li>Fix NitroFS directory reads occasionally failing on non-DLDI environments.</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-0100-2023-11-11"
+    >
+        Version 0.10.0 (2023-11-11)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-0100-2023-11-11" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.10.0 (2023-11-11)" aria-label="Anchor to: Version 0.10.0 (2023-11-11)" href="#version-0100-2023-11-11">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>Build system:</p>
+<ul>
+<li>The default makefiles no longer rely on the toolchain being in the current
+<code>PATH</code>. Now, the default Makefiles have the default path to Wonderful
+Toolchain, which can be overriden by the user if desired.</li>
+<li>The makefiles used by the tests and examples have been moved to a system
+location so that they are more easily reused.</li>
+<li>dldipatch has replaced dlditool as the default to apply DLDI patches, due to
+bugs in dlditool&rsquo;s patch application process:
+<a
   class="gdoc-markdown__link"
-  href="https://github.com/picolibc/picolibc/blob/main/doc/printf.md"
->https://github.com/picolibc/picolibc/blob/main/doc/printf.md</a></p>
+  href="https://problemkaputt.de/gbatek-ds-cart-dldi-driver-guessed-address-adjustments.htm"
+>https://problemkaputt.de/gbatek-ds-cart-dldi-driver-guessed-address-adjustments.htm</a></li>
+<li>Update your makefiles to take advantage of the updates.</li>
+</ul>
+</li>
+<li>
+<p>Filesystem improvements:</p>
+<ul>
+<li>Replaced NitroFAT by a new Zlib-licensed implementation of the NitroFS
+filesystem by @asiekierka. This fixes the performance drawbacks of NitroFAT.</li>
+<li>In <code>stat()</code> and <code>fstat()</code>, the fields <code>st_dev</code> and <code>st_ino</code> are now
+properly populated.</li>
+<li>Fixed <code>stat()</code> not acknowledging <code>/</code> as a directory.</li>
+<li>Remove NitroFAT support from ndstool.</li>
+<li>The example makefiles have been modified to stop using mkfatimg.</li>
+</ul>
+</li>
+<li>
+<p>DSP:</p>
+<ul>
+<li>Initial <strong>experimental, incomplete</strong> support for the Teak DSP of the DSi.
+This isn&rsquo;t ready to be used, it&rsquo;s still under development and it&rsquo;s going
+through a lot of changes. Most of the code is derived from @Gericom&rsquo;s
+prototype code.</li>
+<li>Support for building DSP binaries won&rsquo;t be present on Windows until it&rsquo;s
+more stable. However, if you already have pre-built DSP binaries, it&rsquo;s
+possible to use them on Windows.</li>
+<li>Introduced teaktool, which converts ELF files into TLF (Teak Loadable
+Format) files that can be loaded by libnds.</li>
+<li>Added ARM9 functions to libnds to handle the DSP, load TLF files and
+communicate with programs running on the DSP.</li>
+<li>Introduce libteak, a library with helpers to use the AHBM, DMA, APBP, ICU
+and timer peripherals. It has been documented and added to the Doxygen pages
+of libnds.</li>
+<li>Added a few examples of how to use the currently supported DSP features.</li>
+<li>Update user instructions and Dockerfile to use and mention the LLVM Teak
+toolchain.</li>
+<li>Add NWRAM defintions and helpers.</li>
+</ul>
+</li>
+<li>
+<p>DLDI improvements:</p>
+<ul>
+<li>The DLDI template now automatically calculates the &ldquo;size&rdquo; and &ldquo;fix flags&rdquo;
+fields of the header.</li>
+<li>The binary R4 DLDI driver, used for DeSmuMe compatibility, has been replaced
+by a Zlib-licensed impementation built from source.</li>
+</ul>
+</li>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Microphone samples can now be captured using full 16-bit precision on DSi.</li>
+<li>Cleaned up and added some missing MMIO/bitfield defines throughout libnds.</li>
+<li>Implemented inlined BIOS calls based on gba-hpp. This should make code
+using BIOS calls slightly smaller and faster.</li>
+<li>Small reorganization of syscalls code.</li>
+<li>Slightly optimized coroutine threading code.</li>
+<li>Added documentation about ARM7 audio helpers.</li>
+</ul>
+</li>
+<li>
+<p>Submodules:</p>
+<ul>
+<li>Before this version, repositories owned by third parties were added as
+submodules to the SDK repository. This can be a problem if the owner isn&rsquo;t
+responsive, changes name, deletes the repository&hellip; In order to avoid
+issues, forks have been created under the BlocksDS organization.  It is
+expected to contribute to the original repositories and update the fork to
+stay in sync. Contributing to the forks is a last resort option.</li>
+</ul>
+</li>
+<li>
+<p>Tests:</p>
+<ul>
+<li>Added a new test for SWI functions.</li>
+</ul>
+</li>
+</ul>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="5-note-about-readdir"
+    <h2 id="version-091-2023-10-19"
     >
-        5. Note about readdir()
+        Version 0.9.1 (2023-10-19)
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#5-note-about-readdir" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 5. Note about readdir()" aria-label="Anchor to: 5. Note about readdir()" href="#5-note-about-readdir">
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-091-2023-10-19" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.9.1 (2023-10-19)" aria-label="Anchor to: Version 0.9.1 (2023-10-19)" href="#version-091-2023-10-19">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>The expected behaviour of FatFs is to not include <code>.</code> and <code>..</code> as entries when
-iterating over the entries of a directory. This is different than under
-devkitARM, and it&rsquo;s a behaviour that may be added in the future.</p>
-<p>Also, <code>readdir()</code> returns a <code>struct dirent</code> pointer with the field <code>d_type</code>.
-This field can be used to determine if an entry is a directory or a file. I&rsquo;ve
-seen that some programs use it like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">dirent</span> <span class="o">*</span><span class="n">cur</span> <span class="o">=</span> <span class="nf">readdir</span><span class="p">(</span><span class="n">dirp</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">cur</span><span class="o">-&gt;</span><span class="n">d_type</span> <span class="o">&amp;</span> <span class="n">DT_DIR</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;This is a directory</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="nf">if</span> <span class="p">(</span><span class="n">cur</span><span class="o">-&gt;</span><span class="n">d_type</span> <span class="o">&amp;</span> <span class="n">DT_REG</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;This is a file</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
-</span></span></code></pre></div><p>However, this is incorrect. The right way to compare it is by checking if the
-value is equal:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">dirent</span> <span class="o">*</span><span class="n">cur</span> <span class="o">=</span> <span class="nf">readdir</span><span class="p">(</span><span class="n">dirp</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">cur</span><span class="o">-&gt;</span><span class="n">d_type</span> <span class="o">==</span> <span class="n">DT_DIR</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;This is a directory</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="nf">if</span> <span class="p">(</span><span class="n">cur</span><span class="o">-&gt;</span><span class="n">d_type</span> <span class="o">==</span> <span class="n">DT_REG</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;This is a file</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
-</span></span></code></pre></div><div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="6-touch-screen-and-libnds-keyboard"
+<ul>
+<li>Revert changes in maxmod that duplicated some symbols.</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-090-2023-10-18"
     >
-        6. Touch screen and libnds keyboard
+        Version 0.9.0 (2023-10-18)
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#6-touch-screen-and-libnds-keyboard" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 6. Touch screen and libnds keyboard" aria-label="Anchor to: 6. Touch screen and libnds keyboard" href="#6-touch-screen-and-libnds-keyboard">
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-090-2023-10-18" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.9.0 (2023-10-18)" aria-label="Anchor to: Version 0.9.0 (2023-10-18)" href="#version-090-2023-10-18">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p><code>scanKeys()</code> updates the internal state of the key handling code. This is then
-used by <code>keysHeld()</code>, <code>keysDown()</code> and <code>keysHeld()</code>.</p>
-<p>BlocksDS also requires the user to call <code>scanKeys()</code> before any of the following
-functions: <code>touchRead()</code>, <code>keyboardGetChar()</code>, <code>keyboardUpdate()</code> and the
-deprecated <code>touchReadXY()</code>.</p>
-<p>This is unlikely to be a problem in most projects, as the normal thing to do is
-to both scan the keys and read the touchscreen status, not just read the
-touchscreen.</p>
-<p>The reason is that the functions <code>scanKeys()</code> and <code>touchRead()</code> aren&rsquo;t
-synchronized in any way, which creates a race condition. Consider this code:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">scanKeys</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nf">keysHeld</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">KEY_TOUCH</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">touchPosition</span> <span class="n">touchPos</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">touchRead</span><span class="p">(</span><span class="o">&amp;</span><span class="n">touchPos</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d, %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">touchPos</span><span class="p">.</span><span class="n">px</span><span class="p">,</span> <span class="n">touchPos</span><span class="p">.</span><span class="n">py</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">swiWaitForVBlank</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>The state of the X and Y buttons, as well as the state of the touch screen, is
-passed from the ARM7 with a FIFO message. This message can technically happen in
-between <code>scanKeys()</code> and <code>touchRead()</code>, which means that it&rsquo;s possible that
-<code>keysHeld() &amp; KEY_TOUCH</code> is true, but the coordinates read by <code>touchRead()</code> are
-(0, 0) because the user has stopped pressing the screen right at that point, and
-<code>scanKeys()</code> read the outdated values while <code>touchRead()</code> read the updated
-values.</p>
-<p>In BlocksDS, <code>scanKeys()</code> is used to latch the current state of the keys and the
-touch screen. This forces the developer to call <code>scanKeys()</code>, but it also
-ensures that there are no race conditions, as <code>scanKeys()</code> will read all the
-state atomically.</p>
+<ul>
+<li>
+<p>SDK:</p>
+<ul>
+<li>Native windows support added. Wonderful toolchains now distribute native
+Windows binaries, and the only required change in BlocksDS was to change a
+library used by Grit. Thank you, Generic and asie!</li>
+<li>The stdio implementation of picolibc provided by Wonderful Toolchains has
+been patched by asie and this has substantially improved direct SD card read
+and write speeds.</li>
+<li>The RTC interrupt is no longer used in any test, example or template. Users
+are now expected to timer interrupt instead because the RTC interrupt isn&rsquo;t
+supported on 3DS in DS/DSi mode or most emulators. Check the new code to see
+how to adapt old code. The RTC interrupt functions will still be supported
+to preserve compatibility with old projects that aren&rsquo;t updated.</li>
+<li>Document the ARM9 &lt;-&gt; ARM7 boot synchronization routine.</li>
+<li>In the dockerfile, set a locale to be able to pass UTF-8 characters to
+ndstool to appear in the title of the NDS ROM.</li>
+<li>Add a test to ensure that the libnds modules that use the ARM9 &lt;-&gt; ARM7
+transfer memory region don&rsquo;t break.</li>
+<li>New examples:
+<ul>
+<li>Getting key input state.</li>
+<li>Using NitroFAT, DLDI and DSi SD in the same program.</li>
+<li>Send a buffer in main RAM to the ARM7 from the ARM9.</li>
+<li>Read battery status.</li>
+<li>Set the real time clock of the NDS.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>libnds:</p>
+<ul>
+<li>RTC:
+<ul>
+<li>Add new helpers to get and set the date. They use typedefs to move values
+between functions instead of byte arrays.</li>
+<li>The old helpers that use byte arrays have been deprecated.</li>
+<li>Using the RTC interrupt as a way to update the time every second has been
+deprecated.</li>
+</ul>
+</li>
+<li>Documentation:
+<ul>
+<li>Document values returned by the battery read function.</li>
+<li>Document RTC helpers.</li>
+<li>Add some ARM7 modules to the front page of the Doxygen documentation.</li>
+</ul>
+</li>
+<li>Memory:
+<ul>
+<li>Disable data cache and instruction fetch access to DTCM.</li>
+<li>Rumble detection functions won&rsquo;t try to detect anything on DSi.</li>
+<li>Change location of transfer region area on DSi so that it&rsquo;s uncached.</li>
+<li>Import safe DMA helpers written by Gericom and use them from all DMA
+helpers.</li>
+</ul>
+</li>
+<li>Video:
+<ul>
+<li>Make <code>glGetInt()</code> wait for the GPU to be idle when getting the polygon
+and vertices count. It is common for developers to forget to wait.</li>
+<li>Cleanup some helpers and add some missing VRAM definitions.</li>
+<li>Document hardware bug of the DMA in GFX FIFO mode.</li>
+</ul>
+</li>
+<li>Other:
+<ul>
+<li>FatFs updated to R0.15p3.</li>
+<li>Support the debug button (only available in emulators and debug consoles).</li>
+<li>Switch to using ARM unified syntax (UAL).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Grit:</p>
+<ul>
+<li>Switch from libfreeimage to libplum. This allows us to build Grit on Windows
+easier.</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-081-2023-08-01"
+    >
+        Version 0.8.1 (2023-08-01)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-081-2023-08-01" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.8.1 (2023-08-01)" aria-label="Anchor to: Version 0.8.1 (2023-08-01)" href="#version-081-2023-08-01">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Fixed NitroFAT in emulators. It only worked when DLDI was initialized
+correctly, which isn&rsquo;t the case in emulators like no$gba.</li>
+<li>Set the right CPU as owner of the Slot-1 bus in NitroFAT handling functions.</li>
+</ul>
+</li>
+<li>
+<p>SDK:</p>
+<ul>
+<li>Updated build systems to generate Maxmod soundbanks in the NitroFAT
+filesystem if the filesystem is used. This isn&rsquo;t supported by ARM9 + ARM7
+makefiles for now, only by ARM9 makefiles.</li>
+<li>Fixed segmentation fault in mkfatimg when not enough arguments are
+provided.</li>
+<li>Stop relying on <code>make -j</code> in Makefiles. It is passed by make to any
+sub-make, so it isn&rsquo;t required.</li>
+<li>Added basic Maxmod and Maxmod + NitroFAT examples.</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-08-2023-07-16"
+    >
+        Version 0.8 (2023-07-16)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-08-2023-07-16" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.8 (2023-07-16)" aria-label="Anchor to: Version 0.8 (2023-07-16)" href="#version-08-2023-07-16">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Filesystem:
+<ul>
+<li><code>fatInit()</code> now correctly sets the current working directory.</li>
+<li>NitroFAT now changes directory to <code>nitro:/</code> on initialization.</li>
+<li>Fixed code that selects the default filesystem (DSi SD or DLDI).</li>
+</ul>
+</li>
+<li>Added asynchronous math functions to suplement the synchronous functions.</li>
+<li>Added support for redirecting <code>stdout</code> and <code>stderr</code> to user functions.</li>
+<li>Added support for more rumble packs.</li>
+<li>Improved support for DSi regions in <code>guruMeditationDump()</code>.</li>
+<li>Documented MPU setup code properly.</li>
+<li>Cleaned up exception handling code.</li>
+<li>Added missing <code>DLDI_SIZE_2KB</code> define.</li>
+<li>Fixed leaking file handlers in <code>truncate()</code>.</li>
+<li>Fixed memory leaks and handling in <code>image</code> and <code>pcx</code> modules.</li>
+</ul>
+</li>
+<li>
+<p>ndstool:</p>
+<ul>
+<li>Fixed warnings.</li>
+<li>Removed non-homebrew-related functionality.</li>
+</ul>
+</li>
+<li>
+<p>SDK:</p>
+<ul>
+<li>Automatically link with libc and libstdc++ rather than forcing users to do
+it explicitly.</li>
+<li>Support <code>*.arm.c</code> and <code>*.arm.cpp</code> filenames for compatibility with
+devkitARM-utilizing projects.</li>
+<li>Fixed TLS initialization on the ARM7.</li>
+<li>Improved bin2c.</li>
+<li>Updated libc documentation.</li>
+<li>Improved and cleanup some examples.</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-07-2023-04-19"
+    >
+        Version 0.7 (2023-04-19)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-07-2023-04-19" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.7 (2023-04-19)" aria-label="Anchor to: Version 0.7 (2023-04-19)" href="#version-07-2023-04-19">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Keyboard:
+<ul>
+<li>Fixed initialization glitch where it could blink for a frame.</li>
+<li>Fixed backspace handling.</li>
+<li>Added support for non-blocking keyboard capture when using cothreads.</li>
+</ul>
+</li>
+<li>cothread:
+<ul>
+<li>Fixed stack alignment.</li>
+<li>Fixed the stack size of the scheduler thread.</li>
+</ul>
+</li>
+<li>Fixed no$gba debug messages on the ARM9.</li>
+<li>Added support of no$gba debug messages to the ARM7.</li>
+<li>Implemented <code>fatInit()</code>.</li>
+<li>Improved <code>sassert()</code> so that it can exit to the loader instead of locking
+the application.</li>
+<li>Unified all coding and documentation style of the codebase.</li>
+<li>Changed license of GL2D to Zlib (with the author&rsquo;s permission).</li>
+<li>Reduced the size of <code>OamState</code> structures.</li>
+</ul>
+</li>
+<li>
+<p>mmutil:</p>
+<ul>
+<li>Fixed segfault with samples with implied zero loop.</li>
+</ul>
+</li>
+<li>
+<p>SDK:</p>
+<ul>
+<li>Improved some old examples. Fix memory leaks in all examples that used
+<code>getcwd()</code>.</li>
+<li>Fixed ARM9 linkerscript to place ITCM sections in ITCM correctly.</li>
+<li>Added new examples: Exception handling, assertions, no$gba debug console.</li>
+<li>Prevent mkfatimg from generating FAT images that are so small that FatFs
+can&rsquo;t mount them.</li>
+<li>Improved installation instructions.</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-06-2023-04-11"
+    >
+        Version 0.6 (2023-04-11)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-06-2023-04-11" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.6 (2023-04-11)" aria-label="Anchor to: Version 0.6 (2023-04-11)" href="#version-06-2023-04-11">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>SDK:</p>
+<ul>
+<li>Added a DLDI driver template.</li>
+<li>Refactored <code>install</code> targets of the SDK components. Now, all components
+can be installed on their own, and they copy the licenses of the components
+to the installation directory.</li>
+<li>Tweak bin2c behaviour to more closely match devkitPro&rsquo;s bin2s.</li>
+<li>Use SPDX license identifiers in all libraries and components that end up in
+the NDS application binary.</li>
+<li>Some cleanup of code formatting.</li>
+</ul>
+</li>
+<li>
+<p><strong>libnds</strong>:</p>
+<ul>
+<li>FIFO subsystem:
+<ul>
+<li>The FIFO subsystem has been cleaned up and documented.</li>
+<li>Some bugs in the FIFO subsystem have been fixed (the stress test still
+fails, though).</li>
+<li>Prevent using <code>cothread_yield()</code> in the ARM7.</li>
+</ul>
+</li>
+<li>Alignment of thread local storage sections has been fixed.</li>
+<li>Added support for calling <code>stat()</code> on the root directory of a filesystem.</li>
+<li>Added support for <code>statvfs()</code> and <code>fstatvfs()</code>.</li>
+<li>Avoid pulling in the default keyboard data when stdin-requesting code is
+used. This saves over 10 KB of data in any situation where the default
+keyboard is not used (no keyboard or non-default keyboard alike).</li>
+<li>Allow setting the duration of the lid sleep check, and to disable it
+completely.</li>
+<li>Build release versions of the library as well as debug.</li>
+<li>Document MPU setup steps and CP15 registers.</li>
+<li>Enable more warnings in the Makefile and fix them.</li>
+</ul>
+</li>
+<li>
+<p>ndstool:</p>
+<ul>
+<li>Support multiple languages in the banner.</li>
+<li>Support more file formats for icons (GIF, PNG).</li>
+<li>Support animated icons (from GIF files).</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-05-2023-03-31"
+    >
+        Version 0.5 (2023-03-31)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-05-2023-03-31" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.5 (2023-03-31)" aria-label="Anchor to: Version 0.5 (2023-03-31)" href="#version-05-2023-03-31">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>SDK:</p>
+<ul>
+<li>Defined a default location for BlocksDS: <code>/opt/blocksds/</code></li>
+<li>libxm7 has been integrated as a core library.</li>
+<li>Use mkfatimg (distributed with FatFs) instead of <code>imgbuild.sh</code> to reduce
+the number of dependencies.</li>
+<li>Fixed mmutil target in Makefiles in parallel builds.</li>
+</ul>
+</li>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Peripherals:
+<ul>
+<li>Improved rumble peripheral handling (including detection of the DS Rumble
+Pak).</li>
+<li>Cleaned up <code>REG_EXMEMCNT</code> initialization for the Guitar Grip and Paddle
+peripheral drivers.</li>
+</ul>
+</li>
+<li>Improved error recovery in <code>glInit()</code>. This allows recovering the
+geometry engine from certain situations where a program exited in the
+middle of 3D engine processing.</li>
+<li>Improved error recovery in <code>getcwd()</code>.</li>
+<li>Fixed and simplified exit to loader code on the ARM7 side.</li>
+<li>Improved documentation of exit to loader logic and <code>BoxTest()</code>.</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-04-2023-03-26"
+    >
+        Version 0.4 (2023-03-26)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-04-2023-03-26" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.4 (2023-03-26)" aria-label="Anchor to: Version 0.4 (2023-03-26)" href="#version-04-2023-03-26">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>SDK:</p>
+<ul>
+<li>Use the Wonderful Toolchain to get full C++ standard library support.
+<ul>
+<li>As a result, BlocksDS now targets a specific version of binutils, gcc and
+picolibc.</li>
+<li>Removed picolibc and avr-libstdcpp as submodules (all previous history has
+been condensed to one commit).</li>
+</ul>
+</li>
+<li>Simplified the build system of tests and examples.</li>
+</ul>
+</li>
+<li>
+<p><strong>libnds</strong>:</p>
+<ul>
+<li>Multithreading:
+<ul>
+<li>Added cooperative multithreading scheduler.</li>
+<li>Enabled scheduler in the ARM9 by default.</li>
+<li>Added examples of having multiple threads, mutexes, and asynchronous file
+loading.</li>
+<li>Added support for thread-local storage.</li>
+<li>Added mutexes to FIFO handling and removable storage accesses.</li>
+</ul>
+</li>
+<li>Added initial support and example of DSi camera (thanks, asie!).</li>
+<li>Added support for <code>malloc()</code> on the ARM7.</li>
+<li>Implemented stubs for <code>fchmod()</code>, <code>fchmodat()</code>, <code>fchown()</code>,
+<code>fchownat()</code>. <code>readlink()</code>, <code>symlink()</code>, <code>getentropy()</code>.</li>
+<li>Updated FatFS to R0.15p2.</li>
+<li>Fixed <code>glTexImage2D()</code> not flushing textures before copying them with DMA.</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-031-2023-03-20"
+    >
+        Version 0.3.1 (2023-03-20)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-031-2023-03-20" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.3.1 (2023-03-20)" aria-label="Anchor to: Version 0.3.1 (2023-03-20)" href="#version-031-2023-03-20">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Restored support of <code>gettimeofday()</code> on the ARM7.</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-03-2023-03-20"
+    >
+        Version 0.3 (2023-03-20)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-03-2023-03-20" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.3 (2023-03-20)" aria-label="Anchor to: Version 0.3 (2023-03-20)" href="#version-03-2023-03-20">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>SDK:</p>
+<ul>
+<li>Added some tests.</li>
+<li>Build system improvements (support two-line app titles, remove old makefiles).</li>
+<li>libsysnds has been integrated in libnds.</li>
+</ul>
+</li>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Implemented a disk cache to improve FatFs performance.</li>
+<li>Added support for handling DLDI in the ARM7, as opposed to only the ARM9.
+<ul>
+<li>This is currently controlled either using an additional, previously unused
+bit in the DLDI specification, or explicitly requested by the homebrew
+program.</li>
+</ul>
+</li>
+<li>Added function for the ARM9 to request the ARM7 to read the cartridge.</li>
+<li>Added some missing definitions of DSi registers (SCFG/NDMA).</li>
+<li>Improved TWL/DSi interrupt support.</li>
+<li>Improved data cache handling for removable storage read/writes.</li>
+<li>Fixed detecting certain types of 128 KB cart EEPROMs.</li>
+<li>Fixed incorrect size detection for certain cases of cart EEPROM data.</li>
+<li>Tweaked default keyboard texture to make the keycap legends opaque.</li>
+<li>General cleanup of libnds code (like replacing magic numbers by defines).</li>
+<li>Fixed <code>consoleDemoInit()</code> to restore display brightness when initializing.</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-02-2023-03-15"
+    >
+        Version 0.2 (2023-03-15)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-02-2023-03-15" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.2 (2023-03-15)" aria-label="Anchor to: Version 0.2 (2023-03-15)" href="#version-02-2023-03-15">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>SDK:</p>
+<ul>
+<li>Improved C++ support (now the C++ standard library it is actually usable).</li>
+<li>Improved C library support.</li>
+<li>Fixed <code>install</code> target.</li>
+</ul>
+</li>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Integrated agbabi renamed as ndsabi. This provides fast implementations of
+<code>memcpy()</code>, <code>memmove()</code>, <code>memset()</code>, helper functions for facilitating
+coroutines, etc.</li>
+<li>Implemented support for 1BPP fonts in <code>consoleLoadFont()</code> and replaced
+<code>default_font.bin</code> with a derivative of <a
+  class="gdoc-markdown__link"
+  href="http://viznut.fi/unscii"
+>Unscii</a>,
+limited to ASCII characters 32-127. In total, this saves ~7.25 KB of code
+size for any program using the built-in console.</li>
+<li>Reduced the size of data structures controlling the built-in keyboard.</li>
+<li>Implemented missing bounds checks in <code>keyboardGetKey()</code>.</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-01-2023-03-14"
+    >
+        Version 0.1 (2023-03-14)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-01-2023-03-14" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.1 (2023-03-14)" aria-label="Anchor to: Version 0.1 (2023-03-14)" href="#version-01-2023-03-14">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>First beta release of BlocksDS. Features:</p>
+<ul>
+<li>
+<p>SDK:</p>
+<ul>
+<li>Supports libnds, maxmod, dswifi.</li>
+<li>Supports a lot of the standard C library.</li>
+<li>Very early support of the standard C++ library.</li>
+<li>Supports DLDI, DSi SD slot and NitroFAT (open source alternative of NitroFS)
+using Elm&rsquo;s FatFs.</li>
+<li>Documentation on how to migrate projects to BlocksDS.</li>
+<li>Docker image provided.</li>
+</ul>
+</li>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Added new CP15 control helpers for the ARM9.</li>
+<li>Added Z1/Z2 read support for the TWL/DSi touch screen controller.
+This allows measuring an approximation of pressure, similar to NTR/NDS mode.</li>
+</ul>
+</li>
+</ul>
 
   </article>
 
@@ -1561,536 +2375,6 @@ state atomically.</p>
         
 
         
-
-        
-          
-        
-
-        
-        
-      
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-      
-    
-
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-      
-    
-
-  
-
-        
-      
-    
-
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-
-        
-        
-          
-  
-  
-
-  
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-          
-  
-  
-
-  
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-      
-    
-
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-      
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-      
-    
-
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-      
-    
-
-  
-
-        
-      
-    
-
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-      
-    
-
-  
-
-        
-      
-    
-
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-
-        
-        
-          
-  
-  
-
-  
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-      
-    
-
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-      
-    
-
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-      
-    
-
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-      
-    
-
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
-
-        
-          
-        
-
-        
-        
-      
-    
-
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        
           
           
         
@@ -2102,15 +2386,6 @@ state atomically.</p>
         
         
       
-    
-
-  
-    
-
-    
-      
-    
-
     
       
       
@@ -2129,6 +2404,545 @@ state atomically.</p>
             
             
           
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+
+        
+        
+          
+  
+  
+
+  
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+          
+  
+  
+
+  
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+
+        
+        
+          
+  
+  
+
+  
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
         
 
         
@@ -2157,11 +2971,11 @@ state atomically.</p>
   
     <a
       class="gdoc-page__nav--prev flex align-center"
-      href="/docs/technical/exit_to_loader/"
-      title="Exit to loader protocol"
+      href="/docs/introduction/introduction/"
+      title="Introduction"
     >
       <i class="gdoc-icon">gdoc_arrow_left_alt</i>
-      Exit to loader protocol
+      Introduction
     </a>
   
 </span>
@@ -2169,10 +2983,10 @@ state atomically.</p>
   
     <a
       class="gdoc-page__nav--next flex align-center"
-      href="/docs/technical/design_guide/"
-      title="Design guide"
+      href="/docs/introduction/licenses/"
+      title="Licenses"
     >
-      Design guide
+      Licenses
       <i class="gdoc-icon">gdoc_arrow_right_alt</i>
     </a>
   
