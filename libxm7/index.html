@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.4-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libxm7: libXM7 documentation</title>
+<title>LibXM7: LibXM7 documentation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -13,6 +14,16 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+       <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+       <script type="text/javascript">
+           DoxygenAwesomeDarkModeToggle.init()
+       </script>
+       <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+       <script type="text/javascript">
+           DoxygenAwesomeFragmentCopyButton.init()
+       </script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -21,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libxm7
+   <div id="projectname">LibXM7
    </div>
   </td>
  </tr>
@@ -62,17 +73,22 @@ $(function() {
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">libXM7 documentation </div></div>
+  <div class="headertitle"><div class="title">LibXM7 documentation </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="autotoc_md0"></a>
-Introduction</h2>
+<div class="textblock"><p ><a class="anchor" id="mainpage"></a></p>
+<h1><a class="anchor" id="autotoc_md0"></a>
+Introduction</h1>
 <p >A C library to play XM (and MOD) modules on Nintendo DS using only ARM7 resources (thus freeing your ARM9 from that task).</p>
-<h2><a class="anchor" id="autotoc_md1"></a>
-API documentation</h2>
-<p ><a class="el" href="libxm7_8h.html">Global libXM7 header</a></p>
-<h2><a class="anchor" id="autotoc_md2"></a>
-libXM7 Replay features</h2>
+<h1><a class="anchor" id="autotoc_md1"></a>
+API documentation</h1>
+<ul>
+<li><a class="el" href="group__libxm7__types.html">libXM7 definitions and types.</a></li>
+<li><a class="el" href="group__libxm7__arm9.html">libXM7 ARM9 functions.</a></li>
+<li><a class="el" href="group__libxm7__arm7.html">libXM7 ARM7 functions.</a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
+libXM7 Replay features</h1>
 <p >The current version of libXM7 (1.06) can play XMs featuring the following characteristics:</p>
 <ul>
 <li>Up to 16 channels.</li>
@@ -159,8 +175,8 @@ libXM7 Replay features</h2>
 </ul>
 <p >Of course libXM7 has <b>complete</b> MOD effect support (because they're a subset of XM effects).</p>
 <p >(*) Yeah, I mean <code>FLT8</code> really.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
-Getting the most of your tune</h2>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Getting the most of your tune</h1>
 <p >Since the library doesn't manipulate the samples data directly but simply uses the Nintendo DS hardware 16 digital channels to replay samples, there are some things you should be aware of when composing tunes especially for this system. First of all, remember that hardware mixing among the channels on a Nintendo DS will result in a 10bits/32kHz stereo sound being reproduced. It's not poor quality, but it isn't exactly CD quality either. In the mixing process the samples don't get resampled when pitched so make sure you disable this feature in your tracker (<em>sample interpolation</em>) if you want to simulate the output you would get on the DS as better as possible.</p>
 <p >The DS hardware also wants all the figures to be in 32bit boundaries, which means that the samples should conform to some rules:</p>
 <ul>
@@ -170,12 +186,12 @@ Getting the most of your tune</h2>
 </ul>
 <p >A side effect (<em>detuning</em>) is possible when these rules are ignored, and it could be perceivable on samples with loops, especially when the repeating part of the sample is very short.</p>
 <p >Finally, it's impossible for the DS hardware to start playing a sample that has a loop from inside the loop from other position but the beginning. This means that you should put some care in preparing your samples having loops if you plan to use the <code>9xx</code> (<em>Set sample offset</em>) effect on them. Anyway there are no problems if you simply plan to skip samples of the <b>non-repeating</b> part of a sample with loop.</p>
-<h2><a class="anchor" id="autotoc_md4"></a>
-How to use libXM7 files</h2>
+<h1><a class="anchor" id="autotoc_md4"></a>
+How to use libXM7 files</h1>
 <p >The library consists of one header file (<code><a class="el" href="libxm7_8h.html" title="Global include of libXM7.">libxm7.h</a></code>) and two archive files (<code>libxm77.a</code> and <code>libxm79.a</code>). You should add the path with the header file to your include paths, say the <code>include/libxm7</code> directory. On the other hand, you should add the <code>libs</code> directory to your linker paths. Then you should modify the makefiles for your project: locate the line where the libraries are listed (<code>LIBS := -l&lt;library&gt; -l&lt;library&gt;</code>) and add <code>-lxm77</code> in the ARM7 makefile and <code>LIBDIRS := path/to/libxm7/libs</code>. Add also <code>-lmx79</code> in the ARM9 makefile if you plan to use both libXM7 library parts. Make sure that <code>-lxm77</code> appears <em>before</em> <code>-lnds7</code> and that <code>-lxm79</code> appears <em>before</em> <code>-lnds9</code>.</p>
-<h2><a class="anchor" id="autotoc_md5"></a>
-Inside libXM7 library</h2>
-<p >libXM7 is a combined library: it has one part that is linked to the ARM9 executable and another part that is linked to the ARM7 executable. However the library implements no means of communication between the processors. So it's up to the programmer to choose a suitable way to communicate, let's say, to the ARM7 where the ARM9 has loaded the module that the former should play. Also, the programmer is supposed to ensure that the <a class="el" href="libxm7_8h.html#aa162582344a5927a0ad820462ee68bee" title="This function stops the module.">XM7_StopModule()</a> gets executed on ARM7 before <a class="el" href="libxm7_8h.html#a2808dd9db5ff5db7780b1b8ad7edb907" title="This function frees all the allocated memory thus unloading the module.">XM7_UnloadXM()</a> gets executed on ARM9. By the way, you can even write your own module loader (for instance one that reads directly from FAT) and not use the libXM7 ARM9 part of that library. So, since the ARM7 part is the core of this library, it can be used independently.</p>
+<h1><a class="anchor" id="autotoc_md5"></a>
+Inside libXM7 library</h1>
+<p >libXM7 is a combined library: it has one part that is linked to the ARM9 executable and another part that is linked to the ARM7 executable. However the library implements no means of communication between the processors. So it's up to the programmer to choose a suitable way to communicate, let's say, to the ARM7 where the ARM9 has loaded the module that the former should play. Also, the programmer is supposed to ensure that the <code><a class="el" href="group__libxm7__arm7.html#gaa162582344a5927a0ad820462ee68bee" title="This function stops the module.">XM7_StopModule()</a></code> gets executed on ARM7 before <code><a class="el" href="group__libxm7__arm9.html#ga2808dd9db5ff5db7780b1b8ad7edb907" title="This function frees all the allocated memory thus unloading the module.">XM7_UnloadXM()</a></code> gets executed on ARM9. By the way, you can even write your own module loader (for instance one that reads directly from FAT) and not use the libXM7 ARM9 part of that library. So, since the ARM7 part is the core of this library, it can be used independently.</p>
 <p >libnds comes with a really handy interface for FIFO based Interprocessor Communication. The example sourcecode included above uses this interface.</p>
 <p >The ARM7 part of the library interacts directly with the Nintendo DS hardware. More precisely, it interacts with:</p>
 <ul>
@@ -192,7 +208,7 @@ Inside libXM7 library</h2>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 12 2024 01:17:15 for libxm7 by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Tue Feb 13 2024 19:06:43 for LibXM7 by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

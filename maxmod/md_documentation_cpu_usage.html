@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.4-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -13,6 +14,16 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+       <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+       <script type="text/javascript">
+           DoxygenAwesomeDarkModeToggle.init()
+       </script>
+       <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+       <script type="text/javascript">
+           DoxygenAwesomeFragmentCopyButton.init()
+       </script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -76,7 +87,7 @@ GBA CPU Test (image captured from GBA screen)</div></div>
 <p >Notice the flat line on the bottom, this is the level that was recorded after the module had finished playing, this is the base CPU usage level. A little higher on the graph we notice some interesting spikes in the pattern, this is probably caused by the overhead of switching between patterns. At the top of the graphed data, it jumps around the 18% mark, this is when the intense parts of the module are being played.</p>
 <p >The mixing time for each active channel depends on which panning position is used. Hard panned channels will mix faster than center/other panning positions.</p>
 <p >Base Usage: ~2.6% CPU usage</p>
-<table class="markdownTable">
+<center> <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Channel Panning   </th><th class="markdownTableHeadNone">CPU Per Active Channel    </th></tr>
 <tr class="markdownTableRowOdd">
@@ -86,7 +97,7 @@ GBA CPU Test (image captured from GBA screen)</div></div>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Arbitrary   </td><td class="markdownTableBodyNone">~1.49%   </td></tr>
 </table>
-<p >Another process that adds to the CPU load is module playback. This can effectively round up the CPU usage per channel to ~2%. Notice in the above graph the 18% peak area. That is approximately: 2.6% + 2% * 8. This formula [2.6 + 2 * channels] is an easy way to calculate the amount of CPU load there will be when playing a certain module.</p>
+</center><p >Another process that adds to the CPU load is module playback. This can effectively round up the CPU usage per channel to ~2%. Notice in the above graph the 18% peak area. That is approximately: 2.6% + 2% * 8. This formula [2.6 + 2 * channels] is an easy way to calculate the amount of CPU load there will be when playing a certain module.</p>
 <p >The above tests were performed with WAITCNT = 4317h, that is WS0/ROM = 3,1 cycles &amp; prefetch enabled. They also use standard configuration (channel data and wave buffer in EWRAM, mixing buffer in IWRAM, and 8 channels @ 16KHz).</p>
 <h1><a class="anchor" id="autotoc_md20"></a>
 DS CPU Usage Tests</h1>
@@ -113,7 +124,7 @@ CPU Load with Extended Mixing (ARM7)</div></div>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 12 2024 01:17:16 for Maxmod by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Tue Feb 13 2024 19:06:43 for Maxmod by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
