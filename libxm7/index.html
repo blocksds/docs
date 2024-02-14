@@ -196,7 +196,7 @@ Inside libXM7 library</h1>
 <p >The ARM7 part of the library interacts directly with the Nintendo DS hardware. More precisely, it interacts with:</p>
 <ul>
 <li>As many audio channels as needed for the tune starting from channel 15 on, allocating channels 'backwards' so that if your module has 6 channels then channels 10 through 15 are busy and the first DS hardware channels, from 0 to 9, are free. They will remain completely untouched by the library so that you can use your libnds sound functions directly without any modification needed.</li>
-<li>The timer number 1 on ARM7: it's the heartbeat that imposes the correct speed to the module. Of course, the library sets the corresponding interrupt too.</li>
+<li>The timer number 0 on ARM7: it's the heartbeat that imposes the correct speed to the module. Of course, the library sets the corresponding interrupt too.</li>
 </ul>
 <p >As already mentioned, it doesn't interact with anything else, in particular:</p>
 <ul>
@@ -208,7 +208,7 @@ Inside libXM7 library</h1>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 14 2024 02:05:43 for LibXM7 by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Wed Feb 14 2024 23:41:32 for LibXM7 by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
