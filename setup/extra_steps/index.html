@@ -12,9 +12,8 @@
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="1. Test To test that everything is working, you can try building one of the templates.
-There is a template that lets the programmer write the code for both CPUs of the NDS (templates/rom_combined) and a template that uses the default ARM7 core that comes with Blocks DS and lets the programmer focus on the ARM9 core. There are also two templates to create static libraries.
-For example, go to the combined template folder and run:" />
+  <meta name="description" content="1. Test To test that everything is working, you can try building one of the examples or project templates included in BlocksDS.
+There is a template that lets the programmer write the code for both CPUs of the NDS (rom_combined) and a template that uses the default ARM7 core that comes with Blocks DS and lets the programmer focus on the ARM9 core (rom_arm9). There are also two templates to create static libraries." />
 
     <title>Extra steps | BlocksDS</title>
 
@@ -40,9 +39,8 @@ For example, go to the combined template folder and run:" />
     content="Extra steps"
   />
   <meta property="og:site_name" content="BlocksDS" />
-  <meta property="og:description" content="1. Test To test that everything is working, you can try building one of the templates.
-There is a template that lets the programmer write the code for both CPUs of the NDS (templates/rom_combined) and a template that uses the default ARM7 core that comes with Blocks DS and lets the programmer focus on the ARM9 core. There are also two templates to create static libraries.
-For example, go to the combined template folder and run:" />
+  <meta property="og:description" content="1. Test To test that everything is working, you can try building one of the examples or project templates included in BlocksDS.
+There is a template that lets the programmer write the code for both CPUs of the NDS (rom_combined) and a template that uses the default ARM7 core that comes with Blocks DS and lets the programmer focus on the ARM9 core (rom_arm9). There are also two templates to create static libraries." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blocksds.github.io/docs/setup/extra_steps/" />
 
@@ -51,9 +49,8 @@ For example, go to the combined template folder and run:" />
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Extra steps" />
-  <meta name="twitter:description" content="1. Test To test that everything is working, you can try building one of the templates.
-There is a template that lets the programmer write the code for both CPUs of the NDS (templates/rom_combined) and a template that uses the default ARM7 core that comes with Blocks DS and lets the programmer focus on the ARM9 core. There are also two templates to create static libraries.
-For example, go to the combined template folder and run:" />
+  <meta name="twitter:description" content="1. Test To test that everything is working, you can try building one of the examples or project templates included in BlocksDS.
+There is a template that lets the programmer write the code for both CPUs of the NDS (rom_combined) and a template that uses the default ARM7 core that comes with Blocks DS and lets the programmer focus on the ARM9 core (rom_arm9). There are also two templates to create static libraries." />
 
 
   <script type="application/ld+json">
@@ -64,8 +61,8 @@ For example, go to the combined template folder and run:" />
       "name": "Extra steps",
       "url" : "https://blocksds.github.io/docs/setup/extra_steps/",
       "headline": "Extra steps",
-      "description": "1. Test To test that everything is working, you can try building one of the templates.\nThere is a template that lets the programmer write the code for both CPUs of the NDS (templates\/rom_combined) and a template that uses the default ARM7 core that comes with Blocks DS and lets the programmer focus on the ARM9 core. There are also two templates to create static libraries.\nFor example, go to the combined template folder and run:",
-      "wordCount" : "440",
+      "description": "1. Test To test that everything is working, you can try building one of the examples or project templates included in BlocksDS.\nThere is a template that lets the programmer write the code for both CPUs of the NDS (rom_combined) and a template that uses the default ARM7 core that comes with Blocks DS and lets the programmer focus on the ARM9 core (rom_arm9). There are also two templates to create static libraries.",
+      "wordCount" : "319",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -812,6 +809,50 @@ For example, go to the combined template folder and run:" />
         
       
     
+      
+
+      
+        
+      
+
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
+                    href="/docs/setup/additional_libs/"
+                    class="gdoc-nav__entry"
+                  >
+                    Additional libraries/tools
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+    
   </ul>
 
             
@@ -1267,12 +1308,21 @@ For example, go to the combined template folder and run:" />
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>To test that everything is working, you can try building one of the templates.</p>
+<p>To test that everything is working, you can try building one of the
+<a
+  class="gdoc-markdown__link"
+  href="https://github.com/blocksds/sdk/tree/master/examples"
+>examples</a> or
+<a
+  class="gdoc-markdown__link"
+  href="https://github.com/blocksds/sdk/tree/master/templates"
+>project templates</a>
+included in BlocksDS.</p>
 <p>There is a template that lets the programmer write the code for both CPUs of the
-NDS (<code>templates/rom_combined</code>) and a template that uses the default ARM7 core
-that comes with Blocks DS and lets the programmer focus on the ARM9 core. There
-are also two templates to create static libraries.</p>
-<p>For example, go to the combined template folder and run:</p>
+NDS (<code>rom_combined</code>) and a template that uses the default ARM7 core that comes
+with Blocks DS and lets the programmer focus on the ARM9 core (<code>rom_arm9</code>).
+There are also two templates to create static libraries.</p>
+<p>For example, go to the combined template folder and build it:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> templates/rom_combined
 </span></span><span class="line"><span class="cl">make
 </span></span></code></pre></div><p>This should have generated a NDS ROM that you can run on any emulator or
@@ -1287,55 +1337,19 @@ need to use folders outside of the folder of the project, create a symlink to
 the destination, or build the other code as a static library and link it with
 the project.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="2-additional-tools-and-libraries"
+    <h2 id="2-additional-libraries-and-tools"
     >
-        2. Additional tools and libraries
+        2. Additional libraries and tools
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/setup/extra_steps/#2-additional-tools-and-libraries" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 2. Additional tools and libraries" aria-label="Anchor to: 2. Additional tools and libraries" href="#2-additional-tools-and-libraries">
+    <a data-clipboard-text="https://blocksds.github.io/docs/setup/extra_steps/#2-additional-libraries-and-tools" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 2. Additional libraries and tools" aria-label="Anchor to: 2. Additional libraries and tools" href="#2-additional-libraries-and-tools">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>This section has a list of tools and libraries that support BlocksDS and can be
-installed in <code>/opt/blocksds/external</code>:</p>
-<p>Libraries:</p>
-<ul>
-<li>
 <p><a
   class="gdoc-markdown__link"
-  href="https://github.com/knightfox75/nds_nflib"
->NightFox’s Lib</a>: Library designed
-to make development of 2D games easy, with support for sprites, backgrounds
-(even &ldquo;infinite&rdquo; maps), and it also has limited 2D graphics support using the
-3D engine.</p>
-</li>
-<li>
-<p><a
-  class="gdoc-markdown__link"
-  href="https://github.com/AntonioND/nitro-engine"
->Nitro Engine</a>: Library to create
-3D applications. It supports dual screen 3D, static and animated models,
-supports all texture types, and has basic 2D support using the 3D hardware.
-It&rsquo;s compatible with NightFox&rsquo;s Lib.</p>
-</li>
-<li>
-<p><a
-  class="gdoc-markdown__link"
-  href="https://github.com/blocksds/gbajpeg"
->gbajpeg</a>: Library designed to load
-JPEG files on GBA with very low resource usage, which also makes it a good
-library for NDS.</p>
-</li>
-</ul>
-<p>Tools:</p>
-<ul>
-<li><a
-  class="gdoc-markdown__link"
-  href="https://github.com/blocksds/ptexconv"
->ptexconv</a>: Tool to convert images to
-files in the format of the NDS. This tool is one of the few available tools
-that can output files in the very efficient tex4x4 format used by the GPU of
-the NDS.</li>
-</ul>
+  href="../additional_libs"
+>This document</a> has a list of tools and libraries that
+support BlocksDS and can be installed in <code>/opt/blocksds/external</code>.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="3-keeping-multiple-versions-of-blocksds"
     >
@@ -1771,47 +1785,6 @@ freely install third party libraries and tools.</p>
     
 
   
-
-        
-      
-    
-
-  
-    
-
-    
-      
-    
-
-    
-      
-      
-
-      
-        
-        
-        
-        
-
-        
-        
-
-        
-          
-        
-
-        
-
-        
-
-        
-        
-          
-  
-  
-
-  
-  
     
 
     
@@ -1836,6 +1809,78 @@ freely install third party libraries and tools.</p>
             
             
           
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+
+        
+        
+          
+  
+  
+
+  
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
         
 
         
@@ -2074,10 +2119,10 @@ freely install third party libraries and tools.</p>
   
     <a
       class="gdoc-page__nav--next flex align-center"
-      href="/docs/technical/libc/"
-      title="libc port information"
+      href="/docs/setup/additional_libs/"
+      title="Additional libraries/tools"
     >
-      libc port information
+      Additional libraries/tools
       <i class="gdoc-icon">gdoc_arrow_right_alt</i>
     </a>
   
