@@ -7,5 +7,6 @@ var searchData=
   ['simage_4',['sImage',['../image_8h.html#a18f43f3829e03e9f3bb3f11c7ff53901',1,'image.h']]],
   ['spriteentry_5',['SpriteEntry',['../sprite_8h.html#a9e1aaf467150689d23b20290321aa138',1,'sprite.h']]],
   ['spriterotation_6',['SpriteRotation',['../sprite_8h.html#a76ab2aee358aaa3506f31098d82c2179',1,'sprite.h']]],
-  ['sysvectors_7',['sysVectors',['../system_8h.html#ad363a31ed538fd287f7e26e2cd5eb4cc',1,'system.h']]]
+  ['swisha1context_5ft_7',['swiSHA1context_t',['../sha1_8h.html#a226b0d7e9af151eb599bd8baa47314cb',1,'sha1.h']]],
+  ['sysvectors_8',['sysVectors',['../system_8h.html#ad363a31ed538fd287f7e26e2cd5eb4cc',1,'system.h']]]
 ];

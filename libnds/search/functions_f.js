@@ -65,7 +65,7 @@ var searchData=
   ['swisha1final_62',['swiSHA1Final',['../sha1_8h.html#aeee23c95a8c1fee89bf3b9edad071d73',1,'sha1.h']]],
   ['swisha1init_63',['swiSHA1Init',['../sha1_8h.html#ae857961335e6fdce8b52f7fc7e14ea42',1,'sha1.h']]],
   ['swisha1update_64',['swiSHA1Update',['../sha1_8h.html#a215788d11fb50dd748e2aa37f986da0c',1,'sha1.h']]],
-  ['swisha1verify_65',['swiSHA1Verify',['../sha1_8h.html#a78a900dd575c6d084e27d8a00083c621',1,'sha1.h']]],
+  ['swisha1verify_65',['swiSHA1Verify',['../sha1_8h.html#a62548093f28e95864d7973a349a5e88f',1,'sha1.h']]],
   ['swisleep_66',['swiSleep',['../bios_8h.html#a174ae477035fa624a1af3fbaf7e240df',1,'bios.h']]],
   ['swisoftreset_67',['swiSoftReset',['../bios_8h.html#a3f26342f9ee3bbbfc8c6f39a9835a714',1,'bios.h']]],
   ['swisqrt_68',['swiSqrt',['../bios_8h.html#a7f3faa815267e12f5c64c19d8ff275ab',1,'bios.h']]],

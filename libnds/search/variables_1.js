@@ -12,5 +12,6 @@ var searchData=
   ['birthday_9',['birthDay',['../structtPERSONAL__DATA.html#a0e9a79e216214b5dfd360753da3099e5',1,'tPERSONAL_DATA']]],
   ['birthmonth_10',['birthMonth',['../structtPERSONAL__DATA.html#ad466e5a37942a55b85161a0f4e424fbb',1,'tPERSONAL_DATA']]],
   ['blendmode_11',['blendMode',['../unionSpriteEntry.html#aab850170074add7694d305920e717628',1,'SpriteEntry']]],
-  ['bpp_12',['bpp',['../structConsoleFont.html#a47f4879f419f06cbb3f75c98660548f8',1,'ConsoleFont::bpp()'],['../structsImage.html#ac067b0a73c457bf8765ddc871f293ae7',1,'sImage::bpp()']]]
+  ['bpp_12',['bpp',['../structConsoleFont.html#a47f4879f419f06cbb3f75c98660548f8',1,'ConsoleFont::bpp()'],['../structsImage.html#ac067b0a73c457bf8765ddc871f293ae7',1,'sImage::bpp()']]],
+  ['buffer_13',['buffer',['../structswiSHA1context.html#afabf66d4b6429f401eaf7646e0eebf0d',1,'swiSHA1context']]]
 ];

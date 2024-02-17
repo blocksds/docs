@@ -68,6 +68,16 @@ However, in order to take advantage of per-CPU optimizations and to have a robus
     </item>
     
     <item>
+      <title>Support for slot-2 flashcarts</title>
+      <link>https://blocksds.github.io/docs/technical/slot2_flashcarts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/technical/slot2_flashcarts/</guid>
+      <description>ROMs built with BlocksDS support slot-2 devices. However, they need special care. There are two options:
+You can generate NDS-only ROMs, with a bootloader injected by ndstool. You can load a regular NDS ROM with a patched nds-hb-menu. 1. Generating a NDS-only ROM with bootloader If you add -h 0x200 to the ndstool command line arguments, it will generate a NDS-only ROM, with a bootloader that will let it boot from a slot-2 flaschart.</description>
+    </item>
+    
+    <item>
       <title>libc port information</title>
       <link>https://blocksds.github.io/docs/technical/libc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

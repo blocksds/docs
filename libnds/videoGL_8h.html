@@ -444,6 +444,22 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="videoGL_8h.html#ac9ed764e909c0619b9abd34fb93f2b3cabd16e90881f219228faa391e2d396a07">POLY_CULL_NONE</a> = (3 &lt;&lt; 6)
 , <br />
+&#160;&#160;<a class="el" href="videoGL_8h.html#ac9ed764e909c0619b9abd34fb93f2b3ca08b0465c728299f0e115dd9661f48fc9">POLY_TRANS_KEEP_DEPTH</a> = (0 &lt;&lt; 11)
+, <br />
+&#160;&#160;<a class="el" href="videoGL_8h.html#ac9ed764e909c0619b9abd34fb93f2b3ca905f9c750f45a7130168706749d32c9b">POLY_TRANS_SET_DEPTH</a> = (1 &lt;&lt; 11)
+, <br />
+&#160;&#160;<a class="el" href="videoGL_8h.html#ac9ed764e909c0619b9abd34fb93f2b3cadc96894eed36aadcdb59b9a7206e5382">POLY_HIDE_FAR_POLYS</a> = (0 &lt;&lt; 12)
+, <br />
+&#160;&#160;<a class="el" href="videoGL_8h.html#ac9ed764e909c0619b9abd34fb93f2b3ca9e2ad2f26b957ebcf11eb3299f9d5d58">POLY_RENDER_FAR_POLYS</a> = (1 &lt;&lt; 12)
+, <br />
+&#160;&#160;<a class="el" href="videoGL_8h.html#ac9ed764e909c0619b9abd34fb93f2b3ca87175a3068982e36ac6ddbe9d9481829">POLY_HIDE_1DOT_POLYS</a> = (0 &lt;&lt; 13)
+, <br />
+&#160;&#160;<a class="el" href="videoGL_8h.html#ac9ed764e909c0619b9abd34fb93f2b3ca316b1d8454fc060f0642602ddaed8ff3">POLY_RENDER_1DOT_POLYS</a> = (1 &lt;&lt; 13)
+, <br />
+&#160;&#160;<a class="el" href="videoGL_8h.html#ac9ed764e909c0619b9abd34fb93f2b3caf8e3019af8111b1383c99f4ddeebed30">POLY_DEPTH_TEST_LESS</a> = (0 &lt;&lt; 14)
+, <br />
+&#160;&#160;<a class="el" href="videoGL_8h.html#ac9ed764e909c0619b9abd34fb93f2b3ca14c97a6edb2bffbe38e430a940b366b8">POLY_DEPTH_TEST_EQUAL</a> = (1 &lt;&lt; 14)
+, <br />
 &#160;&#160;<a class="el" href="videoGL_8h.html#ac9ed764e909c0619b9abd34fb93f2b3cac88dce2151ec047aa5554e8e384e4f32">POLY_FOG</a> = (1 &lt;&lt; 15)
 <br />
  }</td></tr>
@@ -1048,7 +1064,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 </td></tr>
 <tr><td class="fieldname"><a id="ac9ed764e909c0619b9abd34fb93f2b3cabd16e90881f219228faa391e2d396a07" name="ac9ed764e909c0619b9abd34fb93f2b3cabd16e90881f219228faa391e2d396a07"></a>POLY_CULL_NONE&#160;</td><td class="fielddoc"><p >Don't cull any polygons. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac9ed764e909c0619b9abd34fb93f2b3cac88dce2151ec047aa5554e8e384e4f32" name="ac9ed764e909c0619b9abd34fb93f2b3cac88dce2151ec047aa5554e8e384e4f32"></a>POLY_FOG&#160;</td><td class="fielddoc"><p >Enable/disable fog for this polygon. </p>
+<tr><td class="fieldname"><a id="ac9ed764e909c0619b9abd34fb93f2b3ca08b0465c728299f0e115dd9661f48fc9" name="ac9ed764e909c0619b9abd34fb93f2b3ca08b0465c728299f0e115dd9661f48fc9"></a>POLY_TRANS_KEEP_DEPTH&#160;</td><td class="fielddoc"><p >Don't update depth buffer when drawing translucent polygons. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac9ed764e909c0619b9abd34fb93f2b3ca905f9c750f45a7130168706749d32c9b" name="ac9ed764e909c0619b9abd34fb93f2b3ca905f9c750f45a7130168706749d32c9b"></a>POLY_TRANS_SET_DEPTH&#160;</td><td class="fielddoc"><p >Update depth buffer when drawing translucent polygons. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac9ed764e909c0619b9abd34fb93f2b3cadc96894eed36aadcdb59b9a7206e5382" name="ac9ed764e909c0619b9abd34fb93f2b3cadc96894eed36aadcdb59b9a7206e5382"></a>POLY_HIDE_FAR_POLYS&#160;</td><td class="fielddoc"><p >Hide polygons that intersect with far plane. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac9ed764e909c0619b9abd34fb93f2b3ca9e2ad2f26b957ebcf11eb3299f9d5d58" name="ac9ed764e909c0619b9abd34fb93f2b3ca9e2ad2f26b957ebcf11eb3299f9d5d58"></a>POLY_RENDER_FAR_POLYS&#160;</td><td class="fielddoc"><p >Render polygons that intersect with far plane. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac9ed764e909c0619b9abd34fb93f2b3ca87175a3068982e36ac6ddbe9d9481829" name="ac9ed764e909c0619b9abd34fb93f2b3ca87175a3068982e36ac6ddbe9d9481829"></a>POLY_HIDE_1DOT_POLYS&#160;</td><td class="fielddoc"><p >Hide 1-dot polygons behind GFX_CUTOFF_DEPTH. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac9ed764e909c0619b9abd34fb93f2b3ca316b1d8454fc060f0642602ddaed8ff3" name="ac9ed764e909c0619b9abd34fb93f2b3ca316b1d8454fc060f0642602ddaed8ff3"></a>POLY_RENDER_1DOT_POLYS&#160;</td><td class="fielddoc"><p >Draw 1-dot polygons behind GFX_CUTOFF_DEPTH. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac9ed764e909c0619b9abd34fb93f2b3caf8e3019af8111b1383c99f4ddeebed30" name="ac9ed764e909c0619b9abd34fb93f2b3caf8e3019af8111b1383c99f4ddeebed30"></a>POLY_DEPTH_TEST_LESS&#160;</td><td class="fielddoc"><p >Draw polygons with a lower depth than the depth buffer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac9ed764e909c0619b9abd34fb93f2b3ca14c97a6edb2bffbe38e430a940b366b8" name="ac9ed764e909c0619b9abd34fb93f2b3ca14c97a6edb2bffbe38e430a940b366b8"></a>POLY_DEPTH_TEST_EQUAL&#160;</td><td class="fielddoc"><p >Draw polygons with the same depth of the depth buffer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac9ed764e909c0619b9abd34fb93f2b3cac88dce2151ec047aa5554e8e384e4f32" name="ac9ed764e909c0619b9abd34fb93f2b3cac88dce2151ec047aa5554e8e384e4f32"></a>POLY_FOG&#160;</td><td class="fielddoc"><p >Enable fog for this polygon. </p>
 </td></tr>
 </table>
 
@@ -1090,7 +1122,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 </div><div class="memdoc">
 
 <p>Texture parameters such as texture wrapping and texture coord wrapping. </p>
-<p >Related functions: glTexImage2d(), <a class="el" href="videoGL_8h.html#aac157f3e214208655a40434f4557ef39" title="Set parameters for the current texture.">glTexParameter()</a> </p>
+<p >Related functions: <a class="el" href="videoGL_8h.html#a750259e65fe2e78340ded1119694dea7" title="Loads a 2D texture into texture memory and sets the currently bound texture ID to the attributes spec...">glTexImage2D()</a>, <a class="el" href="videoGL_8h.html#aac157f3e214208655a40434f4557ef39" title="Set parameters for the current texture.">glTexParameter()</a> </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abeb94a88337262cc47317d39df438547aba937855f8a8846f9244e0abf7b9a15f" name="abeb94a88337262cc47317d39df438547aba937855f8a8846f9244e0abf7b9a15f"></a>GL_TEXTURE_WRAP_S&#160;</td><td class="fielddoc"><p >Wrap (repeat) texture on S axis. </p>
 </td></tr>
@@ -1127,7 +1159,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 </div><div class="memdoc">
 
 <p>Possibles size of a texture (horizontal and vertical). </p>
-<p >Related functions: glTexImage2d(), <a class="el" href="videoGL_8h.html#aac157f3e214208655a40434f4557ef39" title="Set parameters for the current texture.">glTexParameter()</a> </p>
+<p >Related functions: <a class="el" href="videoGL_8h.html#a750259e65fe2e78340ded1119694dea7" title="Loads a 2D texture into texture memory and sets the currently bound texture ID to the attributes spec...">glTexImage2D()</a>, <a class="el" href="videoGL_8h.html#aac157f3e214208655a40434f4557ef39" title="Set parameters for the current texture.">glTexParameter()</a> </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9f0b28cb8d083a96b0156006ddfda933a997bf1e13cb2385a7b504ce70ec275a0" name="a9f0b28cb8d083a96b0156006ddfda933a997bf1e13cb2385a7b504ce70ec275a0"></a>TEXTURE_SIZE_8&#160;</td><td class="fielddoc"><p >8 texels </p>
 </td></tr>
@@ -1162,7 +1194,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 </div><div class="memdoc">
 
 <p>Texture formats. </p>
-<p >Related functions: glTexImage2d(), <a class="el" href="videoGL_8h.html#aac157f3e214208655a40434f4557ef39" title="Set parameters for the current texture.">glTexParameter()</a> </p>
+<p >Related functions: <a class="el" href="videoGL_8h.html#a750259e65fe2e78340ded1119694dea7" title="Loads a 2D texture into texture memory and sets the currently bound texture ID to the attributes spec...">glTexImage2D()</a>, <a class="el" href="videoGL_8h.html#aac157f3e214208655a40434f4557ef39" title="Set parameters for the current texture.">glTexParameter()</a> </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6861121fecdc3ba4592e3125c5ef1755a5ac1bb1a83f8ffac7d18984a642d9dd8" name="a6861121fecdc3ba4592e3125c5ef1755a5ac1bb1a83f8ffac7d18984a642d9dd8"></a>GL_NOTEXTURE&#160;</td><td class="fielddoc"><p >No texture is used - useful for making palettes. </p>
 </td></tr>
@@ -4933,7 +4965,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 14 2024 23:41:32 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Feb 17 2024 12:59:30 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

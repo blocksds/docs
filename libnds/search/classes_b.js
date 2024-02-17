@@ -6,5 +6,6 @@ var searchData=
   ['sndsheader_3',['sNDSHeader',['../structsNDSHeader.html',1,'']]],
   ['spriteentry_4',['SpriteEntry',['../unionSpriteEntry.html',1,'']]],
   ['spriterotation_5',['SpriteRotation',['../structSpriteRotation.html',1,'']]],
-  ['sysvectors_5ft_6',['sysVectors_t',['../structsysVectors__t.html',1,'']]]
+  ['swisha1context_6',['swiSHA1context',['../structswiSHA1context.html',1,'']]],
+  ['sysvectors_5ft_7',['sysVectors_t',['../structsysVectors__t.html',1,'']]]
 ];

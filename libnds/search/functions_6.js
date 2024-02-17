@@ -115,12 +115,15 @@ var searchData=
   ['glvertex3v16_112',['glVertex3v16',['../videoGL_8h.html#adfd9e8e6c9d6c47786a0927f4b6b5e92',1,'videoGL.h']]],
   ['glviewport_113',['glViewport',['../videoGL_8h.html#af976b5d925e91d9ad193a7d8c7027b37',1,'videoGL.h']]],
   ['gpiosetwifimode_114',['gpioSetWifiMode',['../gpio_8h.html#adfb39e5dc41b3a2db416a69f225387fe',1,'gpio.h']]],
-  ['grfloadfile_115',['grfLoadFile',['../grf_8h.html#aafb2300b8a05dd19ca6560acca097b1f',1,'grf.h']]],
-  ['grfloadmem_116',['grfLoadMem',['../grf_8h.html#a23f0aaf657536f61d52500f0eadf21cc',1,'grf.h']]],
-  ['grfloadpath_117',['grfLoadPath',['../grf_8h.html#adde35b89d010c1897eb00ddef56b4b0c',1,'grf.h']]],
-  ['guitargripisinserted_118',['guitarGripIsInserted',['../guitarGrip_8h.html#a34b0bba87acfa398059903498d186cec',1,'guitarGrip.h']]],
-  ['guitargripkeysdown_119',['guitarGripKeysDown',['../guitarGrip_8h.html#af6e05e51fdbce452b4c89b24b3614c5f',1,'guitarGrip.h']]],
-  ['guitargripkeysheld_120',['guitarGripKeysHeld',['../guitarGrip_8h.html#a84f8809fe94d12934306d2136a8a31a0',1,'guitarGrip.h']]],
-  ['guitargripkeysup_121',['guitarGripKeysUp',['../guitarGrip_8h.html#abc56203c86ef75c52b574a454e495280',1,'guitarGrip.h']]],
-  ['guitargripscankeys_122',['guitarGripScanKeys',['../guitarGrip_8h.html#a5b52d67d9840b63d639412d333256ae8',1,'guitarGrip.h']]]
+  ['grfloadfile_115',['grfLoadFile',['../grf_8h.html#abe4384e0a742687e7e7d39f2ee47fca2',1,'grf.h']]],
+  ['grfloadfileex_116',['grfLoadFileEx',['../grf_8h.html#a2ae15a2b2e77df2d31b0b3521d0cd5e6',1,'grf.h']]],
+  ['grfloadmem_117',['grfLoadMem',['../grf_8h.html#a76da431cc55ecbd833bd5bb13b41419c',1,'grf.h']]],
+  ['grfloadmemex_118',['grfLoadMemEx',['../grf_8h.html#a71451a922017783495e2fe612bd74fd8',1,'grf.h']]],
+  ['grfloadpath_119',['grfLoadPath',['../grf_8h.html#a7ac3641c9c61a57edf4e0ed2c7859058',1,'grf.h']]],
+  ['grfloadpathex_120',['grfLoadPathEx',['../grf_8h.html#ab629ba8104cac7bd635d2e4d48c41fb9',1,'grf.h']]],
+  ['guitargripisinserted_121',['guitarGripIsInserted',['../guitarGrip_8h.html#a34b0bba87acfa398059903498d186cec',1,'guitarGrip.h']]],
+  ['guitargripkeysdown_122',['guitarGripKeysDown',['../guitarGrip_8h.html#af6e05e51fdbce452b4c89b24b3614c5f',1,'guitarGrip.h']]],
+  ['guitargripkeysheld_123',['guitarGripKeysHeld',['../guitarGrip_8h.html#a84f8809fe94d12934306d2136a8a31a0',1,'guitarGrip.h']]],
+  ['guitargripkeysup_124',['guitarGripKeysUp',['../guitarGrip_8h.html#abc56203c86ef75c52b574a454e495280',1,'guitarGrip.h']]],
+  ['guitargripscankeys_125',['guitarGripScanKeys',['../guitarGrip_8h.html#a5b52d67d9840b63d639412d333256ae8',1,'guitarGrip.h']]]
 ];

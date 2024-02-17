@@ -1,8 +1,8 @@
 var searchData=
 [
   ['b_0',['b',['../structRGB__24.html#aa76c1a981baa77896b59b35ed06193a8',1,'RGB_24']]],
-  ['background_1',['BACKGROUND',['../group__main__display__registers.html#ga850b2f07a67b73890889e63fb8a49fda',1,'background.h']]],
-  ['background_2',['background',['../structKeyboard.html#a42c4bbdcc6956564b0f550a4aba0ffa7',1,'Keyboard']]],
+  ['background_1',['background',['../structKeyboard.html#a42c4bbdcc6956564b0f550a4aba0ffa7',1,'Keyboard']]],
+  ['background_2',['BACKGROUND',['../group__main__display__registers.html#ga850b2f07a67b73890889e63fb8a49fda',1,'background.h']]],
   ['background_2eh_3',['background.h',['../background_8h.html',1,'']]],
   ['background_5fsub_4',['BACKGROUND_SUB',['../group__sub__display__registers.html#gacfe08d3c713750d0790611a77369eb60',1,'background.h']]],
   ['backgroundcontrol_5',['BackgroundControl',['../group__background__register__group.html#ga7afc211c644079338a1f032ea5e90460',1,'background.h']]],
@@ -20,7 +20,7 @@ var searchData=
   ['bg_5f32x64_17',['BG_32x64',['../group__background__register__group.html#gga7afc211c644079338a1f032ea5e90460a282667b4205902a0f4a234f528071c73',1,'background.h']]],
   ['bg_5f64x32_18',['BG_64x32',['../group__background__register__group.html#gga7afc211c644079338a1f032ea5e90460ad114d631cb887a55bdcf290c1cc07b83',1,'background.h']]],
   ['bg_5f64x64_19',['BG_64x64',['../group__background__register__group.html#gga7afc211c644079338a1f032ea5e90460a0184c0416301b147e1fa8aa6180a32ee',1,'background.h']]],
-  ['bg_5fattribute_20',['bg_attribute',['../structbg__attribute.html',1,'bg_attribute'],['../group__background__register__group.html#ga051d70a8fd005d4685e9c0107635582b',1,'bg_attribute():&#160;background.h']]],
+  ['bg_5fattribute_20',['bg_attribute',['../group__background__register__group.html#ga051d70a8fd005d4685e9c0107635582b',1,'bg_attribute():&#160;background.h'],['../structbg__attribute.html',1,'bg_attribute']]],
   ['bg_5fbmp16_5f128x128_21',['BG_BMP16_128x128',['../group__background__register__group.html#gga7afc211c644079338a1f032ea5e90460a57fed08dae5d321104f02b59280d5caf',1,'background.h']]],
   ['bg_5fbmp16_5f256x256_22',['BG_BMP16_256x256',['../group__background__register__group.html#gga7afc211c644079338a1f032ea5e90460a3510774c3c2a52299946247372ec92a7',1,'background.h']]],
   ['bg_5fbmp16_5f512x256_23',['BG_BMP16_512x256',['../group__background__register__group.html#gga7afc211c644079338a1f032ea5e90460a5f9829d22b904ff535689c7aa6038b5e',1,'background.h']]],
@@ -128,7 +128,7 @@ var searchData=
   ['bgsize_5ft_5f256x512_125',['BgSize_T_256x512',['../group__background__api__group.html#gga6bd2253ebf93a399fa956a2a7b8b6b3ba58185efd0b7ffca03201d60e479c3f72',1,'background.h']]],
   ['bgsize_5ft_5f512x256_126',['BgSize_T_512x256',['../group__background__api__group.html#gga6bd2253ebf93a399fa956a2a7b8b6b3badccf6c4e2ced19ed8b40b5bb6f4d4fd5',1,'background.h']]],
   ['bgsize_5ft_5f512x512_127',['BgSize_T_512x512',['../group__background__api__group.html#gga6bd2253ebf93a399fa956a2a7b8b6b3ba6aa9734b0767bb661110f624254b46e0',1,'background.h']]],
-  ['bgstate_128',['BgState',['../structBgState.html',1,'BgState'],['../group__background__api__group.html#ga70543473e1110a341362f4c56096a482',1,'BgState():&#160;background.h']]],
+  ['bgstate_128',['BgState',['../group__background__api__group.html#ga70543473e1110a341362f4c56096a482',1,'BgState():&#160;background.h'],['../structBgState.html',1,'BgState']]],
   ['bgtype_129',['BgType',['../group__background__api__group.html#ga421d43ca799fd0c471335846da06cae1',1,'background.h']]],
   ['bgtype_5fbmp16_130',['BgType_Bmp16',['../group__background__api__group.html#gga421d43ca799fd0c471335846da06cae1a1e362913a3cbff9fceb211e5e3b1cff9',1,'background.h']]],
   ['bgtype_5fbmp8_131',['BgType_Bmp8',['../group__background__api__group.html#gga421d43ca799fd0c471335846da06cae1a7a93f0ae4b26414a0e8efbcd939597a2',1,'background.h']]],
@@ -152,6 +152,7 @@ var searchData=
   ['boxtestf_149',['BoxTestf',['../boxtest_8h.html#a17ebb85bf26af51044a5a0500fd4c1ad',1,'boxtest.h']]],
   ['boxtestf_5fasynch_150',['BoxTestf_Asynch',['../boxtest_8h.html#a62d802bb04863277d71198d69f2ba914',1,'boxtest.h']]],
   ['boxtestresult_151',['BoxTestResult',['../boxtest_8h.html#ac8628dc4282f8bc8cafa790055ae5369',1,'boxtest.h']]],
-  ['bpp_152',['bpp',['../structConsoleFont.html#a47f4879f419f06cbb3f75c98660548f8',1,'ConsoleFont::bpp()'],['../structsImage.html#ac067b0a73c457bf8765ddc871f293ae7',1,'sImage::bpp()']]],
-  ['bus_5fclock_153',['BUS_CLOCK',['../timers_8h.html#a1caba0e524eb249e9f6bf160b74aa14e',1,'timers.h']]]
+  ['bpp_152',['bpp',['../structsImage.html#ac067b0a73c457bf8765ddc871f293ae7',1,'sImage::bpp()'],['../structConsoleFont.html#a47f4879f419f06cbb3f75c98660548f8',1,'ConsoleFont::bpp()']]],
+  ['buffer_153',['buffer',['../structswiSHA1context.html#afabf66d4b6429f401eaf7646e0eebf0d',1,'swiSHA1context']]],
+  ['bus_5fclock_154',['BUS_CLOCK',['../timers_8h.html#a1caba0e524eb249e9f6bf160b74aa14e',1,'timers.h']]]
 ];

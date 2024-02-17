@@ -78,6 +78,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">sha1.h File Reference</div></div>
 </div><!--header-->
@@ -88,23 +90,36 @@ $(function() {
 <div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="ndstypes_8h.html">nds/ndstypes.h</a>&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswiSHA1context.html">swiSHA1context</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context that holds information about an active SHA1 calculation.  <a href="structswiSHA1context.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a226b0d7e9af151eb599bd8baa47314cb"><td class="memItemLeft" align="right" valign="top"><a id="a226b0d7e9af151eb599bd8baa47314cb" name="a226b0d7e9af151eb599bd8baa47314cb"></a>
+typedef struct <a class="el" href="structswiSHA1context.html">swiSHA1context</a>&#160;</td><td class="memItemRight" valign="bottom"><b>swiSHA1context_t</b></td></tr>
+<tr class="memdesc:a226b0d7e9af151eb599bd8baa47314cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context that holds information about an active SHA1 calculation. <br /></td></tr>
+<tr class="separator:a226b0d7e9af151eb599bd8baa47314cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a913caf9b180b306546c80adecf97044b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha1_8h.html#a913caf9b180b306546c80adecf97044b">swiSHA1Calc</a> (void *digest, const void *data, size_t len)</td></tr>
 <tr class="memdesc:a913caf9b180b306546c80adecf97044b"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHA-1 checksum.  <a href="sha1_8h.html#a913caf9b180b306546c80adecf97044b">More...</a><br /></td></tr>
 <tr class="separator:a913caf9b180b306546c80adecf97044b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeee23c95a8c1fee89bf3b9edad071d73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha1_8h.html#aeee23c95a8c1fee89bf3b9edad071d73">swiSHA1Final</a> (void *digest, swiSHA1context_t *ctx)</td></tr>
+<tr class="memitem:aeee23c95a8c1fee89bf3b9edad071d73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha1_8h.html#aeee23c95a8c1fee89bf3b9edad071d73">swiSHA1Final</a> (void *digest, <a class="el" href="sha1_8h.html#a226b0d7e9af151eb599bd8baa47314cb">swiSHA1context_t</a> *ctx)</td></tr>
 <tr class="memdesc:aeee23c95a8c1fee89bf3b9edad071d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHA-1 final digest.  <a href="sha1_8h.html#aeee23c95a8c1fee89bf3b9edad071d73">More...</a><br /></td></tr>
 <tr class="separator:aeee23c95a8c1fee89bf3b9edad071d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae857961335e6fdce8b52f7fc7e14ea42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha1_8h.html#ae857961335e6fdce8b52f7fc7e14ea42">swiSHA1Init</a> (swiSHA1context_t *ctx)</td></tr>
+<tr class="memitem:ae857961335e6fdce8b52f7fc7e14ea42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha1_8h.html#ae857961335e6fdce8b52f7fc7e14ea42">swiSHA1Init</a> (<a class="el" href="sha1_8h.html#a226b0d7e9af151eb599bd8baa47314cb">swiSHA1context_t</a> *ctx)</td></tr>
 <tr class="memdesc:ae857961335e6fdce8b52f7fc7e14ea42"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHA-1 context setup.  <a href="sha1_8h.html#ae857961335e6fdce8b52f7fc7e14ea42">More...</a><br /></td></tr>
 <tr class="separator:ae857961335e6fdce8b52f7fc7e14ea42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a215788d11fb50dd748e2aa37f986da0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha1_8h.html#a215788d11fb50dd748e2aa37f986da0c">swiSHA1Update</a> (swiSHA1context_t *ctx, const void *data, size_t len)</td></tr>
+<tr class="memitem:a215788d11fb50dd748e2aa37f986da0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha1_8h.html#a215788d11fb50dd748e2aa37f986da0c">swiSHA1Update</a> (<a class="el" href="sha1_8h.html#a226b0d7e9af151eb599bd8baa47314cb">swiSHA1context_t</a> *ctx, const void *data, size_t len)</td></tr>
 <tr class="memdesc:a215788d11fb50dd748e2aa37f986da0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHA-1 process buffer.  <a href="sha1_8h.html#a215788d11fb50dd748e2aa37f986da0c">More...</a><br /></td></tr>
 <tr class="separator:a215788d11fb50dd748e2aa37f986da0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78a900dd575c6d084e27d8a00083c621"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha1_8h.html#a78a900dd575c6d084e27d8a00083c621">swiSHA1Verify</a> (const void *digest1, const void *digest2)</td></tr>
-<tr class="memdesc:a78a900dd575c6d084e27d8a00083c621"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHA-1 verify.  <a href="sha1_8h.html#a78a900dd575c6d084e27d8a00083c621">More...</a><br /></td></tr>
-<tr class="separator:a78a900dd575c6d084e27d8a00083c621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62548093f28e95864d7973a349a5e88f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha1_8h.html#a62548093f28e95864d7973a349a5e88f">swiSHA1Verify</a> (const void *digest1, const void *digest2)</td></tr>
+<tr class="memdesc:a62548093f28e95864d7973a349a5e88f"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHA-1 verify.  <a href="sha1_8h.html#a62548093f28e95864d7973a349a5e88f">More...</a><br /></td></tr>
+<tr class="separator:a62548093f28e95864d7973a349a5e88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >DSi SHA1 functions. </p>
@@ -168,7 +183,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">swiSHA1context_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="sha1_8h.html#a226b0d7e9af151eb599bd8baa47314cb">swiSHA1context_t</a> *&#160;</td>
           <td class="paramname"><em>ctx</em>&#160;</td>
         </tr>
         <tr>
@@ -199,7 +214,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void swiSHA1Init </td>
           <td>(</td>
-          <td class="paramtype">swiSHA1context_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="sha1_8h.html#a226b0d7e9af151eb599bd8baa47314cb">swiSHA1context_t</a> *&#160;</td>
           <td class="paramname"><em>ctx</em></td><td>)</td>
           <td></td>
         </tr>
@@ -225,7 +240,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void swiSHA1Update </td>
           <td>(</td>
-          <td class="paramtype">swiSHA1context_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="sha1_8h.html#a226b0d7e9af151eb599bd8baa47314cb">swiSHA1context_t</a> *&#160;</td>
           <td class="paramname"><em>ctx</em>, </td>
         </tr>
         <tr>
@@ -260,14 +275,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a78a900dd575c6d084e27d8a00083c621" name="a78a900dd575c6d084e27d8a00083c621"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78a900dd575c6d084e27d8a00083c621">&#9670;&nbsp;</a></span>swiSHA1Verify()</h2>
+<a id="a62548093f28e95864d7973a349a5e88f" name="a62548093f28e95864d7973a349a5e88f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62548093f28e95864d7973a349a5e88f">&#9670;&nbsp;</a></span>swiSHA1Verify()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void swiSHA1Verify </td>
+          <td class="memname">int swiSHA1Verify </td>
           <td>(</td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>digest1</em>, </td>
@@ -294,13 +309,14 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if they match, else 0. If either pointer is NULL it returns 0. </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 14 2024 23:41:32 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Feb 17 2024 12:59:30 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
