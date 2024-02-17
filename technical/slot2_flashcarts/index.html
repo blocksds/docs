@@ -62,7 +62,7 @@ You can generate NDS-only ROMs, with a bootloader injected by ndstool. You can l
       "url" : "https://blocksds.github.io/docs/technical/slot2_flashcarts/",
       "headline": "Support for slot-2 flashcarts",
       "description": "ROMs built with BlocksDS support slot-2 devices. However, they need special care. There are two options:\nYou can generate NDS-only ROMs, with a bootloader injected by ndstool. You can load a regular NDS ROM with a patched nds-hb-menu. 1. Generating a NDS-only ROM with bootloader If you add -h 0x200 to the ndstool command line arguments, it will generate a NDS-only ROM, with a bootloader that will let it boot from a slot-2 flaschart.",
-      "wordCount" : "309",
+      "wordCount" : "308",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1382,12 +1382,12 @@ loader, it will patch it with the right DLDI driver. The whole ROM won&rsquo;t b
 loaded to slot-2 memory, so nitroFS will rely on DLDI reads to load data. This
 also means that FAT access is possible.</p>
 <p>This method is recommended, as it doesn&rsquo;t ask the developer to modify the build
-system, and all no features are unavailable.</p>
+system, and no features are unavailable.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="example-supercard-sd"
+    <h3 id="example-supercard-sd"
     >
         Example: SuperCard SD
-    </h2>
+    </h3>
     <a data-clipboard-text="https://blocksds.github.io/docs/technical/slot2_flashcarts/#example-supercard-sd" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Example: SuperCard SD" aria-label="Anchor to: Example: SuperCard SD" href="#example-supercard-sd">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
@@ -1411,7 +1411,7 @@ A copy is also provided <a
 >here</a>.</p>
 </li>
 <li>
-<p>Downloaded <code>scsd_moon.dldi</code> from
+<p>Download <code>scsd_moon.dldi</code> from
 <a
   class="gdoc-markdown__link"
   href="https://github.com/DS-Homebrew/DLDI/blob/master/prebuilts/scsd_moon.dldi"
