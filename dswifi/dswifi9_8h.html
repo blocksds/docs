@@ -116,12 +116,22 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a84ba5991984a7ca18a108aac675a1454"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a84ba5991984a7ca18a108aac675a1454">WifiPacketHandler</a>) (int, int)</td></tr>
 <tr class="memdesc:a84ba5991984a7ca18a108aac675a1454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wifi Packet Handler function.  <a href="dswifi9_8h.html#a84ba5991984a7ca18a108aac675a1454">More...</a><br /></td></tr>
 <tr class="separator:a84ba5991984a7ca18a108aac675a1454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0da1951b1da887f4e1ecde685fe1ba08"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a0da1951b1da887f4e1ecde685fe1ba08">WifiSyncHandler</a>) ()</td></tr>
-<tr class="memdesc:a0da1951b1da887f4e1ecde685fe1ba08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wifi Sync Handler function.  <a href="dswifi9_8h.html#a0da1951b1da887f4e1ecde685fe1ba08">More...</a><br /></td></tr>
-<tr class="separator:a0da1951b1da887f4e1ecde685fe1ba08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4249b4d70c8724a033cd313ddefe2f7f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a4249b4d70c8724a033cd313ddefe2f7f">WifiSyncHandler</a>) (void)</td></tr>
+<tr class="memdesc:a4249b4d70c8724a033cd313ddefe2f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wifi Sync Handler function.  <a href="dswifi9_8h.html#a4249b4d70c8724a033cd313ddefe2f7f">More...</a><br /></td></tr>
+<tr class="separator:a4249b4d70c8724a033cd313ddefe2f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ae9cb5afbaef7ff3acc778b1b24d108b2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#ae9cb5afbaef7ff3acc778b1b24d108b2">WEPMODES</a> { <br />
+&#160;&#160;<a class="el" href="dswifi9_8h.html#ae9cb5afbaef7ff3acc778b1b24d108b2a5d63191d9b748525e1cbe7f7cef96ddf">WEPMODE_NONE</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="dswifi9_8h.html#ae9cb5afbaef7ff3acc778b1b24d108b2a0b625958b3cbcff23492ed4591fa3501">WEPMODE_40BIT</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="dswifi9_8h.html#ae9cb5afbaef7ff3acc778b1b24d108b2a77cedfb53476bff12f36720168551497">WEPMODE_128BIT</a> = 2
+<br />
+ }</td></tr>
+<tr class="memdesc:ae9cb5afbaef7ff3acc778b1b24d108b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supported WEP modes.  <a href="dswifi9_8h.html#ae9cb5afbaef7ff3acc778b1b24d108b2">More...</a><br /></td></tr>
+<tr class="separator:ae9cb5afbaef7ff3acc778b1b24d108b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9cafaedcb9d98cfaa804f4dcdffda9c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#ad9cafaedcb9d98cfaa804f4dcdffda9c">WIFI_ASSOCSTATUS</a> { <br />
 &#160;&#160;<a class="el" href="dswifi9_8h.html#ad9cafaedcb9d98cfaa804f4dcdffda9cae0655bebcdbf3b250cea1fb542494101">ASSOCSTATUS_DISCONNECTED</a>
 , <br />
@@ -138,7 +148,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="dswifi9_8h.html#ad9cafaedcb9d98cfaa804f4dcdffda9ca8b371356284aa4b76d203bcad5982695">ASSOCSTATUS_CANNOTCONNECT</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ad9cafaedcb9d98cfaa804f4dcdffda9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returned by <a class="el" href="dswifi9_8h.html#aee53a897c65ed70865fd2632147781f9" title="Returns information about the status of connection to an AP.">Wifi_AssocStatus()</a> after calling Wifi_ConnectAPk.  <a href="dswifi9_8h.html#ad9cafaedcb9d98cfaa804f4dcdffda9c">More...</a><br /></td></tr>
+<tr class="memdesc:ad9cafaedcb9d98cfaa804f4dcdffda9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returned by <a class="el" href="dswifi9_8h.html#aee41eb3e23244bfc304aecae68a1f837" title="Returns information about the status of connection to an AP.">Wifi_AssocStatus()</a> after calling Wifi_ConnectAPk.  <a href="dswifi9_8h.html#ad9cafaedcb9d98cfaa804f4dcdffda9c">More...</a><br /></td></tr>
 <tr class="separator:ad9cafaedcb9d98cfaa804f4dcdffda9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0fc4203761400f5e931eb92804f4e30"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#ae0fc4203761400f5e931eb92804f4e30">WIFI_RETURN</a> { <br />
 &#160;&#160;<a class="el" href="dswifi9_8h.html#ae0fc4203761400f5e931eb92804f4e30ab77941abe2e55e8211d082f5a1ea1563">WIFI_RETURN_OK</a> = 0
@@ -271,30 +281,30 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aee53a897c65ed70865fd2632147781f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#aee53a897c65ed70865fd2632147781f9">Wifi_AssocStatus</a> ()</td></tr>
-<tr class="memdesc:aee53a897c65ed70865fd2632147781f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about the status of connection to an AP.  <a href="dswifi9_8h.html#aee53a897c65ed70865fd2632147781f9">More...</a><br /></td></tr>
-<tr class="separator:aee53a897c65ed70865fd2632147781f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01be881df5ba5658977eb7de8afd07e7"><td class="memItemLeft" align="right" valign="top"><a id="a01be881df5ba5658977eb7de8afd07e7" name="a01be881df5ba5658977eb7de8afd07e7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_AutoConnect</b> ()</td></tr>
-<tr class="memdesc:a01be881df5ba5658977eb7de8afd07e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to an Access Point specified by the WFC data in the firmware. <br /></td></tr>
-<tr class="separator:a01be881df5ba5658977eb7de8afd07e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a0e1c9f93a8342a931d0d8159af2088"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a9a0e1c9f93a8342a931d0d8159af2088">Wifi_CheckInit</a> ()</td></tr>
-<tr class="memdesc:a9a0e1c9f93a8342a931d0d8159af2088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies when the ARM7 has been successfully initialized.  <a href="dswifi9_8h.html#a9a0e1c9f93a8342a931d0d8159af2088">More...</a><br /></td></tr>
-<tr class="separator:a9a0e1c9f93a8342a931d0d8159af2088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee41eb3e23244bfc304aecae68a1f837"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#aee41eb3e23244bfc304aecae68a1f837">Wifi_AssocStatus</a> (void)</td></tr>
+<tr class="memdesc:aee41eb3e23244bfc304aecae68a1f837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about the status of connection to an AP.  <a href="dswifi9_8h.html#aee41eb3e23244bfc304aecae68a1f837">More...</a><br /></td></tr>
+<tr class="separator:aee41eb3e23244bfc304aecae68a1f837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ba5eb88dec94bdc24dcb3fc65eae50"><td class="memItemLeft" align="right" valign="top"><a id="a10ba5eb88dec94bdc24dcb3fc65eae50" name="a10ba5eb88dec94bdc24dcb3fc65eae50"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_AutoConnect</b> (void)</td></tr>
+<tr class="memdesc:a10ba5eb88dec94bdc24dcb3fc65eae50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to an Access Point specified by the WFC data in the firmware. <br /></td></tr>
+<tr class="separator:a10ba5eb88dec94bdc24dcb3fc65eae50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa56748118f45cba8dd2576413b79b10e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#aa56748118f45cba8dd2576413b79b10e">Wifi_CheckInit</a> (void)</td></tr>
+<tr class="memdesc:aa56748118f45cba8dd2576413b79b10e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies when the ARM7 has been successfully initialized.  <a href="dswifi9_8h.html#aa56748118f45cba8dd2576413b79b10e">More...</a><br /></td></tr>
+<tr class="separator:aa56748118f45cba8dd2576413b79b10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4557f8246eaae06be4422628a90b33c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a4557f8246eaae06be4422628a90b33c9">Wifi_ConnectAP</a> (<a class="el" href="dswifi9_8h.html#af407d1eef22b1d2cca5f144758df0805">Wifi_AccessPoint</a> *apdata, int wepmode, int wepkeyid, unsigned char *wepkey)</td></tr>
 <tr class="memdesc:a4557f8246eaae06be4422628a90b33c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to an Access Point.  <a href="dswifi9_8h.html#a4557f8246eaae06be4422628a90b33c9">More...</a><br /></td></tr>
 <tr class="separator:a4557f8246eaae06be4422628a90b33c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af39ee13d17159c39fb1a1b1071f8300f"><td class="memItemLeft" align="right" valign="top"><a id="af39ee13d17159c39fb1a1b1071f8300f" name="af39ee13d17159c39fb1a1b1071f8300f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_DisableWifi</b> ()</td></tr>
-<tr class="memdesc:af39ee13d17159c39fb1a1b1071f8300f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructs the ARM7 to disengage wireless and stop receiving or transmitting. <br /></td></tr>
-<tr class="separator:af39ee13d17159c39fb1a1b1071f8300f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ef074aae2eb7e9dd16a4b48a77b6560"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a4ef074aae2eb7e9dd16a4b48a77b6560">Wifi_DisconnectAP</a> ()</td></tr>
-<tr class="memdesc:a4ef074aae2eb7e9dd16a4b48a77b6560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disassociate from the Access Point.  <a href="dswifi9_8h.html#a4ef074aae2eb7e9dd16a4b48a77b6560">More...</a><br /></td></tr>
-<tr class="separator:a4ef074aae2eb7e9dd16a4b48a77b6560"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9855b3789f13850a3587b668969c08e4"><td class="memItemLeft" align="right" valign="top"><a id="a9855b3789f13850a3587b668969c08e4" name="a9855b3789f13850a3587b668969c08e4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_EnableWifi</b> ()</td></tr>
-<tr class="memdesc:a9855b3789f13850a3587b668969c08e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructs the ARM7 to go into a basic "active" mode, not actually associated to an AP, but actively receiving and potentially transmitting. <br /></td></tr>
-<tr class="separator:a9855b3789f13850a3587b668969c08e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2f37e680f9bed01f12350151adba4f8"><td class="memItemLeft" align="right" valign="top"><a id="ad2f37e680f9bed01f12350151adba4f8" name="ad2f37e680f9bed01f12350151adba4f8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_DisableWifi</b> (void)</td></tr>
+<tr class="memdesc:ad2f37e680f9bed01f12350151adba4f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructs the ARM7 to disengage wireless and stop receiving or transmitting. <br /></td></tr>
+<tr class="separator:ad2f37e680f9bed01f12350151adba4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5005a8f7f655e21a0d6ec1ca4685e42b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a5005a8f7f655e21a0d6ec1ca4685e42b">Wifi_DisconnectAP</a> (void)</td></tr>
+<tr class="memdesc:a5005a8f7f655e21a0d6ec1ca4685e42b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disassociate from the Access Point.  <a href="dswifi9_8h.html#a5005a8f7f655e21a0d6ec1ca4685e42b">More...</a><br /></td></tr>
+<tr class="separator:a5005a8f7f655e21a0d6ec1ca4685e42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abab0056cdbb8bd0ba66f7af01bd852ab"><td class="memItemLeft" align="right" valign="top"><a id="abab0056cdbb8bd0ba66f7af01bd852ab" name="abab0056cdbb8bd0ba66f7af01bd852ab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_EnableWifi</b> (void)</td></tr>
+<tr class="memdesc:abab0056cdbb8bd0ba66f7af01bd852ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructs the ARM7 to go into a basic "active" mode, not actually associated to an AP, but actively receiving and potentially transmitting. <br /></td></tr>
+<tr class="separator:abab0056cdbb8bd0ba66f7af01bd852ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95a6460e4c649e56fb70ddd27243be28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a95a6460e4c649e56fb70ddd27243be28">Wifi_FindMatchingAP</a> (int numaps, <a class="el" href="dswifi9_8h.html#af407d1eef22b1d2cca5f144758df0805">Wifi_AccessPoint</a> *apdata, <a class="el" href="dswifi9_8h.html#af407d1eef22b1d2cca5f144758df0805">Wifi_AccessPoint</a> *match_dest)</td></tr>
 <tr class="memdesc:a95a6460e4c649e56fb70ddd27243be28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether various APs exist in the local area.  <a href="dswifi9_8h.html#a95a6460e4c649e56fb70ddd27243be28">More...</a><br /></td></tr>
 <tr class="separator:a95a6460e4c649e56fb70ddd27243be28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -304,15 +314,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_EnableWifi</b> (
 <tr class="memitem:a6d7eb4a7a34d955acc72347ca5eb33e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a6d7eb4a7a34d955acc72347ca5eb33e1">Wifi_GetData</a> (int datatype, int bufferlen, unsigned char *buffer)</td></tr>
 <tr class="memdesc:a6d7eb4a7a34d955acc72347ca5eb33e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve an arbitrary or misc. piece of data from the WiFi hardware.  <a href="dswifi9_8h.html#a6d7eb4a7a34d955acc72347ca5eb33e1">More...</a><br /></td></tr>
 <tr class="separator:a6d7eb4a7a34d955acc72347ca5eb33e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53e9913789dc5815da90781983d8eb09"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a53e9913789dc5815da90781983d8eb09">Wifi_GetIP</a> ()</td></tr>
-<tr class="memdesc:a53e9913789dc5815da90781983d8eb09"><td class="mdescLeft">&#160;</td><td class="mdescRight">It returns the current IP address of the DS.  <a href="dswifi9_8h.html#a53e9913789dc5815da90781983d8eb09">More...</a><br /></td></tr>
-<tr class="separator:a53e9913789dc5815da90781983d8eb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a3423334ac4c368ec8645190da922c"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a04a3423334ac4c368ec8645190da922c">Wifi_GetIP</a> (void)</td></tr>
+<tr class="memdesc:a04a3423334ac4c368ec8645190da922c"><td class="mdescLeft">&#160;</td><td class="mdescRight">It returns the current IP address of the DS.  <a href="dswifi9_8h.html#a04a3423334ac4c368ec8645190da922c">More...</a><br /></td></tr>
+<tr class="separator:a04a3423334ac4c368ec8645190da922c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b9c7287f18073860133c16c9bdfcc6a"><td class="memItemLeft" align="right" valign="top">struct in_addr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a7b9c7287f18073860133c16c9bdfcc6a">Wifi_GetIPInfo</a> (struct in_addr *pGateway, struct in_addr *pSnmask, struct in_addr *pDns1, struct in_addr *pDns2)</td></tr>
 <tr class="memdesc:a7b9c7287f18073860133c16c9bdfcc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns IP information.  <a href="dswifi9_8h.html#a7b9c7287f18073860133c16c9bdfcc6a">More...</a><br /></td></tr>
 <tr class="separator:a7b9c7287f18073860133c16c9bdfcc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f81f6242c8afab02a5a291aada82875"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a8f81f6242c8afab02a5a291aada82875">Wifi_GetNumAP</a> ()</td></tr>
-<tr class="memdesc:a8f81f6242c8afab02a5a291aada82875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current number of APs that are known and tracked internally.  <a href="dswifi9_8h.html#a8f81f6242c8afab02a5a291aada82875">More...</a><br /></td></tr>
-<tr class="separator:a8f81f6242c8afab02a5a291aada82875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a009733711efc3e75c17a6b994eb3d901"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a009733711efc3e75c17a6b994eb3d901">Wifi_GetNumAP</a> (void)</td></tr>
+<tr class="memdesc:a009733711efc3e75c17a6b994eb3d901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current number of APs that are known and tracked internally.  <a href="dswifi9_8h.html#a009733711efc3e75c17a6b994eb3d901">More...</a><br /></td></tr>
+<tr class="separator:a009733711efc3e75c17a6b994eb3d901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae381ed88ccd25bbee42bea4b8bd63e19"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#ae381ed88ccd25bbee42bea4b8bd63e19">Wifi_GetStats</a> (int statnum)</td></tr>
 <tr class="memdesc:ae381ed88ccd25bbee42bea4b8bd63e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retreive an element of the WiFi statistics gathered.  <a href="dswifi9_8h.html#ae381ed88ccd25bbee42bea4b8bd63e19">More...</a><br /></td></tr>
 <tr class="separator:ae381ed88ccd25bbee42bea4b8bd63e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -331,10 +341,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_EnableWifi</b> (
 <tr class="memitem:a20b2ddea5aaed8d656ddfc05d9cf1779"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a20b2ddea5aaed8d656ddfc05d9cf1779">Wifi_RxRawReadPacket</a> (long packetID, long readlength, unsigned short *data)</td></tr>
 <tr class="memdesc:a20b2ddea5aaed8d656ddfc05d9cf1779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows user code to read a packet from within the WifiPacketHandler function.  <a href="dswifi9_8h.html#a20b2ddea5aaed8d656ddfc05d9cf1779">More...</a><br /></td></tr>
 <tr class="separator:a20b2ddea5aaed8d656ddfc05d9cf1779"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f12af6a34b7b51260e2b0127bb00ee1"><td class="memItemLeft" align="right" valign="top"><a id="a1f12af6a34b7b51260e2b0127bb00ee1" name="a1f12af6a34b7b51260e2b0127bb00ee1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_ScanMode</b> ()</td></tr>
-<tr class="memdesc:a1f12af6a34b7b51260e2b0127bb00ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructs the ARM7 to periodically rotate through the channels to pick up and record information from beacons given off by APs. <br /></td></tr>
-<tr class="separator:a1f12af6a34b7b51260e2b0127bb00ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affd8ca2ccba2b62d0e0249b793fb4b85"><td class="memItemLeft" align="right" valign="top"><a id="affd8ca2ccba2b62d0e0249b793fb4b85" name="affd8ca2ccba2b62d0e0249b793fb4b85"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_ScanMode</b> (void)</td></tr>
+<tr class="memdesc:affd8ca2ccba2b62d0e0249b793fb4b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructs the ARM7 to periodically rotate through the channels to pick up and record information from beacons given off by APs. <br /></td></tr>
+<tr class="separator:affd8ca2ccba2b62d0e0249b793fb4b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d51b1aa4cf7f44cc22e24a2044f9a1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a3d51b1aa4cf7f44cc22e24a2044f9a1c">Wifi_SetChannel</a> (int channel)</td></tr>
 <tr class="memdesc:a3d51b1aa4cf7f44cc22e24a2044f9a1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the WiFi system is not connected or connecting to an access point, instruct the chipset to change channel.  <a href="dswifi9_8h.html#a3d51b1aa4cf7f44cc22e24a2044f9a1c">More...</a><br /></td></tr>
 <tr class="separator:a3d51b1aa4cf7f44cc22e24a2044f9a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -344,20 +354,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_ScanMode</b> ()<
 <tr class="memitem:a0edd90cba92345ff12b5fe959c38e10b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#a0edd90cba92345ff12b5fe959c38e10b">Wifi_SetPromiscuousMode</a> (int enable)</td></tr>
 <tr class="memdesc:a0edd90cba92345ff12b5fe959c38e10b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows the DS to enter or leave a "promsicuous" mode.  <a href="dswifi9_8h.html#a0edd90cba92345ff12b5fe959c38e10b">More...</a><br /></td></tr>
 <tr class="separator:a0edd90cba92345ff12b5fe959c38e10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac51e728afbc7ec95e2b97fc52c42f50f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#ac51e728afbc7ec95e2b97fc52c42f50f">Wifi_SetSyncHandler</a> (<a class="el" href="dswifi9_8h.html#a0da1951b1da887f4e1ecde685fe1ba08">WifiSyncHandler</a> sh)</td></tr>
-<tr class="memdesc:ac51e728afbc7ec95e2b97fc52c42f50f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this function to request notification of when the ARM7-side <a class="el" href="dswifi9_8h.html#a12de6d80c62b1b89c8a868edb33b4fb4" title="Call this function when requested to sync by the ARM7 side of the WiFi lib.">Wifi_Sync()</a> function should be called.  <a href="dswifi9_8h.html#ac51e728afbc7ec95e2b97fc52c42f50f">More...</a><br /></td></tr>
+<tr class="memitem:ac51e728afbc7ec95e2b97fc52c42f50f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#ac51e728afbc7ec95e2b97fc52c42f50f">Wifi_SetSyncHandler</a> (<a class="el" href="dswifi9_8h.html#a4249b4d70c8724a033cd313ddefe2f7f">WifiSyncHandler</a> sh)</td></tr>
+<tr class="memdesc:ac51e728afbc7ec95e2b97fc52c42f50f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this function to request notification of when the ARM7-side <a class="el" href="dswifi9_8h.html#a652a492dbe9be2326f73b54e324d81bb" title="Call this function when requested to sync by the ARM7 side of the WiFi lib.">Wifi_Sync()</a> function should be called.  <a href="dswifi9_8h.html#ac51e728afbc7ec95e2b97fc52c42f50f">More...</a><br /></td></tr>
 <tr class="separator:ac51e728afbc7ec95e2b97fc52c42f50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12de6d80c62b1b89c8a868edb33b4fb4"><td class="memItemLeft" align="right" valign="top"><a id="a12de6d80c62b1b89c8a868edb33b4fb4" name="a12de6d80c62b1b89c8a868edb33b4fb4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Sync</b> ()</td></tr>
-<tr class="memdesc:a12de6d80c62b1b89c8a868edb33b4fb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this function when requested to sync by the ARM7 side of the WiFi lib. <br /></td></tr>
-<tr class="separator:a12de6d80c62b1b89c8a868edb33b4fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652a492dbe9be2326f73b54e324d81bb"><td class="memItemLeft" align="right" valign="top"><a id="a652a492dbe9be2326f73b54e324d81bb" name="a652a492dbe9be2326f73b54e324d81bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Sync</b> (void)</td></tr>
+<tr class="memdesc:a652a492dbe9be2326f73b54e324d81bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this function when requested to sync by the ARM7 side of the WiFi lib. <br /></td></tr>
+<tr class="separator:a652a492dbe9be2326f73b54e324d81bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac1ef24aeb811d82d1757bcce5aca31f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dswifi9_8h.html#aac1ef24aeb811d82d1757bcce5aca31f">Wifi_Timer</a> (int num_ms)</td></tr>
 <tr class="memdesc:aac1ef24aeb811d82d1757bcce5aca31f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function should be called in a periodic interrupt.  <a href="dswifi9_8h.html#aac1ef24aeb811d82d1757bcce5aca31f">More...</a><br /></td></tr>
 <tr class="separator:aac1ef24aeb811d82d1757bcce5aca31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9caa2650ce12ef44787259d705639084"><td class="memItemLeft" align="right" valign="top"><a id="a9caa2650ce12ef44787259d705639084" name="a9caa2650ce12ef44787259d705639084"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> ()</td></tr>
-<tr class="memdesc:a9caa2650ce12ef44787259d705639084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for new data from the ARM7 and initiates routing if data is available. <br /></td></tr>
-<tr class="separator:a9caa2650ce12ef44787259d705639084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c84ef492b021e9a9cfbce189ae30f2b"><td class="memItemLeft" align="right" valign="top"><a id="a5c84ef492b021e9a9cfbce189ae30f2b" name="a5c84ef492b021e9a9cfbce189ae30f2b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> (void)</td></tr>
+<tr class="memdesc:a5c84ef492b021e9a9cfbce189ae30f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for new data from the ARM7 and initiates routing if data is available. <br /></td></tr>
+<tr class="separator:a5c84ef492b021e9a9cfbce189ae30f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >ARM9 header of DSWifi. </p>
@@ -397,24 +407,52 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> ()</t
 
 </div>
 </div>
-<a id="a0da1951b1da887f4e1ecde685fe1ba08" name="a0da1951b1da887f4e1ecde685fe1ba08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0da1951b1da887f4e1ecde685fe1ba08">&#9670;&nbsp;</a></span>WifiSyncHandler</h2>
+<a id="a4249b4d70c8724a033cd313ddefe2f7f" name="a4249b4d70c8724a033cd313ddefe2f7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4249b4d70c8724a033cd313ddefe2f7f">&#9670;&nbsp;</a></span>WifiSyncHandler</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* WifiSyncHandler) ()</td>
+          <td class="memname">typedef void(* WifiSyncHandler) (void)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Wifi Sync Handler function. </p>
-<p >Callback function that is called when the ARM7 needs to be told to synchronize with new fifo data. If this callback is used (see <a class="el" href="dswifi9_8h.html#ac51e728afbc7ec95e2b97fc52c42f50f" title="Call this function to request notification of when the ARM7-side Wifi_Sync() function should be calle...">Wifi_SetSyncHandler()</a>), it should send a message via the fifo to the ARM7, which will call <a class="el" href="dswifi9_8h.html#a12de6d80c62b1b89c8a868edb33b4fb4" title="Call this function when requested to sync by the ARM7 side of the WiFi lib.">Wifi_Sync()</a> on ARM7. </p>
+<p >Callback function that is called when the ARM7 needs to be told to synchronize with new fifo data. If this callback is used (see <a class="el" href="dswifi9_8h.html#ac51e728afbc7ec95e2b97fc52c42f50f" title="Call this function to request notification of when the ARM7-side Wifi_Sync() function should be calle...">Wifi_SetSyncHandler()</a>), it should send a message via the fifo to the ARM7, which will call <a class="el" href="dswifi9_8h.html#a652a492dbe9be2326f73b54e324d81bb" title="Call this function when requested to sync by the ARM7 side of the WiFi lib.">Wifi_Sync()</a> on ARM7. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ae9cb5afbaef7ff3acc778b1b24d108b2" name="ae9cb5afbaef7ff3acc778b1b24d108b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9cb5afbaef7ff3acc778b1b24d108b2">&#9670;&nbsp;</a></span>WEPMODES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="dswifi9_8h.html#ae9cb5afbaef7ff3acc778b1b24d108b2">WEPMODES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supported WEP modes. </p>
+<ul>
+<li>64 bit (40 bit) WEP mode: 5 ASCII characters (or 10 hex numbers).</li>
+<li>128 bit (104 bit) WEP mode: 13 ASCII characters (or 26 hex numbers). </li>
+</ul>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae9cb5afbaef7ff3acc778b1b24d108b2a5d63191d9b748525e1cbe7f7cef96ddf" name="ae9cb5afbaef7ff3acc778b1b24d108b2a5d63191d9b748525e1cbe7f7cef96ddf"></a>WEPMODE_NONE&#160;</td><td class="fielddoc"><p >No WEP security is used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae9cb5afbaef7ff3acc778b1b24d108b2a0b625958b3cbcff23492ed4591fa3501" name="ae9cb5afbaef7ff3acc778b1b24d108b2a0b625958b3cbcff23492ed4591fa3501"></a>WEPMODE_40BIT&#160;</td><td class="fielddoc"><p >5 ASCII characters. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae9cb5afbaef7ff3acc778b1b24d108b2a77cedfb53476bff12f36720168551497" name="ae9cb5afbaef7ff3acc778b1b24d108b2a77cedfb53476bff12f36720168551497"></a>WEPMODE_128BIT&#160;</td><td class="fielddoc"><p >13 ASCII characters. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="ad9cafaedcb9d98cfaa804f4dcdffda9c" name="ad9cafaedcb9d98cfaa804f4dcdffda9c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9cafaedcb9d98cfaa804f4dcdffda9c">&#9670;&nbsp;</a></span>WIFI_ASSOCSTATUS</h2>
 
@@ -427,7 +465,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> ()</t
       </table>
 </div><div class="memdoc">
 
-<p>Returned by <a class="el" href="dswifi9_8h.html#aee53a897c65ed70865fd2632147781f9" title="Returns information about the status of connection to an AP.">Wifi_AssocStatus()</a> after calling Wifi_ConnectAPk. </p>
+<p>Returned by <a class="el" href="dswifi9_8h.html#aee41eb3e23244bfc304aecae68a1f837" title="Returns information about the status of connection to an AP.">Wifi_AssocStatus()</a> after calling Wifi_ConnectAPk. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad9cafaedcb9d98cfaa804f4dcdffda9cae0655bebcdbf3b250cea1fb542494101" name="ad9cafaedcb9d98cfaa804f4dcdffda9cae0655bebcdbf3b250cea1fb542494101"></a>ASSOCSTATUS_DISCONNECTED&#160;</td><td class="fielddoc"><p >Not <em>trying</em> to connect. </p>
 </td></tr>
@@ -526,8 +564,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> ()</t
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aee53a897c65ed70865fd2632147781f9" name="aee53a897c65ed70865fd2632147781f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee53a897c65ed70865fd2632147781f9">&#9670;&nbsp;</a></span>Wifi_AssocStatus()</h2>
+<a id="aee41eb3e23244bfc304aecae68a1f837" name="aee41eb3e23244bfc304aecae68a1f837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee41eb3e23244bfc304aecae68a1f837">&#9670;&nbsp;</a></span>Wifi_AssocStatus()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -535,6 +573,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> ()</t
         <tr>
           <td class="memname">int Wifi_AssocStatus </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -547,8 +586,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> ()</t
 
 </div>
 </div>
-<a id="a9a0e1c9f93a8342a931d0d8159af2088" name="a9a0e1c9f93a8342a931d0d8159af2088"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a0e1c9f93a8342a931d0d8159af2088">&#9670;&nbsp;</a></span>Wifi_CheckInit()</h2>
+<a id="aa56748118f45cba8dd2576413b79b10e" name="aa56748118f45cba8dd2576413b79b10e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa56748118f45cba8dd2576413b79b10e">&#9670;&nbsp;</a></span>Wifi_CheckInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -556,6 +595,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> ()</t
         <tr>
           <td class="memname">int Wifi_CheckInit </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -609,8 +649,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> ()</t
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">apdata</td><td>Basic data on the AP. </td></tr>
-    <tr><td class="paramname">wepmode</td><td>Indicates whether wep is used, and what kind. </td></tr>
-    <tr><td class="paramname">wepkeyid</td><td>Indicates which wep key ID to use for transmitting. </td></tr>
+    <tr><td class="paramname">wepmode</td><td>Indicates whether WEP is used, and what kind (WEPMODES). </td></tr>
+    <tr><td class="paramname">wepkeyid</td><td>Indicates which WEP key ID to use for transmitting. </td></tr>
     <tr><td class="paramname">wepkey</td><td>The WEP key, to be used in all 4 key slots (should make this more flexible in the future). </td></tr>
   </table>
   </dd>
@@ -619,8 +659,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> ()</t
 
 </div>
 </div>
-<a id="a4ef074aae2eb7e9dd16a4b48a77b6560" name="a4ef074aae2eb7e9dd16a4b48a77b6560"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ef074aae2eb7e9dd16a4b48a77b6560">&#9670;&nbsp;</a></span>Wifi_DisconnectAP()</h2>
+<a id="a5005a8f7f655e21a0d6ec1ca4685e42b" name="a5005a8f7f655e21a0d6ec1ca4685e42b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5005a8f7f655e21a0d6ec1ca4685e42b">&#9670;&nbsp;</a></span>Wifi_DisconnectAP()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -628,6 +668,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> ()</t
         <tr>
           <td class="memname">int Wifi_DisconnectAP </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -769,8 +810,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> ()</t
 
 </div>
 </div>
-<a id="a53e9913789dc5815da90781983d8eb09" name="a53e9913789dc5815da90781983d8eb09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53e9913789dc5815da90781983d8eb09">&#9670;&nbsp;</a></span>Wifi_GetIP()</h2>
+<a id="a04a3423334ac4c368ec8645190da922c" name="a04a3423334ac4c368ec8645190da922c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04a3423334ac4c368ec8645190da922c">&#9670;&nbsp;</a></span>Wifi_GetIP()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -778,6 +819,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> ()</t
         <tr>
           <td class="memname">unsigned long Wifi_GetIP </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -843,8 +885,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> ()</t
 
 </div>
 </div>
-<a id="a8f81f6242c8afab02a5a291aada82875" name="a8f81f6242c8afab02a5a291aada82875"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f81f6242c8afab02a5a291aada82875">&#9670;&nbsp;</a></span>Wifi_GetNumAP()</h2>
+<a id="a009733711efc3e75c17a6b994eb3d901" name="a009733711efc3e75c17a6b994eb3d901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a009733711efc3e75c17a6b994eb3d901">&#9670;&nbsp;</a></span>Wifi_GetNumAP()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -852,6 +894,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> ()</t
         <tr>
           <td class="memname">int Wifi_GetNumAP </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1181,14 +1224,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> ()</t
         <tr>
           <td class="memname">void Wifi_SetSyncHandler </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="dswifi9_8h.html#a0da1951b1da887f4e1ecde685fe1ba08">WifiSyncHandler</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="dswifi9_8h.html#a4249b4d70c8724a033cd313ddefe2f7f">WifiSyncHandler</a>&#160;</td>
           <td class="paramname"><em>sh</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Call this function to request notification of when the ARM7-side <a class="el" href="dswifi9_8h.html#a12de6d80c62b1b89c8a868edb33b4fb4" title="Call this function when requested to sync by the ARM7 side of the WiFi lib.">Wifi_Sync()</a> function should be called. </p>
+<p>Call this function to request notification of when the ARM7-side <a class="el" href="dswifi9_8h.html#a652a492dbe9be2326f73b54e324d81bb" title="Call this function when requested to sync by the ARM7 side of the WiFi lib.">Wifi_Sync()</a> function should be called. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sh</td><td>Pointer to the function to be called for notification. </td></tr>
@@ -1228,7 +1271,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Wifi_Update</b> ()</t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 17 2024 17:43:09 for DSWifi by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Feb 18 2024 22:57:25 for DSWifi by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
