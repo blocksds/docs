@@ -30,5 +30,6 @@ var searchData=
   ['audio_2eh_27',['audio.h',['../audio_8h.html',1,'']]],
   ['automode_28',['autoMode',['../structtPERSONAL__DATA.html#a106bb0c793ae2aa4dbcd8005de3a4dbf',1,'tPERSONAL_DATA']]],
   ['card_2eh_29',['card.h',['../arm9_2card_8h.html',1,'']]],
-  ['input_2eh_30',['input.h',['../arm7_2input_8h.html',1,'(Global Namespace)'],['../arm9_2input_8h.html',1,'(Global Namespace)']]]
+  ['input_2eh_30',['input.h',['../arm7_2input_8h.html',1,'(Global Namespace)'],['../arm9_2input_8h.html',1,'(Global Namespace)']]],
+  ['sdmmc_2eh_31',['sdmmc.h',['../arm9_2sdmmc_8h.html',1,'']]]
 ];

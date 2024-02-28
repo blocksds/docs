@@ -7,5 +7,16 @@ var searchData=
   ['timerstop_4',['timerStop',['../timers_8h.html#a2de7a620d652335e64b79e08b85ea34d',1,'timers.h']]],
   ['timertick_5',['timerTick',['../timers_8h.html#a04a1fece508a10daa18c0eda6b636585',1,'timers.h']]],
   ['timerunpause_6',['timerUnpause',['../timers_8h.html#ace90db2cc67115b27bad7eaa8bee16d2',1,'timers.h']]],
-  ['touchread_7',['touchRead',['../arm9_2input_8h.html#a1e8e991e19f682674c982d1fa8ceece8',1,'input.h']]]
+  ['tmio_5fcarddetected_7',['TMIO_cardDetected',['../tmio_8h.html#a55b6200c1c05cf83a60b33b97797d0fd',1,'tmio.h']]],
+  ['tmio_5fcardwritable_8',['TMIO_cardWritable',['../tmio_8h.html#ab8ba728d9bce1ee297daf27c2698a70d',1,'tmio.h']]],
+  ['tmio_5fdeinit_9',['TMIO_deinit',['../tmio_8h.html#ad87c30d15c90c8ae4c667f3e15eaa3e0',1,'tmio.h']]],
+  ['tmio_5finit_10',['TMIO_init',['../tmio_8h.html#abe74122a21e48a92986811f9e2cee8bb',1,'tmio.h']]],
+  ['tmio_5finitport_11',['TMIO_initPort',['../tmio_8h.html#ab2c16a17a88dc3fcb7f0c9cc445252dc',1,'tmio.h']]],
+  ['tmio_5fpowerupsequence_12',['TMIO_powerupSequence',['../tmio_8h.html#aa112664a99fdb4ce58a9b4ae142ebc3e',1,'tmio.h']]],
+  ['tmio_5fsendcommand_13',['TMIO_sendCommand',['../tmio_8h.html#a9c9f520bc563abfc865209f1cb1967de',1,'tmio.h']]],
+  ['tmio_5fsetblocklen_14',['TMIO_setBlockLen',['../tmio_8h.html#a5381d0a8d648d1523dcaa0540b558a47',1,'tmio.h']]],
+  ['tmio_5fsetbuffer_15',['TMIO_setBuffer',['../tmio_8h.html#a75ecea303eb8e35b4551fc5069515128',1,'tmio.h']]],
+  ['tmio_5fsetbuswidth_16',['TMIO_setBusWidth',['../tmio_8h.html#a507f2defbfbd6e1eee6b696a934f26e3',1,'tmio.h']]],
+  ['tmio_5fsetclock_17',['TMIO_setClock',['../tmio_8h.html#ae8422fedf8cc85d89a35381fb9d5fad9',1,'tmio.h']]],
+  ['touchread_18',['touchRead',['../arm9_2input_8h.html#a1e8e991e19f682674c982d1fa8ceece8',1,'input.h']]]
 ];

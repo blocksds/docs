@@ -779,6 +779,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 <tr class="memitem:aac157f3e214208655a40434f4557ef39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#aac157f3e214208655a40434f4557ef39">glTexParameter</a> (int target, int param)</td></tr>
 <tr class="memdesc:aac157f3e214208655a40434f4557ef39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set parameters for the current texture.  <a href="videoGL_8h.html#aac157f3e214208655a40434f4557ef39">More...</a><br /></td></tr>
 <tr class="separator:aac157f3e214208655a40434f4557ef39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a014352e6bcfc02f3c7ed9a9efbf7e"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="videoGL_8h.html#a9f0b28cb8d083a96b0156006ddfda933">GL_TEXTURE_SIZE_ENUM</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#a73a014352e6bcfc02f3c7ed9a9efbf7e">glTexSizeToEnum</a> (int size)</td></tr>
+<tr class="memdesc:a73a014352e6bcfc02f3c7ed9a9efbf7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This converts a size in pixels to a GL_TEXTURE_SIZE_ENUM value.  <a href="videoGL_8h.html#a73a014352e6bcfc02f3c7ed9a9efbf7e">More...</a><br /></td></tr>
+<tr class="separator:a73a014352e6bcfc02f3c7ed9a9efbf7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15ee4820b85ebc3888ae2bdde39ed58e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#a15ee4820b85ebc3888ae2bdde39ed58e">glTranslatef</a> (float x, float y, float z)</td></tr>
 <tr class="memdesc:a15ee4820b85ebc3888ae2bdde39ed58e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply the current matrix by a translation matrix.  <a href="videoGL_8h.html#a15ee4820b85ebc3888ae2bdde39ed58e">More...</a><br /></td></tr>
 <tr class="separator:a15ee4820b85ebc3888ae2bdde39ed58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4186,6 +4189,42 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 
 </div>
 </div>
+<a id="a73a014352e6bcfc02f3c7ed9a9efbf7e" name="a73a014352e6bcfc02f3c7ed9a9efbf7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73a014352e6bcfc02f3c7ed9a9efbf7e">&#9670;&nbsp;</a></span>glTexSizeToEnum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static enum <a class="el" href="videoGL_8h.html#a9f0b28cb8d083a96b0156006ddfda933">GL_TEXTURE_SIZE_ENUM</a> glTexSizeToEnum </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This converts a size in pixels to a GL_TEXTURE_SIZE_ENUM value. </p>
+<p >Note: This is not a real OpenGL function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>Size in pixels. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A valid GL_TEXTURE_SIZE_ENUM or -1 if the size is incorrect. </dd></dl>
+
+</div>
+</div>
 <a id="a15ee4820b85ebc3888ae2bdde39ed58e" name="a15ee4820b85ebc3888ae2bdde39ed58e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a15ee4820b85ebc3888ae2bdde39ed58e">&#9670;&nbsp;</a></span>glTranslatef()</h2>
 
@@ -4965,7 +5004,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 22:57:25 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Wed Feb 28 2024 20:12:27 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

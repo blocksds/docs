@@ -54,7 +54,7 @@ In short, when you build an application, the DLDI stub is added to your applicat
       
       <guid>https://blocksds.github.io/docs/technical/devkitarm_porting_guide/</guid>
       <description>1. Introduccion Porting devkitARM projects to BlocksDS should be relatively easy in most cases. BlocksDS includes most of the DS libraries that come with devkitARM. The biggest difference is the build system. You will need to replace the Makefile that you have in your project by the one of one of the templates of BlocksDS.
-2. Filesystem libraries While devkitARM uses libfat and libfilesystem, BlocksDS can&amp;rsquo;t. They use the devoptab interface implemented in the newlib fork of devkitARM.</description>
+2. Filesystem libraries devkitARM uses libfat and libfilesystem, but BlocksDS can&amp;rsquo;t. They use the devoptab interface implemented in the newlib fork of devkitARM.</description>
     </item>
     
     <item>
