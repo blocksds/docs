@@ -12,8 +12,8 @@
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="1. Introduccion Porting devkitARM projects to BlocksDS should be relatively easy in most cases. BlocksDS includes most of the DS libraries that come with devkitARM. The biggest difference is the build system. You will need to replace the Makefile that you have in your project by the one of one of the templates of BlocksDS.
-2. Filesystem libraries devkitARM uses libfat and libfilesystem, but BlocksDS can&rsquo;t. They use the devoptab interface implemented in the newlib fork of devkitARM." />
+  <meta name="description" content="1. Introduction In most cases, porting devkitARM projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.
+2. New build system This is the biggest difference between devkitARM and BlocksDS. Makefiles provided by devkitARM are more complicated: they call themselves recursively from the build directory. They also hide a lot of compilation rules from the user, as they are provided by sub-makefiles in the devkitARM system directory." />
 
     <title>devkitARM porting guide | BlocksDS</title>
 
@@ -39,8 +39,8 @@
     content="devkitARM porting guide"
   />
   <meta property="og:site_name" content="BlocksDS" />
-  <meta property="og:description" content="1. Introduccion Porting devkitARM projects to BlocksDS should be relatively easy in most cases. BlocksDS includes most of the DS libraries that come with devkitARM. The biggest difference is the build system. You will need to replace the Makefile that you have in your project by the one of one of the templates of BlocksDS.
-2. Filesystem libraries devkitARM uses libfat and libfilesystem, but BlocksDS can’t. They use the devoptab interface implemented in the newlib fork of devkitARM." />
+  <meta property="og:description" content="1. Introduction In most cases, porting devkitARM projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.
+2. New build system This is the biggest difference between devkitARM and BlocksDS. Makefiles provided by devkitARM are more complicated: they call themselves recursively from the build directory. They also hide a lot of compilation rules from the user, as they are provided by sub-makefiles in the devkitARM system directory." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/" />
 
@@ -49,8 +49,8 @@
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="devkitARM porting guide" />
-  <meta name="twitter:description" content="1. Introduccion Porting devkitARM projects to BlocksDS should be relatively easy in most cases. BlocksDS includes most of the DS libraries that come with devkitARM. The biggest difference is the build system. You will need to replace the Makefile that you have in your project by the one of one of the templates of BlocksDS.
-2. Filesystem libraries devkitARM uses libfat and libfilesystem, but BlocksDS can’t. They use the devoptab interface implemented in the newlib fork of devkitARM." />
+  <meta name="twitter:description" content="1. Introduction In most cases, porting devkitARM projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.
+2. New build system This is the biggest difference between devkitARM and BlocksDS. Makefiles provided by devkitARM are more complicated: they call themselves recursively from the build directory. They also hide a lot of compilation rules from the user, as they are provided by sub-makefiles in the devkitARM system directory." />
 
 
   <script type="application/ld+json">
@@ -61,8 +61,8 @@
       "name": "devkitARM porting guide",
       "url" : "https://blocksds.github.io/docs/technical/devkitarm_porting_guide/",
       "headline": "devkitARM porting guide",
-      "description": "1. Introduccion Porting devkitARM projects to BlocksDS should be relatively easy in most cases. BlocksDS includes most of the DS libraries that come with devkitARM. The biggest difference is the build system. You will need to replace the Makefile that you have in your project by the one of one of the templates of BlocksDS.\n2. Filesystem libraries devkitARM uses libfat and libfilesystem, but BlocksDS can’t. They use the devoptab interface implemented in the newlib fork of devkitARM.",
-      "wordCount" : "1153",
+      "description": "1. Introduction In most cases, porting devkitARM projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.\n2. New build system This is the biggest difference between devkitARM and BlocksDS. Makefiles provided by devkitARM are more complicated: they call themselves recursively from the build directory. They also hide a lot of compilation rules from the user, as they are provided by sub-makefiles in the devkitARM system directory.",
+      "wordCount" : "1220",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1344,66 +1344,35 @@
   >
     <h1>devkitARM porting guide</h1>
     <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="1-introduccion"
+    <h2 id="1-introduction"
     >
-        1. Introduccion
+        1. Introduction
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#1-introduccion" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 1. Introduccion" aria-label="Anchor to: 1. Introduccion" href="#1-introduccion">
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#1-introduction" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 1. Introduction" aria-label="Anchor to: 1. Introduction" href="#1-introduction">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>Porting devkitARM projects to BlocksDS should be relatively easy in most cases.
-BlocksDS includes most of the DS libraries that come with devkitARM. The biggest
-difference is the build system. You will need to replace the Makefile that you
-have in your project by the one of one of the templates of BlocksDS.</p>
+<p>In most cases, porting devkitARM projects to BlocksDS should be relatively easy.
+BlocksDS includes most of the NDS functionality provided by devkitARM. For simple
+projects, only minor changes should be required.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="2-filesystem-libraries"
+    <h2 id="2-new-build-system"
     >
-        2. Filesystem libraries
+        2. New build system
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#2-filesystem-libraries" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 2. Filesystem libraries" aria-label="Anchor to: 2. Filesystem libraries" href="#2-filesystem-libraries">
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#2-new-build-system" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 2. New build system" aria-label="Anchor to: 2. New build system" href="#2-new-build-system">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>devkitARM uses <code>libfat</code> and <code>libfilesystem</code>, but BlocksDS can&rsquo;t. They use the
-<code>devoptab</code> interface implemented in the <code>newlib</code> fork of devkitARM. BlocksDS
-uses <code>picolibc</code> instead of <code>newlib</code>, and it implements filesystem functions in a
-different way. It also has its own implementation of <code>NitroFS</code>.</p>
-<p>In the makefile, you have to remove <code>-lfat</code> and <code>-lfilesystem</code> from <code>LIBS</code>, as
-they don&rsquo;t exist in BlocksDS. You don&rsquo;t need to add any additional library. The
-filesystem support is included in <code>libnds</code>.</p>
-<p>From the point of view of the source code, you can use the same includes as when
-using <code>libfat</code> and <code>libfilesystem</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;fat.h&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;filesystem.h&gt;</span><span class="cp">
-</span></span></span></code></pre></div><p>They provide <code>fatInitDefault()</code> and <code>nitroFSInit()</code>. They should be compatible
-with the ones in the original libraries. Please, report any behaviour that isn&rsquo;t
-the same. If you need any other fuction, report it as well.</p>
-<p>BlocksDS uses <a
-  class="gdoc-markdown__link"
-  href="http://elm-chan.org/fsw/ff/00index_e.html"
->Elm&rsquo;s FatFs library</a>
-instead of <code>libfat</code>. This library has been ported to use the DLDI and DSi
-internal SD card drivers that are provided by <code>libnds</code>. It should be fully
-compatible with <code>libfat</code>.</p>
-<div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="3-build-system-differences"
-    >
-        3. Build system differences
-    </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#3-build-system-differences" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 3. Build system differences" aria-label="Anchor to: 3. Build system differences" href="#3-build-system-differences">
-        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-    </a>
-</div>
-<p>This is the biggest difference between devkitARM and BlocksDS. devkitARM
-Makefiles are very complicated: they call themselves recursively from the build
-directory. They also hide a lot of information from the user: they include
-sub-makefiles in the devkitARM system directory, which has a lot of important
-rules.</p>
-<p>The Makefiles of BlocksDS include all available rules so that it&rsquo;s easy to
-create a new build system based on them (for example, with CMake or Meson). They
-don&rsquo;t use self-recursion, so they are easier to understand.</p>
-<p>As a BlocksDS user you need to edit a few paths and variables, same as with
+<p>This is the biggest difference between devkitARM and BlocksDS. Makefiles provided
+by devkitARM are more complicated: they call themselves recursively from the build
+directory. They also hide a lot of compilation rules from the user, as they are
+provided by sub-makefiles in the devkitARM system directory.</p>
+<p>The Makefiles of BlocksDS include all available rules so that its behaviour is
+easier to understand and customize. This allows for example creating a new build
+system based on them, tailored to your project (for example, with CMake or Meson).
+They also do not rely on self-recursion.</p>
+<p>As a BlocksDS user, you need to edit a few paths and variables, same as with
 devkitARM. Open the Makefile of your devkitARM project and check this part (some
 variables may be missing if you&rsquo;re not using them):</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-make" data-lang="make"><span class="line"><span class="cl"><span class="nv">TARGET</span>      <span class="o">:=</span> <span class="k">$(</span>notdir <span class="k">$(</span>CURDIR<span class="k">))</span>   <span class="c1"># Name of the resulting NDS file</span>
@@ -1449,42 +1418,49 @@ the libraries used by your program.</p>
 <p>The reason for this additional complexity with <code>LIBS</code> and <code>LIBDIRS</code> is to allow
 the user as much flexibility as possible when mixing and matching libraries.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="4-integer-version-of-stdioh-functions"
+    <h2 id="3-filesystem-libraries"
     >
-        4. Integer version of stdio.h functions
+        3. Filesystem libraries
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#4-integer-version-of-stdioh-functions" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 4. Integer version of stdio.h functions" aria-label="Anchor to: 4. Integer version of stdio.h functions" href="#4-integer-version-of-stdioh-functions">
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#3-filesystem-libraries" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 3. Filesystem libraries" aria-label="Anchor to: 3. Filesystem libraries" href="#3-filesystem-libraries">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>Functions like <code>iprintf()</code> or <code>siscanf()</code>, provided by <code>newlib</code>,  aren&rsquo;t
-provided by <code>picolibc</code>. Replace any calls to them by the standard names of the
-functions: <code>printf()</code>, <code>sscanf()</code>, etc.</p>
-<p>By default, the build of <code>picolibc</code> of BlocksDS makes <code>printf()</code>, <code>sscanf()</code> and
-similar functions floats and doubles. This is done to increase compatibility
-with any pre-existing code, but it increases the size of the final binaries.</p>
-<p>It is possible to switch to integer-only versions of the functions, and save
-that additional space, by adding the following line to the <code>LDFLAGS</code> of your
-Makefile:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-make" data-lang="make"><span class="line"><span class="cl"><span class="nv">LDFLAGS</span> <span class="o">:=</span> <span class="o">[</span>all other options go here<span class="o">]</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -Wl,--defsym<span class="o">=</span><span class="nv">vfprintf</span><span class="o">=</span>__i_vfprintf -Wl,--defsym<span class="o">=</span><span class="nv">vfscanf</span><span class="o">=</span>__i_vfscanf
-</span></span></code></pre></div><p>For more information: <a
+<p>devkitARM and BlocksDS also heavily differ with regards to the structure of
+their filesystem access libraries. For most users, this should not lead to major
+code chagnes.</p>
+<p>devkitARM uses <code>libfat</code> and <code>libfilesystem</code>, connected to a modified version of
+its C library <code>newlib</code> through the <code>devoptab</code> interface. These are devkitPro&rsquo;s
+additions, and are not replicated in BlocksDS.</p>
+<p>Instead, BlocksDS uses the <code>picolibc</code> C library&rsquo;s &ldquo;tiny&rdquo; stdio implementation.
+In addition, to cut down on RAM and code size, it omits the <code>devoptab</code> interface.
+AS most homebrew does not modify the device list, this should not affect them.
+It also uses a modified version of <a
   class="gdoc-markdown__link"
-  href="https://github.com/picolibc/picolibc/blob/main/doc/printf.md"
->https://github.com/picolibc/picolibc/blob/main/doc/printf.md</a></p>
+  href="http://elm-chan.org/fsw/ff/00index_e.html"
+>Elm&rsquo;s FatFS library</a>
+in place of libfat, as well as a custom implementation of NitroFS.</p>
+<p>To adapt, you have to remove <code>-lfat</code> and <code>-lfilesystem</code> from <code>LIBS</code> in your Makefile.
+As all filesystem support is included in <code>libnds</code>, no additional libraries are required.</p>
+<p>From the point of view of the source code, you can use the same includes as when
+using <code>libfat</code> and <code>libfilesystem</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;fat.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;filesystem.h&gt;</span><span class="cp">
+</span></span></span></code></pre></div><p>They provide <code>fatInitDefault()</code> and <code>nitroFSInit()</code>. They should be compatible
+with the ones in the original libraries.</p>
+<p>Beyond the limitations listed above, filesystem support should work identically.
+Please report any behaviour that isn&rsquo;t the same. If any other functionality your
+homebrew program requires is missing, please report that as well.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="5-note-about-readdir"
+    <h2 id="3a-note-about-readdir-compatibility"
     >
-        5. Note about readdir()
+        3a. Note about readdir() compatibility
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#5-note-about-readdir" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 5. Note about readdir()" aria-label="Anchor to: 5. Note about readdir()" href="#5-note-about-readdir">
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#3a-note-about-readdir-compatibility" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 3a. Note about readdir() compatibility" aria-label="Anchor to: 3a. Note about readdir() compatibility" href="#3a-note-about-readdir-compatibility">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>The expected behaviour of FatFs is to not include <code>.</code> and <code>..</code> as entries when
-iterating over the entries of a directory. This is different than under
-devkitARM, and it&rsquo;s a behaviour that may be added in the future.</p>
-<p>Also, <code>readdir()</code> returns a <code>struct dirent</code> pointer with the field <code>d_type</code>.
+<p><code>readdir()</code> returns a <code>struct dirent</code> pointer with the field <code>d_type</code>.
 This field can be used to determine if an entry is a directory or a file. I&rsquo;ve
 seen that some programs use it like this:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">dirent</span> <span class="o">*</span><span class="n">cur</span> <span class="o">=</span> <span class="nf">readdir</span><span class="p">(</span><span class="n">dirp</span><span class="p">);</span>
@@ -1500,19 +1476,49 @@ value is equal:</p>
 </span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="nf">if</span> <span class="p">(</span><span class="n">cur</span><span class="o">-&gt;</span><span class="n">d_type</span> <span class="o">==</span> <span class="n">DT_REG</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;This is a file</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
 </span></span></code></pre></div><div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="6-touch-screen-and-libnds-keyboard"
+    <h2 id="4-integer-versions-of-stdioh-functions"
     >
-        6. Touch screen and libnds keyboard
+        4. Integer versions of stdio.h functions
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#6-touch-screen-and-libnds-keyboard" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 6. Touch screen and libnds keyboard" aria-label="Anchor to: 6. Touch screen and libnds keyboard" href="#6-touch-screen-and-libnds-keyboard">
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#4-integer-versions-of-stdioh-functions" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 4. Integer versions of stdio.h functions" aria-label="Anchor to: 4. Integer versions of stdio.h functions" href="#4-integer-versions-of-stdioh-functions">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>The <code>newlib</code> C library provides faster and smaller integer versions of <code>stdio.h</code>
+functions, such as <code>iprintf()</code> or <code>siscanf()</code>. These are not provided by
+<code>picolibc</code>. Replace any calls to them by the standard names of the functions:
+<code>printf()</code>, <code>sscanf()</code>, etc.</p>
+<p>In <code>newlib</code>, including both <code>iprintf()</code> and <code>printf()</code> in the same codebase led
+to including both versions of the relevant <code>stdio.h</code> functions, unnecessarily
+increasing code size. <code>picolibc</code> opts for a different approach - it allows you
+to decide, project-wide, if you want to use integer-only or float-compatible
+versions of the <code>printf()</code> and <code>scanf()</code> functions.</p>
+<p>By default, the build of <code>picolibc</code> of BlocksDS makes <code>printf()</code>, <code>sscanf()</code> and
+similar functions floats and doubles. This is done to increase compatibility
+with any pre-existing code, but it increases the size of the final binaries.
+It is possible to switch to integer-only versions of the functions, and save
+that additional space, by adding the following line to the <code>LDFLAGS</code> of your
+Makefile:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-make" data-lang="make"><span class="line"><span class="cl"><span class="nv">LDFLAGS</span> <span class="o">:=</span> <span class="o">[</span>all other options go here<span class="o">]</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -Wl,--defsym<span class="o">=</span><span class="nv">vfprintf</span><span class="o">=</span>__i_vfprintf -Wl,--defsym<span class="o">=</span><span class="nv">vfscanf</span><span class="o">=</span>__i_vfscanf
+</span></span></code></pre></div><p>For more information, please read <a
+  class="gdoc-markdown__link"
+  href="https://github.com/picolibc/picolibc/blob/main/doc/printf.md"
+>the relevant picolibc documentation</a>.</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="5-libnds-touch-screen-and-keyboard-handling"
+    >
+        5. libnds touch screen and keyboard handling
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/devkitarm_porting_guide/#5-libnds-touch-screen-and-keyboard-handling" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 5. libnds touch screen and keyboard handling" aria-label="Anchor to: 5. libnds touch screen and keyboard handling" href="#5-libnds-touch-screen-and-keyboard-handling">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
 <p><code>scanKeys()</code> updates the internal state of the key handling code. This is then
-used by <code>keysHeld()</code>, <code>keysDown()</code> and <code>keysHeld()</code>.</p>
-<p>BlocksDS also requires the user to call <code>scanKeys()</code> before any of the following
-functions: <code>touchRead()</code>, <code>keyboardGetChar()</code>, <code>keyboardUpdate()</code> and the
-deprecated <code>touchReadXY()</code>.</p>
+used by <code>keysHeld()</code> and <code>keysDown()</code>.</p>
+<p>However, BlocksDS also requires the user to call <code>scanKeys()</code> before any of the
+following functions: <code>touchRead()</code>, <code>keyboardGetChar()</code>, <code>keyboardUpdate()</code> and
+the deprecated <code>touchReadXY()</code>.</p>
 <p>This is unlikely to be a problem in most projects, as the normal thing to do is
 to both scan the keys and read the touchscreen status, not just read the
 touchscreen.</p>
