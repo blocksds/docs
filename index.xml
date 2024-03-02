@@ -150,9 +150,8 @@ You can generate NDS-only ROMs, with a bootloader injected by ndstool. You can l
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blocksds.github.io/docs/introduction/changelog/</guid>
-      <description>Version X.X.X (2024-XX-XX) SDK:
-Refactor documentation. It now uses Hugo, and it is available as a static website. Version 0.13.0 (2024-02-01) libnds:
-Breaking change: Refactor input handling in the ARM9. In order to fix a race condition where the touch screen state could be updated between calls to scanKeys() and touchRead() it has become mandatory to call scanKeys() before touchRead(), keyboardGetChar(), keyboardUpdate() and the deprecated touchReadXY(). Most programs are already doing this, but this may break a small number of programs that don&amp;rsquo;t do it.</description>
+      <description>Version 0.14.0 (2024-03-02) libnds:
+The GRF loading functions have been modified to be actually useful. In some cases it wasn&amp;rsquo;t possible to infer the size of some data chunks of the file (it was impossible to calculate the size of a tileset, for example). The new functions break compatibility with the old ones, but this change was required. Added glTexSizeToEnum() to convert sizes in pixels to GL_TEX_SIZE_ENUM values. Also, the funciton glTexImage2D() now accepts sizes in pixels as well as GL_TEX_SIZE_ENUM values.</description>
     </item>
     
     <item>

@@ -4134,13 +4134,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 </div><div class="memdoc">
 
 <p>Loads a 2D texture into texture memory and sets the currently bound texture ID to the attributes specified. </p>
+<p >The only allowed texture sizes are powers of two between 8 and 1024 (inclusive). It is possible to specify the size in pixels or using the values of GL_TEXTURE_SIZE_ENUM.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">target</td><td>Ignored, only here for OpenGL compatibility. </td></tr>
     <tr><td class="paramname">empty1</td><td>Ignored, only here for OpenGL compatibility. </td></tr>
     <tr><td class="paramname">type</td><td>The format of the texture. </td></tr>
-    <tr><td class="paramname">sizeX</td><td>the horizontal size of the texture, check GL_TEXTURE_SIZE_ENUM. </td></tr>
-    <tr><td class="paramname">sizeY</td><td>the vertical size of the texture, check GL_TEXTURE_SIZE_ENUM. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Width of the texture (in pixels or GL_TEXTURE_SIZE_ENUM values). </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Height of the texture (in pixels or GL_TEXTURE_SIZE_ENUM values). </td></tr>
     <tr><td class="paramname">empty2</td><td>Ignored, only here for OpenGL compatibility. </td></tr>
     <tr><td class="paramname">param</td><td>Parameters of the texture. </td></tr>
     <tr><td class="paramname">texture</td><td>Pointer to the texture data to load. </td></tr>
@@ -5004,7 +5005,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 28 2024 21:43:26 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Mar 2 2024 14:19:14 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

@@ -12,9 +12,8 @@
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="Version X.X.X (2024-XX-XX) SDK:
-Refactor documentation. It now uses Hugo, and it is available as a static website. Version 0.13.0 (2024-02-01) libnds:
-Breaking change: Refactor input handling in the ARM9. In order to fix a race condition where the touch screen state could be updated between calls to scanKeys() and touchRead() it has become mandatory to call scanKeys() before touchRead(), keyboardGetChar(), keyboardUpdate() and the deprecated touchReadXY(). Most programs are already doing this, but this may break a small number of programs that don&rsquo;t do it." />
+  <meta name="description" content="Version 0.14.0 (2024-03-02) libnds:
+The GRF loading functions have been modified to be actually useful. In some cases it wasn&rsquo;t possible to infer the size of some data chunks of the file (it was impossible to calculate the size of a tileset, for example). The new functions break compatibility with the old ones, but this change was required. Added glTexSizeToEnum() to convert sizes in pixels to GL_TEX_SIZE_ENUM values. Also, the funciton glTexImage2D() now accepts sizes in pixels as well as GL_TEX_SIZE_ENUM values." />
 
     <title>Changelog | BlocksDS</title>
 
@@ -40,9 +39,8 @@ Breaking change: Refactor input handling in the ARM9. In order to fix a race con
     content="Changelog"
   />
   <meta property="og:site_name" content="BlocksDS" />
-  <meta property="og:description" content="Version X.X.X (2024-XX-XX) SDK:
-Refactor documentation. It now uses Hugo, and it is available as a static website. Version 0.13.0 (2024-02-01) libnds:
-Breaking change: Refactor input handling in the ARM9. In order to fix a race condition where the touch screen state could be updated between calls to scanKeys() and touchRead() it has become mandatory to call scanKeys() before touchRead(), keyboardGetChar(), keyboardUpdate() and the deprecated touchReadXY(). Most programs are already doing this, but this may break a small number of programs that don’t do it." />
+  <meta property="og:description" content="Version 0.14.0 (2024-03-02) libnds:
+The GRF loading functions have been modified to be actually useful. In some cases it wasn’t possible to infer the size of some data chunks of the file (it was impossible to calculate the size of a tileset, for example). The new functions break compatibility with the old ones, but this change was required. Added glTexSizeToEnum() to convert sizes in pixels to GL_TEX_SIZE_ENUM values. Also, the funciton glTexImage2D() now accepts sizes in pixels as well as GL_TEX_SIZE_ENUM values." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blocksds.github.io/docs/introduction/changelog/" />
 
@@ -51,9 +49,8 @@ Breaking change: Refactor input handling in the ARM9. In order to fix a race con
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Changelog" />
-  <meta name="twitter:description" content="Version X.X.X (2024-XX-XX) SDK:
-Refactor documentation. It now uses Hugo, and it is available as a static website. Version 0.13.0 (2024-02-01) libnds:
-Breaking change: Refactor input handling in the ARM9. In order to fix a race condition where the touch screen state could be updated between calls to scanKeys() and touchRead() it has become mandatory to call scanKeys() before touchRead(), keyboardGetChar(), keyboardUpdate() and the deprecated touchReadXY(). Most programs are already doing this, but this may break a small number of programs that don’t do it." />
+  <meta name="twitter:description" content="Version 0.14.0 (2024-03-02) libnds:
+The GRF loading functions have been modified to be actually useful. In some cases it wasn’t possible to infer the size of some data chunks of the file (it was impossible to calculate the size of a tileset, for example). The new functions break compatibility with the old ones, but this change was required. Added glTexSizeToEnum() to convert sizes in pixels to GL_TEX_SIZE_ENUM values. Also, the funciton glTexImage2D() now accepts sizes in pixels as well as GL_TEX_SIZE_ENUM values." />
 
 
   <script type="application/ld+json">
@@ -64,8 +61,8 @@ Breaking change: Refactor input handling in the ARM9. In order to fix a race con
       "name": "Changelog",
       "url" : "https://blocksds.github.io/docs/introduction/changelog/",
       "headline": "Changelog",
-      "description": "Version X.X.X (2024-XX-XX) SDK:\nRefactor documentation. It now uses Hugo, and it is available as a static website. Version 0.13.0 (2024-02-01) libnds:\nBreaking change: Refactor input handling in the ARM9. In order to fix a race condition where the touch screen state could be updated between calls to scanKeys() and touchRead() it has become mandatory to call scanKeys() before touchRead(), keyboardGetChar(), keyboardUpdate() and the deprecated touchReadXY(). Most programs are already doing this, but this may break a small number of programs that don’t do it.",
-      "wordCount" : "3740",
+      "description": "Version 0.14.0 (2024-03-02) libnds:\nThe GRF loading functions have been modified to be actually useful. In some cases it wasn’t possible to infer the size of some data chunks of the file (it was impossible to calculate the size of a tileset, for example). The new functions break compatibility with the old ones, but this change was required. Added glTexSizeToEnum() to convert sizes in pixels to GL_TEX_SIZE_ENUM values. Also, the funciton glTexImage2D() now accepts sizes in pixels as well as GL_TEX_SIZE_ENUM values.",
+      "wordCount" : "4092",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1347,20 +1344,94 @@ Breaking change: Refactor input handling in the ARM9. In order to fix a race con
   >
     <h1>Changelog</h1>
     <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="version-xxx-2024-xx-xx"
+    <h2 id="version-0140-2024-03-02"
     >
-        Version X.X.X (2024-XX-XX)
+        Version 0.14.0 (2024-03-02)
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-xxx-2024-xx-xx" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version X.X.X (2024-XX-XX)" aria-label="Anchor to: Version X.X.X (2024-XX-XX)" href="#version-xxx-2024-xx-xx">
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-0140-2024-03-02" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 0.14.0 (2024-03-02)" aria-label="Anchor to: Version 0.14.0 (2024-03-02)" href="#version-0140-2024-03-02">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
 <ul>
 <li>
+<p>libnds:</p>
+<ul>
+<li>The GRF loading functions have been modified to be actually useful. In some
+cases it wasn&rsquo;t possible to infer the size of some data chunks of the file
+(it was impossible to calculate the size of a tileset, for example). The new
+functions break compatibility with the old ones, but this change was
+required.</li>
+<li>Added <code>glTexSizeToEnum()</code> to convert sizes in pixels to <code>GL_TEX_SIZE_ENUM</code>
+values. Also, the funciton <code>glTexImage2D()</code> now accepts sizes in pixels as
+well as <code>GL_TEX_SIZE_ENUM</code> values.</li>
+<li>Added a function to return the default drive (<code>sd:</code> in the case of DSi,
+<code>fat:</code> in the case of a DS).</li>
+<li>FatFs has been moved to an external repository (wf-fatfs) which is included
+in libnds as a submodule. The documentation of FatFs has been removed from
+this repository.</li>
+<li>Added some missing 3D polygon attribute definitions.</li>
+<li>Fixed the return type of <code>swiSHA1Verify()</code>.</li>
+<li>The <code>fatfs.h</code> header has been removed, it is redundant.</li>
+</ul>
+</li>
+<li>
 <p>SDK:</p>
 <ul>
-<li>Refactor documentation. It now uses Hugo, and it is available as a static
-website.</li>
+<li>
+<p>Refactor documentation.</p>
+<ul>
+<li>It now uses Hugo, and it is available as a static website.</li>
+<li>Some old sections have been updated.</li>
+<li>The documentation of all libraries has been integrated with the
+documentation of BlocksDS so that everything is linked.</li>
+<li>Document how to use Slot-2 flashcards with BlocksDS applications.</li>
+<li>Reword devkitARM porting guide.</li>
+<li>A doxygen theme has been applied to the documentation of all the libraries
+used by BlocksDS.</li>
+</ul>
+</li>
+<li>
+<p>Add lots of examples:</p>
+<ul>
+<li>3D and 2D graphics.</li>
+<li>DSWifi.</li>
+<li>How to use multiple DSP binaries in the same application</li>
+<li>General NitroFS usage in an application (such as loading music for LibXM7
+or graphics to be used as 2D backgrounds or sprites).</li>
+<li>DSi SHA1 functions.</li>
+<li>Hardware timers.</li>
+<li>Video capture (render to texture, dual screen 3D, save screenshot as PNG).</li>
+<li>More text console examples.</li>
+</ul>
+</li>
+<li>
+<p>Small change to makefiles that modifies the destination folder of build
+artifacts.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>LibXM7:</p>
+<ul>
+<li>It now uses timer 0 instead of timer 1, so that Maxmod and LibXM7 use the
+same timer and it&rsquo;s easier to switch libraries.</li>
+<li>The documentation has been improved.</li>
+</ul>
+</li>
+<li>
+<p>DSWifi:</p>
+<ul>
+<li>WEP modes have been documented.</li>
+<li>The prototypes of some functions have been cleaned up.</li>
+<li>The documentation has been improved.</li>
+</ul>
+</li>
+<li>
+<p>Maxmod:</p>
+<ul>
+<li>The return type of <code>mmEffectCancel()</code> has been fixed.</li>
+<li>Some definitions have been turned into enums.</li>
+<li><code>inline</code> functions in headers have been turned into <code>static inline.</code></li>
 </ul>
 </li>
 </ul>
