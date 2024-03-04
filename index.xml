@@ -64,6 +64,15 @@ Add the following to your project:
     </item>
     
     <item>
+      <title>Memory map</title>
+      <link>https://blocksds.github.io/docs/technical/memory_map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/technical/memory_map/</guid>
+      <description>1. Introduction The DS has several RAM regions that are distributed across its address space. In most cases you don&amp;rsquo;t need to worry about the details, as libnds is setup in a way that covers most use-cases. All you normally need to worry about is how to allocate VRAM to be used by the 2D and 3D engines. However, in some cases it may be needed to understand how everything works.</description>
+    </item>
+    
+    <item>
       <title>DLDI in ARM7</title>
       <link>https://blocksds.github.io/docs/technical/dldi_arm7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

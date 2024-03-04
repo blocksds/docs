@@ -16,8 +16,8 @@ var searchData=
   ['normalizef32_13',['normalizef32',['../math_8h.html#a3db2ca090c078fed6d0cdb422fff5b0f',1,'math.h']]],
   ['nwramgetblockaddress_14',['nwramGetBlockAddress',['../nwram_8h.html#acce3f5c5f8ba0295386f85706ec28684',1,'nwram.h']]],
   ['nwramisavailable_15',['nwramIsAvailable',['../nwram_8h.html#ac5cdf39329b145f793db3db469cdcde3',1,'nwram.h']]],
-  ['nwrammapwramaslot_16',['nwramMapWramASlot',['../nwram_8h.html#afb3eb82efa7e500d811b3ff06ac756fe',1,'nwram.h']]],
-  ['nwrammapwrambslot_17',['nwramMapWramBSlot',['../nwram_8h.html#a317ea290fe4a2c4c9b80b62b5e3ff8a7',1,'nwram.h']]],
-  ['nwrammapwramcslot_18',['nwramMapWramCSlot',['../nwram_8h.html#acf4b7ba0aa503d3fa24ad57a376d2b72',1,'nwram.h']]],
+  ['nwrammapwramaslot_16',['nwramMapWramASlot',['../nwram_8h.html#a81cbd3cdea881e9085147e32c198eb6e',1,'nwram.h']]],
+  ['nwrammapwrambslot_17',['nwramMapWramBSlot',['../nwram_8h.html#ae26d723b636897d59735b798e1b5d932',1,'nwram.h']]],
+  ['nwrammapwramcslot_18',['nwramMapWramCSlot',['../nwram_8h.html#ad60607fcc55016d5809529ff7e0de4bc',1,'nwram.h']]],
   ['nwramsetblockmapping_19',['nwramSetBlockMapping',['../nwram_8h.html#ad69cb29ece467463a11f1d060a1666c0',1,'nwram.h']]]
 ];
