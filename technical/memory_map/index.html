@@ -59,7 +59,7 @@
       "url" : "https://blocksds.github.io/docs/technical/memory_map/",
       "headline": "Memory map",
       "description": "1. Introduction The DS has several RAM regions that are distributed across its address space. In most cases you don’t need to worry about the details, as libnds is setup in a way that covers most use-cases. All you normally need to worry about is how to allocate VRAM to be used by the 2D and 3D engines. However, in some cases it may be needed to understand how everything works.",
-      "wordCount" : "2247",
+      "wordCount" : "2274",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1867,6 +1867,15 @@ the bank needs to be setup as LCDC.</p>
 <p>It is also possible to setup one of the main VRAM banks as LCDC and ask the main
 graphics engine to render its contents directly to the screen.  This is
 equivalent to using that VRAM bank as a framebuffer.</p>
+<p>If you want to configure VRAM in a visual way, you should use mtheall&rsquo;s
+<a
+  class="gdoc-markdown__link"
+  href="https://mtheall.com/banks.html"
+>NDS Homebrew VRAM Banks Selector</a> and
+<a
+  class="gdoc-markdown__link"
+  href="https://mtheall.com/vram.html"
+>NDS Homebrew VRAM BG Allocation Conflict Viewer</a>.</p>
 
   </article>
 
