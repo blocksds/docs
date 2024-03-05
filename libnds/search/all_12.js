@@ -163,7 +163,7 @@ var searchData=
   ['swisoftreset_160',['swiSoftReset',['../bios_8h.html#a3f26342f9ee3bbbfc8c6f39a9835a714',1,'bios.h']]],
   ['swisqrt_161',['swiSqrt',['../bios_8h.html#a7f3faa815267e12f5c64c19d8ff275ab',1,'bios.h']]],
   ['swiswitchtogbamode_162',['swiSwitchToGBAMode',['../bios_8h.html#a108cf729433e322bb7c9cd4e29927147',1,'bios.h']]],
-  ['swiunpackbits_163',['swiUnpackBits',['../bios_8h.html#a3456b4aaf3f0d8bca65c1db48ace9580',1,'bios.h']]],
+  ['swiunpackbits_163',['swiUnpackBits',['../bios_8h.html#ad0dfe501be5b874c8a67707edeccf58d',1,'bios.h']]],
   ['swiwaitforirq_164',['swiWaitForIRQ',['../bios_8h.html#ab1596447b5e802eb802e670ef727ba19',1,'bios.h']]],
   ['swiwaitforvblank_165',['swiWaitForVBlank',['../interrupts_8h.html#ab5fa1f196cafaeba9c69a766a63a90f9',1,'interrupts.h']]],
   ['syssetbusowners_166',['sysSetBusOwners',['../memory_8h.html#ac06c2c3031bf0e84bcfb63d965bef6a3',1,'memory.h']]],

@@ -65,7 +65,7 @@ Add the following to your project:
       "url" : "https://blocksds.github.io/docs/technical/filesystem/",
       "headline": "Filesystem support",
       "description": "1. Introduction BlocksDS supports using standard C functions to access the filesystem. It is possible to use them to access both the SD cards of flashcards, and the internal SD slot of the DSi. This code is integrated in libnds, so you don’t need to do anything special to use it.\nAdd the following to your project:\n#include \u003cfat.h\u003e int main(int argc, char *argv[]) { bool init_ok = fatInitDefault(); if (!",
-      "wordCount" : "749",
+      "wordCount" : "758",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1501,29 +1501,26 @@ patcher. Most flashcards do this automatically.</p>
 <p>Filesystem access works in several emulators. The following ones have been
 tested:</p>
 <ul>
-<li>DeSmuMe: The ROM needs to be DLDI patched, it only runs in DS mode.</li>
+<li>melonDS: The ROM runs in DS/DSi mode.</li>
 <li>no$gba: The ROM runs in DSi mode. A FAT image needs to be used.</li>
-<li>melonDS: The ROM runs in DSi mode. A FAT image needs to be used.</li>
+<li>DeSmuMe: The ROM needs to be DLDI patched, it only runs in DS mode.</li>
 </ul>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h3 id="desmume"
+    <h3 id="melonds"
     >
-        DeSmuMe
+        melonDS
     </h3>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/filesystem/#desmume" class="gdoc-page__anchor clip flex align-center" title="Anchor to: DeSmuMe" aria-label="Anchor to: DeSmuMe" href="#desmume">
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/filesystem/#melonds" class="gdoc-page__anchor clip flex align-center" title="Anchor to: melonDS" aria-label="Anchor to: melonDS" href="#melonds">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>It supports DS mode only. Run the following command when building the ROM:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make dldipatch
-</span></span></code></pre></div><p>This will patch the ROM with the DLDI driver of the R4, which is required for
-the emulator to access the filesystem.</p>
-<p>You will need to set the &ldquo;Slot 1&rdquo; configuration to &ldquo;R4&rdquo;, and set the directory
-to the folder that will act as root of your filesystem. If using DeSmuMe with a
-graphical interface, the settings can be found in &ldquo;Config &gt; Slot 1&rdquo;. If using it
-through the command line, run it like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">desmume --slot1<span class="o">=</span>R4 --slot1-fat-dir<span class="o">=</span>&lt;path-to-folder&gt; &lt;path-to-rom&gt;.nds
-</span></span></code></pre></div><div class="flex align-center gdoc-page__anchorwrap">
+<p>melonDS supports both DLDI in DS/DSi modes, and the internal SD in DSi mode.</p>
+<p>It supports using a folder as a base for the SD of the DSi, or for a DLDI device
+for DS.</p>
+<p>Open &ldquo;Emu settings&rdquo;. The &ldquo;DSi mode&rdquo; and &ldquo;DLDI&rdquo; tabs let you select the folders
+to use as root of the filesystems (or the filesystem images to be used, if you
+prefer that).</p>
+<div class="flex align-center gdoc-page__anchorwrap">
     <h3 id="nogba"
     >
         no$gba
@@ -1542,19 +1539,24 @@ directory as no$gba. Set <code>SDIMAGE</code> to <code>&lt;path-to-folder&gt;/DS
 renaming the file all the time.</p>
 <p>Then, open no$gba as normal.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h3 id="melonds"
+    <h3 id="desmume"
     >
-        melonDS
+        DeSmuMe
     </h3>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/filesystem/#melonds" class="gdoc-page__anchor clip flex align-center" title="Anchor to: melonDS" aria-label="Anchor to: melonDS" href="#melonds">
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/filesystem/#desmume" class="gdoc-page__anchor clip flex align-center" title="Anchor to: DeSmuMe" aria-label="Anchor to: DeSmuMe" href="#desmume">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>melonDS supports both DLDI in DS/DSi modes, and the internal SD in DSi mode.
-Follow the same steps as for no$gba to generate a filesystem image, and name it
-however you want. Then, open &ldquo;Emu settings&rdquo;. The &ldquo;DSi mode&rdquo; and &ldquo;DLDI&rdquo; tabs let
-you select the filesystem images to be used.</p>
-
+<p>It supports DS mode only. Run the following command when building the ROM:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make dldipatch
+</span></span></code></pre></div><p>This will patch the ROM with the DLDI driver of the R4, which is required for
+the emulator to access the filesystem.</p>
+<p>You will need to set the &ldquo;Slot 1&rdquo; configuration to &ldquo;R4&rdquo;, and set the directory
+to the folder that will act as root of your filesystem. If using DeSmuMe with a
+graphical interface, the settings can be found in &ldquo;Config &gt; Slot 1&rdquo;. If using it
+through the command line, run it like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">desmume --slot1<span class="o">=</span>R4 --slot1-fat-dir<span class="o">=</span>&lt;path-to-folder&gt; &lt;path-to-rom&gt;.nds
+</span></span></code></pre></div>
   </article>
 
 
