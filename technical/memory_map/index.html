@@ -59,7 +59,7 @@
       "url" : "https://blocksds.github.io/docs/technical/memory_map/",
       "headline": "Memory map",
       "description": "1. Introduction The DS has several RAM regions that are distributed across its address space. In most cases you don’t need to worry about the details, as libnds is setup in a way that covers most use-cases. All you normally need to worry about is how to allocate VRAM to be used by the 2D and 3D engines. However, in some cases it may be needed to understand how everything works.",
-      "wordCount" : "2356",
+      "wordCount" : "2404",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1672,10 +1672,22 @@ according to the setup of libnds, they are uncached.</p>
 3DS consoles in DSi mode can access the full 32 MB that would correspond to a
 DSi debugger unit. Because of this, it is interesting to support the full 32 MB
 of RAM.</p>
-<p>The last few KBs of main RAM are reserved by libnds to be used as
-inter-CPU-communication region (IPC) between the ARM7 and ARM9. You should only
-access them through uncached mirrors. If not, you may forget that the ARM7 can&rsquo;t
-see the ARM9 cache, and you may not send/receive data when you expect it.</p>
+<p>The last few KBs of main RAM are reserved by libnds to be used for different
+purposes:</p>
+<ul>
+<li>As a (mostly) deprecated inter-CPU-communication region (IPC) between the
+ARM7 and ARM9. You should only access them through uncached mirrors. If not,
+you may forget that the ARM7 can&rsquo;t see the ARM9 cache, and you may not send
+or receive data when you expect it.</li>
+<li>As the location for the loader to store <code>argv</code> when booting a NDS homebrew ROM
+(at address 0x02FFFE70, check the code
+<a
+  class="gdoc-markdown__link"
+  href="https://github.com/blocksds/sdk/blob/e5a03d0940fffe6585786bddac4700d24a814f8d/sys/crts/ds_arm9_crt0.s#L141"
+>here</a>.</li>
+<li>This region can also contain information about how to exit the NDS application
+and return to the loader.</li>
+</ul>
 <p>Note that, if both CPUs are accessing main RAM at the same time, there will be
 penalties that will delay accesses. Ideally, ARM9 and ARM7 should use different
 memory regions so that this doesn&rsquo;t happen. That&rsquo;s why the ARM7 normally only
