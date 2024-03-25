@@ -62,7 +62,7 @@
       "url" : "https://blocksds.github.io/docs/technical/libc/",
       "headline": "libc port information",
       "description": "1. Introduction BlocksDS has code to allow libc functions to work on NDS programs. The supported functions are described in this file. Note that they should only be used from ARM9 code, as they aren’t supported from the ARM7.\n2. argc and argv For NDS and NDS Lite consoles that run ROMs from a flashcard, the loader needs to support the argv protocol of libnds. If so, argv[0] will hold the path of the NDS file in the SD card of the flashcard.",
-      "wordCount" : "426",
+      "wordCount" : "548",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1509,6 +1509,33 @@ You can also return from <code>main()</code> to get the same effect.</p>
   class="gdoc-markdown__link"
   href="../exit_to_loader"
 >this document</a>.</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="9-multithreading-support"
+    >
+        9. Multithreading support
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/libc/#9-multithreading-support" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 9. Multithreading support" aria-label="Anchor to: 9. Multithreading support" href="#9-multithreading-support">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>Functions like <code>fopen()</code> or <code>malloc()</code> need to be thread-safe, and picolibc uses
+locks to ensure that they are thread-safe. The implementation of the locking
+funtrions is platform-specific, and libnds has its implementation in
+<a
+  class="gdoc-markdown__link"
+  href="https://github.com/blocksds/libnds/blob/8e7ab8207dfb761cd9984719690ac0c318f2f1ca/source/common/libc/locks.c"
+>this file</a>.</p>
+<p>In general, you don&rsquo;t need to worry about them. However, if there is an
+unexpected crash because of running the undefined instruction <code>0xEBAD</code>, it may
+mean that the locking functions have found a logic error.</p>
+<p>Printing an error message is very expensive: It is required to include a text
+font as well as console handling functions. The locking functions simply have
+a <a
+  class="gdoc-markdown__link"
+  href="https://github.com/blocksds/libnds/blob/8e7ab8207dfb761cd9984719690ac0c318f2f1ca/source/common/libc/locks.c#L34"
+>function</a>
+with an opcode that is defined to always be an undefined instruction in Thumb
+mode by the ARM Architecture Reference Manual.</p>
 
   </article>
 
