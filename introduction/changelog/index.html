@@ -12,8 +12,8 @@
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="Version 0.14.0 (2024-03-02) libnds:
-The GRF loading functions have been modified to be actually useful. In some cases it wasn&rsquo;t possible to infer the size of some data chunks of the file (it was impossible to calculate the size of a tileset, for example). The new functions break compatibility with the old ones, but this change was required. Added glTexSizeToEnum() to convert sizes in pixels to GL_TEX_SIZE_ENUM values. Also, the funciton glTexImage2D() now accepts sizes in pixels as well as GL_TEX_SIZE_ENUM values." />
+  <meta name="description" content="version X.X.X (2024-03-29) libnds:
+Fix C&#43;&#43; builds (there was a missing cast from enum to int, and the Makefile was using the wrong program to link binaries). Optimize some videoGl functions (compile them as ARM instead of Thumb to take advantage of the faster multiplication instructions). Fix bug in readdir(). Implement __retarget_lock_*() family of functions to allow libc functions to work in a multithreaded environment. Make glCallList() take a void pointer instead of u32." />
 
     <title>Changelog | BlocksDS</title>
 
@@ -39,8 +39,8 @@ The GRF loading functions have been modified to be actually useful. In some case
     content="Changelog"
   />
   <meta property="og:site_name" content="BlocksDS" />
-  <meta property="og:description" content="Version 0.14.0 (2024-03-02) libnds:
-The GRF loading functions have been modified to be actually useful. In some cases it wasn’t possible to infer the size of some data chunks of the file (it was impossible to calculate the size of a tileset, for example). The new functions break compatibility with the old ones, but this change was required. Added glTexSizeToEnum() to convert sizes in pixels to GL_TEX_SIZE_ENUM values. Also, the funciton glTexImage2D() now accepts sizes in pixels as well as GL_TEX_SIZE_ENUM values." />
+  <meta property="og:description" content="version X.X.X (2024-03-29) libnds:
+Fix C&#43;&#43; builds (there was a missing cast from enum to int, and the Makefile was using the wrong program to link binaries). Optimize some videoGl functions (compile them as ARM instead of Thumb to take advantage of the faster multiplication instructions). Fix bug in readdir(). Implement __retarget_lock_*() family of functions to allow libc functions to work in a multithreaded environment. Make glCallList() take a void pointer instead of u32." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blocksds.github.io/docs/introduction/changelog/" />
 
@@ -49,8 +49,8 @@ The GRF loading functions have been modified to be actually useful. In some case
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Changelog" />
-  <meta name="twitter:description" content="Version 0.14.0 (2024-03-02) libnds:
-The GRF loading functions have been modified to be actually useful. In some cases it wasn’t possible to infer the size of some data chunks of the file (it was impossible to calculate the size of a tileset, for example). The new functions break compatibility with the old ones, but this change was required. Added glTexSizeToEnum() to convert sizes in pixels to GL_TEX_SIZE_ENUM values. Also, the funciton glTexImage2D() now accepts sizes in pixels as well as GL_TEX_SIZE_ENUM values." />
+  <meta name="twitter:description" content="version X.X.X (2024-03-29) libnds:
+Fix C&#43;&#43; builds (there was a missing cast from enum to int, and the Makefile was using the wrong program to link binaries). Optimize some videoGl functions (compile them as ARM instead of Thumb to take advantage of the faster multiplication instructions). Fix bug in readdir(). Implement __retarget_lock_*() family of functions to allow libc functions to work in a multithreaded environment. Make glCallList() take a void pointer instead of u32." />
 
 
   <script type="application/ld+json">
@@ -61,8 +61,8 @@ The GRF loading functions have been modified to be actually useful. In some case
       "name": "Changelog",
       "url" : "https://blocksds.github.io/docs/introduction/changelog/",
       "headline": "Changelog",
-      "description": "Version 0.14.0 (2024-03-02) libnds:\nThe GRF loading functions have been modified to be actually useful. In some cases it wasn’t possible to infer the size of some data chunks of the file (it was impossible to calculate the size of a tileset, for example). The new functions break compatibility with the old ones, but this change was required. Added glTexSizeToEnum() to convert sizes in pixels to GL_TEX_SIZE_ENUM values. Also, the funciton glTexImage2D() now accepts sizes in pixels as well as GL_TEX_SIZE_ENUM values.",
-      "wordCount" : "4092",
+      "description": "version X.X.X (2024-03-29) libnds:\nFix C\u002b\u002b builds (there was a missing cast from enum to int, and the Makefile was using the wrong program to link binaries). Optimize some videoGl functions (compile them as ARM instead of Thumb to take advantage of the faster multiplication instructions). Fix bug in readdir(). Implement __retarget_lock_*() family of functions to allow libc functions to work in a multithreaded environment. Make glCallList() take a void pointer instead of u32.",
+      "wordCount" : "4292",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1388,6 +1388,56 @@ The GRF loading functions have been modified to be actually useful. In some case
   >
     <h1>Changelog</h1>
     <div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-xxx-2024-03-29"
+    >
+        version X.X.X (2024-03-29)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-xxx-2024-03-29" class="gdoc-page__anchor clip flex align-center" title="Anchor to: version X.X.X (2024-03-29)" aria-label="Anchor to: version X.X.X (2024-03-29)" href="#version-xxx-2024-03-29">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Fix C++ builds (there was a missing cast from enum to int, and the Makefile
+was using the wrong program to link binaries).</li>
+<li>Optimize some videoGl functions (compile them as ARM instead of Thumb to
+take advantage of the faster multiplication instructions).</li>
+<li>Fix bug in <code>readdir()</code>.</li>
+<li>Implement <code>__retarget_lock_*()</code> family of functions to allow libc functions
+to work in a multithreaded environment.</li>
+<li>Make <code>glCallList()</code> take a <code>void</code> pointer instead of <code>u32</code>.</li>
+<li>Add checks to NWRAM functions to see if MBK1-MBK5 are writable.</li>
+<li>Don&rsquo;t remap NWRAM-A when starting the DSP (only B and C are needed).</li>
+<li>Fix swiUnpackBits().</li>
+<li>Fix some casts to respect &ldquo;const&rdquo;.</li>
+<li>Fix some warnings.</li>
+<li>Improve some documentation comments.</li>
+<li>Deprecate typedef <code>fp</code> (the name is too short!) and <code>PUnpackStruct</code>.</li>
+<li>Add missing files to the Doxygen documentation.</li>
+</ul>
+</li>
+<li>
+<p>SDK:</p>
+<ul>
+<li>Add examples (3D object picking, 3D toon shading, building 3D display lists,
+3D volumetric shadows).</li>
+<li>Improve C++ test to prevent regressions like during the last few versions.</li>
+<li>Document memory map of the DS.</li>
+<li>Add note about the Makefiles of BlocksDS not supporting paths outisde of the
+root folder of the project (thanks, @lifehackerhansol).</li>
+<li>Fix linking C++ projects in default makefiles.</li>
+</ul>
+</li>
+<li>
+<p>maxmod:</p>
+<ul>
+<li>Fix return type of <code>mmEffectCancel()</code> in ARM9 code.</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="version-0140-2024-03-02"
     >
         Version 0.14.0 (2024-03-02)
