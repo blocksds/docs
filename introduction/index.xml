@@ -33,8 +33,8 @@ Many thanks to asie for his help and advice, and for Wonderful Toolchain devkitP
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blocksds.github.io/docs/introduction/changelog/</guid>
-      <description>version X.X.X (2024-03-29) libnds:
-Fix C++ builds (there was a missing cast from enum to int, and the Makefile was using the wrong program to link binaries). Optimize some videoGl functions (compile them as ARM instead of Thumb to take advantage of the faster multiplication instructions). Fix bug in readdir(). Implement __retarget_lock_*() family of functions to allow libc functions to work in a multithreaded environment. Make glCallList() take a void pointer instead of u32.</description>
+      <description>version 1.0.0 (2024-03-30) libnds:
+Fix C++ builds (there was a missing cast from enum to int, and the Makefile was using the wrong program to link binaries). Optimize some videoGL functions (compile them as ARM instead of Thumb to take advantage of the faster multiplication instructions). Fix bug in readdir(). Implement __retarget_lock_*() family of functions to allow libc functions to work in a multithreaded environment. Make glCallList() take a void pointer instead of u32.</description>
     </item>
     
     <item>
