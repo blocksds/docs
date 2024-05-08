@@ -12,8 +12,9 @@
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="version 1.0.0 (2024-03-30) libnds:
-Fix C&#43;&#43; builds (there was a missing cast from enum to int, and the Makefile was using the wrong program to link binaries). Optimize some videoGL functions (compile them as ARM instead of Thumb to take advantage of the faster multiplication instructions). Fix bug in readdir(). Implement __retarget_lock_*() family of functions to allow libc functions to work in a multithreaded environment. Make glCallList() take a void pointer instead of u32." />
+  <meta name="description" content="Version 1.1.0 (2024-05-08) libnds:
+Add keyboardExit() function to deinitialize keyboard structures. Add realpath() implementation. Adjust keyboardInit() to only link the default keyboard if no custom keyboard is being used. Fix getcwd() result when called in the root NitroFS directory. Fix Slot-1 card reads not being aligned to 512 bytes. Minor allocation/string handling bugfixes. Fix some memory allocation issues found by GCC 14. SDK:
+Add examples (paletted textures, rotation backgrounds, 16-bit backgrounds, sprites in sub screen, FAT file attributes, GL2D usage)." />
 
     <title>Changelog | BlocksDS</title>
 
@@ -39,8 +40,9 @@ Fix C&#43;&#43; builds (there was a missing cast from enum to int, and the Makef
     content="Changelog"
   />
   <meta property="og:site_name" content="BlocksDS" />
-  <meta property="og:description" content="version 1.0.0 (2024-03-30) libnds:
-Fix C&#43;&#43; builds (there was a missing cast from enum to int, and the Makefile was using the wrong program to link binaries). Optimize some videoGL functions (compile them as ARM instead of Thumb to take advantage of the faster multiplication instructions). Fix bug in readdir(). Implement __retarget_lock_*() family of functions to allow libc functions to work in a multithreaded environment. Make glCallList() take a void pointer instead of u32." />
+  <meta property="og:description" content="Version 1.1.0 (2024-05-08) libnds:
+Add keyboardExit() function to deinitialize keyboard structures. Add realpath() implementation. Adjust keyboardInit() to only link the default keyboard if no custom keyboard is being used. Fix getcwd() result when called in the root NitroFS directory. Fix Slot-1 card reads not being aligned to 512 bytes. Minor allocation/string handling bugfixes. Fix some memory allocation issues found by GCC 14. SDK:
+Add examples (paletted textures, rotation backgrounds, 16-bit backgrounds, sprites in sub screen, FAT file attributes, GL2D usage)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blocksds.github.io/docs/introduction/changelog/" />
 
@@ -49,8 +51,9 @@ Fix C&#43;&#43; builds (there was a missing cast from enum to int, and the Makef
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Changelog" />
-  <meta name="twitter:description" content="version 1.0.0 (2024-03-30) libnds:
-Fix C&#43;&#43; builds (there was a missing cast from enum to int, and the Makefile was using the wrong program to link binaries). Optimize some videoGL functions (compile them as ARM instead of Thumb to take advantage of the faster multiplication instructions). Fix bug in readdir(). Implement __retarget_lock_*() family of functions to allow libc functions to work in a multithreaded environment. Make glCallList() take a void pointer instead of u32." />
+  <meta name="twitter:description" content="Version 1.1.0 (2024-05-08) libnds:
+Add keyboardExit() function to deinitialize keyboard structures. Add realpath() implementation. Adjust keyboardInit() to only link the default keyboard if no custom keyboard is being used. Fix getcwd() result when called in the root NitroFS directory. Fix Slot-1 card reads not being aligned to 512 bytes. Minor allocation/string handling bugfixes. Fix some memory allocation issues found by GCC 14. SDK:
+Add examples (paletted textures, rotation backgrounds, 16-bit backgrounds, sprites in sub screen, FAT file attributes, GL2D usage)." />
 
 
   <script type="application/ld+json">
@@ -61,8 +64,8 @@ Fix C&#43;&#43; builds (there was a missing cast from enum to int, and the Makef
       "name": "Changelog",
       "url" : "https://blocksds.github.io/docs/introduction/changelog/",
       "headline": "Changelog",
-      "description": "version 1.0.0 (2024-03-30) libnds:\nFix C\u002b\u002b builds (there was a missing cast from enum to int, and the Makefile was using the wrong program to link binaries). Optimize some videoGL functions (compile them as ARM instead of Thumb to take advantage of the faster multiplication instructions). Fix bug in readdir(). Implement __retarget_lock_*() family of functions to allow libc functions to work in a multithreaded environment. Make glCallList() take a void pointer instead of u32.",
-      "wordCount" : "4304",
+      "description": "Version 1.1.0 (2024-05-08) libnds:\nAdd keyboardExit() function to deinitialize keyboard structures. Add realpath() implementation. Adjust keyboardInit() to only link the default keyboard if no custom keyboard is being used. Fix getcwd() result when called in the root NitroFS directory. Fix Slot-1 card reads not being aligned to 512 bytes. Minor allocation\/string handling bugfixes. Fix some memory allocation issues found by GCC 14. SDK:\nAdd examples (paletted textures, rotation backgrounds, 16-bit backgrounds, sprites in sub screen, FAT file attributes, GL2D usage).",
+      "wordCount" : "4396",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1388,11 +1391,44 @@ Fix C&#43;&#43; builds (there was a missing cast from enum to int, and the Makef
   >
     <h1>Changelog</h1>
     <div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-110-2024-05-08"
+    >
+        Version 1.1.0 (2024-05-08)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-110-2024-05-08" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 1.1.0 (2024-05-08)" aria-label="Anchor to: Version 1.1.0 (2024-05-08)" href="#version-110-2024-05-08">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Add <code>keyboardExit()</code> function to deinitialize keyboard structures.</li>
+<li>Add <code>realpath()</code> implementation.</li>
+<li>Adjust <code>keyboardInit()</code> to only link the default keyboard if no custom
+keyboard is being used.</li>
+<li>Fix <code>getcwd()</code> result when called in the root NitroFS directory.</li>
+<li>Fix Slot-1 card reads not being aligned to 512 bytes.</li>
+<li>Minor allocation/string handling bugfixes.</li>
+<li>Fix some memory allocation issues found by GCC 14.</li>
+</ul>
+</li>
+<li>
+<p>SDK:</p>
+<ul>
+<li>Add examples (paletted textures, rotation backgrounds, 16-bit backgrounds,
+sprites in sub screen, FAT file attributes, GL2D usage).</li>
+<li>Add tests for <code>realpath()</code>.</li>
+<li>Fix warnings found by GCC 14 in examples.</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="version-100-2024-03-30"
     >
-        version 1.0.0 (2024-03-30)
+        Version 1.0.0 (2024-03-30)
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-100-2024-03-30" class="gdoc-page__anchor clip flex align-center" title="Anchor to: version 1.0.0 (2024-03-30)" aria-label="Anchor to: version 1.0.0 (2024-03-30)" href="#version-100-2024-03-30">
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-100-2024-03-30" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 1.0.0 (2024-03-30)" aria-label="Anchor to: Version 1.0.0 (2024-03-30)" href="#version-100-2024-03-30">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>

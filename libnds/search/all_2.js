@@ -27,9 +27,15 @@ var searchData=
   ['arm_5fcode_24',['ARM_CODE',['../ndstypes_8h.html#aec3cfdebc2d5bff5791b4178a8152613',1,'ndstypes.h']]],
   ['asciioffset_25',['asciiOffset',['../structConsoleFont.html#a676b4b45082d34b8bfbd21d20e0a6444',1,'ConsoleFont']]],
   ['asinlerp_26',['asinLerp',['../trig__lut_8h.html#abcb7541ff6e3bf78cd8e5b2207761dc9',1,'trig_lut.h']]],
-  ['audio_2eh_27',['audio.h',['../audio_8h.html',1,'']]],
-  ['automode_28',['autoMode',['../structtPERSONAL__DATA.html#a106bb0c793ae2aa4dbcd8005de3a4dbf',1,'tPERSONAL_DATA']]],
-  ['card_2eh_29',['card.h',['../arm9_2card_8h.html',1,'']]],
-  ['input_2eh_30',['input.h',['../arm7_2input_8h.html',1,'(Global Namespace)'],['../arm9_2input_8h.html',1,'(Global Namespace)']]],
-  ['sdmmc_2eh_31',['sdmmc.h',['../arm9_2sdmmc_8h.html',1,'']]]
+  ['attr_5farchive_27',['ATTR_ARCHIVE',['../fat_8h.html#a1b257aa7e0fdd8b11372edf885302176',1,'fat.h']]],
+  ['attr_5fdirectory_28',['ATTR_DIRECTORY',['../fat_8h.html#afa13d3c1c60925f7b1e639233a799860',1,'fat.h']]],
+  ['attr_5fhidden_29',['ATTR_HIDDEN',['../fat_8h.html#a42249a182dc832d4647b67281c2ffc90',1,'fat.h']]],
+  ['attr_5freadonly_30',['ATTR_READONLY',['../fat_8h.html#afcb55784ebb3224b5b47139008fd8841',1,'fat.h']]],
+  ['attr_5fsystem_31',['ATTR_SYSTEM',['../fat_8h.html#a1c1250075cd2ca065a67a44fc9fc3222',1,'fat.h']]],
+  ['attr_5fvolume_32',['ATTR_VOLUME',['../fat_8h.html#ad76e26366a244d81d5933d68bfc19eca',1,'fat.h']]],
+  ['audio_2eh_33',['audio.h',['../audio_8h.html',1,'']]],
+  ['automode_34',['autoMode',['../structtPERSONAL__DATA.html#a106bb0c793ae2aa4dbcd8005de3a4dbf',1,'tPERSONAL_DATA']]],
+  ['card_2eh_35',['card.h',['../arm9_2card_8h.html',1,'']]],
+  ['input_2eh_36',['input.h',['../arm7_2input_8h.html',1,'(Global Namespace)'],['../arm9_2input_8h.html',1,'(Global Namespace)']]],
+  ['sdmmc_2eh_37',['sdmmc.h',['../arm9_2sdmmc_8h.html',1,'']]]
 ];

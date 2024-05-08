@@ -167,8 +167,11 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a947c3e447001d1eef63430a00b90d8d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structKeyboard.html">Keyboard</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#a947c3e447001d1eef63430a00b90d8d8">keyboardDemoInit</a> (void)</td></tr>
-<tr class="memdesc:a947c3e447001d1eef63430a00b90d8d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the keyboard with default options.  <a href="keyboard_8h.html#a947c3e447001d1eef63430a00b90d8d8">More...</a><br /></td></tr>
+<tr class="memdesc:a947c3e447001d1eef63430a00b90d8d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the default keyboard of libnds.  <a href="keyboard_8h.html#a947c3e447001d1eef63430a00b90d8d8">More...</a><br /></td></tr>
 <tr class="separator:a947c3e447001d1eef63430a00b90d8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7525625bf0cf60a4ab527fe686e8ebe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#ae7525625bf0cf60a4ab527fe686e8ebe">keyboardExit</a> (void)</td></tr>
+<tr class="memdesc:ae7525625bf0cf60a4ab527fe686e8ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initializes the keyboard system, if initialized.  <a href="keyboard_8h.html#ae7525625bf0cf60a4ab527fe686e8ebe">More...</a><br /></td></tr>
+<tr class="separator:ae7525625bf0cf60a4ab527fe686e8ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac36cc6f9e67cc7d8cc5c694d6614994b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndstypes_8h.html#aa980e2c02ba2305e0f489d5650655425">s16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#ac36cc6f9e67cc7d8cc5c694d6614994b">keyboardGetChar</a> (void)</td></tr>
 <tr class="memdesc:ac36cc6f9e67cc7d8cc5c694d6614994b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for user to press a key and returns the key pressed.  <a href="keyboard_8h.html#ac36cc6f9e67cc7d8cc5c694d6614994b">More...</a><br /></td></tr>
 <tr class="separator:ac36cc6f9e67cc7d8cc5c694d6614994b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,13 +184,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a10095e3a102677b79be0276a6f5f28b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#a10095e3a102677b79be0276a6f5f28b1">keyboardGetString</a> (char *buffer, int maxLen)</td></tr>
 <tr class="memdesc:a10095e3a102677b79be0276a6f5f28b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the input until a the return key is pressed or the maxLen is exceeded.  <a href="keyboard_8h.html#a10095e3a102677b79be0276a6f5f28b1">More...</a><br /></td></tr>
 <tr class="separator:a10095e3a102677b79be0276a6f5f28b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a696fef1ec10d968f35799b4ae643a97e"><td class="memItemLeft" align="right" valign="top"><a id="a696fef1ec10d968f35799b4ae643a97e" name="a696fef1ec10d968f35799b4ae643a97e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>keyboardHide</b> (void)</td></tr>
-<tr class="memdesc:a696fef1ec10d968f35799b4ae643a97e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hides the keyboard. <br /></td></tr>
+<tr class="memitem:a696fef1ec10d968f35799b4ae643a97e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#a696fef1ec10d968f35799b4ae643a97e">keyboardHide</a> (void)</td></tr>
+<tr class="memdesc:a696fef1ec10d968f35799b4ae643a97e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hides the keyboard.  <a href="keyboard_8h.html#a696fef1ec10d968f35799b4ae643a97e">More...</a><br /></td></tr>
 <tr class="separator:a696fef1ec10d968f35799b4ae643a97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa40dab1b593f482f7d08e8fd798b05e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structKeyboard.html">Keyboard</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#aa40dab1b593f482f7d08e8fd798b05e5">keyboardInit</a> (<a class="el" href="structKeyboard.html">Keyboard</a> *keyboard, int layer, <a class="el" href="group__background__api__group.html#ga421d43ca799fd0c471335846da06cae1">BgType</a> type, <a class="el" href="group__background__api__group.html#ga6bd2253ebf93a399fa956a2a7b8b6b3b">BgSize</a> size, int mapBase, int tileBase, bool mainDisplay, bool loadGraphics)</td></tr>
-<tr class="memdesc:aa40dab1b593f482f7d08e8fd798b05e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the keyboard system with the supplied keyboard.  <a href="keyboard_8h.html#aa40dab1b593f482f7d08e8fd798b05e5">More...</a><br /></td></tr>
-<tr class="separator:aa40dab1b593f482f7d08e8fd798b05e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd335faf4175e01c4f1736d587f5d7c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structKeyboard.html">Keyboard</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyboard_8h.html#aafd335faf4175e01c4f1736d587f5d7c">keyboardInit</a> (<a class="el" href="structKeyboard.html">Keyboard</a> *keyboard, int layer, <a class="el" href="group__background__api__group.html#ga421d43ca799fd0c471335846da06cae1">BgType</a> type, <a class="el" href="group__background__api__group.html#ga6bd2253ebf93a399fa956a2a7b8b6b3b">BgSize</a> size, int mapBase, int tileBase, bool mainDisplay, bool loadGraphics)</td></tr>
+<tr class="memdesc:aafd335faf4175e01c4f1736d587f5d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the keyboard system with the supplied keyboard.  <a href="keyboard_8h.html#aafd335faf4175e01c4f1736d587f5d7c">More...</a><br /></td></tr>
+<tr class="separator:aafd335faf4175e01c4f1736d587f5d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6ca3204e3a03b49694b39ed549b2e2e"><td class="memItemLeft" align="right" valign="top"><a id="ab6ca3204e3a03b49694b39ed549b2e2e" name="ab6ca3204e3a03b49694b39ed549b2e2e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>keyboardShow</b> (void)</td></tr>
 <tr class="memdesc:ab6ca3204e3a03b49694b39ed549b2e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the keyboard. <br /></td></tr>
@@ -294,12 +296,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>keyboardShow</b> (voi
       </table>
 </div><div class="memdoc">
 
-<p>Initializes the keyboard with default options. </p>
-<p >Same as calling: </p><div class="fragment"><div class="line"><a class="code hl_function" href="keyboard_8h.html#aa40dab1b593f482f7d08e8fd798b05e5">keyboardInit</a>(NULL, 3, <a class="code hl_enumvalue" href="group__background__api__group.html#gga421d43ca799fd0c471335846da06cae1ae7509222f1b7bc4a35bdd59882f078ae">BgType_Text4bpp</a>, <a class="code hl_enumvalue" href="group__background__api__group.html#gga6bd2253ebf93a399fa956a2a7b8b6b3ba58185efd0b7ffca03201d60e479c3f72">BgSize_T_256x512</a>, 20, 0, <span class="keyword">false</span>, <span class="keyword">true</span>)</div>
+<p>Initializes the default keyboard of libnds. </p>
+<p >Same as calling: </p><div class="fragment"><div class="line"><a class="code hl_function" href="keyboard_8h.html#aafd335faf4175e01c4f1736d587f5d7c">keyboardInit</a>(NULL, 3, <a class="code hl_enumvalue" href="group__background__api__group.html#gga421d43ca799fd0c471335846da06cae1ae7509222f1b7bc4a35bdd59882f078ae">BgType_Text4bpp</a>, <a class="code hl_enumvalue" href="group__background__api__group.html#gga6bd2253ebf93a399fa956a2a7b8b6b3ba58185efd0b7ffca03201d60e479c3f72">BgSize_T_256x512</a>, 20, 0, <span class="keyword">false</span>, <span class="keyword">true</span>)</div>
 <div class="ttc" id="agroup__background__api__group_html_gga421d43ca799fd0c471335846da06cae1ae7509222f1b7bc4a35bdd59882f078ae"><div class="ttname"><a href="group__background__api__group.html#gga421d43ca799fd0c471335846da06cae1ae7509222f1b7bc4a35bdd59882f078ae">BgType_Text4bpp</a></div><div class="ttdeci">@ BgType_Text4bpp</div><div class="ttdoc">4bpp Tiled background with 16 bit tile indexes and no allowed rotation or scaling</div><div class="ttdef"><b>Definition:</b> background.h:448</div></div>
 <div class="ttc" id="agroup__background__api__group_html_gga6bd2253ebf93a399fa956a2a7b8b6b3ba58185efd0b7ffca03201d60e479c3f72"><div class="ttname"><a href="group__background__api__group.html#gga6bd2253ebf93a399fa956a2a7b8b6b3ba58185efd0b7ffca03201d60e479c3f72">BgSize_T_256x512</a></div><div class="ttdeci">@ BgSize_T_256x512</div><div class="ttdoc">256 x 512 pixel text background</div><div class="ttdef"><b>Definition:</b> background.h:470</div></div>
-<div class="ttc" id="akeyboard_8h_html_aa40dab1b593f482f7d08e8fd798b05e5"><div class="ttname"><a href="keyboard_8h.html#aa40dab1b593f482f7d08e8fd798b05e5">keyboardInit</a></div><div class="ttdeci">Keyboard * keyboardInit(Keyboard *keyboard, int layer, BgType type, BgSize size, int mapBase, int tileBase, bool mainDisplay, bool loadGraphics)</div><div class="ttdoc">Initializes the keyboard system with the supplied keyboard.</div></div>
+<div class="ttc" id="akeyboard_8h_html_aafd335faf4175e01c4f1736d587f5d7c"><div class="ttname"><a href="keyboard_8h.html#aafd335faf4175e01c4f1736d587f5d7c">keyboardInit</a></div><div class="ttdeci">static Keyboard * keyboardInit(Keyboard *keyboard, int layer, BgType type, BgSize size, int mapBase, int tileBase, bool mainDisplay, bool loadGraphics)</div><div class="ttdoc">Initializes the keyboard system with the supplied keyboard.</div><div class="ttdef"><b>Definition:</b> keyboard.h:125</div></div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>A pointer to the current keyboard. </dd></dl>
+
+</div>
+</div>
+<a id="ae7525625bf0cf60a4ab527fe686e8ebe" name="ae7525625bf0cf60a4ab527fe686e8ebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7525625bf0cf60a4ab527fe686e8ebe">&#9670;&nbsp;</a></span>keyboardExit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void keyboardExit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>De-initializes the keyboard system, if initialized. </p>
+<p >After calling this, one may de-allocate any custom keyboard struct used. </p>
 
 </div>
 </div>
@@ -423,14 +446,38 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>keyboardShow</b> (voi
 
 </div>
 </div>
-<a id="aa40dab1b593f482f7d08e8fd798b05e5" name="aa40dab1b593f482f7d08e8fd798b05e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa40dab1b593f482f7d08e8fd798b05e5">&#9670;&nbsp;</a></span>keyboardInit()</h2>
+<a id="a696fef1ec10d968f35799b4ae643a97e" name="a696fef1ec10d968f35799b4ae643a97e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a696fef1ec10d968f35799b4ae643a97e">&#9670;&nbsp;</a></span>keyboardHide()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structKeyboard.html">Keyboard</a> * keyboardInit </td>
+          <td class="memname">void keyboardHide </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Hides the keyboard. </p>
+<p >If scrollSpeed has been set to a non-zero value it will scroll it out of the screen. If not, it will hide it right away. </p>
+
+</div>
+</div>
+<a id="aafd335faf4175e01c4f1736d587f5d7c" name="aafd335faf4175e01c4f1736d587f5d7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafd335faf4175e01c4f1736d587f5d7c">&#9670;&nbsp;</a></span>keyboardInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structKeyboard.html">Keyboard</a> * keyboardInit </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structKeyboard.html">Keyboard</a> *&#160;</td>
           <td class="paramname"><em>keyboard</em>, </td>
@@ -483,6 +530,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>keyboardShow</b> (voi
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Initializes the keyboard system with the supplied keyboard. </p>
@@ -529,7 +581,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>keyboardShow</b> (voi
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 30 2024 11:00:26 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Wed May 8 2024 18:46:03 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

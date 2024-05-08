@@ -159,8 +159,9 @@ You can generate NDS-only ROMs, with a bootloader injected by ndstool. You can l
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blocksds.github.io/docs/introduction/changelog/</guid>
-      <description>version 1.0.0 (2024-03-30) libnds:
-Fix C++ builds (there was a missing cast from enum to int, and the Makefile was using the wrong program to link binaries). Optimize some videoGL functions (compile them as ARM instead of Thumb to take advantage of the faster multiplication instructions). Fix bug in readdir(). Implement __retarget_lock_*() family of functions to allow libc functions to work in a multithreaded environment. Make glCallList() take a void pointer instead of u32.</description>
+      <description>Version 1.1.0 (2024-05-08) libnds:
+Add keyboardExit() function to deinitialize keyboard structures. Add realpath() implementation. Adjust keyboardInit() to only link the default keyboard if no custom keyboard is being used. Fix getcwd() result when called in the root NitroFS directory. Fix Slot-1 card reads not being aligned to 512 bytes. Minor allocation/string handling bugfixes. Fix some memory allocation issues found by GCC 14. SDK:
+Add examples (paletted textures, rotation backgrounds, 16-bit backgrounds, sprites in sub screen, FAT file attributes, GL2D usage).</description>
     </item>
     
     <item>

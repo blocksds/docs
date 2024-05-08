@@ -62,7 +62,7 @@
       "url" : "https://blocksds.github.io/docs/technical/devkitarm_porting_guide/",
       "headline": "devkitARM porting guide",
       "description": "1. Introduction In most cases, porting devkitARM projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.\n2. New build system This is the biggest difference between devkitARM and BlocksDS. Makefiles provided by devkitARM are more complicated: they call themselves recursively from the build directory. They also hide a lot of compilation rules from the user, as they are provided by sub-makefiles in the devkitARM system directory.",
-      "wordCount" : "1235",
+      "wordCount" : "1245",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1543,14 +1543,14 @@ increasing code size. <code>picolibc</code> opts for a different approach - it a
 to decide, project-wide, if you want to use integer-only or float-compatible
 versions of the <code>printf()</code> and <code>scanf()</code> functions.</p>
 <p>By default, the build of <code>picolibc</code> of BlocksDS makes <code>printf()</code>, <code>sscanf()</code> and
-similar functions floats and doubles. This is done to increase compatibility
-with any pre-existing code, but it increases the size of the final binaries.
-It is possible to switch to integer-only versions of the functions, and save
-that additional space, by adding the following line to the <code>LDFLAGS</code> of your
-Makefile:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-make" data-lang="make"><span class="line"><span class="cl"><span class="nv">LDFLAGS</span> <span class="o">:=</span> <span class="o">[</span>all other options go here<span class="o">]</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -Wl,--defsym<span class="o">=</span><span class="nv">vfprintf</span><span class="o">=</span>__i_vfprintf -Wl,--defsym<span class="o">=</span><span class="nv">vfscanf</span><span class="o">=</span>__i_vfscanf
-</span></span></code></pre></div><p>For more information, please read <a
+similar functions support float and double conversions. This is done to maintain
+compatibility with existing code (and the C standard), but it increases the size
+of the final binaries. It is possible to switch to integer-only versions of the
+functions by adding the following line to the <code>DEFINES</code> of your Makefile:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-make" data-lang="make"><span class="line"><span class="cl"><span class="nv">DEFINES</span> <span class="o">:=</span> <span class="o">[</span>all other options go here<span class="o">]</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DPICOLIBC_LONG_LONG_PRINTF_SCANF
+</span></span></code></pre></div><p>There are additional variants available, depending on the codebase&rsquo;s specific
+requirements. For more information, please read <a
   class="gdoc-markdown__link"
   href="https://github.com/picolibc/picolibc/blob/main/doc/printf.md"
 >the relevant picolibc documentation</a>.</p>
