@@ -65,7 +65,7 @@ To encourage developers to hack and improve the SDK by letting them have all the
       "url" : "https://blocksds.github.io/docs/introduction/introduction/",
       "headline": "Introduction",
       "description": "This is an SDK to develop applications for Nintendo DS in C or C\u002b\u002b.\n1. Goals To create an easy-to-use NDS software development kit based on GCC with as few dependencies as possible, and that supports as many features of the DS and DSi as possible.\nTo encourage developers to hack and improve the SDK by letting them have all the source code of the SDK. This also shows how easy it is to build the whole codebase.",
-      "wordCount" : "1058",
+      "wordCount" : "1067",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1485,8 +1485,9 @@ that have been optimized for the CPUs of the DS. This is thanks to using
   href="https://github.com/felixjones/agbabi"
 >agbabi</a> by
 felixjones.</p>
-<p>Also, <code>argv[]</code> is may be provided by the environment so that the program
-knows where it&rsquo;s running from, and any arguments, if any, passed to it.</p>
+<p>Also, <code>argv</code> may be provided by the environment so that programs know where
+they are running from (the path of the NDS file is provided in <code>argv[0]</code>), and
+any arguments pased to it if any.</p>
 </li>
 <li>
 <p>It is possible to access the filesystem of DLDI devices (like the SD card of
