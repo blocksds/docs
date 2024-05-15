@@ -12,9 +12,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blocksds.github.io/docs/introduction/introduction/</guid>
-      <description>This is an SDK for Nintendo DS. It builds on the work of several people, and it has the following goals:
-To create an easy-to-use NDS software development kit based on GCC with as few dependencies as possible.
-To encourage developers to hack and improve the SDK by letting them have all the source code of the SDK. This also shows how easy it is to build the whole codebase. The exception is the tolchain, which is non-trivial to build.</description>
+      <description>This is an SDK to develop applications for Nintendo DS in C or C++.
+1. Goals To create an easy-to-use NDS software development kit based on GCC with as few dependencies as possible, and that supports as many features of the DS and DSi as possible.
+To encourage developers to hack and improve the SDK by letting them have all the source code of the SDK. This also shows how easy it is to build the whole codebase.</description>
     </item>
     
     <item>

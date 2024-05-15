@@ -12,9 +12,9 @@
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="This is an SDK for Nintendo DS. It builds on the work of several people, and it has the following goals:
-To create an easy-to-use NDS software development kit based on GCC with as few dependencies as possible.
-To encourage developers to hack and improve the SDK by letting them have all the source code of the SDK. This also shows how easy it is to build the whole codebase. The exception is the tolchain, which is non-trivial to build." />
+  <meta name="description" content="This is an SDK to develop applications for Nintendo DS in C or C&#43;&#43;.
+1. Goals To create an easy-to-use NDS software development kit based on GCC with as few dependencies as possible, and that supports as many features of the DS and DSi as possible.
+To encourage developers to hack and improve the SDK by letting them have all the source code of the SDK. This also shows how easy it is to build the whole codebase." />
 
     <title>Introduction | BlocksDS</title>
 
@@ -40,9 +40,9 @@ To encourage developers to hack and improve the SDK by letting them have all the
     content="Introduction"
   />
   <meta property="og:site_name" content="BlocksDS" />
-  <meta property="og:description" content="This is an SDK for Nintendo DS. It builds on the work of several people, and it has the following goals:
-To create an easy-to-use NDS software development kit based on GCC with as few dependencies as possible.
-To encourage developers to hack and improve the SDK by letting them have all the source code of the SDK. This also shows how easy it is to build the whole codebase. The exception is the tolchain, which is non-trivial to build." />
+  <meta property="og:description" content="This is an SDK to develop applications for Nintendo DS in C or C&#43;&#43;.
+1. Goals To create an easy-to-use NDS software development kit based on GCC with as few dependencies as possible, and that supports as many features of the DS and DSi as possible.
+To encourage developers to hack and improve the SDK by letting them have all the source code of the SDK. This also shows how easy it is to build the whole codebase." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blocksds.github.io/docs/introduction/introduction/" />
 
@@ -51,9 +51,9 @@ To encourage developers to hack and improve the SDK by letting them have all the
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Introduction" />
-  <meta name="twitter:description" content="This is an SDK for Nintendo DS. It builds on the work of several people, and it has the following goals:
-To create an easy-to-use NDS software development kit based on GCC with as few dependencies as possible.
-To encourage developers to hack and improve the SDK by letting them have all the source code of the SDK. This also shows how easy it is to build the whole codebase. The exception is the tolchain, which is non-trivial to build." />
+  <meta name="twitter:description" content="This is an SDK to develop applications for Nintendo DS in C or C&#43;&#43;.
+1. Goals To create an easy-to-use NDS software development kit based on GCC with as few dependencies as possible, and that supports as many features of the DS and DSi as possible.
+To encourage developers to hack and improve the SDK by letting them have all the source code of the SDK. This also shows how easy it is to build the whole codebase." />
 
 
   <script type="application/ld+json">
@@ -64,8 +64,8 @@ To encourage developers to hack and improve the SDK by letting them have all the
       "name": "Introduction",
       "url" : "https://blocksds.github.io/docs/introduction/introduction/",
       "headline": "Introduction",
-      "description": "This is an SDK for Nintendo DS. It builds on the work of several people, and it has the following goals:\nTo create an easy-to-use NDS software development kit based on GCC with as few dependencies as possible.\nTo encourage developers to hack and improve the SDK by letting them have all the source code of the SDK. This also shows how easy it is to build the whole codebase. The exception is the tolchain, which is non-trivial to build.",
-      "wordCount" : "184",
+      "description": "This is an SDK to develop applications for Nintendo DS in C or C\u002b\u002b.\n1. Goals To create an easy-to-use NDS software development kit based on GCC with as few dependencies as possible, and that supports as many features of the DS and DSi as possible.\nTo encourage developers to hack and improve the SDK by letting them have all the source code of the SDK. This also shows how easy it is to build the whole codebase.",
+      "wordCount" : "1058",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1390,17 +1390,26 @@ To encourage developers to hack and improve the SDK by letting them have all the
     class="gdoc-markdown gdoc-markdown__align--left"
   >
     <h1>Introduction</h1>
-    <p>This is an SDK for Nintendo DS. It builds on the work of several people, and it
-has the following goals:</p>
+    <p>This is an SDK to develop applications for Nintendo DS in C or C++.</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="1-goals"
+    >
+        1. Goals
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/introduction/#1-goals" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 1. Goals" aria-label="Anchor to: 1. Goals" href="#1-goals">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
 <ul>
 <li>
 <p>To create an easy-to-use NDS software development kit based on GCC with as few
-dependencies as possible.</p>
+dependencies as possible, and that supports as many features of the DS and DSi
+as possible.</p>
 </li>
 <li>
 <p>To encourage developers to hack and improve the SDK by letting them have all
 the source code of the SDK. This also shows how easy it is to build the whole
-codebase. The exception is the tolchain, which is non-trivial to build.
+codebase. The exception is the toolchain, which is non-trivial to build.
 Because of that, <a
   class="gdoc-markdown__link"
   href="https://wonderful.asie.pl/"
@@ -1408,31 +1417,224 @@ Because of that, <a
 instead of asking the users to build it themselves.</p>
 </li>
 <li>
-<p>To try to keep compatibility with pre-existing C projects. In theory, it
-should be enough to replace the makefile by one of BlocksDS to build any
-project that uses libnds.</p>
-</li>
-</ul>
-<p>This project is currently in beta stage, and most features are working. Please,
-check the <a
-  class="gdoc-markdown__link"
-  href="../../technical/libc"
->libc port documentation</a> for more information
-about the supported libc functions.</p>
-<p>If you want to port a project built with devkitPro, follow
+<p>To try to keep compatibility with pre-existing C projects made by devkitARM.
+In theory, it should be enough to replace the Makefile of devkitARM by a
+Makefile of BlocksDS to build any old project, with some few exceptions. Check
 <a
   class="gdoc-markdown__link"
   href="../../technical/devkitarm_porting_guide"
->this guide</a> for instructions.</p>
-<p>For detailed information about the design of BlocksDS, check
-<a
+>this guide</a> for more details.</p>
+</li>
+<li>
+<p>To document as much of the SDK as possible. For detailed information about the
+design of BlocksDS, check <a
   class="gdoc-markdown__link"
   href="../../technical/design_guide"
->this other document</a>.</p>
-<p>For licensing information, check <a
+>this document</a>.</p>
+</li>
+<li>
+<p>To ensure that the licensing status of all the code is correct and that the
+licenses used are all FOSS. This SDK is made from the work of many others that
+came before it and who developed FOSS libraries that can be now used by
+BlocksDS. This SDK must ensure that all the code remains FOSS for other people
+to use it in the future. For more information about the licenses used by
+different components, check <a
   class="gdoc-markdown__link"
   href="../licenses"
 >this</a>.</p>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="2-features"
+    >
+        2. Features
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/introduction/#2-features" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 2. Features" aria-label="Anchor to: 2. Features" href="#2-features">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h3 id="21-standard-libraries"
+    >
+        2.1 Standard libraries
+    </h3>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/introduction/#21-standard-libraries" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 2.1 Standard libraries" aria-label="Anchor to: 2.1 Standard libraries" href="#21-standard-libraries">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>Binaries are pretty small and their baseline RAM usage is low thanks to using
+<a
+  class="gdoc-markdown__link"
+  href="https://github.com/picolibc/picolibc"
+>picolibc</a> instead of the more commonly
+used <a
+  class="gdoc-markdown__link"
+  href="https://sourceware.org/newlib/"
+>newlib</a>.</p>
+</li>
+<li>
+<p>A libc with most of the features and functions you would expect in a regular
+environment like in a PC. For example: <code>printf()</code>, <code>scanf()</code>, <code>fopen()</code>,
+<code>stat()</code>, <code>opendir()</code>, <code>malloc()</code>, <code>gettimeofday()</code>, <code>time()</code> and <code>exit()</code>.</p>
+<p>There are versions of functions like <code>memcpy()</code>, <code>memset()</code> and <code>memmove()</code>
+that have been optimized for the CPUs of the DS. This is thanks to using
+<strong>ndsabi</strong>, a fork of <a
+  class="gdoc-markdown__link"
+  href="https://github.com/felixjones/agbabi"
+>agbabi</a> by
+felixjones.</p>
+<p>Also, <code>argv[]</code> is may be provided by the environment so that the program
+knows where it&rsquo;s running from, and any arguments, if any, passed to it.</p>
+</li>
+<li>
+<p>It is possible to access the filesystem of DLDI devices (like the SD card of
+flashcards), the SD slot of the DSi, and the filesystem embedded in a NDS ROM
+(NitroFS). Performance (particularly for reads) has been
+<a
+  class="gdoc-markdown__link"
+  href="https://mk.asie.pl/notes/9m2fsvk1hp"
+>optimized by asie</a> a lot. This is partly
+thanks to using <a
+  class="gdoc-markdown__link"
+  href="http://elm-chan.org/fsw/ff/00index_e.html"
+>FatFs</a>, partly due
+to the DSi SD driver by <a
+  class="gdoc-markdown__link"
+  href="https://github.com/profi200/"
+>profi200</a>, and partly
+due to lots of additional optimizations by <a
+  class="gdoc-markdown__link"
+  href="https://asie.pl/"
+>asie</a></p>
+</li>
+<li>
+<p>C++ is supported, as well as <code>libstdc++</code> but it hasn&rsquo;t been tested as
+extensively as the C standard library.</p>
+</li>
+<li>
+<p>There is basic cooperative multithreading support. <code>libnds</code> has been
+modified to be thread-safe. Thread-local storage support has also been added.
+You can define variables that are unique per thread like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">__thread</span> <span class="kt">int</span> <span class="n">my_variable</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">__thread</span> <span class="kt">int</span> <span class="n">other_variable</span><span class="p">;</span>
+</span></span></code></pre></div><p>Filesystem reads can be done from the ARM9 and ARM7. You can make the ARM9 ask
+the ARM7 to load files in one thread. While the ARM7 load files the ARM9 can
+be doing other things in other threads, so you aren&rsquo;t blocked. This is always
+done when loading files from the SD card of the DSi, but it can also be done
+with DLDI devices. Most DLDI drivers can run from the ARM7 even if they
+haven&rsquo;t been explicitly built with that in mind!</p>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h3 id="22-supported-ds-features"
+    >
+        2.2 Supported DS features
+    </h3>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/introduction/#22-supported-ds-features" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 2.2 Supported DS features" aria-label="Anchor to: 2.2 Supported DS features" href="#22-supported-ds-features">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>All features of the 2D video hardware are supported. There are some
+APIs to simplify the usage of backgrounds and sprites, as well as a basic text
+console system based on the 2D background system.</p>
+</li>
+<li>
+<p>All features of the 3D hardware are supported through an API that is similar
+to the one of OpenGL 1. There is a library to render 2D graphics with the 3D
+hardware easily, called GL2D.</p>
+</li>
+<li>
+<p>There is a tool to convert graphics to the formats used by the DS: <code>grit</code>. The
+only format that it doesn&rsquo;t support is the <code>Tex4x4</code> texture format, but that
+one is supported by <a
+  class="gdoc-markdown__link--code"
+  href="https://github.com/Garhoogin/ptexconv/"
+><code>ptexconv</code></a>.</p>
+</li>
+<li>
+<p>The audio hardware is supported. There are two libraries that can be used to
+play music: Maxmod and libxm7. libxm7 only supports playing MOD and XM files,
+and it is required to use libnds to play SFXs through a basic sound API.
+Maxmod, on the other hand, has its own way to play sound effects and music,
+and it supports MOD, XM, IT and S3M files.</p>
+</li>
+<li>
+<p>It is possible to record audio using the microphone of the console.</p>
+</li>
+<li>
+<p>There are some helpers to use the division and square root co-processor, the
+BIOS functions, hardware timers, DMA, interrupt handlers, and the hardware
+FIFO system for ARM9 &lt;-&gt; ARM7 communications.</p>
+</li>
+<li>
+<p>There are some helpers to setup the MPU and to manipulate the cache of the
+ARM9 (to clean it or invalidate it).</p>
+</li>
+<li>
+<p>There is an API to access the DS cartridge ROM, as well as EEPROM chips in
+the cartridges that use it. It is also possible to access the filesystem of SD
+cards used in flashcards.</p>
+</li>
+<li>
+<p>There is an API to read the state of the buttons and the touchscreen.</p>
+</li>
+<li>
+<p>There is an API to use Slot-2 peripherals such as RAM expansion cartridges,
+gyroscopes or tilt sensors.</p>
+</li>
+<li>
+<p>There are some helper functions to decompress some formats supported by the
+BIOS.</p>
+</li>
+<li>
+<p>It is possible to read and set the date and time of the RTC clock.</p>
+</li>
+<li>
+<p>WiFi support isn&rsquo;t complete. It is possible to connect to Access Points with
+the library DS WiFi, but it doesn&rsquo;t support DS to DS WiFi communications.</p>
+</li>
+<li>
+<p><strong>ndstool</strong> suuports creating NDS ROMs and define a ROM icon and banner text
+(in multiple languages!).</p>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h3 id="23-supported-dsi-features"
+    >
+        2.3 Supported DSi features
+    </h3>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/introduction/#23-supported-dsi-features" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 2.3 Supported DSi features" aria-label="Anchor to: 2.3 Supported DSi features" href="#23-supported-dsi-features">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>The SD slot of the DSi is supported.</p>
+</li>
+<li>
+<p>The new DMA features, as well as the new WRAM memory banks, are supported.</p>
+</li>
+<li>
+<p><strong>ndstool</strong> supports animated icons from PNG, GIF, even animated GIF files.</p>
+</li>
+<li>
+<p>The DSi camera is supported (thanks, asie!). It&rsquo;s still quite basic, but
+enough to be able to take photos from the front and back cameras.</p>
+</li>
+<li>
+<p>There is preliminary support for the DSP of the DSi (the toolchain is very
+buggy, so be very careful when using it, it&rsquo;s probably not ready to be used by
+most developers!).</p>
+</li>
+<li>
+<p>Unfortunately, none of the DSi WiFi features (such as WPA support) are
+supported by DS WiFi yet.</p>
+</li>
+</ul>
 
   </article>
 

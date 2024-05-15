@@ -1,24 +1,4 @@
 var searchData=
 [
-  ['ic_5finvalidateall_0',['IC_InvalidateAll',['../cache_8h.html#aa0e6dc096105699406241749c38b7553',1,'cache.h']]],
-  ['ic_5finvalidaterange_1',['IC_InvalidateRange',['../cache_8h.html#a2b15ca118cdb4513c5e4d24b06010388',1,'cache.h']]],
-  ['image24to16_2',['image24to16',['../image_8h.html#ac0127376558f9be76db51e8d59a918da',1,'image.h']]],
-  ['image8to16_3',['image8to16',['../image_8h.html#a7cf6d10d9b6c8877310ce1b7a8eeed08',1,'image.h']]],
-  ['image8to16trans_4',['image8to16trans',['../image_8h.html#afe34b9b349eb4784f9870d11ef6ddb4a',1,'image.h']]],
-  ['imagedestroy_5',['imageDestroy',['../image_8h.html#add63b152c65c7e9103320308028c963f',1,'image.h']]],
-  ['imagetiledata_6',['imageTileData',['../image_8h.html#a29ab1f3efa6628f82aaec1223a48d0d8',1,'image.h']]],
-  ['initclockirq_7',['initClockIRQ',['../clock_8h.html#ae9f77cdc93f5df3e31343cc0328b3b12',1,'clock.h']]],
-  ['initclockirqtimer_8',['initClockIRQTimer',['../clock_8h.html#a2a6972dd6bc8cfc594cd700eab8cab09',1,'clock.h']]],
-  ['inputgetandsend_9',['inputGetAndSend',['../arm7_2input_8h.html#a52604271fc05d3302115e3dc99c77837',1,'input.h']]],
-  ['inputsetlidsleepduration_10',['inputSetLidSleepDuration',['../arm7_2input_8h.html#a63723712208d0bcc49ea12a83326fada',1,'input.h']]],
-  ['installsoundfifo_11',['installSoundFIFO',['../audio_8h.html#ae90d95bc28a0e398d2b32ac6271e9842',1,'audio.h']]],
-  ['irqclear_12',['irqClear',['../interrupts_8h.html#a653ed3a072b3e8af35c3ec21793ad9e0',1,'interrupts.h']]],
-  ['irqdisable_13',['irqDisable',['../interrupts_8h.html#ae980c6ad09f9698c8bd2f385dee860bf',1,'interrupts.h']]],
-  ['irqenable_14',['irqEnable',['../interrupts_8h.html#a6371c2999351e50b3d0710d8dc5cd481',1,'interrupts.h']]],
-  ['irqinit_15',['irqInit',['../interrupts_8h.html#ab20f4701aefb86484839006e804e3323',1,'interrupts.h']]],
-  ['irqinithandler_16',['irqInitHandler',['../interrupts_8h.html#ae500e880cdf49e0074c4d34ebf179c6b',1,'interrupts.h']]],
-  ['irqset_17',['irqSet',['../interrupts_8h.html#a51d0f8c1fa01a21d2caea869e2167938',1,'interrupts.h']]],
-  ['isdsimode_18',['isDSiMode',['../system_8h.html#ac3fb0d83d71ca5ff0e75d107aa8823a2',1,'system.h']]],
-  ['ishwdebugger_19',['isHwDebugger',['../system_8h.html#ad0f3b3217b4e08df62457df135b25ea2',1,'system.h']]],
-  ['isrumbleinserted_20',['isRumbleInserted',['../rumble_8h.html#a325ed0c013defa0dfca20c1ca24ea3c1',1,'rumble.h']]]
+  ['hw_5fsqrtf_0',['hw_sqrtf',['../math_8h.html#a73e84723383f51fb37dd3d041ddc8f11',1,'math.h']]]
 ];

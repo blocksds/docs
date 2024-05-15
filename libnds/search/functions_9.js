@@ -1,10 +1,19 @@
 var searchData=
 [
-  ['lcdmainonbottom_0',['lcdMainOnBottom',['../system_8h.html#afd135d0b6703f98902d32aed3f7bf115',1,'system.h']]],
-  ['lcdmainontop_1',['lcdMainOnTop',['../system_8h.html#a1ac0452f290abccc30614c5cbb0f56d0',1,'system.h']]],
-  ['lcdswap_2',['lcdSwap',['../system_8h.html#ac971d312d6363a8e66235fb14119187c',1,'system.h']]],
-  ['ledblink_3',['ledBlink',['../system_8h.html#afc3d6c31804940d92938159876f266ad',1,'system.h']]],
-  ['linkedlistadd_4',['linkedlistAdd',['../linkedlist_8h.html#a23c525b0376e226c594121395234cdaa',1,'linkedlist.h']]],
-  ['linkedlistremove_5',['linkedlistRemove',['../linkedlist_8h.html#a763c6bc9ad15bff44e0baddd3079b022',1,'linkedlist.h']]],
-  ['loadpcx_6',['loadPCX',['../pcx_8h.html#ac49d8c07d15a05f7877e1687825c4e98',1,'pcx.h']]]
+  ['keyboarddemoinit_0',['keyboardDemoInit',['../keyboard_8h.html#a947c3e447001d1eef63430a00b90d8d8',1,'keyboard.h']]],
+  ['keyboardexit_1',['keyboardExit',['../keyboard_8h.html#ae7525625bf0cf60a4ab527fe686e8ebe',1,'keyboard.h']]],
+  ['keyboardgetchar_2',['keyboardGetChar',['../keyboard_8h.html#ac36cc6f9e67cc7d8cc5c694d6614994b',1,'keyboard.h']]],
+  ['keyboardgetdefault_3',['keyboardGetDefault',['../keyboard_8h.html#ae444b962aab7192aef0737e365f9fd04',1,'keyboard.h']]],
+  ['keyboardgetkey_4',['keyboardGetKey',['../keyboard_8h.html#a4f2978c3808852fac5815f31660bafd1',1,'keyboard.h']]],
+  ['keyboardgetstring_5',['keyboardGetString',['../keyboard_8h.html#a10095e3a102677b79be0276a6f5f28b1',1,'keyboard.h']]],
+  ['keyboardhide_6',['keyboardHide',['../keyboard_8h.html#a696fef1ec10d968f35799b4ae643a97e',1,'keyboard.h']]],
+  ['keyboardinit_7',['keyboardInit',['../keyboard_8h.html#aafd335faf4175e01c4f1736d587f5d7c',1,'keyboard.h']]],
+  ['keyboardshow_8',['keyboardShow',['../keyboard_8h.html#ab6ca3204e3a03b49694b39ed549b2e2e',1,'keyboard.h']]],
+  ['keyboardupdate_9',['keyboardUpdate',['../keyboard_8h.html#a788662b30dee506f7a181746bddf8f1b',1,'keyboard.h']]],
+  ['keyscurrent_10',['keysCurrent',['../arm9_2input_8h.html#aea553012e0203524946af27366cdeee1',1,'input.h']]],
+  ['keysdown_11',['keysDown',['../arm9_2input_8h.html#a3713fbb45a1711c900c2dc386e9aadbb',1,'input.h']]],
+  ['keysdownrepeat_12',['keysDownRepeat',['../arm9_2input_8h.html#a623a823ad43f35ebb5fa9b8cd49a2db6',1,'input.h']]],
+  ['keysheld_13',['keysHeld',['../arm9_2input_8h.html#ad03ea457f6fade2a0b8e2be45e72d181',1,'input.h']]],
+  ['keyssetrepeat_14',['keysSetRepeat',['../arm9_2input_8h.html#a701a7f324e1bc8cfc7f1468ee4d4166c',1,'input.h']]],
+  ['keysup_15',['keysUp',['../arm9_2input_8h.html#af4e77fdcd97d318c0a7461c774f2fabf',1,'input.h']]]
 ];

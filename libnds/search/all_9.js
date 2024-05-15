@@ -8,5 +8,6 @@ var searchData=
   ['height_5',['height',['../structglImage.html#aae64883e310eeb72445b86eef486b7bb',1,'glImage::height()'],['../structsImage.html#a5181a58f8a60b0c457dd26cfa1fbed6a',1,'sImage::height()'],['../structKeyMap.html#adc2d875457a40b42f7a4b833565af1a4',1,'KeyMap::height()']]],
   ['hflip_6',['hFlip',['../unionSpriteEntry.html#a4c62d0accfa457731d008741c663797d',1,'SpriteEntry']]],
   ['hours_7',['hours',['../structRTCtime.html#a9e03721888b70c2f4b6a899982b40d9e',1,'RTCtime::hours()'],['../structrtcTimeAndDate.html#acceb3422368f7e190f58c7fda0f60f31',1,'rtcTimeAndDate::hours()'],['../structrtcTime.html#a9e21aa9897dcfc07a36c118cd91ecb5a',1,'rtcTime::hours()']]],
-  ['huff_8',['HUFF',['../decompress_8h.html#aa81d284ca6e0a5e546588b20c92dde8aa42633cb5fae6d613ffd21290471e822f',1,'decompress.h']]]
+  ['huff_8',['HUFF',['../decompress_8h.html#aa81d284ca6e0a5e546588b20c92dde8aa42633cb5fae6d613ffd21290471e822f',1,'decompress.h']]],
+  ['hw_5fsqrtf_9',['hw_sqrtf',['../math_8h.html#a73e84723383f51fb37dd3d041ddc8f11',1,'math.h']]]
 ];

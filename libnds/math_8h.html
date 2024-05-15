@@ -142,6 +142,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab5439a263f1d3fde33068aa3d97fd2cb"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="math_8h.html#ab5439a263f1d3fde33068aa3d97fd2cb">dotf32</a> (int32_t *a, int32_t *b)</td></tr>
 <tr class="memdesc:ab5439a263f1d3fde33068aa3d97fd2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">20.12 fixed point dot product.  <a href="math_8h.html#ab5439a263f1d3fde33068aa3d97fd2cb">More...</a><br /></td></tr>
 <tr class="separator:ab5439a263f1d3fde33068aa3d97fd2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e84723383f51fb37dd3d041ddc8f11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndstypes_8h.html#aec3cfdebc2d5bff5791b4178a8152613">ARM_CODE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="math_8h.html#a73e84723383f51fb37dd3d041ddc8f11">hw_sqrtf</a> (float x)</td></tr>
+<tr class="memdesc:a73e84723383f51fb37dd3d041ddc8f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">32-bit floating point sqrt  <a href="math_8h.html#a73e84723383f51fb37dd3d041ddc8f11">More...</a><br /></td></tr>
+<tr class="separator:a73e84723383f51fb37dd3d041ddc8f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d52f6e6696ac6d35bbe31ad2344ceb4"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="math_8h.html#a5d52f6e6696ac6d35bbe31ad2344ceb4">mod32</a> (int32_t num, int32_t den)</td></tr>
 <tr class="memdesc:a5d52f6e6696ac6d35bbe31ad2344ceb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer modulo.  <a href="math_8h.html#a5d52f6e6696ac6d35bbe31ad2344ceb4">More...</a><br /></td></tr>
 <tr class="separator:a5d52f6e6696ac6d35bbe31ad2344ceb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -658,6 +661,36 @@ z = Ax * By - Bx * Ay
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>32 bit integer result </dd></dl>
+
+</div>
+</div>
+<a id="a73e84723383f51fb37dd3d041ddc8f11" name="a73e84723383f51fb37dd3d041ddc8f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e84723383f51fb37dd3d041ddc8f11">&#9670;&nbsp;</a></span>hw_sqrtf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ndstypes_8h.html#aec3cfdebc2d5bff5791b4178a8152613">ARM_CODE</a> float hw_sqrtf </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>32-bit floating point sqrt </p>
+<dl class="section warning"><dt>Warning</dt><dd>Subnormal floats are treated as if they were zero. </dd>
+<dd>
+Not safe to call inside an interrupt handler.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valid</td><td>32 bit non-negative floating point value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>32 bit floating point value </dd></dl>
 
 </div>
 </div>
@@ -1278,7 +1311,7 @@ z = Ax * By - Bx * Ay
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 8 2024 18:46:03 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Wed May 15 2024 01:34:45 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
