@@ -144,13 +144,14 @@ However, in order to take advantage of per-CPU optimizations and to have a robus
     </item>
     
     <item>
-      <title>Support for slot-2 flashcarts</title>
-      <link>https://blocksds.github.io/docs/technical/slot2_flashcarts/</link>
+      <title>Legacy device/launcher support</title>
+      <link>https://blocksds.github.io/docs/technical/legacy_support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blocksds.github.io/docs/technical/slot2_flashcarts/</guid>
-      <description>ROMs built with BlocksDS support slot-2 devices. However, they need special care. There are two options:
-You can generate NDS-only ROMs, with a bootloader injected by ndstool. You can load a regular NDS ROM with a patched nds-hb-menu. 1. Generating a NDS-only ROM with bootloader If you add -h 0x200 to the ndstool command line arguments, it will generate a NDS-only ROM, with a bootloader that will let it boot from a slot-2 flaschart.</description>
+      <guid>https://blocksds.github.io/docs/technical/legacy_support/</guid>
+      <description>ROMs built with BlocksDS are designed first and foremost to support modern execution environments and maximize the amount of free memory available to the application. Unfortunately, some changes end up breaking compatibility with legacy homebrew execution methods.
+Known loaders which cause issues include:
+the PassMe/WifiMe methods, the MoonShell launcher, the Unlaunch launcher, many legacy cartridge devices. Workarounds exist to run affected homebrew software on these platforms, both from the user and developer&amp;rsquo;s perspective.</description>
     </item>
     
     <item>
@@ -159,9 +160,9 @@ You can generate NDS-only ROMs, with a bootloader injected by ndstool. You can l
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blocksds.github.io/docs/introduction/changelog/</guid>
-      <description>Version 1.1.0 (2024-05-08) libnds:
-Add keyboardExit() function to deinitialize keyboard structures. Add realpath() implementation. Adjust keyboardInit() to only link the default keyboard if no custom keyboard is being used. Fix getcwd() result when called in the root NitroFS directory. Fix Slot-1 card reads not being aligned to 512 bytes. Minor allocation/string handling bugfixes. Fix some memory allocation issues found by GCC 14. SDK:
-Add examples (paletted textures, rotation backgrounds, 16-bit backgrounds, sprites in sub screen, FAT file attributes, GL2D usage).</description>
+      <description>Version DEV (2024-??-??) libnds:
+Add hw_sqrtf() - a hardware-accelerated alternative to sqrtf(). Fix swiSwitchToGBAMode(). Improve documentation of RTC structs. Improve GL2D error checking. Modify GL2D sprite sets to use uint16_t arrays for texture coordinates. SDK:
+Add GL2D sprite examples. Add new tool: squeezer - used for generating packed textures for GL2D sprite sets. Add tests for hw_sqrtf(). Fix VRAM bank setup in &amp;ldquo;text over 3D&amp;rdquo; example. Version 1.1.0 (2024-05-08) libnds:</description>
     </item>
     
     <item>

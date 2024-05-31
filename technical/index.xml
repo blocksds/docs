@@ -77,13 +77,14 @@ However, in order to take advantage of per-CPU optimizations and to have a robus
     </item>
     
     <item>
-      <title>Support for slot-2 flashcarts</title>
-      <link>https://blocksds.github.io/docs/technical/slot2_flashcarts/</link>
+      <title>Legacy device/launcher support</title>
+      <link>https://blocksds.github.io/docs/technical/legacy_support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blocksds.github.io/docs/technical/slot2_flashcarts/</guid>
-      <description>ROMs built with BlocksDS support slot-2 devices. However, they need special care. There are two options:
-You can generate NDS-only ROMs, with a bootloader injected by ndstool. You can load a regular NDS ROM with a patched nds-hb-menu. 1. Generating a NDS-only ROM with bootloader If you add -h 0x200 to the ndstool command line arguments, it will generate a NDS-only ROM, with a bootloader that will let it boot from a slot-2 flaschart.</description>
+      <guid>https://blocksds.github.io/docs/technical/legacy_support/</guid>
+      <description>ROMs built with BlocksDS are designed first and foremost to support modern execution environments and maximize the amount of free memory available to the application. Unfortunately, some changes end up breaking compatibility with legacy homebrew execution methods.
+Known loaders which cause issues include:
+the PassMe/WifiMe methods, the MoonShell launcher, the Unlaunch launcher, many legacy cartridge devices. Workarounds exist to run affected homebrew software on these platforms, both from the user and developer&amp;rsquo;s perspective.</description>
     </item>
     
     <item>

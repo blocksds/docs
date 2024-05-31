@@ -12,10 +12,11 @@
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="ROMs built with BlocksDS support slot-2 devices. However, they need special care. There are two options:
-You can generate NDS-only ROMs, with a bootloader injected by ndstool. You can load a regular NDS ROM with a patched nds-hb-menu. 1. Generating a NDS-only ROM with bootloader If you add -h 0x200 to the ndstool command line arguments, it will generate a NDS-only ROM, with a bootloader that will let it boot from a slot-2 flaschart." />
+  <meta name="description" content="ROMs built with BlocksDS are designed first and foremost to support modern execution environments and maximize the amount of free memory available to the application. Unfortunately, some changes end up breaking compatibility with legacy homebrew execution methods.
+Known loaders which cause issues include:
+the PassMe/WifiMe methods, the MoonShell launcher, the Unlaunch launcher, many legacy cartridge devices. Workarounds exist to run affected homebrew software on these platforms, both from the user and developer&rsquo;s perspective." />
 
-    <title>Support for slot-2 flashcarts | BlocksDS</title>
+    <title>Legacy device/launcher support | BlocksDS</title>
 
     <link rel="icon" type="image/svg+xml" href="/docs/favicon/favicon.svg" />
 <link
@@ -36,21 +37,23 @@ You can generate NDS-only ROMs, with a bootloader injected by ndstool. You can l
     
   <meta
     property="og:title"
-    content="Support for slot-2 flashcarts"
+    content="Legacy device/launcher support"
   />
   <meta property="og:site_name" content="BlocksDS" />
-  <meta property="og:description" content="ROMs built with BlocksDS support slot-2 devices. However, they need special care. There are two options:
-You can generate NDS-only ROMs, with a bootloader injected by ndstool. You can load a regular NDS ROM with a patched nds-hb-menu. 1. Generating a NDS-only ROM with bootloader If you add -h 0x200 to the ndstool command line arguments, it will generate a NDS-only ROM, with a bootloader that will let it boot from a slot-2 flaschart." />
+  <meta property="og:description" content="ROMs built with BlocksDS are designed first and foremost to support modern execution environments and maximize the amount of free memory available to the application. Unfortunately, some changes end up breaking compatibility with legacy homebrew execution methods.
+Known loaders which cause issues include:
+the PassMe/WifiMe methods, the MoonShell launcher, the Unlaunch launcher, many legacy cartridge devices. Workarounds exist to run affected homebrew software on these platforms, both from the user and developer’s perspective." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blocksds.github.io/docs/technical/slot2_flashcarts/" />
+<meta property="og:url" content="https://blocksds.github.io/docs/technical/legacy_support/" />
 
 <meta property="article:section" content="Technical" />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Support for slot-2 flashcarts" />
-  <meta name="twitter:description" content="ROMs built with BlocksDS support slot-2 devices. However, they need special care. There are two options:
-You can generate NDS-only ROMs, with a bootloader injected by ndstool. You can load a regular NDS ROM with a patched nds-hb-menu. 1. Generating a NDS-only ROM with bootloader If you add -h 0x200 to the ndstool command line arguments, it will generate a NDS-only ROM, with a bootloader that will let it boot from a slot-2 flaschart." />
+<meta name="twitter:title" content="Legacy device/launcher support" />
+  <meta name="twitter:description" content="ROMs built with BlocksDS are designed first and foremost to support modern execution environments and maximize the amount of free memory available to the application. Unfortunately, some changes end up breaking compatibility with legacy homebrew execution methods.
+Known loaders which cause issues include:
+the PassMe/WifiMe methods, the MoonShell launcher, the Unlaunch launcher, many legacy cartridge devices. Workarounds exist to run affected homebrew software on these platforms, both from the user and developer’s perspective." />
 
 
   <script type="application/ld+json">
@@ -58,17 +61,17 @@ You can generate NDS-only ROMs, with a bootloader injected by ndstool. You can l
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Technical",
-      "name": "Support for slot-2 flashcarts",
-      "url" : "https://blocksds.github.io/docs/technical/slot2_flashcarts/",
-      "headline": "Support for slot-2 flashcarts",
-      "description": "ROMs built with BlocksDS support slot-2 devices. However, they need special care. There are two options:\nYou can generate NDS-only ROMs, with a bootloader injected by ndstool. You can load a regular NDS ROM with a patched nds-hb-menu. 1. Generating a NDS-only ROM with bootloader If you add -h 0x200 to the ndstool command line arguments, it will generate a NDS-only ROM, with a bootloader that will let it boot from a slot-2 flaschart.",
-      "wordCount" : "308",
+      "name": "Legacy device/launcher support",
+      "url" : "https://blocksds.github.io/docs/technical/legacy_support/",
+      "headline": "Legacy device/launcher support",
+      "description": "ROMs built with BlocksDS are designed first and foremost to support modern execution environments and maximize the amount of free memory available to the application. Unfortunately, some changes end up breaking compatibility with legacy homebrew execution methods.\nKnown loaders which cause issues include:\nthe PassMe\/WifiMe methods, the MoonShell launcher, the Unlaunch launcher, many legacy cartridge devices. Workarounds exist to run affected homebrew software on these platforms, both from the user and developer’s perspective.",
+      "wordCount" : "663",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://blocksds.github.io/docs/technical/slot2_flashcarts/"
+          "@id": "https://blocksds.github.io/docs/technical/legacy_support/"
       },
       "copyrightHolder" : "BlocksDS",
       "copyrightYear" : "0001",
@@ -152,7 +155,7 @@ You can generate NDS-only ROMs, with a bootloader injected by ndstool. You can l
   href="/docs/custom.css"
   media="all"
 />
-  <link href="https://blocksds.github.io/docs/technical/slot2_flashcarts/" rel="canonical" type="text/html" />
+  <link href="https://blocksds.github.io/docs/technical/legacy_support/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -1281,10 +1284,10 @@ You can generate NDS-only ROMs, with a bootloader injected by ndstool. You can l
               
                 <span class="flex">
                   <a
-                    href="/docs/technical/slot2_flashcarts/"
+                    href="/docs/technical/legacy_support/"
                     class="gdoc-nav__entry is-active"
                   >
-                    Support for slot-2 flashcarts
+                    Legacy device/launcher support
                   </a>
                 </span>
               
@@ -1368,7 +1371,7 @@ You can generate NDS-only ROMs, with a bootloader injected by ndstool. You can l
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/docs/' href='/docs/'><span itemprop='name'>BlocksDS Documentation</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/docs/technical/' href='/docs/technical/'><span itemprop='name'>Technical information</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Support for slot-2 flashcarts</span><meta itemprop='position' content='4' /></li>
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/docs/' href='/docs/'><span itemprop='name'>BlocksDS Documentation</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/docs/technical/' href='/docs/technical/'><span itemprop='name'>Technical information</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Legacy device/launcher support</span><meta itemprop='position' content='4' /></li>
   
 
   
@@ -1386,56 +1389,79 @@ You can generate NDS-only ROMs, with a bootloader injected by ndstool. You can l
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Support for slot-2 flashcarts</h1>
-    <p>ROMs built with BlocksDS support slot-2 devices. However, they need special
-care. There are two options:</p>
+    <h1>Legacy device/launcher support</h1>
+    <p>ROMs built with BlocksDS are designed first and foremost to support modern
+execution environments and maximize the amount of free memory available to
+the application. Unfortunately, some changes end up breaking compatibility
+with legacy homebrew execution methods.</p>
+<p>Known loaders which cause issues include:</p>
 <ul>
-<li>You can generate NDS-only ROMs, with a bootloader injected by <code>ndstool</code>.</li>
-<li>You can load a regular NDS ROM with a patched <code>nds-hb-menu</code>.</li>
+<li>the PassMe/WifiMe methods,</li>
+<li>the MoonShell launcher,</li>
+<li>the Unlaunch launcher,</li>
+<li>many legacy cartridge devices.</li>
+</ul>
+<p>Workarounds exist to run affected homebrew software on these platforms,
+both from the user and developer&rsquo;s perspective. A detailed explanation of
+the specific technical issues is also provided further below.</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="user-workarounds"
+    >
+        User workarounds
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/legacy_support/#user-workarounds" class="gdoc-page__anchor clip flex align-center" title="Anchor to: User workarounds" aria-label="Anchor to: User workarounds" href="#user-workarounds">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>This section is intended for users who would like to run modern homebrew
+on affected legacy devices and execution methods.</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h3 id="nds-hb-menu"
+    >
+        nds-hb-menu
+    </h3>
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/legacy_support/#nds-hb-menu" class="gdoc-page__anchor clip flex align-center" title="Anchor to: nds-hb-menu" aria-label="Anchor to: nds-hb-menu" href="#nds-hb-menu">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>The recommended way to launch a BlocksDS ROM on legacy devices is to use
+the <code>nds-hb-menu</code> launcher, which is lightweight and appropriately
+respects all modern homebrew standards.</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h4 id="example-slot-1-devices"
+    >
+        Example: Slot-1 devices
+    </h4>
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/legacy_support/#example-slot-1-devices" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Example: Slot-1 devices" aria-label="Anchor to: Example: Slot-1 devices" href="#example-slot-1-devices">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>Download <code>nds-hb-menu</code> <a
+  class="gdoc-markdown__link"
+  href="https://github.com/devkitPro/nds-hb-menu/releases"
+>here</a>.
+The file that is required for this is <code>BOOT.NDS</code>. Other files in the <code>hbmenu</code>
+directory provide support for replacing some devices&rsquo; launchers with <code>nds-hb-menu</code>
+directly.</p>
+</li>
+<li>
+<p>On some devices, you may need to perform a DLDI patch, otherwise the filesystem
+won&rsquo;t be detected. For this, you can use the <code>dldipatch</code> tool bundled with BlocksDS:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/opt/blocksds/core/tools/dldipatch/dldipatch patch BOOT.NDS device_driver.dldi
+</span></span></code></pre></div></li>
 </ul>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="1-generating-a-nds-only-rom-with-bootloader"
+    <h4 id="example-slot-2-devices"
     >
-        1. Generating a NDS-only ROM with bootloader
-    </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/slot2_flashcarts/#1-generating-a-nds-only-rom-with-bootloader" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 1. Generating a NDS-only ROM with bootloader" aria-label="Anchor to: 1. Generating a NDS-only ROM with bootloader" href="#1-generating-a-nds-only-rom-with-bootloader">
+        Example: Slot-2 devices
+    </h4>
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/legacy_support/#example-slot-2-devices" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Example: Slot-2 devices" aria-label="Anchor to: Example: Slot-2 devices" href="#example-slot-2-devices">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>If you add <code>-h 0x200</code> to the <code>ndstool</code> command line arguments, it will generate
-a NDS-only ROM, with a bootloader that will let it boot from a slot-2 flaschart.
-Essentially, the ROM is loaded to the slot-2 memory, and it remains memory
-mapped during the execution of the game.</p>
-<p>This mode will let you use nitroFS normally by reading directly from the slot-2
-memory. FAT access will be unavailable.</p>
-<p>Any ROM generated with this system will be unable of using DSi features when
-loaded in a DSi, so it isn&rsquo;t recommended.</p>
-<div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="2-load-the-rom-through-nds-hb-menu"
-    >
-        2. Load the rom through nds-hb-menu
-    </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/slot2_flashcarts/#2-load-the-rom-through-nds-hb-menu" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 2. Load the rom through nds-hb-menu" aria-label="Anchor to: 2. Load the rom through nds-hb-menu" href="#2-load-the-rom-through-nds-hb-menu">
-        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-    </a>
-</div>
-<p>You won&rsquo;t need to modify the invocation of <code>ndstool</code>, but you will need a
-version of <code>nds-hb-menu</code> patched with the DLDI driver of your flashcart, and
-patched to run from a slot-2 flashcard. When you load a NDS ROM through this
-loader, it will patch it with the right DLDI driver. The whole ROM won&rsquo;t be
-loaded to slot-2 memory, so nitroFS will rely on DLDI reads to load data. This
-also means that FAT access is possible.</p>
-<p>This method is recommended, as it doesn&rsquo;t ask the developer to modify the build
-system, and no features are unavailable.</p>
-<div class="flex align-center gdoc-page__anchorwrap">
-    <h3 id="example-supercard-sd"
-    >
-        Example: SuperCard SD
-    </h3>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/slot2_flashcarts/#example-supercard-sd" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Example: SuperCard SD" aria-label="Anchor to: Example: SuperCard SD" href="#example-supercard-sd">
-        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-    </a>
-</div>
+<p>Some Slot-2 devices require additional work for proper support.</p>
 <ul>
 <li>
 <p>Download <code>nds-hb-menu</code> <a
@@ -1455,7 +1481,7 @@ A copy is also provided <a
 >here</a>.</p>
 </li>
 <li>
-<p>Download <code>scsd_moon.dldi</code> from
+<p>Download the DLDI driver. For example, the SuperCard SD should use <code>scsd_moon.dldi</code> from
 <a
   class="gdoc-markdown__link"
   href="https://github.com/DS-Homebrew/DLDI/blob/master/prebuilts/scsd_moon.dldi"
@@ -1474,6 +1500,89 @@ A copy is also provided <a
 loader should work.</p>
 </li>
 </ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="developer-workarounds"
+    >
+        Developer workarounds
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/legacy_support/#developer-workarounds" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Developer workarounds" aria-label="Anchor to: Developer workarounds" href="#developer-workarounds">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>This section is intended for developers who would like to understand why
+modern homebrew does not run on affected legacy devices and execution methods.
+Workarounds are provided where available, but their use is discouraged and should
+be limited to appropriate, specialized use cases.</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h3 id="missing-argv-support"
+    >
+        Missing argv support
+    </h3>
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/legacy_support/#missing-argv-support" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Missing argv support" aria-label="Anchor to: Missing argv support" href="#missing-argv-support">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>The argv structure was added to libnds <a
+  class="gdoc-markdown__link"
+  href="https://github.com/devkitPro/libnds/commit/34f30043ce8683d48194fa009fd788da691517de"
+>in mid-2007</a>;
+this means that any launcher written before that date, as well as many launchers
+written after that date (including ones as recent as Unlaunch), do not support
+passing command-line arguments. Most notably, this impacts the NitroFS filesystem,
+which - outside of Slot-2 cartridges - relies on reading <code>argv[0]</code> to find
+the <code>.nds</code> file it was launched from.</p>
+<p>As this is a missing feature rather than a bug, there is no workaround available.</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h3 id="reduced-dldi-driver-reserved-space"
+    >
+        Reduced DLDI driver reserved space
+    </h3>
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/legacy_support/#reduced-dldi-driver-reserved-space" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Reduced DLDI driver reserved space" aria-label="Anchor to: Reduced DLDI driver reserved space" href="#reduced-dldi-driver-reserved-space">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>ROM files built <a
+  class="gdoc-markdown__link"
+  href="https://github.com/devkitPro/libnds/commit/c9668aa8f47bd41400f485b8a9a728b517a1174d"
+>from 2017 onwards</a>
+only reserve 16 kilobytes, as opposed to 32 kilobytes, for the DLDI driver used
+to communicate with the launch device&rsquo;s filesystem. This frees RAM to be used
+by the homebrew program. Unfortunately, some legacy launchers - most notably
+MoonShell - incorrectly perform the DLDI patching process when encountering such
+<code>.nds</code> files. This affects any homebrew program which links in filesystem access
+code (be it FAT or NitroFS), <em>even if</em> the code is not used at runtime.</p>
+<p>There is a workaround available to emit <code>.nds</code> files with the larger reserved DLDI
+space; one has to create an assembly file (for example, <code>dldi_size_32k.s</code>) in the
+source directory with the following contents:</p>
+<pre tabindex="0"><code>.global __dldi_size
+.equ __dldi_size, 32768
+</code></pre><div class="flex align-center gdoc-page__anchorwrap">
+    <h3 id="ndsdsi-hybrid-roms"
+    >
+        NDS/DSi hybrid ROMs
+    </h3>
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/legacy_support/#ndsdsi-hybrid-roms" class="gdoc-page__anchor clip flex align-center" title="Anchor to: NDS/DSi hybrid ROMs" aria-label="Anchor to: NDS/DSi hybrid ROMs" href="#ndsdsi-hybrid-roms">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>ROM files built <a
+  class="gdoc-markdown__link"
+  href="https://github.com/devkitPro/ndstool/commit/18d3c00df65a2b7a9c9f0312eaac518678869345"
+>from 2017 onwards</a>
+are designed to simultaneously be both valid NDS and DSi-format ROMs. However,
+this fully breaks some forms of executing ROMs:</p>
+<ul>
+<li>PassMe, WifiMe and Slot-2 flashcarts launch ROMs by jumping to the beginning
+of the file, normally containing the game title. On older homebrew ROMs,
+however, a branch instruction to a small built-in <code>.nds</code> loader is placed
+there.</li>
+<li>MoonShell, in particular, also relies on said built-in <code>.nds</code> loader to run
+homebrew applications.</li>
+</ul>
+<p>By adding <code>-h 0x200</code> to the <code>ndstool</code> command line arguments, an NDS-only ROM
+can be generated, which will work on the above environments. However, such
+ROMs will not work at all on DSi/3DS consoles in DSi mode, so its use is
+heavily discouraged.</p>
 
   </article>
 

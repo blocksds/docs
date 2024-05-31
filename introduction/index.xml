@@ -33,9 +33,9 @@ Many thanks to asie for his help and advice, and for Wonderful Toolchain devkitP
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blocksds.github.io/docs/introduction/changelog/</guid>
-      <description>Version 1.1.0 (2024-05-08) libnds:
-Add keyboardExit() function to deinitialize keyboard structures. Add realpath() implementation. Adjust keyboardInit() to only link the default keyboard if no custom keyboard is being used. Fix getcwd() result when called in the root NitroFS directory. Fix Slot-1 card reads not being aligned to 512 bytes. Minor allocation/string handling bugfixes. Fix some memory allocation issues found by GCC 14. SDK:
-Add examples (paletted textures, rotation backgrounds, 16-bit backgrounds, sprites in sub screen, FAT file attributes, GL2D usage).</description>
+      <description>Version DEV (2024-??-??) libnds:
+Add hw_sqrtf() - a hardware-accelerated alternative to sqrtf(). Fix swiSwitchToGBAMode(). Improve documentation of RTC structs. Improve GL2D error checking. Modify GL2D sprite sets to use uint16_t arrays for texture coordinates. SDK:
+Add GL2D sprite examples. Add new tool: squeezer - used for generating packed textures for GL2D sprite sets. Add tests for hw_sqrtf(). Fix VRAM bank setup in &amp;ldquo;text over 3D&amp;rdquo; example. Version 1.1.0 (2024-05-08) libnds:</description>
     </item>
     
     <item>
