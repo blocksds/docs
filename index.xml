@@ -42,14 +42,12 @@ sudo apt-get install -y --no-install-recommends build-essential You will also ne
     </item>
     
     <item>
-      <title>Usage notes</title>
-      <link>https://blocksds.github.io/docs/technical/usage_notes/</link>
+      <title>Exit to loader protocol</title>
+      <link>https://blocksds.github.io/docs/design/exit_to_loader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blocksds.github.io/docs/technical/usage_notes/</guid>
-      <description>1. Introduction This is just a list of tips and notes about how to use BlocksDS.
-2. Section annotations in filenames Some projects require specific functions or variables to be placed in specific memory regions. Some functions may also need to be compiled as ARM instead of Thumb, which is the default.
-It is possible to rename your C and C++ source files to affect the whole file. For example, a file named engine.</description>
+      <guid>https://blocksds.github.io/docs/design/exit_to_loader/</guid>
+      <description>1. Introduction Normally, the only way to exit a DS application is to switch the console off and turn it on again. It can get annoying to do this if you&amp;rsquo;re, for example, testing many applications. libnds supports a protocol that allows an application loader (such as the menu of a flashcart) to setup an exit routine that allows the application to return to the loader. This is needed because the DS doesn&amp;rsquo;t have an OS, so the protocol is managed manually.</description>
     </item>
     
     <item>
@@ -58,7 +56,7 @@ It is possible to rename your C and C++ source files to affect the whole file. F
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blocksds.github.io/docs/technical/filesystem/</guid>
-      <description>1. Introduction BlocksDS supports using standard C functions to access the filesystem. It is possible to use them to access both the SD cards of flashcards, and the internal SD slot of the DSi. This code is integrated in libnds, so you don&amp;rsquo;t need to do anything special to use it.
+      <description>1. Introduction BlocksDS supports using standard C functions to access the filesystem. It is possible to use them to access both the SD cards of flashcarts, and the internal SD slot of the DSi. This code is integrated in libnds, so you don&amp;rsquo;t need to do anything special to use it.
 Add the following to your project:
 #include &amp;lt;fat.h&amp;gt; int main(int argc, char *argv[]) { bool init_ok = fatInitDefault(); if (!</description>
     </item>
@@ -78,17 +76,8 @@ Add the following to your project:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blocksds.github.io/docs/technical/dldi_arm7/</guid>
-      <description>1. Introduction DLDI (Dynamically Linked Disc Interface) is an interface designed for homebrew projects to be able to access the memory of flashcards (usually micro SD cards) in a standardized way. https://www.chishm.com/DLDI/
-In short, when you build an application, the DLDI stub is added to your application. Then you and your users have to patch your application with the DLDI driver your flashcards. Most flashcards patch homebrew NDS ROMs, so normally you don&amp;rsquo;t need to worry about it, it just works.</description>
-    </item>
-    
-    <item>
-      <title>Exit to loader protocol</title>
-      <link>https://blocksds.github.io/docs/technical/exit_to_loader/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blocksds.github.io/docs/technical/exit_to_loader/</guid>
-      <description>1. Introduction Normally, the only way to exit a DS application is to switch the console off and turn it on again. It can get annoying to do this if you&amp;rsquo;re, for example, testing many applications. libnds supports a protocol that allows an application loader (such as the menu of a flashcard) to setup an exit routine that allows the application to return to the loader. This is needed because the DS doesn&amp;rsquo;t have an OS, so the protocol is managed manually.</description>
+      <description>1. Introduction DLDI (Dynamically Linked Disc Interface) is an interface designed for homebrew projects to be able to access the memory of flashcarts (usually micro SD cards) in a standardized way. https://www.chishm.com/DLDI/
+In short, when you build an application, the DLDI stub is added to your application. Then you and your users have to patch your application with the DLDI driver your flashcarts. Most flashcarts patch homebrew NDS ROMs, so normally you don&amp;rsquo;t need to worry about it, it just works.</description>
     </item>
     
     <item>
@@ -99,6 +88,16 @@ In short, when you build an application, the DLDI stub is added to your applicat
       <guid>https://blocksds.github.io/docs/setup/extra_steps/</guid>
       <description>1. Test To test that everything is working, you can try building one of the examples or project templates included in BlocksDS.
 There is a template that lets the programmer write the code for both CPUs of the NDS (rom_combined) and a template that uses the default ARM7 core that comes with Blocks DS and lets the programmer focus on the ARM9 core (rom_arm9). There are also two templates to create static libraries.</description>
+    </item>
+    
+    <item>
+      <title>Optimization guide</title>
+      <link>https://blocksds.github.io/docs/technical/optimization_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/technical/optimization_guide/</guid>
+      <description>This guide covers some techniques one can use to optimize DS/DSi homebrew with BlocksDS.
+Optimizing CPU usage Measure CPU performance on hardware only! As of writing (May 2024), the most popular emulators are not sufficiently cycle-accurate to provide accurate profiling results; this might lead, at worst, to mistaken optimizations. Avoid using floating point values (float, double). As the DS does not include any hardware for accelerating floating point math, operations on them have to be emulated in software, which is quite costly.</description>
     </item>
     
     <item>
@@ -124,7 +123,29 @@ Many thanks to asie for his help and advice, and for Wonderful Toolchain devkitP
     </item>
     
     <item>
-      <title>devkitARM porting guide</title>
+      <title>Legacy device/launcher support</title>
+      <link>https://blocksds.github.io/docs/usage/legacy_support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/usage/legacy_support/</guid>
+      <description>ROMs built with BlocksDS are designed first and foremost to support modern execution environments and maximize the amount of free memory available to the application. Unfortunately, some changes end up breaking compatibility with legacy homebrew execution methods.
+Known loaders which cause issues include:
+the PassMe/WifiMe methods, the MoonShell launcher, the Unlaunch launcher, many legacy cartridge devices. Workarounds exist to run affected homebrew software on these platforms, both from the user and developer&amp;rsquo;s perspective.</description>
+    </item>
+    
+    <item>
+      <title>Upgrade guide</title>
+      <link>https://blocksds.github.io/docs/technical/updating_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/technical/updating_guide/</guid>
+      <description>Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.
+Please refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.
+Upgrading to BlocksDS 1.2.0 In gl2d.h, glLoadSpriteSet now expects an array of uint16_t integers for texture coordinates, rather than 32-bit unsigned ints.</description>
+    </item>
+    
+    <item>
+      <title>Migrating from devkitARM</title>
       <link>https://blocksds.github.io/docs/technical/devkitarm_porting_guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -134,24 +155,15 @@ Many thanks to asie for his help and advice, and for Wonderful Toolchain devkitP
     </item>
     
     <item>
-      <title>Design guide</title>
-      <link>https://blocksds.github.io/docs/technical/design_guide/</link>
+      <title>C/C&#43;&#43; support</title>
+      <link>https://blocksds.github.io/docs/technical/libc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blocksds.github.io/docs/technical/design_guide/</guid>
-      <description>1. Custom build of GCC vs not custom build Building GCC is a long and not-too-easy process that doesn&amp;rsquo;t give you a big advantage over the other approach. It would make setting up the SDK a more fragile process.
-However, in order to take advantage of per-CPU optimizations and to have a robust toolchain, it is required to use a custom build of GCC. For this purpose, BlocksDS relies on Wonderful Toolchain.</description>
-    </item>
-    
-    <item>
-      <title>Legacy device/launcher support</title>
-      <link>https://blocksds.github.io/docs/technical/legacy_support/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blocksds.github.io/docs/technical/legacy_support/</guid>
-      <description>ROMs built with BlocksDS are designed first and foremost to support modern execution environments and maximize the amount of free memory available to the application. Unfortunately, some changes end up breaking compatibility with legacy homebrew execution methods.
-Known loaders which cause issues include:
-the PassMe/WifiMe methods, the MoonShell launcher, the Unlaunch launcher, many legacy cartridge devices. Workarounds exist to run affected homebrew software on these platforms, both from the user and developer&amp;rsquo;s perspective.</description>
+      <guid>https://blocksds.github.io/docs/technical/libc/</guid>
+      <description>1. Introduction BlocksDS supports modern C/C++ standard libraries by providing the following libraries:
+picolibc, an embedded-centric fork of the Newlib C library; libstdc++, the GNU C++ library. However, this support includes some platform-specific caveats.
+2. POSIX I/O BlocksDS provides POSIX standard I/O using the tinystdio library, which is part of picolibc. It supports most of the functionality mandated by the C standard, as well as some extensions.
+File I/O (fopen, opendir, etc.</description>
     </item>
     
     <item>
@@ -166,6 +178,17 @@ Add GL2D sprite examples. Add new tool: squeezer - used for generating packed te
     </item>
     
     <item>
+      <title>Design choices</title>
+      <link>https://blocksds.github.io/docs/design/design_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/design/design_guide/</guid>
+      <description>This guide serves as a loose explanation of some design choices made during the development of BlocksDS.
+A supplementary good source for understanding its design choices is the BlocksDS issue tracker, where many were and continue to be openly discussed.
+1. Standardized binary build of the GCC compiler Existing builds of GCC used for embedded development come with various, often not fully matching C/C++ standard libraries. The compatibility issues and added support headache make relying on user-provided GCC a non-viable option.</description>
+    </item>
+    
+    <item>
       <title>Docker</title>
       <link>https://blocksds.github.io/docs/setup/options/docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -173,16 +196,6 @@ Add GL2D sprite examples. Add new tool: squeezer - used for generating packed te
       <guid>https://blocksds.github.io/docs/setup/options/docker/</guid>
       <description>1. Introduction If you&amp;rsquo;re not familiar with Docker, in short, it lets you create containers with predefined images. Containers are something similar to a virtual machine. An image is just the contents of the hard drive of that virtual machine.
 It is very easy to share folders between the docker container and the host. That way you can share your code with the container, build your code from the container, and see the results in the host (so that you can test the result on an emulator or copy it to a flashcart!</description>
-    </item>
-    
-    <item>
-      <title>libc port information</title>
-      <link>https://blocksds.github.io/docs/technical/libc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blocksds.github.io/docs/technical/libc/</guid>
-      <description>1. Introduction BlocksDS has code to allow libc functions to work on NDS programs. The supported functions are described in this file. Note that they should only be used from ARM9 code, as they aren&amp;rsquo;t supported from the ARM7.
-2. argc and argv For NDS and NDS Lite consoles that run ROMs from a flashcard, the loader needs to support the argv protocol of libnds. If so, argv[0] will hold the path of the NDS file in the SD card of the flashcard.</description>
     </item>
     
     <item>
@@ -207,6 +220,17 @@ Copyright (C) 2005-2006 Stephen Stair - sgstair@akkit.org libnds This is used in
 You will also need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https://wonderful.asie.pl/docs/getting-started/#linux
 Now, install the ARM toolchain of Wonderful Toolchains, as well as the BlocksDS packages.
 export PATH=/opt/wonderful/bin:$PATH wf-pacman -Syu wf-pacman -S toolchain-gcc-arm-none-eabi Install the following if you plan to develop binaries for the DSP of the DSi:</description>
+    </item>
+    
+    <item>
+      <title>Usage notes</title>
+      <link>https://blocksds.github.io/docs/technical/usage_notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blocksds.github.io/docs/technical/usage_notes/</guid>
+      <description>1. Introduction This is just a list of tips and notes about how to use BlocksDS.
+2. Section annotations in filenames Some projects require specific functions or variables to be placed in specific memory regions. Some functions may also need to be compiled as ARM instead of Thumb, which is the default.
+It is possible to rename your C and C++ source files to affect the whole file. For example, a file named engine.</description>
     </item>
     
   </channel>

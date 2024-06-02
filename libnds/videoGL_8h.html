@@ -581,12 +581,12 @@ Functions</h2></td></tr>
 <tr class="memitem:af036551b1827883eb67c63d54c196eb1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#af036551b1827883eb67c63d54c196eb1">glColor3f</a> (float r, float g, float b)</td></tr>
 <tr class="memdesc:af036551b1827883eb67c63d54c196eb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify a color for following vertices.  <a href="videoGL_8h.html#af036551b1827883eb67c63d54c196eb1">More...</a><br /></td></tr>
 <tr class="separator:af036551b1827883eb67c63d54c196eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cc39c3b3e8e0638afb4d8661e0d8e9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#a8cc39c3b3e8e0638afb4d8661e0d8e9a">glColorSubTableEXT</a> (int target, int start, int count, int empty1, int empty2, const uint16_t *data)</td></tr>
-<tr class="memdesc:a8cc39c3b3e8e0638afb4d8661e0d8e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a 15-bit color format palette into a specific spot in a currently bound texture's existing palette.  <a href="videoGL_8h.html#a8cc39c3b3e8e0638afb4d8661e0d8e9a">More...</a><br /></td></tr>
-<tr class="separator:a8cc39c3b3e8e0638afb4d8661e0d8e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac12430866f80ddc2e9cf35e3fa83185c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#ac12430866f80ddc2e9cf35e3fa83185c">glColorTableEXT</a> (int target, int empty1, uint16_t width, int empty2, int empty3, const uint16_t *table)</td></tr>
-<tr class="memdesc:ac12430866f80ddc2e9cf35e3fa83185c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a 15-bit color palette into palette memory, and sets it to the currently bound texture.  <a href="videoGL_8h.html#ac12430866f80ddc2e9cf35e3fa83185c">More...</a><br /></td></tr>
-<tr class="separator:ac12430866f80ddc2e9cf35e3fa83185c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79fd2c4071b3add75dd9210ca9f928f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#ac79fd2c4071b3add75dd9210ca9f928f">glColorSubTableEXT</a> (int target, int start, int count, int empty1, int empty2, const void *data)</td></tr>
+<tr class="memdesc:ac79fd2c4071b3add75dd9210ca9f928f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a 15-bit color format palette into a specific spot in a currently bound texture's existing palette.  <a href="videoGL_8h.html#ac79fd2c4071b3add75dd9210ca9f928f">More...</a><br /></td></tr>
+<tr class="separator:ac79fd2c4071b3add75dd9210ca9f928f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de2ca5f873855a131cf801894d33d5e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#a9de2ca5f873855a131cf801894d33d5e">glColorTableEXT</a> (int target, int empty1, uint16_t width, int empty2, int empty3, const void *table)</td></tr>
+<tr class="memdesc:a9de2ca5f873855a131cf801894d33d5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a 15-bit color palette into palette memory, and sets it to the currently bound texture.  <a href="videoGL_8h.html#a9de2ca5f873855a131cf801894d33d5e">More...</a><br /></td></tr>
+<tr class="separator:a9de2ca5f873855a131cf801894d33d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d7836ab3f6b8eca667678b64e9ee98d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#a2d7836ab3f6b8eca667678b64e9ee98d">glCutoffDepth</a> (<a class="el" href="videoGL_8h.html#af4f9c3c4e013700605107b638aa08e62">fixed12d3</a> wVal)</td></tr>
 <tr class="memdesc:a2d7836ab3f6b8eca667678b64e9ee98d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the drawing of polygons that are a certain distance from the camera.  <a href="videoGL_8h.html#a2d7836ab3f6b8eca667678b64e9ee98d">More...</a><br /></td></tr>
 <tr class="separator:a2d7836ab3f6b8eca667678b64e9ee98d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -627,9 +627,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>glEnd</b> (voi
 <tr class="memitem:aab7f277f7e9dd9683b8671ade84b3eda"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#aab7f277f7e9dd9683b8671ade84b3eda">glGenTextures</a> (int n, int *names)</td></tr>
 <tr class="memdesc:aab7f277f7e9dd9683b8671ade84b3eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates room for the specified number of textures.  <a href="videoGL_8h.html#aab7f277f7e9dd9683b8671ade84b3eda">More...</a><br /></td></tr>
 <tr class="separator:aab7f277f7e9dd9683b8671ade84b3eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada7c22ab3fafba7e58002154474f490c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#ada7c22ab3fafba7e58002154474f490c">glGetColorTableEXT</a> (int target, int empty1, int empty2, uint16_t *table)</td></tr>
-<tr class="memdesc:ada7c22ab3fafba7e58002154474f490c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a 15-bit color format palette from the palette memory of the currently bound texture.  <a href="videoGL_8h.html#ada7c22ab3fafba7e58002154474f490c">More...</a><br /></td></tr>
-<tr class="separator:ada7c22ab3fafba7e58002154474f490c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a5dc5fcc847b211c4f0901f7e0a10a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#ab3a5dc5fcc847b211c4f0901f7e0a10a">glGetColorTableEXT</a> (int target, int empty1, int empty2, void *table)</td></tr>
+<tr class="memdesc:ab3a5dc5fcc847b211c4f0901f7e0a10a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a 15-bit color format palette from the palette memory of the currently bound texture.  <a href="videoGL_8h.html#ab3a5dc5fcc847b211c4f0901f7e0a10a">More...</a><br /></td></tr>
+<tr class="separator:ab3a5dc5fcc847b211c4f0901f7e0a10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe19b2fd2815f98a563ab95b09eb620b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#afe19b2fd2815f98a563ab95b09eb620b">glGetColorTableParameterEXT</a> (int target, int pname, int *params)</td></tr>
 <tr class="memdesc:afe19b2fd2815f98a563ab95b09eb620b"><td class="mdescLeft">&#160;</td><td class="mdescRight">glGetColorTableParameterEXT retrieves information pertaining to the currently bound texture's palette.  <a href="videoGL_8h.html#afe19b2fd2815f98a563ab95b09eb620b">More...</a><br /></td></tr>
 <tr class="separator:afe19b2fd2815f98a563ab95b09eb620b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1684,8 +1684,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 
 </div>
 </div>
-<a id="a8cc39c3b3e8e0638afb4d8661e0d8e9a" name="a8cc39c3b3e8e0638afb4d8661e0d8e9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cc39c3b3e8e0638afb4d8661e0d8e9a">&#9670;&nbsp;</a></span>glColorSubTableEXT()</h2>
+<a id="ac79fd2c4071b3add75dd9210ca9f928f" name="ac79fd2c4071b3add75dd9210ca9f928f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac79fd2c4071b3add75dd9210ca9f928f">&#9670;&nbsp;</a></span>glColorSubTableEXT()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1723,7 +1723,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint16_t *&#160;</td>
+          <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>data</em>&#160;</td>
         </tr>
         <tr>
@@ -1750,8 +1750,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 
 </div>
 </div>
-<a id="ac12430866f80ddc2e9cf35e3fa83185c" name="ac12430866f80ddc2e9cf35e3fa83185c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac12430866f80ddc2e9cf35e3fa83185c">&#9670;&nbsp;</a></span>glColorTableEXT()</h2>
+<a id="a9de2ca5f873855a131cf801894d33d5e" name="a9de2ca5f873855a131cf801894d33d5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9de2ca5f873855a131cf801894d33d5e">&#9670;&nbsp;</a></span>glColorTableEXT()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1789,7 +1789,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint16_t *&#160;</td>
+          <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>table</em>&#160;</td>
         </tr>
         <tr>
@@ -2344,8 +2344,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 
 </div>
 </div>
-<a id="ada7c22ab3fafba7e58002154474f490c" name="ada7c22ab3fafba7e58002154474f490c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada7c22ab3fafba7e58002154474f490c">&#9670;&nbsp;</a></span>glGetColorTableEXT()</h2>
+<a id="ab3a5dc5fcc847b211c4f0901f7e0a10a" name="ab3a5dc5fcc847b211c4f0901f7e0a10a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3a5dc5fcc847b211c4f0901f7e0a10a">&#9670;&nbsp;</a></span>glGetColorTableEXT()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2371,7 +2371,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>table</em>&#160;</td>
         </tr>
         <tr>
@@ -4968,7 +4968,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 31 2024 18:10:34 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 2 2024 02:56:31 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

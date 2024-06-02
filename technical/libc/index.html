@@ -12,10 +12,12 @@
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="1. Introduction BlocksDS has code to allow libc functions to work on NDS programs. The supported functions are described in this file. Note that they should only be used from ARM9 code, as they aren&rsquo;t supported from the ARM7.
-2. argc and argv For NDS and NDS Lite consoles that run ROMs from a flashcard, the loader needs to support the argv protocol of libnds. If so, argv[0] will hold the path of the NDS file in the SD card of the flashcard." />
+  <meta name="description" content="1. Introduction BlocksDS supports modern C/C&#43;&#43; standard libraries by providing the following libraries:
+picolibc, an embedded-centric fork of the Newlib C library; libstdc&#43;&#43;, the GNU C&#43;&#43; library. However, this support includes some platform-specific caveats.
+2. POSIX I/O BlocksDS provides POSIX standard I/O using the tinystdio library, which is part of picolibc. It supports most of the functionality mandated by the C standard, as well as some extensions.
+File I/O (fopen, opendir, etc." />
 
-    <title>libc port information | BlocksDS</title>
+    <title>C/C&#43;&#43; support | BlocksDS</title>
 
     <link rel="icon" type="image/svg+xml" href="/docs/favicon/favicon.svg" />
 <link
@@ -36,11 +38,13 @@
     
   <meta
     property="og:title"
-    content="libc port information"
+    content="C/C++ support"
   />
   <meta property="og:site_name" content="BlocksDS" />
-  <meta property="og:description" content="1. Introduction BlocksDS has code to allow libc functions to work on NDS programs. The supported functions are described in this file. Note that they should only be used from ARM9 code, as they aren’t supported from the ARM7.
-2. argc and argv For NDS and NDS Lite consoles that run ROMs from a flashcard, the loader needs to support the argv protocol of libnds. If so, argv[0] will hold the path of the NDS file in the SD card of the flashcard." />
+  <meta property="og:description" content="1. Introduction BlocksDS supports modern C/C&#43;&#43; standard libraries by providing the following libraries:
+picolibc, an embedded-centric fork of the Newlib C library; libstdc&#43;&#43;, the GNU C&#43;&#43; library. However, this support includes some platform-specific caveats.
+2. POSIX I/O BlocksDS provides POSIX standard I/O using the tinystdio library, which is part of picolibc. It supports most of the functionality mandated by the C standard, as well as some extensions.
+File I/O (fopen, opendir, etc." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blocksds.github.io/docs/technical/libc/" />
 
@@ -48,9 +52,11 @@
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="libc port information" />
-  <meta name="twitter:description" content="1. Introduction BlocksDS has code to allow libc functions to work on NDS programs. The supported functions are described in this file. Note that they should only be used from ARM9 code, as they aren’t supported from the ARM7.
-2. argc and argv For NDS and NDS Lite consoles that run ROMs from a flashcard, the loader needs to support the argv protocol of libnds. If so, argv[0] will hold the path of the NDS file in the SD card of the flashcard." />
+<meta name="twitter:title" content="C/C++ support" />
+  <meta name="twitter:description" content="1. Introduction BlocksDS supports modern C/C&#43;&#43; standard libraries by providing the following libraries:
+picolibc, an embedded-centric fork of the Newlib C library; libstdc&#43;&#43;, the GNU C&#43;&#43; library. However, this support includes some platform-specific caveats.
+2. POSIX I/O BlocksDS provides POSIX standard I/O using the tinystdio library, which is part of picolibc. It supports most of the functionality mandated by the C standard, as well as some extensions.
+File I/O (fopen, opendir, etc." />
 
 
   <script type="application/ld+json">
@@ -58,11 +64,11 @@
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Technical",
-      "name": "libc port information",
+      "name": "C/C++ support",
       "url" : "https://blocksds.github.io/docs/technical/libc/",
-      "headline": "libc port information",
-      "description": "1. Introduction BlocksDS has code to allow libc functions to work on NDS programs. The supported functions are described in this file. Note that they should only be used from ARM9 code, as they aren’t supported from the ARM7.\n2. argc and argv For NDS and NDS Lite consoles that run ROMs from a flashcard, the loader needs to support the argv protocol of libnds. If so, argv[0] will hold the path of the NDS file in the SD card of the flashcard.",
-      "wordCount" : "548",
+      "headline": "C/C++ support",
+      "description": "1. Introduction BlocksDS supports modern C\/C\u002b\u002b standard libraries by providing the following libraries:\npicolibc, an embedded-centric fork of the Newlib C library; libstdc\u002b\u002b, the GNU C\u002b\u002b library. However, this support includes some platform-specific caveats.\n2. POSIX I\/O BlocksDS provides POSIX standard I\/O using the tinystdio library, which is part of picolibc. It supports most of the functionality mandated by the C standard, as well as some extensions.\nFile I\/O (fopen, opendir, etc.",
+      "wordCount" : "562",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -887,6 +893,97 @@
               
             >
               
+                <span class="flex">Usage</span>
+              
+              
+            </label>
+
+            
+              
+  
+
+
+  <ul class="gdoc-nav__list">
+    
+    
+      
+
+      
+        
+      
+
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
+                    href="/docs/usage/legacy_support/"
+                    class="gdoc-nav__entry"
+                  >
+                    Legacy device/launcher support
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+    
+  </ul>
+
+            
+          </li>
+        
+      
+    
+      
+
+      
+        
+      
+
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
                 <span class="flex">Technical information</span>
               
               
@@ -932,7 +1029,7 @@
                     href="/docs/technical/libc/"
                     class="gdoc-nav__entry is-active"
                   >
-                    libc port information
+                    C/C&#43;&#43; support
                   </a>
                 </span>
               
@@ -942,14 +1039,6 @@
             
           </li>
         
-      
-    
-      
-
-      
-        
-      
-
       
         
           
@@ -1149,10 +1238,54 @@
               
                 <span class="flex">
                   <a
-                    href="/docs/technical/exit_to_loader/"
+                    href="/docs/technical/optimization_guide/"
                     class="gdoc-nav__entry"
                   >
-                    Exit to loader protocol
+                    Optimization guide
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+    
+      
+
+      
+        
+      
+
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
+                    href="/docs/technical/updating_guide/"
+                    class="gdoc-nav__entry"
+                  >
+                    Upgrade guide
                   </a>
                 </span>
               
@@ -1196,7 +1329,98 @@
                     href="/docs/technical/devkitarm_porting_guide/"
                     class="gdoc-nav__entry"
                   >
-                    devkitARM porting guide
+                    Migrating from devkitARM
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+    
+  </ul>
+
+            
+          </li>
+        
+      
+    
+      
+
+      
+        
+      
+
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">Additional information</span>
+              
+              
+            </label>
+
+            
+              
+  
+
+
+  <ul class="gdoc-nav__list">
+    
+    
+      
+
+      
+        
+      
+
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
+                    href="/docs/design/design_guide/"
+                    class="gdoc-nav__entry"
+                  >
+                    Design choices
                   </a>
                 </span>
               
@@ -1237,54 +1461,10 @@
               
                 <span class="flex">
                   <a
-                    href="/docs/technical/design_guide/"
+                    href="/docs/design/exit_to_loader/"
                     class="gdoc-nav__entry"
                   >
-                    Design guide
-                  </a>
-                </span>
-              
-              
-            </label>
-
-            
-          </li>
-        
-      
-    
-      
-
-      
-        
-      
-
-      
-        
-          
-          
-          
-          
-          
-          
-
-
-          <li>
-            <input
-              type="checkbox"
-              
-                class="hidden"
-              
-            />
-            <label
-              
-            >
-              
-                <span class="flex">
-                  <a
-                    href="/docs/technical/legacy_support/"
-                    class="gdoc-nav__entry"
-                  >
-                    Legacy device/launcher support
+                    Exit to loader protocol
                   </a>
                 </span>
               
@@ -1368,7 +1548,7 @@
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/docs/' href='/docs/'><span itemprop='name'>BlocksDS Documentation</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/docs/technical/' href='/docs/technical/'><span itemprop='name'>Technical information</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>libc port information</span><meta itemprop='position' content='4' /></li>
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/docs/' href='/docs/'><span itemprop='name'>BlocksDS Documentation</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/docs/technical/' href='/docs/technical/'><span itemprop='name'>Technical information</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>C/C++ support</span><meta itemprop='position' content='4' /></li>
   
 
   
@@ -1386,7 +1566,7 @@
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>libc port information</h1>
+    <h1>C/C&#43;&#43; support</h1>
     <div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="1-introduction"
     >
@@ -1396,73 +1576,51 @@
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>BlocksDS has code to allow libc functions to work on NDS programs. The supported
-functions are described in this file. Note that they should only be used from
-ARM9 code, as they aren&rsquo;t supported from the ARM7.</p>
-<div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="2-argc-and-argv"
-    >
-        2. argc and argv
-    </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/libc/#2-argc-and-argv" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 2. argc and argv" aria-label="Anchor to: 2. argc and argv" href="#2-argc-and-argv">
-        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-    </a>
-</div>
-<p>For NDS and NDS Lite consoles that run ROMs from a flashcard, the loader needs
-to support the argv protocol of libnds. If so, <code>argv[0]</code> will hold the path of
-the NDS file in the SD card of the flashcard. The drive name is <code>fat:</code>. For
-example, a valid path is <code>fat:/path/to/rom.nds</code>.</p>
-<p>For DSi consoles loading ROMs from the internal SD card, <code>argv[0]</code> works in a
-similar way. It will hold the path to the NDS ROM in the internal SD card, which
-uses <code>sd:</code> as prefix. For example, <code>sd:/path/to/rom.nds</code>.</p>
-<p>Note that it is possible to use a NDS flashcard on DSi. If the user loads the
-NDS ROM from a flashcard, <code>argv[0]</code> will point to the filesystem of the
-flashcard (<code>fat:</code>), not the internal SD card (<code>sd:</code>).</p>
-<p>Other <code>argv</code> entries may be set as well, but this isn&rsquo;t a common occurrence.</p>
-<p>For more information, check <a
+<p>BlocksDS supports modern C/C++ standard libraries by providing the following
+libraries:</p>
+<ul>
+<li><a
   class="gdoc-markdown__link"
-  href="https://devkitpro.org/wiki/Homebrew_Menu"
->this</a>.</p>
+  href="https://github.com/picolibc/picolibc"
+>picolibc</a>, an embedded-centric fork of
+the Newlib C library;</li>
+<li><a
+  class="gdoc-markdown__link"
+  href="https://gcc.gnu.org/onlinedocs/libstdc&#43;&#43;/"
+>libstdc++</a>, the GNU C++ library.</li>
+</ul>
+<p>However, this support includes some platform-specific caveats.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="3-filesystem"
+    <h2 id="2-posix-io"
     >
-        3. Filesystem
+        2. POSIX I/O
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/libc/#3-filesystem" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 3. Filesystem" aria-label="Anchor to: 3. Filesystem" href="#3-filesystem">
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/libc/#2-posix-io" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 2. POSIX I/O" aria-label="Anchor to: 2. POSIX I/O" href="#2-posix-io">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>Functions like <code>fopen</code>, <code>opendir</code>, etc. For more information, check the
-<a
+<p>BlocksDS provides POSIX standard I/O using the tinystdio library, which is part
+of picolibc. It supports most of the functionality mandated by the C standard,
+as well as some extensions.</p>
+<p>File I/O (<code>fopen</code>, <code>opendir</code>, etc.) is supported. Storage on cartridges and the
+DSi internal SD card can be accessed. A bundled read-only filesystem called
+NitroFS is also supported. For more information, check the <a
   class="gdoc-markdown__link"
   href="../filesystem"
 >filesystem documentation</a>.</p>
-<div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="4-nitrofs"
-    >
-        4. NitroFS
-    </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/libc/#4-nitrofs" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 4. NitroFS" aria-label="Anchor to: 4. NitroFS" href="#4-nitrofs">
-        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-    </a>
-</div>
-<p>NitroFS (<code>nitro:</code>) is supported, but the implementation is different than the
-one in <code>libfilesystem</code>. It should be 100% compatible with it. Please, report
-any bugs you may find with it.</p>
-<div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="5-text-console-stdout-stderr-stdin"
-    >
-        5. Text console (stdout, stderr, stdin)
-    </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/libc/#5-text-console-stdout-stderr-stdin" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 5. Text console (stdout, stderr, stdin)" aria-label="Anchor to: 5. Text console (stdout, stderr, stdin)" href="#5-text-console-stdout-stderr-stdin">
-        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-    </a>
-</div>
-<p><code>stdout</code> and <code>stderr</code> can be redirected to the libnds console or to the no$gba
-debug console. They are unbuffered. When text is sent to them (by using
-<code>printf()</code> or <code>fprintf(stderr, ...)</code> it&rsquo;s always sent to the console.  The
-exceptions are ANSI escape sequences, which are buffered until the end of the
-sequence is received, and then sent to the console low level functions.</p>
+<p>Console I/O (<code>stdin</code>, <code>stdout</code>) is supported; however, by default, no input or
+output is initialized:</p>
+<ul>
+<li><code>stdout</code> can be redirected to the built-in libnds console by initializing the
+console. This can be done using the <code>consoleInit()</code> or <code>consoleDemoInit()</code>
+functions.</li>
+<li><code>stderr</code> can be redirected to the built-in libnds console or
+a no$gba-compatible emulator debug output by using <code>consoleDebugInit()</code>.</li>
+</ul>
+<p>Standard output is unbuffered. When text is sent to them (by using <code>printf()</code>
+or <code>fprintf(stderr, ...)</code> it&rsquo;s always sent to the console.  The exceptions
+are ANSI escape sequences, which are buffered until the end of the sequence
+is received, and then sent to the console low level functions.</p>
 <p>Remember that you can use <code>fflush(stdout)</code> or <code>fflush(stderr)</code> if buffering
 becomes an issue.</p>
 <p>For more information about ANSI escape sequences, check
@@ -1470,36 +1628,62 @@ becomes an issue.</p>
   class="gdoc-markdown__link"
   href="https://en.wikipedia.org/wiki/ANSI_escape_code"
 >this link</a>.</p>
-<p><code>stdin</code> is tied to the keyboard of libnds. When <code>sscanf(stdin, ...)</code> is called,
-for example, the keyboard of libnds is used as input device. Please, check the
-examples to see how to use it.</p>
+<ul>
+<li><code>stdin</code> is tied to the keyboard of libnds. When <code>sscanf(stdin, ...)</code> is called,
+for example, the keyboard of libnds is used as input device. For more information,
+see the relevant examples bundled with BlocksDS.</li>
+</ul>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="6-memory-allocation"
+    <h2 id="3-argc-and-argv"
     >
-        6. Memory allocation
+        3. argc and argv
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/libc/#6-memory-allocation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 6. Memory allocation" aria-label="Anchor to: 6. Memory allocation" href="#6-memory-allocation">
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/libc/#3-argc-and-argv" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 3. argc and argv" aria-label="Anchor to: 3. argc and argv" href="#3-argc-and-argv">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>Functions like <code>malloc</code>, <code>calloc</code>, <code>memalign</code> and <code>free</code> work as usual.  They
+<p>To provide correct argv information, the loader needs to support argv structure
+passing. This is not supported by certain legacy loaders; for more information,
+see our page on <a
+  class="gdoc-markdown__link"
+  href="../legacy_support"
+>legacy support</a>.</p>
+<p>Under compatible loading environment, <code>argv[0]</code> will hold the path of the .nds
+file. Other <code>argv</code> entries may be set as well, but this isn&rsquo;t a common
+occurrence.</p>
+<ul>
+<li>For cartridges, the drive name used is <code>fat:</code> - for example, <code>fat:/homebrew/program.nds</code>.</li>
+<li>For DSi consoles loading .nds files from the internal SD card, the drive
+name used is <code>sd:</code> - for example, <code>sd:/homebrew/program.nds</code>.</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="4-dynamic-heap-allocation"
+    >
+        4. Dynamic heap allocation
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/libc/#4-dynamic-heap-allocation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 4. Dynamic heap allocation" aria-label="Anchor to: 4. Dynamic heap allocation" href="#4-dynamic-heap-allocation">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>Functions like <code>malloc</code>, <code>calloc</code>, <code>memalign</code> and <code>free</code> are supported. They
 always return space from the main RAM region.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="7-time"
+    <h2 id="5-time"
     >
-        7. Time
+        5. Time
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/libc/#7-time" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 7. Time" aria-label="Anchor to: 7. Time" href="#7-time">
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/libc/#5-time" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 5. Time" aria-label="Anchor to: 5. Time" href="#5-time">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p><code>gettimeofday</code> and <code>time</code> are supported.</p>
+<p><code>gettimeofday</code> and <code>time</code> are supported. Timezones are not handled in any
+particular manner, however.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="8-exit"
+    <h2 id="6-exit"
     >
-        8. Exit
+        6. Exit
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/libc/#8-exit" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 8. Exit" aria-label="Anchor to: 8. Exit" href="#8-exit">
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/libc/#6-exit" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 6. Exit" aria-label="Anchor to: 6. Exit" href="#6-exit">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -1507,14 +1691,16 @@ always return space from the main RAM region.</p>
 You can also return from <code>main()</code> to get the same effect.</p>
 <p>For more information, check <a
   class="gdoc-markdown__link"
-  href="../exit_to_loader"
+  href="../../design/exit_to_loader"
 >this document</a>.</p>
+<p>In addition, <code>atexit</code> is supported for dynamically registering program exit
+handlers.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="9-multithreading-support"
+    <h2 id="7-multithreading"
     >
-        9. Multithreading support
+        7. Multithreading
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/technical/libc/#9-multithreading-support" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 9. Multithreading support" aria-label="Anchor to: 9. Multithreading support" href="#9-multithreading-support">
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/libc/#7-multithreading" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 7. Multithreading" aria-label="Anchor to: 7. Multithreading" href="#7-multithreading">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -1528,7 +1714,7 @@ funtrions is platform-specific, and libnds has its implementation in
 <p>In general, you don&rsquo;t need to worry about them. However, if there is an
 unexpected crash because of running the undefined instruction <code>0xEBAD</code>, it may
 mean that the locking functions have found a logic error.</p>
-<p>Printing an error message is very expensive: It is required to include a text
+<p>Printing an error message is very expensive: it is required to include a text
 font as well as console handling functions. The locking functions simply have
 a <a
   class="gdoc-markdown__link"
@@ -2045,9 +2231,6 @@ mode by the ARM Architecture Reference Manual.</p>
         
 
         
-          
-          
-        
 
         
           
@@ -2059,12 +2242,78 @@ mode by the ARM Architecture Reference Manual.</p>
     
 
   
+
+        
+      
+    
+
+  
     
 
     
       
     
 
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+
+        
+        
+          
+  
+  
+
+  
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+          
+          
+        
+
+        
+          
+        
+
+        
+        
+      
     
       
       
@@ -2261,6 +2510,78 @@ mode by the ARM Architecture Reference Manual.</p>
       
     
 
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+
+        
+        
+          
+  
+  
+
+  
   
     
 
@@ -2342,11 +2663,11 @@ mode by the ARM Architecture Reference Manual.</p>
   
     <a
       class="gdoc-page__nav--prev flex align-center"
-      href="/docs/setup/additional_libs/"
-      title="Additional libraries/tools"
+      href="/docs/usage/legacy_support/"
+      title="Legacy device/launcher support"
     >
       <i class="gdoc-icon">gdoc_arrow_left_alt</i>
-      Additional libraries/tools
+      Legacy device/launcher support
     </a>
   
 </span>

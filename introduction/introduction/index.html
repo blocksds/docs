@@ -890,6 +890,97 @@ To encourage developers to hack and improve the SDK by letting them have all the
               
             >
               
+                <span class="flex">Usage</span>
+              
+              
+            </label>
+
+            
+              
+  
+
+
+  <ul class="gdoc-nav__list">
+    
+    
+      
+
+      
+        
+      
+
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
+                    href="/docs/usage/legacy_support/"
+                    class="gdoc-nav__entry"
+                  >
+                    Legacy device/launcher support
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+    
+  </ul>
+
+            
+          </li>
+        
+      
+    
+      
+
+      
+        
+      
+
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
                 <span class="flex">Technical information</span>
               
               
@@ -935,7 +1026,7 @@ To encourage developers to hack and improve the SDK by letting them have all the
                     href="/docs/technical/libc/"
                     class="gdoc-nav__entry"
                   >
-                    libc port information
+                    C/C&#43;&#43; support
                   </a>
                 </span>
               
@@ -945,14 +1036,6 @@ To encourage developers to hack and improve the SDK by letting them have all the
             
           </li>
         
-      
-    
-      
-
-      
-        
-      
-
       
         
           
@@ -1152,10 +1235,54 @@ To encourage developers to hack and improve the SDK by letting them have all the
               
                 <span class="flex">
                   <a
-                    href="/docs/technical/exit_to_loader/"
+                    href="/docs/technical/optimization_guide/"
                     class="gdoc-nav__entry"
                   >
-                    Exit to loader protocol
+                    Optimization guide
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+    
+      
+
+      
+        
+      
+
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
+                    href="/docs/technical/updating_guide/"
+                    class="gdoc-nav__entry"
+                  >
+                    Upgrade guide
                   </a>
                 </span>
               
@@ -1199,7 +1326,98 @@ To encourage developers to hack and improve the SDK by letting them have all the
                     href="/docs/technical/devkitarm_porting_guide/"
                     class="gdoc-nav__entry"
                   >
-                    devkitARM porting guide
+                    Migrating from devkitARM
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+    
+  </ul>
+
+            
+          </li>
+        
+      
+    
+      
+
+      
+        
+      
+
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">Additional information</span>
+              
+              
+            </label>
+
+            
+              
+  
+
+
+  <ul class="gdoc-nav__list">
+    
+    
+      
+
+      
+        
+      
+
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
+                    href="/docs/design/design_guide/"
+                    class="gdoc-nav__entry"
+                  >
+                    Design choices
                   </a>
                 </span>
               
@@ -1240,54 +1458,10 @@ To encourage developers to hack and improve the SDK by letting them have all the
               
                 <span class="flex">
                   <a
-                    href="/docs/technical/design_guide/"
+                    href="/docs/design/exit_to_loader/"
                     class="gdoc-nav__entry"
                   >
-                    Design guide
-                  </a>
-                </span>
-              
-              
-            </label>
-
-            
-          </li>
-        
-      
-    
-      
-
-      
-        
-      
-
-      
-        
-          
-          
-          
-          
-          
-          
-
-
-          <li>
-            <input
-              type="checkbox"
-              
-                class="hidden"
-              
-            />
-            <label
-              
-            >
-              
-                <span class="flex">
-                  <a
-                    href="/docs/technical/legacy_support/"
-                    class="gdoc-nav__entry"
-                  >
-                    Legacy device/launcher support
+                    Exit to loader protocol
                   </a>
                 </span>
               
@@ -1491,7 +1665,7 @@ any arguments pased to it if any.</p>
 </li>
 <li>
 <p>It is possible to access the filesystem of DLDI devices (like the SD card of
-flashcards), the SD slot of the DSi, and the filesystem embedded in a NDS ROM
+flashcarts), the SD slot of the DSi, and the filesystem embedded in a NDS ROM
 (NitroFS). Performance (particularly for reads) has been
 <a
   class="gdoc-markdown__link"
@@ -1578,7 +1752,7 @@ ARM9 (to clean it or invalidate it).</p>
 <li>
 <p>There is an API to access the DS cartridge ROM, as well as EEPROM chips in
 the cartridges that use it. It is also possible to access the filesystem of SD
-cards used in flashcards.</p>
+cards used in flashcarts.</p>
 </li>
 <li>
 <p>There is an API to read the state of the buttons and the touchscreen.</p>
@@ -2164,12 +2338,75 @@ supported by DS WiFi yet.</p>
     
 
   
+
+        
+      
+    
+
+  
     
 
     
       
     
 
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+
+        
+        
+          
+  
+  
+
+  
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
     
       
       
@@ -2361,6 +2598,78 @@ supported by DS WiFi yet.</p>
       
     
 
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+          
+        
+
+        
+        
+      
+    
+
+  
+
+        
+      
+    
+
+  
+    
+
+    
+      
+    
+
+    
+      
+      
+
+      
+        
+        
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+
+        
+        
+          
+  
+  
+
+  
   
     
 
