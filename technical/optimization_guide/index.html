@@ -62,7 +62,7 @@ Optimizing CPU usage Measure CPU performance on hardware only! As of writing (Ma
       "url" : "https://blocksds.github.io/docs/technical/optimization_guide/",
       "headline": "Optimization guide",
       "description": "This guide covers some techniques one can use to optimize DS\/DSi homebrew with BlocksDS.\nOptimizing CPU usage Measure CPU performance on hardware only! As of writing (May 2024), the most popular emulators are not sufficiently cycle-accurate to provide accurate profiling results; this might lead, at worst, to mistaken optimizations. Avoid using floating point values (float, double). As the DS does not include any hardware for accelerating floating point math, operations on them have to be emulated in software, which is quite costly.",
-      "wordCount" : "820",
+      "wordCount" : "1057",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1701,7 +1701,42 @@ exceed a few hundred bytes. Note that the lookup cache is automatically enabled
 for NitroFS accesses. For example, to try and enable the lookup cache on a file:</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">    <span class="nf">fatInitLookupCacheFile</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">);</span> <span class="cm">/* 2 KB maximum lookup cache */</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="opengl-like-api-usage"
+    >
+        OpenGL-like API usage
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/optimization_guide/#opengl-like-api-usage" class="gdoc-page__anchor clip flex align-center" title="Anchor to: OpenGL-like API usage" aria-label="Anchor to: OpenGL-like API usage" href="#opengl-like-api-usage">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h3 id="texture-formats"
+    >
+        Texture formats
+    </h3>
+    <a data-clipboard-text="https://blocksds.github.io/docs/technical/optimization_guide/#texture-formats" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Texture formats" aria-label="Anchor to: Texture formats" href="#texture-formats">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>The <code>GL_RGB</code> texture format isn&rsquo;t actually supported by the hardware. When a
+texture is loaded with <code>glTexImage2D()</code> with format <code>GL_RGB</code>, it is actually
+converted to <code>GL_RGBA</code> internally by setting the alpha bit of all pixels to 1.
+This is pretty slow, and it isn&rsquo;t normally needed because any graphics
+conversion tool (such as <code>grit</code>) can set the alpha bit to 1 when the image is
+converted. None of the 3D examples of BlocksDS use <code>GL_RGB</code>. The ones that use
+<code>GL_RGBA</code> also show how to convert images the right way.</p>
+<p>Also, consider using other texture formats. <code>GL_RGBA</code> isn&rsquo;t a very efficient way
+to store textures. All other formats (the ones that use palettes) use a lot less
+memory. In many cases <code>GL_COMPRESSED</code> is the best format you can use (but
+converting images to this format is only currently supported by <code>ptexconv</code>).</p>
+<p>BlocksDS has examples of how to use all texture formats (except for <code>GL_RGB</code>,
+which works the same way as <code>GL_RGBA</code>, and is never used in order to not
+encourage new users to use it). Take a look at the examples for more details.</p>
+<p>Final note: The video capture circuit of the NDS sets the alpha bit to 1, so it
+isn&rsquo;t needed even if you want to use the saved image as a texture, or as a
+16-bit bitmap background. There is an example of how to render to a texture too.</p>
+
   </article>
 
 

@@ -1215,7 +1215,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 </td></tr>
 <tr><td class="fieldname"><a id="a6861121fecdc3ba4592e3125c5ef1755a1ce6d716a35e34bacf578be7ec41928a" name="a6861121fecdc3ba4592e3125c5ef1755a1ce6d716a35e34bacf578be7ec41928a"></a>GL_RGBA&#160;</td><td class="fielddoc"><p >15 bit direct color, 1 bit of alpha </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6861121fecdc3ba4592e3125c5ef1755a5429ba2be1e257cba360b31d8c14e3b3" name="a6861121fecdc3ba4592e3125c5ef1755a5429ba2be1e257cba360b31d8c14e3b3"></a>GL_RGB&#160;</td><td class="fielddoc"><p >15 bit direct color, manually sets alpha bit to 1 </p>
+<tr><td class="fieldname"><a id="a6861121fecdc3ba4592e3125c5ef1755a5429ba2be1e257cba360b31d8c14e3b3" name="a6861121fecdc3ba4592e3125c5ef1755a5429ba2be1e257cba360b31d8c14e3b3"></a>GL_RGB&#160;</td><td class="fielddoc"><p >15 bit direct color. Converted to GL_RGBA internally, which causes a performance penalty when using <a class="el" href="videoGL_8h.html#a750259e65fe2e78340ded1119694dea7" title="Loads a 2D texture into texture memory and sets the currently bound texture ID to the attributes spec...">glTexImage2D()</a>. This format isn't recommended, use GL_RGBA instead. </p>
 </td></tr>
 </table>
 
@@ -4968,7 +4968,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 2 2024 02:56:31 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Mon Jun 3 2024 22:49:56 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
