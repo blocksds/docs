@@ -157,18 +157,21 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>TIMER_ENABLE</b>&#160;&#160;&#160;(1 &lt;&lt; 7)</td></tr>
 <tr class="memdesc:ace9bc6168bdb15fd3c88da899ad3f154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the timer. <br /></td></tr>
 <tr class="separator:ace9bc6168bdb15fd3c88da899ad3f154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65ca7f26f34c5407b6d7d0802b93770b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8h.html#a65ca7f26f34c5407b6d7d0802b93770b">TIMER_FREQ</a>(n)&#160;&#160;&#160;(-<a class="el" href="timers_8h.html#a1caba0e524eb249e9f6bf160b74aa14e">BUS_CLOCK</a> / (n))</td></tr>
+<tr class="memitem:a65ca7f26f34c5407b6d7d0802b93770b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8h.html#a65ca7f26f34c5407b6d7d0802b93770b">TIMER_FREQ</a>(n)&#160;&#160;&#160;<a class="el" href="timers_8h.html#ab7c6a65dcf73959d1d8b78e2c0b07897">TIMER_FREQ_SHIFT</a>(n, 1, 0)</td></tr>
 <tr class="memdesc:a65ca7f26f34c5407b6d7d0802b93770b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A macro that calculates <a class="el" href="timers_8h.html#ad1e93306eef44502d0c4fdc1a533e9cb" title="Returns a dereferenced pointer to the data register for timer number &quot;n&quot;.">TIMER_DATA(n)</a> settings for a given frequency of n.  <a href="timers_8h.html#a65ca7f26f34c5407b6d7d0802b93770b">More...</a><br /></td></tr>
 <tr class="separator:a65ca7f26f34c5407b6d7d0802b93770b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bd61921dbb01700c9afd4c576723dcb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8h.html#a3bd61921dbb01700c9afd4c576723dcb">TIMER_FREQ_1024</a>(n)&#160;&#160;&#160;(-(<a class="el" href="timers_8h.html#a1caba0e524eb249e9f6bf160b74aa14e">BUS_CLOCK</a> &gt;&gt; 10) / (n))</td></tr>
+<tr class="memitem:a3bd61921dbb01700c9afd4c576723dcb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8h.html#a3bd61921dbb01700c9afd4c576723dcb">TIMER_FREQ_1024</a>(n)&#160;&#160;&#160;<a class="el" href="timers_8h.html#ab7c6a65dcf73959d1d8b78e2c0b07897">TIMER_FREQ_SHIFT</a>(n, 1, 10)</td></tr>
 <tr class="memdesc:a3bd61921dbb01700c9afd4c576723dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro that calculates <a class="el" href="timers_8h.html#ad1e93306eef44502d0c4fdc1a533e9cb" title="Returns a dereferenced pointer to the data register for timer number &quot;n&quot;.">TIMER_DATA(n)</a> settings for a given frequency of n.  <a href="timers_8h.html#a3bd61921dbb01700c9afd4c576723dcb">More...</a><br /></td></tr>
 <tr class="separator:a3bd61921dbb01700c9afd4c576723dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f1b6faf6245aece339855ac3b5554b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8h.html#a8f1b6faf6245aece339855ac3b5554b3">TIMER_FREQ_256</a>(n)&#160;&#160;&#160;(-(<a class="el" href="timers_8h.html#a1caba0e524eb249e9f6bf160b74aa14e">BUS_CLOCK</a> &gt;&gt; 8) / (n))</td></tr>
+<tr class="memitem:a8f1b6faf6245aece339855ac3b5554b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8h.html#a8f1b6faf6245aece339855ac3b5554b3">TIMER_FREQ_256</a>(n)&#160;&#160;&#160;<a class="el" href="timers_8h.html#ab7c6a65dcf73959d1d8b78e2c0b07897">TIMER_FREQ_SHIFT</a>(n, 1, 8)</td></tr>
 <tr class="memdesc:a8f1b6faf6245aece339855ac3b5554b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A macro that calculates <a class="el" href="timers_8h.html#ad1e93306eef44502d0c4fdc1a533e9cb" title="Returns a dereferenced pointer to the data register for timer number &quot;n&quot;.">TIMER_DATA(n)</a> settings for a given frequency of n.  <a href="timers_8h.html#a8f1b6faf6245aece339855ac3b5554b3">More...</a><br /></td></tr>
 <tr class="separator:a8f1b6faf6245aece339855ac3b5554b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30ad00084fb8d449152657abecf341bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8h.html#a30ad00084fb8d449152657abecf341bc">TIMER_FREQ_64</a>(n)&#160;&#160;&#160;(-(<a class="el" href="timers_8h.html#a1caba0e524eb249e9f6bf160b74aa14e">BUS_CLOCK</a> &gt;&gt; 6) / (n))</td></tr>
+<tr class="memitem:a30ad00084fb8d449152657abecf341bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8h.html#a30ad00084fb8d449152657abecf341bc">TIMER_FREQ_64</a>(n)&#160;&#160;&#160;<a class="el" href="timers_8h.html#ab7c6a65dcf73959d1d8b78e2c0b07897">TIMER_FREQ_SHIFT</a>(n, 1, 6)</td></tr>
 <tr class="memdesc:a30ad00084fb8d449152657abecf341bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">A macro that calculates <a class="el" href="timers_8h.html#ad1e93306eef44502d0c4fdc1a533e9cb" title="Returns a dereferenced pointer to the data register for timer number &quot;n&quot;.">TIMER_DATA(n)</a> settings for a given frequency of n.  <a href="timers_8h.html#a30ad00084fb8d449152657abecf341bc">More...</a><br /></td></tr>
 <tr class="separator:a30ad00084fb8d449152657abecf341bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c6a65dcf73959d1d8b78e2c0b07897"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8h.html#ab7c6a65dcf73959d1d8b78e2c0b07897">TIMER_FREQ_SHIFT</a>(n,  divisor,  shift)&#160;&#160;&#160;((-((<a class="el" href="timers_8h.html#a1caba0e524eb249e9f6bf160b74aa14e">BUS_CLOCK</a> &gt;&gt; (shift)) * (divisor)) - ((((n) + 1)) &gt;&gt; 1)) / (n))</td></tr>
+<tr class="memdesc:ab7c6a65dcf73959d1d8b78e2c0b07897"><td class="mdescLeft">&#160;</td><td class="mdescRight">A macro that calculates <a class="el" href="timers_8h.html#ad1e93306eef44502d0c4fdc1a533e9cb" title="Returns a dereferenced pointer to the data register for timer number &quot;n&quot;.">TIMER_DATA(n)</a> settings for a given frequency of n and shift. Correctly rounds the timer to the closest available frequency.  <a href="timers_8h.html#ab7c6a65dcf73959d1d8b78e2c0b07897">More...</a><br /></td></tr>
+<tr class="separator:ab7c6a65dcf73959d1d8b78e2c0b07897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a16ca3761bba86b1cc9c665dc2997cd"><td class="memItemLeft" align="right" valign="top"><a id="a7a16ca3761bba86b1cc9c665dc2997cd" name="a7a16ca3761bba86b1cc9c665dc2997cd"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>TIMER_IRQ_REQ</b>&#160;&#160;&#160;(1 &lt;&lt; 6)</td></tr>
 <tr class="memdesc:a7a16ca3761bba86b1cc9c665dc2997cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes the timer to request an Interrupt on overflow. <br /></td></tr>
@@ -295,19 +298,19 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">n</td><td>)</td>
-          <td>&#160;&#160;&#160;(-<a class="el" href="timers_8h.html#a1caba0e524eb249e9f6bf160b74aa14e">BUS_CLOCK</a> / (n))</td>
+          <td>&#160;&#160;&#160;<a class="el" href="timers_8h.html#ab7c6a65dcf73959d1d8b78e2c0b07897">TIMER_FREQ_SHIFT</a>(n, 1, 0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>A macro that calculates <a class="el" href="timers_8h.html#ad1e93306eef44502d0c4fdc1a533e9cb" title="Returns a dereferenced pointer to the data register for timer number &quot;n&quot;.">TIMER_DATA(n)</a> settings for a given frequency of n. </p>
 <p >It will calculate the correct value for <a class="el" href="timers_8h.html#ad1e93306eef44502d0c4fdc1a533e9cb" title="Returns a dereferenced pointer to the data register for timer number &quot;n&quot;.">TIMER_DATA(n)</a> given the frequency in Hz (number of times the timer should overflow per second).</p>
-<p ><b>Example Usage:</b> </p><div class="fragment"><div class="line"><span class="comment">// Calls the timerCallBack function 5 times per second.</span></div>
-<div class="line"><a class="code hl_function" href="timers_8h.html#a07196b3b1bbbec901ed221c61849b1fb">timerStart</a>(0, <a class="code hl_enumvalue" href="timers_8h.html#a2885908e39e7576d7277f9d97c1c14f7a73032dffa9b4c46172ce78ebe21915c2">ClockDivider_1024</a>, <a class="code hl_define" href="timers_8h.html#a3bd61921dbb01700c9afd4c576723dcb">TIMER_FREQ_1024</a>(5), timerCallBack);</div>
+<p ><b>Example Usage:</b> </p><div class="fragment"><div class="line"><span class="comment">// Calls the timerCallBack function 5000 times per second.</span></div>
+<div class="line"><a class="code hl_function" href="timers_8h.html#a07196b3b1bbbec901ed221c61849b1fb">timerStart</a>(0, <a class="code hl_enumvalue" href="timers_8h.html#a2885908e39e7576d7277f9d97c1c14f7a9d6ab181c5c9adca06db4968c93b6d9a">ClockDivider_1</a>, <a class="code hl_define" href="timers_8h.html#a65ca7f26f34c5407b6d7d0802b93770b">TIMER_FREQ</a>(5000), timerCallBack);</div>
 <div class="ttc" id="atimers_8h_html_a07196b3b1bbbec901ed221c61849b1fb"><div class="ttname"><a href="timers_8h.html#a07196b3b1bbbec901ed221c61849b1fb">timerStart</a></div><div class="ttdeci">void timerStart(int timer, ClockDivider divider, u16 ticks, VoidFn callback)</div><div class="ttdoc">Start a hardware timer.</div></div>
-<div class="ttc" id="atimers_8h_html_a2885908e39e7576d7277f9d97c1c14f7a73032dffa9b4c46172ce78ebe21915c2"><div class="ttname"><a href="timers_8h.html#a2885908e39e7576d7277f9d97c1c14f7a73032dffa9b4c46172ce78ebe21915c2">ClockDivider_1024</a></div><div class="ttdeci">@ ClockDivider_1024</div><div class="ttdoc">divides the timer clock by 1024 (~32.7284 kHz)</div><div class="ttdef"><b>Definition:</b> timers.h:97</div></div>
-<div class="ttc" id="atimers_8h_html_a3bd61921dbb01700c9afd4c576723dcb"><div class="ttname"><a href="timers_8h.html#a3bd61921dbb01700c9afd4c576723dcb">TIMER_FREQ_1024</a></div><div class="ttdeci">#define TIMER_FREQ_1024(n)</div><div class="ttdoc">Macro that calculates TIMER_DATA(n) settings for a given frequency of n.</div><div class="ttdef"><b>Definition:</b> timers.h:177</div></div>
-</div><!-- fragment --><p >Max frequency is: 33554432 Hz Min frequency is: 512 Hz</p>
+<div class="ttc" id="atimers_8h_html_a2885908e39e7576d7277f9d97c1c14f7a9d6ab181c5c9adca06db4968c93b6d9a"><div class="ttname"><a href="timers_8h.html#a2885908e39e7576d7277f9d97c1c14f7a9d6ab181c5c9adca06db4968c93b6d9a">ClockDivider_1</a></div><div class="ttdeci">@ ClockDivider_1</div><div class="ttdoc">Divides the timer clock by 1 (~33513.982 kHz)</div><div class="ttdef"><b>Definition:</b> timers.h:94</div></div>
+<div class="ttc" id="atimers_8h_html_a65ca7f26f34c5407b6d7d0802b93770b"><div class="ttname"><a href="timers_8h.html#a65ca7f26f34c5407b6d7d0802b93770b">TIMER_FREQ</a></div><div class="ttdeci">#define TIMER_FREQ(n)</div><div class="ttdoc">A macro that calculates TIMER_DATA(n) settings for a given frequency of n.</div><div class="ttdef"><b>Definition:</b> timers.h:137</div></div>
+</div><!-- fragment --><p >Max frequency is: 33513982 Hz Min frequency is: ~511 Hz</p>
 <dl class="section note"><dt>Note</dt><dd>Use the appropriate macro depending on the used clock divider. </dd></dl>
 
 </div>
@@ -323,7 +326,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">n</td><td>)</td>
-          <td>&#160;&#160;&#160;(-(<a class="el" href="timers_8h.html#a1caba0e524eb249e9f6bf160b74aa14e">BUS_CLOCK</a> &gt;&gt; 10) / (n))</td>
+          <td>&#160;&#160;&#160;<a class="el" href="timers_8h.html#ab7c6a65dcf73959d1d8b78e2c0b07897">TIMER_FREQ_SHIFT</a>(n, 1, 10)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -332,7 +335,9 @@ Functions</h2></td></tr>
 <p >It wtill calculate the correct value for <a class="el" href="timers_8h.html#ad1e93306eef44502d0c4fdc1a533e9cb" title="Returns a dereferenced pointer to the data register for timer number &quot;n&quot;.">TIMER_DATA(n)</a> given the frequency in Hz (number of times the timer should overflow per second).</p>
 <p ><b>Example Usage:</b> </p><div class="fragment"><div class="line"><span class="comment">// Calls the timerCallBack function 5 times per second.</span></div>
 <div class="line"><a class="code hl_function" href="timers_8h.html#a07196b3b1bbbec901ed221c61849b1fb">timerStart</a>(0, <a class="code hl_enumvalue" href="timers_8h.html#a2885908e39e7576d7277f9d97c1c14f7a73032dffa9b4c46172ce78ebe21915c2">ClockDivider_1024</a>, <a class="code hl_define" href="timers_8h.html#a3bd61921dbb01700c9afd4c576723dcb">TIMER_FREQ_1024</a>(5), timerCallBack);</div>
-</div><!-- fragment --><p >Max frequency is: 32768 Hz Min frequency is: 0.5 Hz</p>
+<div class="ttc" id="atimers_8h_html_a2885908e39e7576d7277f9d97c1c14f7a73032dffa9b4c46172ce78ebe21915c2"><div class="ttname"><a href="timers_8h.html#a2885908e39e7576d7277f9d97c1c14f7a73032dffa9b4c46172ce78ebe21915c2">ClockDivider_1024</a></div><div class="ttdeci">@ ClockDivider_1024</div><div class="ttdoc">divides the timer clock by 1024 (~32.7284 kHz)</div><div class="ttdef"><b>Definition:</b> timers.h:97</div></div>
+<div class="ttc" id="atimers_8h_html_a3bd61921dbb01700c9afd4c576723dcb"><div class="ttname"><a href="timers_8h.html#a3bd61921dbb01700c9afd4c576723dcb">TIMER_FREQ_1024</a></div><div class="ttdeci">#define TIMER_FREQ_1024(n)</div><div class="ttdoc">Macro that calculates TIMER_DATA(n) settings for a given frequency of n.</div><div class="ttdef"><b>Definition:</b> timers.h:188</div></div>
+</div><!-- fragment --><p >Max frequency is: ~32728 Hz Min frequency is: ~0.5 Hz</p>
 <dl class="section note"><dt>Note</dt><dd>Use the appropriate macro depending on the used clock divider. </dd></dl>
 
 </div>
@@ -348,16 +353,18 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">n</td><td>)</td>
-          <td>&#160;&#160;&#160;(-(<a class="el" href="timers_8h.html#a1caba0e524eb249e9f6bf160b74aa14e">BUS_CLOCK</a> &gt;&gt; 8) / (n))</td>
+          <td>&#160;&#160;&#160;<a class="el" href="timers_8h.html#ab7c6a65dcf73959d1d8b78e2c0b07897">TIMER_FREQ_SHIFT</a>(n, 1, 8)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>A macro that calculates <a class="el" href="timers_8h.html#ad1e93306eef44502d0c4fdc1a533e9cb" title="Returns a dereferenced pointer to the data register for timer number &quot;n&quot;.">TIMER_DATA(n)</a> settings for a given frequency of n. </p>
 <p >It will calculate the correct value for <a class="el" href="timers_8h.html#ad1e93306eef44502d0c4fdc1a533e9cb" title="Returns a dereferenced pointer to the data register for timer number &quot;n&quot;.">TIMER_DATA(n)</a> given the frequency in Hz (number of times the timer should overflow per second).</p>
-<p ><b>Example Usage:</b> </p><div class="fragment"><div class="line"><span class="comment">// Calls the timerCallBack function 5 times per second.</span></div>
-<div class="line"><a class="code hl_function" href="timers_8h.html#a07196b3b1bbbec901ed221c61849b1fb">timerStart</a>(0, <a class="code hl_enumvalue" href="timers_8h.html#a2885908e39e7576d7277f9d97c1c14f7a73032dffa9b4c46172ce78ebe21915c2">ClockDivider_1024</a>, <a class="code hl_define" href="timers_8h.html#a3bd61921dbb01700c9afd4c576723dcb">TIMER_FREQ_1024</a>(5), timerCallBack);</div>
-</div><!-- fragment --><p >Max frequency is: 131072 Hz Min frequency is: 2 Hz</p>
+<p ><b>Example Usage:</b> </p><div class="fragment"><div class="line"><span class="comment">// Calls the timerCallBack function 50 times per second.</span></div>
+<div class="line"><a class="code hl_function" href="timers_8h.html#a07196b3b1bbbec901ed221c61849b1fb">timerStart</a>(0, <a class="code hl_enumvalue" href="timers_8h.html#a2885908e39e7576d7277f9d97c1c14f7a768b3fce9d6eed61dbe2030561a87dea">ClockDivider_256</a>, <a class="code hl_define" href="timers_8h.html#a8f1b6faf6245aece339855ac3b5554b3">TIMER_FREQ_256</a>(50), timerCallBack);</div>
+<div class="ttc" id="atimers_8h_html_a2885908e39e7576d7277f9d97c1c14f7a768b3fce9d6eed61dbe2030561a87dea"><div class="ttname"><a href="timers_8h.html#a2885908e39e7576d7277f9d97c1c14f7a768b3fce9d6eed61dbe2030561a87dea">ClockDivider_256</a></div><div class="ttdeci">@ ClockDivider_256</div><div class="ttdoc">Divides the timer clock by 256 (~130.914 kHz)</div><div class="ttdef"><b>Definition:</b> timers.h:96</div></div>
+<div class="ttc" id="atimers_8h_html_a8f1b6faf6245aece339855ac3b5554b3"><div class="ttname"><a href="timers_8h.html#a8f1b6faf6245aece339855ac3b5554b3">TIMER_FREQ_256</a></div><div class="ttdeci">#define TIMER_FREQ_256(n)</div><div class="ttdoc">A macro that calculates TIMER_DATA(n) settings for a given frequency of n.</div><div class="ttdef"><b>Definition:</b> timers.h:171</div></div>
+</div><!-- fragment --><p >Max frequency is: ~130914 Hz Min frequency is: ~2 Hz</p>
 <dl class="section note"><dt>Note</dt><dd>Use the appropriate macro depending on the used clock divider. </dd></dl>
 
 </div>
@@ -373,17 +380,61 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">n</td><td>)</td>
-          <td>&#160;&#160;&#160;(-(<a class="el" href="timers_8h.html#a1caba0e524eb249e9f6bf160b74aa14e">BUS_CLOCK</a> &gt;&gt; 6) / (n))</td>
+          <td>&#160;&#160;&#160;<a class="el" href="timers_8h.html#ab7c6a65dcf73959d1d8b78e2c0b07897">TIMER_FREQ_SHIFT</a>(n, 1, 6)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>A macro that calculates <a class="el" href="timers_8h.html#ad1e93306eef44502d0c4fdc1a533e9cb" title="Returns a dereferenced pointer to the data register for timer number &quot;n&quot;.">TIMER_DATA(n)</a> settings for a given frequency of n. </p>
 <p >It will calculate the correct value for <a class="el" href="timers_8h.html#ad1e93306eef44502d0c4fdc1a533e9cb" title="Returns a dereferenced pointer to the data register for timer number &quot;n&quot;.">TIMER_DATA(n)</a> given the frequency in Hz (number of times the timer should overflow per second).</p>
-<p ><b>Example Usage:</b> </p><div class="fragment"><div class="line"><span class="comment">// Calls the timerCallBack function 5 times per second.</span></div>
-<div class="line"><a class="code hl_function" href="timers_8h.html#a07196b3b1bbbec901ed221c61849b1fb">timerStart</a>(0, <a class="code hl_enumvalue" href="timers_8h.html#a2885908e39e7576d7277f9d97c1c14f7a73032dffa9b4c46172ce78ebe21915c2">ClockDivider_1024</a>, <a class="code hl_define" href="timers_8h.html#a3bd61921dbb01700c9afd4c576723dcb">TIMER_FREQ_1024</a>(5), timerCallBack);</div>
-</div><!-- fragment --><p >Max frequency is: 524288 Hz Min frequency is: 8 Hz</p>
+<p ><b>Example Usage:</b> </p><div class="fragment"><div class="line"><span class="comment">// Calls the timerCallBack function 500 times per second.</span></div>
+<div class="line"><a class="code hl_function" href="timers_8h.html#a07196b3b1bbbec901ed221c61849b1fb">timerStart</a>(0, <a class="code hl_enumvalue" href="timers_8h.html#a2885908e39e7576d7277f9d97c1c14f7a84ba46434faa17ac1700408ae50dc462">ClockDivider_64</a>, <a class="code hl_define" href="timers_8h.html#a30ad00084fb8d449152657abecf341bc">TIMER_FREQ_64</a>(500), timerCallBack);</div>
+<div class="ttc" id="atimers_8h_html_a30ad00084fb8d449152657abecf341bc"><div class="ttname"><a href="timers_8h.html#a30ad00084fb8d449152657abecf341bc">TIMER_FREQ_64</a></div><div class="ttdeci">#define TIMER_FREQ_64(n)</div><div class="ttdoc">A macro that calculates TIMER_DATA(n) settings for a given frequency of n.</div><div class="ttdef"><b>Definition:</b> timers.h:154</div></div>
+</div><!-- fragment --><p >Max frequency is: ~523656 Hz Min frequency is: 8 Hz</p>
 <dl class="section note"><dt>Note</dt><dd>Use the appropriate macro depending on the used clock divider. </dd></dl>
+
+</div>
+</div>
+<a id="ab7c6a65dcf73959d1d8b78e2c0b07897" name="ab7c6a65dcf73959d1d8b78e2c0b07897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7c6a65dcf73959d1d8b78e2c0b07897">&#9670;&nbsp;</a></span>TIMER_FREQ_SHIFT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIMER_FREQ_SHIFT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">divisor, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">shift&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((-((<a class="el" href="timers_8h.html#a1caba0e524eb249e9f6bf160b74aa14e">BUS_CLOCK</a> &gt;&gt; (shift)) * (divisor)) - ((((n) + 1)) &gt;&gt; 1)) / (n))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A macro that calculates <a class="el" href="timers_8h.html#ad1e93306eef44502d0c4fdc1a533e9cb" title="Returns a dereferenced pointer to the data register for timer number &quot;n&quot;.">TIMER_DATA(n)</a> settings for a given frequency of n and shift. Correctly rounds the timer to the closest available frequency. </p>
+<p >Shift values:</p><ul>
+<li>ClockDivider_1 = 0</li>
+<li>ClockDivider_64 = 6</li>
+<li>ClockDivider_256 = 8</li>
+<li>ClockDivider_1024 = 10</li>
+<li>ARM7 sound timer = 1 </li>
+</ul>
 
 </div>
 </div>
@@ -688,7 +739,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 3 2024 22:49:57 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Fri Jun 7 2024 19:36:31 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

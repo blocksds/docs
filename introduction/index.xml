@@ -33,9 +33,9 @@ Many thanks to asie for his help and advice, and for Wonderful Toolchain devkitP
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blocksds.github.io/docs/introduction/changelog/</guid>
-      <description>Version DEV (2024-??-??) libnds:
-Add hw_sqrtf() - a hardware-accelerated alternative to sqrtf(). Fix swiSwitchToGBAMode(). Improve documentation of RTC structs. Improve GL2D error checking. Modify GL2D sprite sets to use uint16_t arrays for texture coordinates. SDK:
-Add GL2D sprite examples. Add new tool: squeezer - used for generating packed textures for GL2D sprite sets. Add tests for hw_sqrtf(). Fix VRAM bank setup in &amp;ldquo;text over 3D&amp;rdquo; example. Version 1.1.0 (2024-05-08) libnds:</description>
+      <description>Version DEV (2024-06-??) libnds:
+videoGL:
+Add glGetColorTablePointer() (returns pointer in VRAM to the palette of a texture). Add glGetTextureExtPointer() (returns pointer in VRAM to the additional texture data of GL_COMPRESSED textures). Fix allocation of GL_COMPRESSED textures when VRAM_A is not allocated to the 3D engine. Fix crash in glTexImage2D() with no active texture. Fix error checking in glColorTableEXT() and glTexImage2D(). General code cleanup and improvements. Minor optimization to loading GL_RGB textures using glTexImage2D().</description>
     </item>
     
     <item>

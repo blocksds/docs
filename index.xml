@@ -67,7 +67,7 @@ Add the following to your project:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blocksds.github.io/docs/technical/memory_map/</guid>
-      <description>1. Introduction The DS has several RAM regions that are distributed across its address space. In most cases you don&amp;rsquo;t need to worry about the details, as libnds is setup in a way that covers most use-cases. All you normally need to worry about is how to allocate VRAM to be used by the 2D and 3D engines. However, in some cases it may be needed to understand how everything works.</description>
+      <description>1. Introduction The DS has several RAM regions that are distributed across its address space. In most cases you don&amp;rsquo;t need to worry about the details, as libnds is set up in a way that covers most use-cases. All you normally need to worry about is how to allocate VRAM to be used by the 2D and 3D engines. However, in some cases it may be needed to understand how everything works.</description>
     </item>
     
     <item>
@@ -141,7 +141,7 @@ the PassMe/WifiMe methods, the MoonShell launcher, the Unlaunch launcher, many l
       <guid>https://blocksds.github.io/docs/technical/updating_guide/</guid>
       <description>Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.
 Please refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.
-Upgrading to BlocksDS 1.2.0 In gl2d.h, glLoadSpriteSet now expects an array of uint16_t integers for texture coordinates, rather than 32-bit unsigned ints.</description>
+Upgrading to BlocksDS 1.2.0 The SOUND_FREQ (ARM7) and TIMER_FREQ macros have been reworked to provide the nearest frequency to the one requested by the user, rounded.</description>
     </item>
     
     <item>
@@ -172,9 +172,9 @@ File I/O (fopen, opendir, etc.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blocksds.github.io/docs/introduction/changelog/</guid>
-      <description>Version DEV (2024-??-??) libnds:
-Add hw_sqrtf() - a hardware-accelerated alternative to sqrtf(). Fix swiSwitchToGBAMode(). Improve documentation of RTC structs. Improve GL2D error checking. Modify GL2D sprite sets to use uint16_t arrays for texture coordinates. SDK:
-Add GL2D sprite examples. Add new tool: squeezer - used for generating packed textures for GL2D sprite sets. Add tests for hw_sqrtf(). Fix VRAM bank setup in &amp;ldquo;text over 3D&amp;rdquo; example. Version 1.1.0 (2024-05-08) libnds:</description>
+      <description>Version DEV (2024-06-??) libnds:
+videoGL:
+Add glGetColorTablePointer() (returns pointer in VRAM to the palette of a texture). Add glGetTextureExtPointer() (returns pointer in VRAM to the additional texture data of GL_COMPRESSED textures). Fix allocation of GL_COMPRESSED textures when VRAM_A is not allocated to the 3D engine. Fix crash in glTexImage2D() with no active texture. Fix error checking in glColorTableEXT() and glTexImage2D(). General code cleanup and improvements. Minor optimization to loading GL_RGB textures using glTexImage2D().</description>
     </item>
     
     <item>

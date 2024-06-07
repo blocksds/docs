@@ -496,6 +496,8 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:abeb94a88337262cc47317d39df438547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture parameters such as texture wrapping and texture coord wrapping.  <a href="videoGL_8h.html#abeb94a88337262cc47317d39df438547">More...</a><br /></td></tr>
 <tr class="separator:abeb94a88337262cc47317d39df438547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f0b28cb8d083a96b0156006ddfda933"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#a9f0b28cb8d083a96b0156006ddfda933">GL_TEXTURE_SIZE_ENUM</a> { <br />
+&#160;&#160;<a class="el" href="videoGL_8h.html#a9f0b28cb8d083a96b0156006ddfda933a860a8f57898ea881601d6bfb87c652c5">TEXTURE_SIZE_INVALID</a> = -1
+, <br />
 &#160;&#160;<a class="el" href="videoGL_8h.html#a9f0b28cb8d083a96b0156006ddfda933a997bf1e13cb2385a7b504ce70ec275a0">TEXTURE_SIZE_8</a> = 0
 , <br />
 &#160;&#160;<a class="el" href="videoGL_8h.html#a9f0b28cb8d083a96b0156006ddfda933a092344286570e2655b52e72d4d9216fe">TEXTURE_SIZE_16</a> = 1
@@ -633,6 +635,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>glEnd</b> (voi
 <tr class="memitem:afe19b2fd2815f98a563ab95b09eb620b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#afe19b2fd2815f98a563ab95b09eb620b">glGetColorTableParameterEXT</a> (int target, int pname, int *params)</td></tr>
 <tr class="memdesc:afe19b2fd2815f98a563ab95b09eb620b"><td class="mdescLeft">&#160;</td><td class="mdescRight">glGetColorTableParameterEXT retrieves information pertaining to the currently bound texture's palette.  <a href="videoGL_8h.html#afe19b2fd2815f98a563ab95b09eb620b">More...</a><br /></td></tr>
 <tr class="separator:afe19b2fd2815f98a563ab95b09eb620b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaefc19e52a2466eceec2dbfb5dabeba"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#aeaefc19e52a2466eceec2dbfb5dabeba">glGetColorTablePointer</a> (int name)</td></tr>
+<tr class="memdesc:aeaefc19e52a2466eceec2dbfb5dabeba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the address alocated to the palette of the texture named by name.  <a href="videoGL_8h.html#aeaefc19e52a2466eceec2dbfb5dabeba">More...</a><br /></td></tr>
+<tr class="separator:aeaefc19e52a2466eceec2dbfb5dabeba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accc87085dd09509afb52bf6d31f59edd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#accc87085dd09509afb52bf6d31f59edd">glGetFixed</a> (const <a class="el" href="videoGL_8h.html#a9f708486b49c4f71e8a82938938258ef">GL_GET_ENUM</a> param, int *f)</td></tr>
 <tr class="memdesc:accc87085dd09509afb52bf6d31f59edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets fixed format of state variables.  <a href="videoGL_8h.html#accc87085dd09509afb52bf6d31f59edd">More...</a><br /></td></tr>
 <tr class="separator:accc87085dd09509afb52bf6d31f59edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -642,8 +647,11 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>glEnd</b> (voi
 <tr class="memitem:ad5c990173eadc241cd7a1c3ac95fdba7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndstypes_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#ad5c990173eadc241cd7a1c3ac95fdba7">glGetTexParameter</a> (void)</td></tr>
 <tr class="memdesc:ad5c990173eadc241cd7a1c3ac95fdba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the active texture parameter.  <a href="videoGL_8h.html#ad5c990173eadc241cd7a1c3ac95fdba7">More...</a><br /></td></tr>
 <tr class="separator:ad5c990173eadc241cd7a1c3ac95fdba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b74b3a8883ffad5611f2e202e3403da"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#a9b74b3a8883ffad5611f2e202e3403da">glGetTextureExtPointer</a> (int name)</td></tr>
+<tr class="memdesc:a9b74b3a8883ffad5611f2e202e3403da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns address allocated to the extra compressed texure data named by name.  <a href="videoGL_8h.html#a9b74b3a8883ffad5611f2e202e3403da">More...</a><br /></td></tr>
+<tr class="separator:a9b74b3a8883ffad5611f2e202e3403da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a676f238bb2f7ce0e07f9cf546ab98b44"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#a676f238bb2f7ce0e07f9cf546ab98b44">glGetTexturePointer</a> (int name)</td></tr>
-<tr class="memdesc:a676f238bb2f7ce0e07f9cf546ab98b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the address alocated to the texure named by name.  <a href="videoGL_8h.html#a676f238bb2f7ce0e07f9cf546ab98b44">More...</a><br /></td></tr>
+<tr class="memdesc:a676f238bb2f7ce0e07f9cf546ab98b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the address allocated to the texure named by name.  <a href="videoGL_8h.html#a676f238bb2f7ce0e07f9cf546ab98b44">More...</a><br /></td></tr>
 <tr class="separator:a676f238bb2f7ce0e07f9cf546ab98b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7ee6f389a109e8bd32b8a04984d17c4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="videoGL_8h.html#ac7ee6f389a109e8bd32b8a04984d17c4">glInit</a> (void)</td></tr>
 <tr class="memdesc:ac7ee6f389a109e8bd32b8a04984d17c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the GL state machine (must be called once before using GL calls).  <a href="videoGL_8h.html#ac7ee6f389a109e8bd32b8a04984d17c4">More...</a><br /></td></tr>
@@ -1164,7 +1172,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 <p>Possibles size of a texture (horizontal and vertical). </p>
 <p >Related functions: <a class="el" href="videoGL_8h.html#a750259e65fe2e78340ded1119694dea7" title="Loads a 2D texture into texture memory and sets the currently bound texture ID to the attributes spec...">glTexImage2D()</a>, <a class="el" href="videoGL_8h.html#aac157f3e214208655a40434f4557ef39" title="Set parameters for the current texture.">glTexParameter()</a> </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9f0b28cb8d083a96b0156006ddfda933a997bf1e13cb2385a7b504ce70ec275a0" name="a9f0b28cb8d083a96b0156006ddfda933a997bf1e13cb2385a7b504ce70ec275a0"></a>TEXTURE_SIZE_8&#160;</td><td class="fielddoc"><p >8 texels </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9f0b28cb8d083a96b0156006ddfda933a860a8f57898ea881601d6bfb87c652c5" name="a9f0b28cb8d083a96b0156006ddfda933a860a8f57898ea881601d6bfb87c652c5"></a>TEXTURE_SIZE_INVALID&#160;</td><td class="fielddoc"><p >An invalid number of texels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9f0b28cb8d083a96b0156006ddfda933a997bf1e13cb2385a7b504ce70ec275a0" name="a9f0b28cb8d083a96b0156006ddfda933a997bf1e13cb2385a7b504ce70ec275a0"></a>TEXTURE_SIZE_8&#160;</td><td class="fielddoc"><p >8 texels </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9f0b28cb8d083a96b0156006ddfda933a092344286570e2655b52e72d4d9216fe" name="a9f0b28cb8d083a96b0156006ddfda933a092344286570e2655b52e72d4d9216fe"></a>TEXTURE_SIZE_16&#160;</td><td class="fielddoc"><p >16 texels </p>
 </td></tr>
@@ -2440,6 +2450,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 
 </div>
 </div>
+<a id="aeaefc19e52a2466eceec2dbfb5dabeba" name="aeaefc19e52a2466eceec2dbfb5dabeba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaefc19e52a2466eceec2dbfb5dabeba">&#9670;&nbsp;</a></span>glGetColorTablePointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * glGetColorTablePointer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the address alocated to the palette of the texture named by name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the texture to get a pointer to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The address. </dd></dl>
+
+</div>
+</div>
 <a id="accc87085dd09509afb52bf6d31f59edd" name="accc87085dd09509afb52bf6d31f59edd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#accc87085dd09509afb52bf6d31f59edd">&#9670;&nbsp;</a></span>glGetFixed()</h2>
 
@@ -2536,6 +2573,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 
 </div>
 </div>
+<a id="a9b74b3a8883ffad5611f2e202e3403da" name="a9b74b3a8883ffad5611f2e202e3403da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b74b3a8883ffad5611f2e202e3403da">&#9670;&nbsp;</a></span>glGetTextureExtPointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * glGetTextureExtPointer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns address allocated to the extra compressed texure data named by name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the texture to get a pointer to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The address, or NULL if there is no data or the format of the texture isn't GL_COMPRESSED. </dd></dl>
+
+</div>
+</div>
 <a id="a676f238bb2f7ce0e07f9cf546ab98b44" name="a676f238bb2f7ce0e07f9cf546ab98b44"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a676f238bb2f7ce0e07f9cf546ab98b44">&#9670;&nbsp;</a></span>glGetTexturePointer()</h2>
 
@@ -2552,7 +2616,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
       </table>
 </div><div class="memdoc">
 
-<p>Returns the address alocated to the texure named by name. </p>
+<p>Returns the address allocated to the texure named by name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the texture to get a pointer to. </td></tr>
@@ -4121,7 +4185,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 </div><div class="memdoc">
 
 <p>Loads a 2D texture into texture memory and sets the currently bound texture ID to the attributes specified. </p>
-<p >The only allowed texture sizes are powers of two between 8 and 1024 (inclusive). It is possible to specify the size in pixels or using the values of GL_TEXTURE_SIZE_ENUM.</p>
+<p >The only allowed texture sizes are powers of two between 8 and 1024 (inclusive). It is possible to specify the size in pixels or using the values of GL_TEXTURE_SIZE_ENUM. Note that a value of 0 won't cause an error because is a GL_TEXTURE_SIZE_ENUM value equivalent to 8 pixels.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">target</td><td>Ignored, only here for OpenGL compatibility. </td></tr>
@@ -4131,7 +4195,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
     <tr><td class="paramname">sizeY</td><td>Height of the texture (in pixels or GL_TEXTURE_SIZE_ENUM values). </td></tr>
     <tr><td class="paramname">empty2</td><td>Ignored, only here for OpenGL compatibility. </td></tr>
     <tr><td class="paramname">param</td><td>Parameters of the texture. </td></tr>
-    <tr><td class="paramname">texture</td><td>Pointer to the texture data to load. </td></tr>
+    <tr><td class="paramname">texture</td><td>Pointer to the texture data to load. If this is NULL, the texture will be allocated but no data will be copied to it. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4209,7 +4273,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A valid GL_TEXTURE_SIZE_ENUM or -1 if the size is incorrect. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A valid GL_TEXTURE_SIZE_ENUM value (TEXTURE_SIZE_INVALID if the size is invalid). </dd></dl>
 
 </div>
 </div>
@@ -4968,7 +5032,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>glResetTextures</b> (
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 3 2024 22:49:56 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Fri Jun 7 2024 19:36:31 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

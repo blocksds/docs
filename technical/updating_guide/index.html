@@ -14,7 +14,7 @@
 
   <meta name="description" content="Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.
 Please refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.
-Upgrading to BlocksDS 1.2.0 In gl2d.h, glLoadSpriteSet now expects an array of uint16_t integers for texture coordinates, rather than 32-bit unsigned ints." />
+Upgrading to BlocksDS 1.2.0 The SOUND_FREQ (ARM7) and TIMER_FREQ macros have been reworked to provide the nearest frequency to the one requested by the user, rounded." />
 
     <title>Upgrade guide | BlocksDS</title>
 
@@ -42,7 +42,7 @@ Upgrading to BlocksDS 1.2.0 In gl2d.h, glLoadSpriteSet now expects an array of u
   <meta property="og:site_name" content="BlocksDS" />
   <meta property="og:description" content="Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.
 Please refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.
-Upgrading to BlocksDS 1.2.0 In gl2d.h, glLoadSpriteSet now expects an array of uint16_t integers for texture coordinates, rather than 32-bit unsigned ints." />
+Upgrading to BlocksDS 1.2.0 The SOUND_FREQ (ARM7) and TIMER_FREQ macros have been reworked to provide the nearest frequency to the one requested by the user, rounded." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blocksds.github.io/docs/technical/updating_guide/" />
 
@@ -53,7 +53,7 @@ Upgrading to BlocksDS 1.2.0 In gl2d.h, glLoadSpriteSet now expects an array of u
 <meta name="twitter:title" content="Upgrade guide" />
   <meta name="twitter:description" content="Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.
 Please refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.
-Upgrading to BlocksDS 1.2.0 In gl2d.h, glLoadSpriteSet now expects an array of uint16_t integers for texture coordinates, rather than 32-bit unsigned ints." />
+Upgrading to BlocksDS 1.2.0 The SOUND_FREQ (ARM7) and TIMER_FREQ macros have been reworked to provide the nearest frequency to the one requested by the user, rounded." />
 
 
   <script type="application/ld+json">
@@ -64,8 +64,8 @@ Upgrading to BlocksDS 1.2.0 In gl2d.h, glLoadSpriteSet now expects an array of u
       "name": "Upgrade guide",
       "url" : "https://blocksds.github.io/docs/technical/updating_guide/",
       "headline": "Upgrade guide",
-      "description": "Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.\nPlease refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.\nUpgrading to BlocksDS 1.2.0 In gl2d.h, glLoadSpriteSet now expects an array of uint16_t integers for texture coordinates, rather than 32-bit unsigned ints.",
-      "wordCount" : "495",
+      "description": "Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.\nPlease refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.\nUpgrading to BlocksDS 1.2.0 The SOUND_FREQ (ARM7) and TIMER_FREQ macros have been reworked to provide the nearest frequency to the one requested by the user, rounded.",
+      "wordCount" : "535",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1579,6 +1579,10 @@ and enhancements to the SDK which are not listed here.</p>
     </a>
 </div>
 <ul>
+<li>The <code>SOUND_FREQ</code> (ARM7) and <code>TIMER_FREQ</code> macros have been reworked to
+provide the nearest frequency to the one requested by the user, rounded.
+This changes their returned values in some cases; you may want to validate
+your uses of these macros.</li>
 <li>In <code>gl2d.h</code>, <code>glLoadSpriteSet</code> now expects an array of <code>uint16_t</code> integers
 for texture coordinates, rather than 32-bit <code>unsigned int</code>s. This has been done
 to reduce memory waste, as the coordinates always fit in a 16-bit integer.</li>

@@ -11,5 +11,6 @@ var searchData=
   ['texture_5fsize_5f32_8',['TEXTURE_SIZE_32',['../videoGL_8h.html#a9f0b28cb8d083a96b0156006ddfda933a7bea0a168ffe347decf9ec45dd82c6eb',1,'videoGL.h']]],
   ['texture_5fsize_5f512_9',['TEXTURE_SIZE_512',['../videoGL_8h.html#a9f0b28cb8d083a96b0156006ddfda933ae0d091b18f33f3636ae2537df07a5c58',1,'videoGL.h']]],
   ['texture_5fsize_5f64_10',['TEXTURE_SIZE_64',['../videoGL_8h.html#a9f0b28cb8d083a96b0156006ddfda933a4a069b6a40d5d02a819d9eb0f4e8ccd1',1,'videoGL.h']]],
-  ['texture_5fsize_5f8_11',['TEXTURE_SIZE_8',['../videoGL_8h.html#a9f0b28cb8d083a96b0156006ddfda933a997bf1e13cb2385a7b504ce70ec275a0',1,'videoGL.h']]]
+  ['texture_5fsize_5f8_11',['TEXTURE_SIZE_8',['../videoGL_8h.html#a9f0b28cb8d083a96b0156006ddfda933a997bf1e13cb2385a7b504ce70ec275a0',1,'videoGL.h']]],
+  ['texture_5fsize_5finvalid_12',['TEXTURE_SIZE_INVALID',['../videoGL_8h.html#a9f0b28cb8d083a96b0156006ddfda933a860a8f57898ea881601d6bfb87c652c5',1,'videoGL.h']]]
 ];
