@@ -85,7 +85,7 @@ Configuring the Reverb Unit</h1>
 <div class="fragment"><div class="line"><a class="code hl_struct" href="structmmreverbcfg.html">mm_reverb_cfg</a> config;</div>
 <div class="line">config.<a class="code hl_variable" href="structmmreverbcfg.html#a688117afa316d6b27e7aa0b221a40098">flags</a> = <a class="code hl_enumvalue" href="group__maxmod__types.html#gga410c125d33ebdcd12ad8a88e147b9acbaaea9507bb4823a4f5fea6caf838d8622">MMRF_FEEDBACK</a> | <a class="code hl_enumvalue" href="group__maxmod__types.html#gga410c125d33ebdcd12ad8a88e147b9acba82b9b2736b7304c12a8384f82bce5c78">MMRF_LEFT</a>;</div>
 <div class="line">config.<a class="code hl_variable" href="structmmreverbcfg.html#af4b29b19af64808747d38a47c97d46d0">feedback</a> = 80 * 2047 / 100;</div>
-<div class="line"><a class="code hl_function" href="group__nds__arm7__reverb.html#gab073890ddcb3fc3a60b9bd8e2ddd68c3">mmReverbConfigure</a>( &amp;config );</div>
+<div class="line"><a class="code hl_function" href="group__nds__arm7__reverb.html#gab073890ddcb3fc3a60b9bd8e2ddd68c3">mmReverbConfigure</a>(&amp;config);</div>
 <div class="ttc" id="agroup__maxmod__types_html_gga410c125d33ebdcd12ad8a88e147b9acba82b9b2736b7304c12a8384f82bce5c78"><div class="ttname"><a href="group__maxmod__types.html#gga410c125d33ebdcd12ad8a88e147b9acba82b9b2736b7304c12a8384f82bce5c78">MMRF_LEFT</a></div><div class="ttdeci">@ MMRF_LEFT</div><div class="ttdoc">Affect left output.</div><div class="ttdef"><b>Definition:</b> mm_types.h:100</div></div>
 <div class="ttc" id="agroup__maxmod__types_html_gga410c125d33ebdcd12ad8a88e147b9acbaaea9507bb4823a4f5fea6caf838d8622"><div class="ttname"><a href="group__maxmod__types.html#gga410c125d33ebdcd12ad8a88e147b9acbaaea9507bb4823a4f5fea6caf838d8622">MMRF_FEEDBACK</a></div><div class="ttdeci">@ MMRF_FEEDBACK</div><div class="ttdoc">Set feedback setting.</div><div class="ttdef"><b>Definition:</b> mm_types.h:98</div></div>
 <div class="ttc" id="agroup__nds__arm7__reverb_html_gab073890ddcb3fc3a60b9bd8e2ddd68c3"><div class="ttname"><a href="group__nds__arm7__reverb.html#gab073890ddcb3fc3a60b9bd8e2ddd68c3">mmReverbConfigure</a></div><div class="ttdeci">void mmReverbConfigure(mm_reverb_cfg *config)</div><div class="ttdoc">Configures the reverb system.</div></div>
@@ -181,13 +181,13 @@ Starting/Stopping</h1>
 Example Configuration</h1>
 <p >Here is an example that configures the reverb unit.</p>
 <div class="fragment"><div class="line"><span class="keyword">enum</span> {</div>
-<div class="line">    rv_delay_left = 280,   <span class="comment">// milliseconds</span></div>
+<div class="line">    rv_delay_left = 280,  <span class="comment">// Milliseconds</span></div>
 <div class="line">    rv_delay_right = 288,</div>
-<div class="line">    rv_rate = 32768,       <span class="comment">// Hertz</span></div>
-<div class="line">    rv_format = 16         <span class="comment">// 16-bit</span></div>
+<div class="line">    rv_rate = 32768,      <span class="comment">// Hertz</span></div>
+<div class="line">    rv_format = 16        <span class="comment">// 16-bit</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> setupReverb( <span class="keywordtype">void</span> )</div>
+<div class="line"><span class="keywordtype">void</span> setupReverb(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Enable reverb system</span></div>
 <div class="line">    <a class="code hl_function" href="group__nds__arm7__reverb.html#gad4f8843899c93bc4fe9ecb7c73273c3f">mmReverbEnable</a>();</div>
@@ -197,12 +197,12 @@ Example Configuration</h1>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">int</span> rv_size_left;</div>
 <div class="line">    <span class="keywordtype">int</span> rv_size_right;</div>
-<div class="line">    rv_size_left = <a class="code hl_function" href="group__nds__arm7__reverb.html#gacfe1c9b6a16120d9eb464026295540b0">mmReverbBufferSize</a>( rv_format, rv_rate, rv_delay_left );</div>
-<div class="line">    rv_size_right = <a class="code hl_function" href="group__nds__arm7__reverb.html#gacfe1c9b6a16120d9eb464026295540b0">mmReverbBufferSize</a>( rv_format, rv_rate, rv_delay_right );</div>
+<div class="line">    rv_size_left = <a class="code hl_function" href="group__nds__arm7__reverb.html#gacfe1c9b6a16120d9eb464026295540b0">mmReverbBufferSize</a>(rv_format, rv_rate, rv_delay_left);</div>
+<div class="line">    rv_size_right = <a class="code hl_function" href="group__nds__arm7__reverb.html#gacfe1c9b6a16120d9eb464026295540b0">mmReverbBufferSize</a>(rv_format, rv_rate, rv_delay_right);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// allocate memory for both reverb channels</span></div>
-<div class="line">    rv_buffer_left  = malloc( rv_size_left * 4 );</div>
-<div class="line">    rv_buffer_right = malloc( rv_size_right * 4 );</div>
+<div class="line">    rv_buffer_left  = malloc(rv_size_left * 4);</div>
+<div class="line">    rv_buffer_right = malloc(rv_size_right * 4);</div>
 <div class="line"> </div>
 <div class="line">    <a class="code hl_struct" href="structmmreverbcfg.html">mm_reverb_cfg</a> config;</div>
 <div class="line"> </div>
@@ -228,7 +228,7 @@ Example Configuration</h1>
 <div class="line">    config.<a class="code hl_variable" href="structmmreverbcfg.html#a559f15b419f9bfee1fa8d3cf8eca5622">rate</a> = 16777216 / rv_rate;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Do configuration...</span></div>
-<div class="line">    <a class="code hl_function" href="group__nds__arm7__reverb.html#gab073890ddcb3fc3a60b9bd8e2ddd68c3">mmReverbConfigure</a>( &amp;config );</div>
+<div class="line">    <a class="code hl_function" href="group__nds__arm7__reverb.html#gab073890ddcb3fc3a60b9bd8e2ddd68c3">mmReverbConfigure</a>(&amp;config);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Give the right channel slightly more delay and set the memory buffer</span></div>
 <div class="line">    config.<a class="code hl_variable" href="structmmreverbcfg.html#a688117afa316d6b27e7aa0b221a40098">flags</a> = <a class="code hl_enumvalue" href="group__maxmod__types.html#gga410c125d33ebdcd12ad8a88e147b9acbac459fd88e7f409b0e8cf9111f5421079">MMRF_MEMORY</a> | <a class="code hl_enumvalue" href="group__maxmod__types.html#gga410c125d33ebdcd12ad8a88e147b9acba5bf02a45921439b6aba679af3f750e75">MMRF_DELAY</a> | <a class="code hl_enumvalue" href="group__maxmod__types.html#gga410c125d33ebdcd12ad8a88e147b9acba22f5db27837f36822cbffc78dc7a080e">MMRF_RIGHT</a>;</div>
@@ -236,9 +236,9 @@ Example Configuration</h1>
 <div class="line">    config.<a class="code hl_variable" href="structmmreverbcfg.html#aec5ef6f9f3267033ae47e6702e8918c4">delay</a> = rv_size_right;</div>
 <div class="line">    config.<a class="code hl_variable" href="structmmreverbcfg.html#a29aafe23b17b054e9910ad0ba84f4ac5">memory</a> = rv_buffer_right;</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_function" href="group__nds__arm7__reverb.html#gab073890ddcb3fc3a60b9bd8e2ddd68c3">mmReverbConfigure</a>( &amp;config );</div>
+<div class="line">    <a class="code hl_function" href="group__nds__arm7__reverb.html#gab073890ddcb3fc3a60b9bd8e2ddd68c3">mmReverbConfigure</a>(&amp;config);</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_function" href="group__nds__arm7__reverb.html#gaa37cad944f7b3b095ab3667218a67993">mmReverbStart</a>( <a class="code hl_enumvalue" href="group__maxmod__types.html#gga90694691a28d87a44898fe5ad7c0d75fa2c1fa73f2128ae3b53731db6d45e3cd9">MMRC_BOTH</a> );</div>
+<div class="line">    <a class="code hl_function" href="group__nds__arm7__reverb.html#gaa37cad944f7b3b095ab3667218a67993">mmReverbStart</a>(<a class="code hl_enumvalue" href="group__maxmod__types.html#gga90694691a28d87a44898fe5ad7c0d75fa2c1fa73f2128ae3b53731db6d45e3cd9">MMRC_BOTH</a>);</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__maxmod__types_html_gga410c125d33ebdcd12ad8a88e147b9acba22f5db27837f36822cbffc78dc7a080e"><div class="ttname"><a href="group__maxmod__types.html#gga410c125d33ebdcd12ad8a88e147b9acba22f5db27837f36822cbffc78dc7a080e">MMRF_RIGHT</a></div><div class="ttdeci">@ MMRF_RIGHT</div><div class="ttdoc">Affect right output.</div><div class="ttdef"><b>Definition:</b> mm_types.h:101</div></div>
 <div class="ttc" id="agroup__maxmod__types_html_gga410c125d33ebdcd12ad8a88e147b9acba2a7ee5424319c44f51d7f978abee7c0f"><div class="ttname"><a href="group__maxmod__types.html#gga410c125d33ebdcd12ad8a88e147b9acba2a7ee5424319c44f51d7f978abee7c0f">MMRF_16BITRIGHT</a></div><div class="ttdeci">@ MMRF_16BITRIGHT</div><div class="ttdoc">Set 16-bit format for the right channel.</div><div class="ttdef"><b>Definition:</b> mm_types.h:110</div></div>
@@ -266,7 +266,7 @@ Closing</h1>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 8 2024 12:55:13 for Maxmod by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Jun 8 2024 17:54:54 for Maxmod by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

@@ -78,10 +78,8 @@ $(function() {
 <div class="contents">
 <div class="textblock"><p >This article will explain how to use the Maxmod Utility.</p>
 <p >Let's start with the <em>usage</em>. Run the program without any arguments to bring it up.</p>
-<div class="fragment"><div class="line">C:\dev&gt;mmutil</div>
-<div class="line"> </div>
-<div class="line">************************</div>
-<div class="line">* Maxmod Utility v1.8e *</div>
+<div class="fragment"><div class="line">************************</div>
+<div class="line">* Maxmod Utility 1.10.1 *</div>
 <div class="line">************************</div>
 <div class="line"> </div>
 <div class="line">Usage:</div>
@@ -119,10 +117,8 @@ $(function() {
 <div class="line">| mmutil -d -b input1.xm input2.s3m testsound.wav                 |</div>
 <div class="line">`-----------------------------------------------------------------&#39;</div>
 <div class="line"> www.maxmod.org</div>
-<div class="line"> </div>
-<div class="line">C:\dev&gt;</div>
 </div><!-- fragment --><p >Let's pretend we have 4 music files named song1.mod, song2.s3m, song3.xm, and song4.it. Let's also throw in a couple sound effects too: sound1.wav and sound2.wav. Produce a soundbank file like this:</p>
-<div class="fragment"><div class="line">C:\dev&gt;mmutil -osoundbank.bin -hsoundbank.h -d song1.mod song2.s3m song3.xm song4.it sound1.wav sound2.wav</div>
+<div class="fragment"><div class="line">mmutil -osoundbank.bin -hsoundbank.h -d song1.mod song2.s3m song3.xm song4.it sound1.wav sound2.wav</div>
 </div><!-- fragment --><p >You should now have <b>soundbank.bin</b> which is the actual soundbank file, and <b>soundbank.h</b> which contains the C/C++ definitions for your project. Notice that the <b>-d</b> option was specified. This makes the output suitable for a DS project, but not for GBA. Remove the <b>-d</b> flag for GBA projects.</p>
 <h1><a class="anchor" id="autotoc_md16"></a>
 Header Output</h1>
@@ -135,20 +131,20 @@ Header Output</h1>
 <div class="line"><span class="preprocessor">#define SFX_SOUND1  0</span></div>
 <div class="line"><span class="preprocessor">#define SFX_SOUND2  1</span></div>
 <div class="line"><span class="preprocessor">#define MSL_NSONGS  4</span></div>
-<div class="line"><span class="preprocessor">#define MSL_NSAMPS  46    </span><span class="comment">// 44 module samples + 2 WAVs</span></div>
-<div class="line"><span class="preprocessor">#define MSL_BANKSIZE 50   </span><span class="comment">// sum of modules + samples</span></div>
+<div class="line"><span class="preprocessor">#define MSL_NSAMPS  46  </span><span class="comment">// 44 module samples + 2 WAVs</span></div>
+<div class="line"><span class="preprocessor">#define MSL_BANKSIZE 50 </span><span class="comment">// Sum of modules + samples</span></div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md17"></a>
 ROM Output</h1>
 <p >To make a test ROM with a certain module, use the <b>-b</b> option. This will produce a GBA image that features the song listed.</p>
-<div class="fragment"><div class="line">C:\dev&gt;mmutil -b test.xm test2.xm -oMyTestROM.gba</div>
+<div class="fragment"><div class="line">mmutil -b test.xm test2.xm -oMyTestROM.gba</div>
 </div><!-- fragment --><p >To make a DS image, specify the <b>-d</b> option too.</p>
-<div class="fragment"><div class="line">C:\dev&gt;mutil -b -d test3.it test6.it sound1.wav sound2.wav -oMyAwesomeTestROM.nds</div>
+<div class="fragment"><div class="line">mutil -b -d test3.it test6.it sound1.wav sound2.wav -oMyAwesomeTestROM.nds</div>
 </div><!-- fragment --><p >You should now have either have a GBA or NDS file depending on the <b>-d</b> flag. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 8 2024 12:55:13 for Maxmod by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Jun 8 2024 17:54:54 for Maxmod by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
