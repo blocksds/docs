@@ -172,7 +172,7 @@ File I/O (fopen, opendir, etc.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://blocksds.github.io/docs/introduction/changelog/</guid>
-      <description>Version DEV (2024-06-??) libnds:
+      <description>Version 1.2.0 (2024-06-08) libnds:
 videoGL:
 Add glGetColorTablePointer() (returns pointer in VRAM to the palette of a texture). Add glGetTextureExtPointer() (returns pointer in VRAM to the additional texture data of GL_COMPRESSED textures). Fix allocation of GL_COMPRESSED textures when VRAM_A is not allocated to the 3D engine. Fix crash in glTexImage2D() with no active texture. Fix error checking in glColorTableEXT() and glTexImage2D(). General code cleanup and improvements. Minor optimization to loading GL_RGB textures using glTexImage2D().</description>
     </item>

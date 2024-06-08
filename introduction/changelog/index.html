@@ -12,7 +12,7 @@
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="Version DEV (2024-06-??) libnds:
+  <meta name="description" content="Version 1.2.0 (2024-06-08) libnds:
 videoGL:
 Add glGetColorTablePointer() (returns pointer in VRAM to the palette of a texture). Add glGetTextureExtPointer() (returns pointer in VRAM to the additional texture data of GL_COMPRESSED textures). Fix allocation of GL_COMPRESSED textures when VRAM_A is not allocated to the 3D engine. Fix crash in glTexImage2D() with no active texture. Fix error checking in glColorTableEXT() and glTexImage2D(). General code cleanup and improvements. Minor optimization to loading GL_RGB textures using glTexImage2D()." />
 
@@ -40,7 +40,7 @@ Add glGetColorTablePointer() (returns pointer in VRAM to the palette of a textur
     content="Changelog"
   />
   <meta property="og:site_name" content="BlocksDS" />
-  <meta property="og:description" content="Version DEV (2024-06-??) libnds:
+  <meta property="og:description" content="Version 1.2.0 (2024-06-08) libnds:
 videoGL:
 Add glGetColorTablePointer() (returns pointer in VRAM to the palette of a texture). Add glGetTextureExtPointer() (returns pointer in VRAM to the additional texture data of GL_COMPRESSED textures). Fix allocation of GL_COMPRESSED textures when VRAM_A is not allocated to the 3D engine. Fix crash in glTexImage2D() with no active texture. Fix error checking in glColorTableEXT() and glTexImage2D(). General code cleanup and improvements. Minor optimization to loading GL_RGB textures using glTexImage2D()." />
 <meta property="og:type" content="article" />
@@ -51,7 +51,7 @@ Add glGetColorTablePointer() (returns pointer in VRAM to the palette of a textur
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Changelog" />
-  <meta name="twitter:description" content="Version DEV (2024-06-??) libnds:
+  <meta name="twitter:description" content="Version 1.2.0 (2024-06-08) libnds:
 videoGL:
 Add glGetColorTablePointer() (returns pointer in VRAM to the palette of a texture). Add glGetTextureExtPointer() (returns pointer in VRAM to the additional texture data of GL_COMPRESSED textures). Fix allocation of GL_COMPRESSED textures when VRAM_A is not allocated to the 3D engine. Fix crash in glTexImage2D() with no active texture. Fix error checking in glColorTableEXT() and glTexImage2D(). General code cleanup and improvements. Minor optimization to loading GL_RGB textures using glTexImage2D()." />
 
@@ -64,8 +64,8 @@ Add glGetColorTablePointer() (returns pointer in VRAM to the palette of a textur
       "name": "Changelog",
       "url" : "https://blocksds.github.io/docs/introduction/changelog/",
       "headline": "Changelog",
-      "description": "Version DEV (2024-06-??) libnds:\nvideoGL:\nAdd glGetColorTablePointer() (returns pointer in VRAM to the palette of a texture). Add glGetTextureExtPointer() (returns pointer in VRAM to the additional texture data of GL_COMPRESSED textures). Fix allocation of GL_COMPRESSED textures when VRAM_A is not allocated to the 3D engine. Fix crash in glTexImage2D() with no active texture. Fix error checking in glColorTableEXT() and glTexImage2D(). General code cleanup and improvements. Minor optimization to loading GL_RGB textures using glTexImage2D().",
-      "wordCount" : "4668",
+      "description": "Version 1.2.0 (2024-06-08) libnds:\nvideoGL:\nAdd glGetColorTablePointer() (returns pointer in VRAM to the palette of a texture). Add glGetTextureExtPointer() (returns pointer in VRAM to the additional texture data of GL_COMPRESSED textures). Fix allocation of GL_COMPRESSED textures when VRAM_A is not allocated to the 3D engine. Fix crash in glTexImage2D() with no active texture. Fix error checking in glColorTableEXT() and glTexImage2D(). General code cleanup and improvements. Minor optimization to loading GL_RGB textures using glTexImage2D().",
+      "wordCount" : "4710",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1565,11 +1565,11 @@ Add glGetColorTablePointer() (returns pointer in VRAM to the palette of a textur
   >
     <h1>Changelog</h1>
     <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="version-dev-2024-06-"
+    <h2 id="version-120-2024-06-08"
     >
-        Version DEV (2024-06-??)
+        Version 1.2.0 (2024-06-08)
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-dev-2024-06-" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version DEV (2024-06-??)" aria-label="Anchor to: Version DEV (2024-06-??)" href="#version-dev-2024-06-">
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-120-2024-06-08" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 1.2.0 (2024-06-08)" aria-label="Anchor to: Version 1.2.0 (2024-06-08)" href="#version-120-2024-06-08">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -1609,6 +1609,10 @@ coordinates.</li>
 <p>Add <code>hw_sqrtf()</code> - a hardware-accelerated alternative to <code>sqrtf()</code>.</p>
 </li>
 <li>
+<p>Small optimizations to functions that use the hardware accelerators of
+division and square root.</p>
+</li>
+<li>
 <p>Add support for detecting stack smash canaries.</p>
 <ul>
 <li>As a result, the debug versions of libnds are now built with
@@ -1640,12 +1644,14 @@ default; if you&rsquo;d like alternate options, please let us know.</li>
 <ul>
 <li>Add error code checks to 3D engine examples.</li>
 <li>Add GL2D spriteset and tileset examples.</li>
-<li>Add new tool: squeezer - used for generating packed textures for GL2D
-sprite sets.</li>
+<li>Add new tool: squeezer (by @huxingyi), used for generating packed textures
+for GL2D sprite sets. It has been forked to easily export formats used by
+GL2D instead of generic formats.</li>
 <li>Add tests for <code>hw_sqrtf()</code>.</li>
 <li>Avoid using <code>GL_RGB</code> and <code>TEXTURE_SIZE_n</code> defines in 3D engine examples.</li>
 <li>Fix VRAM bank setup in &ldquo;text over 3D&rdquo; example.</li>
 <li>Improve timer example.</li>
+<li>Add a test for the videoGL functions that allocate textures and palettes.</li>
 </ul>
 </li>
 </ul>
