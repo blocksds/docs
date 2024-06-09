@@ -207,6 +207,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resyncClock</b> (void
 
 <p>Saves the current time and date to the provided <a class="el" href="structrtcTimeAndDate.html" title="Struct containing time and day of the real time clock.">rtcTimeAndDate</a> structure. </p>
 <p >A returned value of 0 doesn't mean that the RTC registers were updated correctly, only that the checks previous to writing the RTC registers passed.</p>
+<p >Note: Check the documentation of rtcOffset in struct PERSONAL_DATA for additional information.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rtc</td><td>Pointer to the <a class="el" href="structrtcTimeAndDate.html" title="Struct containing time and day of the real time clock.">rtcTimeAndDate</a> struct with the new time and date. </td></tr>
@@ -261,6 +262,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resyncClock</b> (void
 
 <p>Sets the current time to the provided <a class="el" href="structrtcTime.html" title="Struct containing time of the real time clock.">rtcTime</a> structure. </p>
 <p >A returned value of 0 doesn't mean that the RTC registers were updated correctly, only that the checks previous to writing the RTC registers passed.</p>
+<p >Note: Check the documentation of rtcOffset in struct PERSONAL_DATA for additional information.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rtc</td><td>Pointer to the <a class="el" href="structrtcTime.html" title="Struct containing time of the real time clock.">rtcTime</a> struct with the new time. </td></tr>
@@ -274,7 +276,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resyncClock</b> (void
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 8 2024 17:54:53 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 9 2024 03:01:01 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

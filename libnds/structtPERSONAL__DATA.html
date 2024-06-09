@@ -154,9 +154,8 @@ Data Fields</h2></td></tr>
 <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rtcClockAdjust</b></td></tr>
 <tr class="memdesc:a46f97da624bd2638b723ffb5dde281eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Real Time Clock adjustment register value. <br /></td></tr>
 <tr class="separator:a46f97da624bd2638b723ffb5dde281eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d6027b850086c751e62dc14a53c2813"><td class="memItemLeft" align="right" valign="top"><a id="a6d6027b850086c751e62dc14a53c2813" name="a6d6027b850086c751e62dc14a53c2813"></a>
-<a class="el" href="ndstypes_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rtcOffset</b></td></tr>
-<tr class="memdesc:a6d6027b850086c751e62dc14a53c2813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Real Time Clock offset. <br /></td></tr>
+<tr class="memitem:a6d6027b850086c751e62dc14a53c2813"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndstypes_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtPERSONAL__DATA.html#a6d6027b850086c751e62dc14a53c2813">rtcOffset</a></td></tr>
+<tr class="memdesc:a6d6027b850086c751e62dc14a53c2813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Real Time Clock offset.  <a href="structtPERSONAL__DATA.html#a6d6027b850086c751e62dc14a53c2813">More...</a><br /></td></tr>
 <tr class="separator:a6d6027b850086c751e62dc14a53c2813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80d37f96c43969683c6a94fe50b05d00"><td class="memItemLeft" align="right" valign="top"><a id="a80d37f96c43969683c6a94fe50b05d00" name="a80d37f96c43969683c6a94fe50b05d00"></a>
 <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theme</b></td></tr>
@@ -218,13 +217,31 @@ Data Fields</h2></td></tr>
 <li>6 = Chinese(?)</li>
 <li>7 = Unknown/Reserved </li>
 </ul>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a6d6027b850086c751e62dc14a53c2813" name="a6d6027b850086c751e62dc14a53c2813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d6027b850086c751e62dc14a53c2813">&#9670;&nbsp;</a></span>rtcOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ndstypes_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> tPERSONAL_DATA::rtcOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Real Time Clock offset. </p>
+<p >Whenever the time/date of the NDS is changed in the system settings menu from time A to time B, the firmware adds (epoch(B) - epoch(A)) to this field. libnds doesn't do this in <a class="el" href="clock_8h.html#a2345cc818877d2136e181d0f43b35582" title="Sets the current time to the provided rtcTime structure.">rtcTimeSet()</a> or <a class="el" href="clock_8h.html#a369fe445c69213c0175747f95dbdf1c8" title="Saves the current time and date to the provided rtcTimeAndDate structure.">rtcTimeAndDateSet()</a>, so any game that relies on this firmware field to detect time/date modifications won't be able to do it. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="system_8h.html">system.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 8 2024 17:54:53 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 9 2024 03:01:01 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
