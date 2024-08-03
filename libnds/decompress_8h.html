@@ -141,16 +141,17 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The types of decompression available. </p>
+<p>VRAM only accepts 16-bit and 32-bit writes. If the CPU tries to write in 8-bit units, the write is ignored. Due to how the BIOS decompresses data, some of the options of this enum are safe to be used in VRAM, and others aren't. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa81d284ca6e0a5e546588b20c92dde8aa0cbd96b55e1e26680b3e1370539f6c81" name="aa81d284ca6e0a5e546588b20c92dde8aa0cbd96b55e1e26680b3e1370539f6c81"></a>LZ77&#160;</td><td class="fielddoc"><p>LZ77 decompression. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa81d284ca6e0a5e546588b20c92dde8aa0fecdf59434cc08baf43fd1dd7200cfc" name="aa81d284ca6e0a5e546588b20c92dde8aa0fecdf59434cc08baf43fd1dd7200cfc"></a>LZ77Vram&#160;</td><td class="fielddoc"><p>VRAM safe LZ77 decompression. </p>
+<tr><td class="fieldname"><a id="aa81d284ca6e0a5e546588b20c92dde8aa0fecdf59434cc08baf43fd1dd7200cfc" name="aa81d284ca6e0a5e546588b20c92dde8aa0fecdf59434cc08baf43fd1dd7200cfc"></a>LZ77Vram&#160;</td><td class="fielddoc"><p>LZ77 decompression (VRAM can be used as destination). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa81d284ca6e0a5e546588b20c92dde8aa42633cb5fae6d613ffd21290471e822f" name="aa81d284ca6e0a5e546588b20c92dde8aa42633cb5fae6d613ffd21290471e822f"></a>HUFF&#160;</td><td class="fielddoc"><p>VRAM safe huff decompression. </p>
+<tr><td class="fieldname"><a id="aa81d284ca6e0a5e546588b20c92dde8aa42633cb5fae6d613ffd21290471e822f" name="aa81d284ca6e0a5e546588b20c92dde8aa42633cb5fae6d613ffd21290471e822f"></a>HUFF&#160;</td><td class="fielddoc"><p>Huffman decompression (VRAM can be used as destination). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa81d284ca6e0a5e546588b20c92dde8aa2d5567efbb7b2fe83985425c0ada3269" name="aa81d284ca6e0a5e546588b20c92dde8aa2d5567efbb7b2fe83985425c0ada3269"></a>RLE&#160;</td><td class="fielddoc"><p>Run length encoded decompression. </p>
+<tr><td class="fieldname"><a id="aa81d284ca6e0a5e546588b20c92dde8aa2d5567efbb7b2fe83985425c0ada3269" name="aa81d284ca6e0a5e546588b20c92dde8aa2d5567efbb7b2fe83985425c0ada3269"></a>RLE&#160;</td><td class="fielddoc"><p>Run Length Encoding decompression. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa81d284ca6e0a5e546588b20c92dde8aa42751999686acc7d00dc74333f1a7633" name="aa81d284ca6e0a5e546588b20c92dde8aa42751999686acc7d00dc74333f1a7633"></a>RLEVram&#160;</td><td class="fielddoc"><p>VRAM safe run length encoded decompression. </p>
+<tr><td class="fieldname"><a id="aa81d284ca6e0a5e546588b20c92dde8aa42751999686acc7d00dc74333f1a7633" name="aa81d284ca6e0a5e546588b20c92dde8aa42751999686acc7d00dc74333f1a7633"></a>RLEVram&#160;</td><td class="fielddoc"><p>Run Length Encoding decompression (VRAM can be used as detination). </p>
 </td></tr>
 </table>
 
@@ -324,7 +325,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 3 2024 15:35:12 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Aug 4 2024 00:48:55 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
