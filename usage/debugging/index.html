@@ -65,7 +65,7 @@ It’s very easy to setup libnds so that the output of printf() is sent to a tex
       "url" : "https://blocksds.github.io/docs/usage/debugging/",
       "headline": "How to debug programs",
       "description": "While developing applications with BlocksDS you will reach situations where you need to debug your code. There are different ways to do this with BlocksDS, and they are described below.\n1. Regular text console printf-debugging is the most basic way to debug code, but it’s still very useful so it’s worth mentioning it.\nIt’s very easy to setup libnds so that the output of printf() is sent to a text console on the screen.",
-      "wordCount" : "1451",
+      "wordCount" : "1804",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1756,11 +1756,11 @@ itself is used to format strings!):</p>
   href="https://problemkaputt.de/gbatek.htm#debugmessages"
 >here</a>.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="4-sassert-and-debug-builds-of-libnds"
+    <h2 id="4-assert-sassert-and-debug-builds-of-libnds"
     >
-        4. sassert() and debug builds of libnds
+        4. assert(), sassert() and debug builds of libnds
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/usage/debugging/#4-sassert-and-debug-builds-of-libnds" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 4. sassert() and debug builds of libnds" aria-label="Anchor to: 4. sassert() and debug builds of libnds" href="#4-sassert-and-debug-builds-of-libnds">
+    <a data-clipboard-text="https://blocksds.github.io/docs/usage/debugging/#4-assert-sassert-and-debug-builds-of-libnds" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 4. assert(), sassert() and debug builds of libnds" aria-label="Anchor to: 4. assert(), sassert() and debug builds of libnds" href="#4-assert-sassert-and-debug-builds-of-libnds">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -1770,10 +1770,14 @@ enabled or not.</p>
 libc. It uses it internally in many places to detect problems like setting up
 backgrounds with invalid parameters, or using values outside of their valid
 ranges.</p>
+<p>Also, it is possible to use the standard <code>assert()</code> function of libc. If the
+expression fails on the ARM9, it will stop the program and print an error
+message on the screen. On the ARM7 it will print a message to the no$gba/melonDS
+console and stop execution.</p>
 <p>It&rsquo;s always a good idea to use this function in your code to warn the developer
 about problems that need to be fixed, but that can&rsquo;t happen during normal
 execution of the program. For errors that may happen during normal execution of
-the program (like running out of RAM or VRAM) you shouldn&rsquo;t use <code>sassert()</code>. You
+the program (like running out of RAM or VRAM) you shouldn&rsquo;t use <code>assert()</code>. You
 should never check the return value of <code>malloc()</code> with it, for example. You can
 use it to check that the background layer you are using is between 0 and 3.</p>
 <p>The release build of libnds doesn&rsquo;t include any assertion, the debug build does.
@@ -1885,11 +1889,53 @@ editor and look for the address on the screen.</p>
 information on the screen to try to understand what the code was doing when it
 crashed.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="7-gdb-with-melonds"
+    <h2 id="7-stack-overflows"
     >
-        7. GDB with melonDS
+        7. Stack overflows
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/usage/debugging/#7-gdb-with-melonds" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 7. GDB with melonDS" aria-label="Anchor to: 7. GDB with melonDS" href="#7-gdb-with-melonds">
+    <a data-clipboard-text="https://blocksds.github.io/docs/usage/debugging/#7-stack-overflows" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 7. Stack overflows" aria-label="Anchor to: 7. Stack overflows" href="#7-stack-overflows">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>A very common bug found while developing DS applications is stack overflows.
+BlocksDS places the user stack starting at the top address of DTCM. DTCM is a
+very fast memory region, so it&rsquo;s very useful to keep your stack here so that
+your program runs generally fast.</p>
+<p>However, this memory region is small (16 KiB) and the start of DTCM may contain
+variables that you have asked the compiler to place in DTCM. This means that, in
+practice, your stack isn&rsquo;t that big.</p>
+<p>You should be very careful and avoid allocating big arrays in structs. This is
+especially true if your code is running in an interrupt handler. <code>printf()</code> uses
+a lot of stack to work, so it can be a cause for crashes.</p>
+<p>You should allocate anything bigger than one or two KBs on the heap with
+<code>malloc()</code> or similar functions.</p>
+<p>You can read more about how memory is used in BlocksDS in
+<a
+  class="gdoc-markdown__link"
+  href="../../technical/memory_map"
+>this document</a>.</p>
+<p>Other types of stack overflows happen when you, for example, allocate an array
+on the stack by declaring it at the top of a function, and you have a loop that
+writes into that array, but it goes over the end of the array.</p>
+<p>It is possible to detect this kind of bugs by using the stack protector of the
+compiler. Normally it is disabled because it increases the code footprint, but
+you can enable it by editing your Makefile and adding <code>-fstack-protector-strong</code>
+to your <code>CFLAGS</code> and switching from using <code>-lnds9</code> in <code>LIBS</code> to using <code>-lnds9d</code>.</p>
+<p>If the stack protection code detects stack corruption, libnds will cause an
+exception to crash the game in a controlled way. You can then check the value of
+<code>lr</code> in the exception handler screen to see where the exception was triggered
+from.</p>
+<p>Check <a
+  class="gdoc-markdown__link"
+  href="https://github.com/blocksds/sdk/tree/master/tests/system/stack_smash_protection"
+>this example</a>
+to see it in action.</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="8-gdb-with-melonds"
+    >
+        8. GDB with melonDS
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/usage/debugging/#8-gdb-with-melonds" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 8. GDB with melonDS" aria-label="Anchor to: 8. GDB with melonDS" href="#8-gdb-with-melonds">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
