@@ -26,7 +26,7 @@ var searchData=
   ['keyboardgetstring_23',['keyboardGetString',['../keyboard_8h.html#a10095e3a102677b79be0276a6f5f28b1',1,'keyboard.h']]],
   ['keyboardhide_24',['keyboardHide',['../keyboard_8h.html#a696fef1ec10d968f35799b4ae643a97e',1,'keyboard.h']]],
   ['keyboardinit_25',['keyboardInit',['../keyboard_8h.html#aafd335faf4175e01c4f1736d587f5d7c',1,'keyboard.h']]],
-  ['keyboardonsub_26',['keyboardOnSub',['../structKeyboard.html#aa09893e391860dece0f2f898d560e63e',1,'Keyboard']]],
+  ['keyboardonsub_26',['keyboardOnSub',['../structKeyboard.html#abb9a125d3d2442ad99cc1784b28c9fa0',1,'Keyboard']]],
   ['keyboardshow_27',['keyboardShow',['../keyboard_8h.html#ab6ca3204e3a03b49694b39ed549b2e2e',1,'keyboard.h']]],
   ['keyboardstate_28',['KeyboardState',['../keyboard_8h.html#aa45fda05d3607810c6db30b1af3caac9',1,'keyboard.h']]],
   ['keyboardupdate_29',['keyboardUpdate',['../keyboard_8h.html#a788662b30dee506f7a181746bddf8f1b',1,'keyboard.h']]],

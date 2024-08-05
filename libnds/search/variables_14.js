@@ -6,5 +6,5 @@ var searchData=
   ['version_3',['version',['../structtlf__header.html#a70a59ff24809525cdf3b6092ac97505a',1,'tlf_header::version'],['../structsGBAHeader.html#af214609b2773aeff4e9c03de834ed281',1,'sGBAHeader::version'],['../structsNDSBanner.html#a3e43c21f28af86c5589eb8b8f3e74ff1',1,'sNDSBanner::version']]],
   ['versionnumber_4',['versionNumber',['../structDLDI__INTERFACE.html#ab1510350d038dde4fc90bdd11584eabc',1,'DLDI_INTERFACE']]],
   ['vflip_5',['vFlip',['../unionSpriteEntry.html#a652638c2a558bfca7afaad7294e164e8',1,'SpriteEntry']]],
-  ['visible_6',['visible',['../structKeyboard.html#a8c2a25c82eda18258747de5f6e242ecc',1,'Keyboard']]]
+  ['visible_6',['visible',['../structKeyboard.html#aef60ab4dcb8afd6c34eec7fbe3ea13a1',1,'Keyboard']]]
 ];

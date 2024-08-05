@@ -95,7 +95,7 @@ $(function() {
 Data Fields</h2></td></tr>
 <tr class="memitem:a42c4bbdcc6956564b0f550a4aba0ffa7" id="r_a42c4bbdcc6956564b0f550a4aba0ffa7"><td class="memItemLeft" align="right" valign="top"><a id="a42c4bbdcc6956564b0f550a4aba0ffa7" name="a42c4bbdcc6956564b0f550a4aba0ffa7"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>background</b></td></tr>
-<tr class="memdesc:a42c4bbdcc6956564b0f550a4aba0ffa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Background use, after init() this contains the background ID. <br /></td></tr>
+<tr class="memdesc:a42c4bbdcc6956564b0f550a4aba0ffa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Background ID used by the keyboard. Initialized by <a class="el" href="keyboard_8h.html#aafd335faf4175e01c4f1736d587f5d7c" title="Initializes the keyboard system with the supplied keyboard.">keyboardInit()</a> <br /></td></tr>
 <tr class="separator:a42c4bbdcc6956564b0f550a4aba0ffa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf862fcc190873affafa4c8ea4eaaf05" id="r_acf862fcc190873affafa4c8ea4eaaf05"><td class="memItemLeft" align="right" valign="top"><a id="acf862fcc190873affafa4c8ea4eaaf05" name="acf862fcc190873affafa4c8ea4eaaf05"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>grid_height</b></td></tr>
@@ -105,25 +105,25 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>grid_height</b></td></
 int&#160;</td><td class="memItemRight" valign="bottom"><b>grid_width</b></td></tr>
 <tr class="memdesc:ac486dc2e40718d14a90cf4cb96c04315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grid width, used to translate x coordinate to keymap. <br /></td></tr>
 <tr class="separator:ac486dc2e40718d14a90cf4cb96c04315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa09893e391860dece0f2f898d560e63e" id="r_aa09893e391860dece0f2f898d560e63e"><td class="memItemLeft" align="right" valign="top"><a id="aa09893e391860dece0f2f898d560e63e" name="aa09893e391860dece0f2f898d560e63e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>keyboardOnSub</b></td></tr>
-<tr class="memdesc:aa09893e391860dece0f2f898d560e63e"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean to determine if keyboard is on sub screen or main <br /></td></tr>
-<tr class="separator:aa09893e391860dece0f2f898d560e63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9a125d3d2442ad99cc1784b28c9fa0" id="r_abb9a125d3d2442ad99cc1784b28c9fa0"><td class="memItemLeft" align="right" valign="top"><a id="abb9a125d3d2442ad99cc1784b28c9fa0" name="abb9a125d3d2442ad99cc1784b28c9fa0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyboardOnSub</b></td></tr>
+<tr class="memdesc:abb9a125d3d2442ad99cc1784b28c9fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the keyboard is on the sub screen. Initialized by <a class="el" href="keyboard_8h.html#aafd335faf4175e01c4f1736d587f5d7c" title="Initializes the keyboard system with the supplied keyboard.">keyboardInit()</a>. <br /></td></tr>
+<tr class="separator:abb9a125d3d2442ad99cc1784b28c9fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2764bb2e44159ea5eae2fe4ce7edc4f9" id="r_a2764bb2e44159ea5eae2fe4ce7edc4f9"><td class="memItemLeft" align="right" valign="top"><a id="a2764bb2e44159ea5eae2fe4ce7edc4f9" name="a2764bb2e44159ea5eae2fe4ce7edc4f9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>mapBase</b></td></tr>
-<tr class="memdesc:a2764bb2e44159ea5eae2fe4ce7edc4f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map base to be used by the keyboard. <br /></td></tr>
+<tr class="memdesc:a2764bb2e44159ea5eae2fe4ce7edc4f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map base to be used by the keyboard. Initialized by <a class="el" href="keyboard_8h.html#aafd335faf4175e01c4f1736d587f5d7c" title="Initializes the keyboard system with the supplied keyboard.">keyboardInit()</a>. <br /></td></tr>
 <tr class="separator:a2764bb2e44159ea5eae2fe4ce7edc4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ef84b3a005b254c313a7de84b34979" id="r_ad9ef84b3a005b254c313a7de84b34979"><td class="memItemLeft" align="right" valign="top"><a id="ad9ef84b3a005b254c313a7de84b34979" name="ad9ef84b3a005b254c313a7de84b34979"></a>
 <a class="el" href="structKeyMap.html">KeyMap</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mappings</b> [4]</td></tr>
-<tr class="memdesc:ad9ef84b3a005b254c313a7de84b34979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of 4 keymap pointers, one for every keyboard state. <br /></td></tr>
+<tr class="memdesc:ad9ef84b3a005b254c313a7de84b34979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of 4 keymap pointers, one for every KeyboardState. <br /></td></tr>
 <tr class="separator:ad9ef84b3a005b254c313a7de84b34979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77e27d0fac6c8d508f8fbbc7a1577122" id="r_a77e27d0fac6c8d508f8fbbc7a1577122"><td class="memItemLeft" align="right" valign="top"><a id="a77e27d0fac6c8d508f8fbbc7a1577122" name="a77e27d0fac6c8d508f8fbbc7a1577122"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>offset_x</b></td></tr>
-<tr class="memdesc:a77e27d0fac6c8d508f8fbbc7a1577122"><td class="mdescLeft">&#160;</td><td class="mdescRight">X offset of the map, can be used to center a custom keyboard. <br /></td></tr>
+<tr class="memdesc:a77e27d0fac6c8d508f8fbbc7a1577122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current X offset of the map. Initialized by <a class="el" href="keyboard_8h.html#aafd335faf4175e01c4f1736d587f5d7c" title="Initializes the keyboard system with the supplied keyboard.">keyboardInit()</a> <br /></td></tr>
 <tr class="separator:a77e27d0fac6c8d508f8fbbc7a1577122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abef2c1d757940e7e0847bf6882c907a5" id="r_abef2c1d757940e7e0847bf6882c907a5"><td class="memItemLeft" align="right" valign="top"><a id="abef2c1d757940e7e0847bf6882c907a5" name="abef2c1d757940e7e0847bf6882c907a5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>offset_y</b></td></tr>
-<tr class="memdesc:abef2c1d757940e7e0847bf6882c907a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y offset of the map, can be used to center a custom keyboard. <br /></td></tr>
+<tr class="memdesc:abef2c1d757940e7e0847bf6882c907a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current Y offset of the map. Initialized by <a class="el" href="keyboard_8h.html#aafd335faf4175e01c4f1736d587f5d7c" title="Initializes the keyboard system with the supplied keyboard.">keyboardInit()</a> <br /></td></tr>
 <tr class="separator:abef2c1d757940e7e0847bf6882c907a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4770f2accee0bd41fca0d0c3dc738025" id="r_a4770f2accee0bd41fca0d0c3dc738025"><td class="memItemLeft" align="right" valign="top"><a id="a4770f2accee0bd41fca0d0c3dc738025" name="a4770f2accee0bd41fca0d0c3dc738025"></a>
 <a class="el" href="keyboard_8h.html#adf717b886beb4079c0a39cabcf2d8cf3">KeyChangeCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OnKeyPressed</b></td></tr>
@@ -133,56 +133,89 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>offset_y</b></td></tr>
 <a class="el" href="keyboard_8h.html#adf717b886beb4079c0a39cabcf2d8cf3">KeyChangeCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OnKeyReleased</b></td></tr>
 <tr class="memdesc:acfdbd3d80f388d52f623f0c7e2f5e2c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will be called on key release. <br /></td></tr>
 <tr class="separator:acfdbd3d80f388d52f623f0c7e2f5e2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a2fd726777d20a0fd1780ca79380744" id="r_a6a2fd726777d20a0fd1780ca79380744"><td class="memItemLeft" align="right" valign="top"><a id="a6a2fd726777d20a0fd1780ca79380744" name="a6a2fd726777d20a0fd1780ca79380744"></a>
-const <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>palette</b></td></tr>
-<tr class="memdesc:a6a2fd726777d20a0fd1780ca79380744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the palette. <br /></td></tr>
-<tr class="separator:a6a2fd726777d20a0fd1780ca79380744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755ae615659c9d72c2fd31a325040193" id="r_a755ae615659c9d72c2fd31a325040193"><td class="memItemLeft" align="right" valign="top"><a id="a755ae615659c9d72c2fd31a325040193" name="a755ae615659c9d72c2fd31a325040193"></a>
+const void *&#160;</td><td class="memItemRight" valign="bottom"><b>palette</b></td></tr>
+<tr class="memdesc:a755ae615659c9d72c2fd31a325040193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the palette. <br /></td></tr>
+<tr class="separator:a755ae615659c9d72c2fd31a325040193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45e06c1fdf4d1cd54cb9bde2dbfeebec" id="r_a45e06c1fdf4d1cd54cb9bde2dbfeebec"><td class="memItemLeft" align="right" valign="top"><a id="a45e06c1fdf4d1cd54cb9bde2dbfeebec" name="a45e06c1fdf4d1cd54cb9bde2dbfeebec"></a>
 <a class="el" href="ndstypes_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>paletteLen</b></td></tr>
 <tr class="memdesc:a45e06c1fdf4d1cd54cb9bde2dbfeebec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length in bytes of the palette data. <br /></td></tr>
 <tr class="separator:a45e06c1fdf4d1cd54cb9bde2dbfeebec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee212ff8fb3df04764e89caff51a9269" id="r_aee212ff8fb3df04764e89caff51a9269"><td class="memItemLeft" align="right" valign="top"><a id="aee212ff8fb3df04764e89caff51a9269" name="aee212ff8fb3df04764e89caff51a9269"></a>
-<a class="el" href="ndstypes_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>scrollSpeed</b></td></tr>
-<tr class="memdesc:aee212ff8fb3df04764e89caff51a9269"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structKeyboard.html" title="Describes a keyboard.">Keyboard</a> scroll speed on hide and show in pixels per frame (must be positive; 0 == instant on). <br /></td></tr>
+<tr class="memitem:aee212ff8fb3df04764e89caff51a9269" id="r_aee212ff8fb3df04764e89caff51a9269"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndstypes_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKeyboard.html#aee212ff8fb3df04764e89caff51a9269">scrollSpeed</a></td></tr>
+<tr class="memdesc:aee212ff8fb3df04764e89caff51a9269"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structKeyboard.html" title="Describes a keyboard.">Keyboard</a> scroll speed on hide and show in pixels per frame.  <br /></td></tr>
 <tr class="separator:aee212ff8fb3df04764e89caff51a9269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a280a3c7077eaeecabe7b8ade977c5b42" id="r_a280a3c7077eaeecabe7b8ade977c5b42"><td class="memItemLeft" align="right" valign="top"><a id="a280a3c7077eaeecabe7b8ade977c5b42" name="a280a3c7077eaeecabe7b8ade977c5b42"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>shifted</b></td></tr>
-<tr class="memdesc:a280a3c7077eaeecabe7b8ade977c5b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">If shifted, true. <br /></td></tr>
-<tr class="separator:a280a3c7077eaeecabe7b8ade977c5b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c728246ea90d5a1beb76f360c8542e6" id="r_a7c728246ea90d5a1beb76f360c8542e6"><td class="memItemLeft" align="right" valign="top"><a id="a7c728246ea90d5a1beb76f360c8542e6" name="a7c728246ea90d5a1beb76f360c8542e6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>shifted</b></td></tr>
+<tr class="memdesc:a7c728246ea90d5a1beb76f360c8542e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">If shifted, true (e.g. if you want the first char to be uppercase). <br /></td></tr>
+<tr class="separator:a7c728246ea90d5a1beb76f360c8542e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eec31a43a9c7f9fe755706b14481f06" id="r_a3eec31a43a9c7f9fe755706b14481f06"><td class="memItemLeft" align="right" valign="top"><a id="a3eec31a43a9c7f9fe755706b14481f06" name="a3eec31a43a9c7f9fe755706b14481f06"></a>
 <a class="el" href="keyboard_8h.html#aa45fda05d3607810c6db30b1af3caac9">KeyboardState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
 <tr class="memdesc:a3eec31a43a9c7f9fe755706b14481f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">The state of the keyboard. <br /></td></tr>
 <tr class="separator:a3eec31a43a9c7f9fe755706b14481f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af79b82a4d65f186ede71b418e4398aaf" id="r_af79b82a4d65f186ede71b418e4398aaf"><td class="memItemLeft" align="right" valign="top"><a id="af79b82a4d65f186ede71b418e4398aaf" name="af79b82a4d65f186ede71b418e4398aaf"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>tileBase</b></td></tr>
-<tr class="memdesc:af79b82a4d65f186ede71b418e4398aaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tile base to be used by keyboard graphics. <br /></td></tr>
+<tr class="memdesc:af79b82a4d65f186ede71b418e4398aaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tile base to be used by keyboard graphics. Initialized by <a class="el" href="keyboard_8h.html#aafd335faf4175e01c4f1736d587f5d7c" title="Initializes the keyboard system with the supplied keyboard.">keyboardInit()</a>. <br /></td></tr>
 <tr class="separator:af79b82a4d65f186ede71b418e4398aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3f7a266156e8d6b5aac077c8261d8fe" id="r_ae3f7a266156e8d6b5aac077c8261d8fe"><td class="memItemLeft" align="right" valign="top"><a id="ae3f7a266156e8d6b5aac077c8261d8fe" name="ae3f7a266156e8d6b5aac077c8261d8fe"></a>
 <a class="el" href="ndstypes_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tileLen</b></td></tr>
 <tr class="memdesc:ae3f7a266156e8d6b5aac077c8261d8fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length in bytes of graphics data. <br /></td></tr>
 <tr class="separator:ae3f7a266156e8d6b5aac077c8261d8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa27ee44c5f7c47045568d372b427770e" id="r_aa27ee44c5f7c47045568d372b427770e"><td class="memItemLeft" align="right" valign="top"><a id="aa27ee44c5f7c47045568d372b427770e" name="aa27ee44c5f7c47045568d372b427770e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>tileOffset</b></td></tr>
-<tr class="memdesc:aa27ee44c5f7c47045568d372b427770e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tile offset (in bytes) to load graphics (the map must be preadjusted for this offset) <br /></td></tr>
+<tr class="memitem:aa27ee44c5f7c47045568d372b427770e" id="r_aa27ee44c5f7c47045568d372b427770e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKeyboard.html#aa27ee44c5f7c47045568d372b427770e">tileOffset</a></td></tr>
+<tr class="memdesc:aa27ee44c5f7c47045568d372b427770e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tile offset (in bytes) to load graphics.  <br /></td></tr>
 <tr class="separator:aa27ee44c5f7c47045568d372b427770e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23a60978576d2c17c88fc222ed6b5ccf" id="r_a23a60978576d2c17c88fc222ed6b5ccf"><td class="memItemLeft" align="right" valign="top"><a id="a23a60978576d2c17c88fc222ed6b5ccf" name="a23a60978576d2c17c88fc222ed6b5ccf"></a>
-const <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>tiles</b></td></tr>
-<tr class="memdesc:a23a60978576d2c17c88fc222ed6b5ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to graphics tiles, cannot exceed 44KB with default base. <br /></td></tr>
-<tr class="separator:a23a60978576d2c17c88fc222ed6b5ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c2a25c82eda18258747de5f6e242ecc" id="r_a8c2a25c82eda18258747de5f6e242ecc"><td class="memItemLeft" align="right" valign="top"><a id="a8c2a25c82eda18258747de5f6e242ecc" name="a8c2a25c82eda18258747de5f6e242ecc"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>visible</b></td></tr>
-<tr class="memdesc:a8c2a25c82eda18258747de5f6e242ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">If visible, true. <br /></td></tr>
-<tr class="separator:a8c2a25c82eda18258747de5f6e242ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3432670ed5098f13f4d65eabae0e9f4" id="r_aa3432670ed5098f13f4d65eabae0e9f4"><td class="memItemLeft" align="right" valign="top"><a id="aa3432670ed5098f13f4d65eabae0e9f4" name="aa3432670ed5098f13f4d65eabae0e9f4"></a>
+const void *&#160;</td><td class="memItemRight" valign="bottom"><b>tiles</b></td></tr>
+<tr class="memdesc:aa3432670ed5098f13f4d65eabae0e9f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to graphics tiles, cannot exceed 44KB with default base. <br /></td></tr>
+<tr class="separator:aa3432670ed5098f13f4d65eabae0e9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef60ab4dcb8afd6c34eec7fbe3ea13a1" id="r_aef60ab4dcb8afd6c34eec7fbe3ea13a1"><td class="memItemLeft" align="right" valign="top"><a id="aef60ab4dcb8afd6c34eec7fbe3ea13a1" name="aef60ab4dcb8afd6c34eec7fbe3ea13a1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>visible</b></td></tr>
+<tr class="memdesc:aef60ab4dcb8afd6c34eec7fbe3ea13a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">If visible, true. Initialized by <a class="el" href="keyboard_8h.html#aafd335faf4175e01c4f1736d587f5d7c" title="Initializes the keyboard system with the supplied keyboard.">keyboardInit()</a>. <br /></td></tr>
+<tr class="separator:aef60ab4dcb8afd6c34eec7fbe3ea13a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes a keyboard. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="aee212ff8fb3df04764e89caff51a9269" name="aee212ff8fb3df04764e89caff51a9269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee212ff8fb3df04764e89caff51a9269">&#9670;&#160;</a></span>scrollSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ndstypes_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> Keyboard::scrollSpeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="structKeyboard.html" title="Describes a keyboard.">Keyboard</a> scroll speed on hide and show in pixels per frame. </p>
+<p>Must be positive. 0 means that the keyboard is shown/hidden right away. </p>
+
+</div>
+</div>
+<a id="aa27ee44c5f7c47045568d372b427770e" name="aa27ee44c5f7c47045568d372b427770e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa27ee44c5f7c47045568d372b427770e">&#9670;&#160;</a></span>tileOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Keyboard::tileOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tile offset (in bytes) to load graphics. </p>
+<p>The map must be preadjusted for this offset. TODO: Make this work. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="keyboard_8h.html">keyboard.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 4 2024 00:48:55 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Mon Aug 5 2024 22:40:23 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

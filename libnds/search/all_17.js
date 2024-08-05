@@ -29,7 +29,7 @@ var searchData=
   ['vint32_26',['vint32',['../ndstypes_8h.html#a668172f3e044daeeb9a7d248b421ad01',1,'ndstypes.h']]],
   ['vint64_27',['vint64',['../ndstypes_8h.html#aa4f81c59a9134f7d34d29ff3ed81fe50',1,'ndstypes.h']]],
   ['vint8_28',['vint8',['../ndstypes_8h.html#ab7b3dddd95f0eda73b92edaa6aaeb16f',1,'ndstypes.h']]],
-  ['visible_29',['visible',['../structKeyboard.html#a8c2a25c82eda18258747de5f6e242ecc',1,'Keyboard']]],
+  ['visible_29',['visible',['../structKeyboard.html#aef60ab4dcb8afd6c34eec7fbe3ea13a1',1,'Keyboard']]],
   ['voidfn_30',['VoidFn',['../ndstypes_8h.html#a5fe554ddab29fbcd75e14e38ee89724f',1,'ndstypes.h']]],
   ['vram_5fa_31',['VRAM_A',['../video_8h.html#a0871eee8d0d2336c97e93d3d5a97e415',1,'video.h']]],
   ['vram_5fa_5flcd_32',['VRAM_A_LCD',['../video_8h.html#a348d2824280b1b94792407f4920e346aa48ee60158f850200439ff2261233d6ad',1,'video.h']]],

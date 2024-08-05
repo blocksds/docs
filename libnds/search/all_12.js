@@ -8,7 +8,7 @@ var searchData=
   ['paddlereset_5',['paddleReset',['../paddle_8h.html#a99b81378654c7aa5a7bf9d19b5108e61',1,'paddle.h']]],
   ['pal_6',['pal',['../structConsoleFont.html#ab323814d01d30bbf0376d4ba6f6d913e',1,'ConsoleFont']]],
   ['palattr_7',['palAttr',['../structGRFHeader.html#ac611a63a99e02ce7ebd825d9e70295c0',1,'GRFHeader']]],
-  ['palette_8',['palette',['../structsImage.html#a590541cf94347434a1578aaefab271e3',1,'sImage::palette'],['../structKeyboard.html#a6a2fd726777d20a0fd1780ca79380744',1,'Keyboard::palette'],['../unionSpriteEntry.html#ad1256cd2335d07cb76908468caa1f2c9',1,'SpriteEntry::palette'],['../structsNDSBanner.html#a010c1cbd9528c2747e0b95c972d47b5c',1,'sNDSBanner::palette']]],
+  ['palette_8',['palette',['../structsImage.html#a590541cf94347434a1578aaefab271e3',1,'sImage::palette'],['../structKeyboard.html#a755ae615659c9d72c2fd31a325040193',1,'Keyboard::palette'],['../unionSpriteEntry.html#ad1256cd2335d07cb76908468caa1f2c9',1,'SpriteEntry::palette'],['../structsNDSBanner.html#a010c1cbd9528c2747e0b95c972d47b5c',1,'sNDSBanner::palette']]],
   ['palettelen_9',['paletteLen',['../structKeyboard.html#a45e06c1fdf4d1cd54cb9bde2dbfeebec',1,'Keyboard']]],
   ['pcx_2eh_10',['pcx.h',['../pcx_8h.html',1,'']]],
   ['peripherals_11',['Custom Peripherals',['../index.html#peripheral_api',1,'']]],

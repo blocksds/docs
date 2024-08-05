@@ -33,7 +33,7 @@ var searchData=
   ['sha1_2eh_30',['sha1.h',['../sha1_8h.html',1,'']]],
   ['sha_5fblock_31',['sha_block',['../structswiSHA1context.html#ae3734cc0a819c9f3682bc11db2758c93',1,'swiSHA1context']]],
   ['shape_32',['shape',['../unionSpriteEntry.html#aae24a9ff049b8fedfcdb9eb2db29cd46',1,'SpriteEntry']]],
-  ['shifted_33',['shifted',['../structKeyboard.html#a280a3c7077eaeecabe7b8ade977c5b42',1,'Keyboard']]],
+  ['shifted_33',['shifted',['../structKeyboard.html#a7c728246ea90d5a1beb76f360c8542e6',1,'Keyboard']]],
   ['sig_34',['sig',['../structswiRSAbuffers.html#aa46f485d11a201be8195cb801e947479',1,'swiRSAbuffers']]],
   ['simage_35',['simage',['../image_8h.html#a18f43f3829e03e9f3bb3f11c7ff53901',1,'sImage:&#160;image.h'],['../structsImage.html',1,'sImage']]],
   ['sinlerp_36',['sinLerp',['../trig__lut_8h.html#a4488c5e9ab13094d971be867ea431846',1,'trig_lut.h']]],

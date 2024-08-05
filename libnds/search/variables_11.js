@@ -8,7 +8,7 @@ var searchData=
   ['settingslost_5',['settingsLost',['../structtPERSONAL__DATA.html#af9c462e12351c3727a7f1e07c3af1739',1,'tPERSONAL_DATA']]],
   ['sha_5fblock_6',['sha_block',['../structswiSHA1context.html#ae3734cc0a819c9f3682bc11db2758c93',1,'swiSHA1context']]],
   ['shape_7',['shape',['../unionSpriteEntry.html#aae24a9ff049b8fedfcdb9eb2db29cd46',1,'SpriteEntry']]],
-  ['shifted_8',['shifted',['../structKeyboard.html#a280a3c7077eaeecabe7b8ade977c5b42',1,'Keyboard']]],
+  ['shifted_8',['shifted',['../structKeyboard.html#a7c728246ea90d5a1beb76f360c8542e6',1,'Keyboard']]],
   ['sig_9',['sig',['../structswiRSAbuffers.html#aa46f485d11a201be8195cb801e947479',1,'swiRSAbuffers']]],
   ['size_10',['size',['../unionSpriteEntry.html#a47a0c483a53b4649a79faa4b1ea16de0',1,'SpriteEntry::size'],['../structtlf__section__header.html#a22e87f264d5798790cf12930cb8b8c21',1,'tlf_section_header::size']]],
   ['sourcesize_11',['sourceSize',['../structUnpackStruct.html#a3f3b915ef937cc2157aa88c4fffb670b',1,'UnpackStruct']]],
