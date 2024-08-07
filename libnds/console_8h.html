@@ -93,7 +93,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>NDS stdio support.  
+<p>NDS stdout and stderr support.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="background_8h.html">nds/arm9/background.h</a>&gt;</code><br />
@@ -142,7 +142,7 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ac62c34a3fa2a6403c690dd80022b3e34" id="r_ac62c34a3fa2a6403c690dd80022b3e34"><td class="memItemLeft" align="right" valign="top"><a id="ac62c34a3fa2a6403c690dd80022b3e34" name="ac62c34a3fa2a6403c690dd80022b3e34"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>consoleClear</b> (void)</td></tr>
-<tr class="memdesc:ac62c34a3fa2a6403c690dd80022b3e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the screan by using printf("\x1b[2J");. <br /></td></tr>
+<tr class="memdesc:ac62c34a3fa2a6403c690dd80022b3e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the console and returns the cursor to the top left corner. <br /></td></tr>
 <tr class="separator:ac62c34a3fa2a6403c690dd80022b3e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcafd6f7742f32542245b568c450815f" id="r_afcafd6f7742f32542245b568c450815f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="console_8h.html#afcafd6f7742f32542245b568c450815f">consoleDebugInit</a> (<a class="el" href="console_8h.html#af012f4b6708bcac38466e98ac58f9bd0">DebugDevice</a> device)</td></tr>
 <tr class="memdesc:afcafd6f7742f32542245b568c450815f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the debug console output on stderr to the specified device.  <br /></td></tr>
@@ -150,9 +150,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>consoleClear</b> (voi
 <tr class="memitem:a228e8e59be4ed57849a56494c36c5c2d" id="r_a228e8e59be4ed57849a56494c36c5c2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPrintConsole.html">PrintConsole</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="console_8h.html#a228e8e59be4ed57849a56494c36c5c2d">consoleDemoInit</a> (void)</td></tr>
 <tr class="memdesc:a228e8e59be4ed57849a56494c36c5c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the console to a default state for prototyping.  <br /></td></tr>
 <tr class="separator:a228e8e59be4ed57849a56494c36c5c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75750f9ddbb62e857309d791e6fcf749" id="r_a75750f9ddbb62e857309d791e6fcf749"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPrintConsole.html">PrintConsole</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="console_8h.html#a75750f9ddbb62e857309d791e6fcf749">consoleGetDefault</a> (void)</td></tr>
-<tr class="memdesc:a75750f9ddbb62e857309d791e6fcf749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a pointer to the console with the default values.  <br /></td></tr>
-<tr class="separator:a75750f9ddbb62e857309d791e6fcf749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd997504b46c79950e3f261475c6724" id="r_aafd997504b46c79950e3f261475c6724"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structPrintConsole.html">PrintConsole</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="console_8h.html#aafd997504b46c79950e3f261475c6724">consoleGetDefault</a> (void)</td></tr>
+<tr class="memdesc:aafd997504b46c79950e3f261475c6724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a pointer to the console with the default values.  <br /></td></tr>
+<tr class="separator:aafd997504b46c79950e3f261475c6724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64085e7df82b8db93d3bdab5e444568b" id="r_a64085e7df82b8db93d3bdab5e444568b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPrintConsole.html">PrintConsole</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="console_8h.html#a64085e7df82b8db93d3bdab5e444568b">consoleInit</a> (<a class="el" href="structPrintConsole.html">PrintConsole</a> *console, int layer, <a class="el" href="group__background__api__group.html#ga421d43ca799fd0c471335846da06cae1">BgType</a> type, <a class="el" href="group__background__api__group.html#ga6bd2253ebf93a399fa956a2a7b8b6b3b">BgSize</a> size, int mapBase, int tileBase, bool mainDisplay, bool loadGraphics)</td></tr>
 <tr class="memdesc:a64085e7df82b8db93d3bdab5e444568b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the console.  <br /></td></tr>
 <tr class="separator:a64085e7df82b8db93d3bdab5e444568b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,20 +176,51 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>consoleClear</b> (voi
 <tr class="separator:a4a65cfe4467b2059c6b70e15d861b563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>NDS stdio support. </p>
-<p>Provides stdio integration for printing to the DS screen as well as debug print functionality provided by stderr.</p>
-<p>General usage is to initialize the console by calling <a class="el" href="console_8h.html#a228e8e59be4ed57849a56494c36c5c2d" title="Initialize the console to a default state for prototyping.">consoleDemoInit()</a> or to customize the console usage by calling <a class="el" href="console_8h.html#a64085e7df82b8db93d3bdab5e444568b" title="Initialise the console.">consoleInit()</a></p>
-<p>The default instance utilizes the sub display, approximatly 4 KiB of VRAM C starting at tile base 3 and 2 KiB of map at map base 22.</p>
-<p>Debug printing is performed by initializing the debug console via <a class="el" href="console_8h.html#afcafd6f7742f32542245b568c450815f" title="Initializes the debug console output on stderr to the specified device.">consoleDebugInit()</a> as follows:</p>
+<div class="textblock"><p>NDS stdout and stderr support. </p>
+<p>Provides stdio integration for printing using &lt;stdio.h&gt; functions.</p>
+<h3><a class="anchor" id="autotoc_md0"></a>
+Regular console</h3>
+<p>It is initialized by calling <a class="el" href="console_8h.html#a228e8e59be4ed57849a56494c36c5c2d" title="Initialize the console to a default state for prototyping.">consoleDemoInit()</a> (or <a class="el" href="console_8h.html#a64085e7df82b8db93d3bdab5e444568b" title="Initialise the console.">consoleInit()</a> to customize the console), and it will simply print messages to the screen of the DS whenever the user sends text to <code>stdout</code> (with <code>printf()</code>, for example).</p>
+<p>The default console utilizes the sub display, approximatly 4 KiB of VRAM C starting at tile base 3 and 2 KiB of map at map base 22.</p>
+<h3><a class="anchor" id="autotoc_md1"></a>
+Debug console</h3>
+<p>The debug console uses <code>stderr</code>, and it is initialized by calling <a class="el" href="console_8h.html#afcafd6f7742f32542245b568c450815f" title="Initializes the debug console output on stderr to the specified device.">consoleDebugInit()</a> as follows:</p>
 <div class="fragment"><div class="line"><a class="code hl_function" href="console_8h.html#afcafd6f7742f32542245b568c450815f">consoleDebugInit</a>(<a class="code hl_enumvalue" href="console_8h.html#af012f4b6708bcac38466e98ac58f9bd0a07eb91a84bc4934adce44b8674c9be08">DebugDevice_NOCASH</a>);</div>
 <div class="line">fprintf(stderr, <span class="stringliteral">&quot;debug message in no$gba window %i&quot;</span>, stuff);</div>
-<div class="ttc" id="aconsole_8h_html_af012f4b6708bcac38466e98ac58f9bd0a07eb91a84bc4934adce44b8674c9be08"><div class="ttname"><a href="console_8h.html#af012f4b6708bcac38466e98ac58f9bd0a07eb91a84bc4934adce44b8674c9be08">DebugDevice_NOCASH</a></div><div class="ttdeci">@ DebugDevice_NOCASH</div><div class="ttdoc">Directs stderr to the no$gba debug window.</div><div class="ttdef"><b>Definition</b> console.h:166</div></div>
+<div class="ttc" id="aconsole_8h_html_af012f4b6708bcac38466e98ac58f9bd0a07eb91a84bc4934adce44b8674c9be08"><div class="ttname"><a href="console_8h.html#af012f4b6708bcac38466e98ac58f9bd0a07eb91a84bc4934adce44b8674c9be08">DebugDevice_NOCASH</a></div><div class="ttdeci">@ DebugDevice_NOCASH</div><div class="ttdoc">Directs stderr to the no$gba debug window.</div><div class="ttdef"><b>Definition</b> console.h:230</div></div>
 <div class="ttc" id="aconsole_8h_html_afcafd6f7742f32542245b568c450815f"><div class="ttname"><a href="console_8h.html#afcafd6f7742f32542245b568c450815f">consoleDebugInit</a></div><div class="ttdeci">void consoleDebugInit(DebugDevice device)</div><div class="ttdoc">Initializes the debug console output on stderr to the specified device.</div></div>
 </div><!-- fragment --><p>OR</p>
 <div class="fragment"><div class="line"><a class="code hl_function" href="console_8h.html#afcafd6f7742f32542245b568c450815f">consoleDebugInit</a>(<a class="code hl_enumvalue" href="console_8h.html#af012f4b6708bcac38466e98ac58f9bd0a1d90508a3b756bcd9790671afca62835">DebugDevice_CONSOLE</a>);</div>
 <div class="line">fprintf(stderr, <span class="stringliteral">&quot;debug message on DS console screen&quot;</span>);</div>
-<div class="ttc" id="aconsole_8h_html_af012f4b6708bcac38466e98ac58f9bd0a1d90508a3b756bcd9790671afca62835"><div class="ttname"><a href="console_8h.html#af012f4b6708bcac38466e98ac58f9bd0a1d90508a3b756bcd9790671afca62835">DebugDevice_CONSOLE</a></div><div class="ttdeci">@ DebugDevice_CONSOLE</div><div class="ttdoc">Directs stderr to the DS console window.</div><div class="ttdef"><b>Definition</b> console.h:167</div></div>
-</div><!-- fragment --><p>The print console must be initialized to use DB_CONSOLE. </p>
+<div class="ttc" id="aconsole_8h_html_af012f4b6708bcac38466e98ac58f9bd0a1d90508a3b756bcd9790671afca62835"><div class="ttname"><a href="console_8h.html#af012f4b6708bcac38466e98ac58f9bd0a1d90508a3b756bcd9790671afca62835">DebugDevice_CONSOLE</a></div><div class="ttdeci">@ DebugDevice_CONSOLE</div><div class="ttdoc">Directs stderr to the DS console window.</div><div class="ttdef"><b>Definition</b> console.h:231</div></div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md2"></a>
+ANSI excape sequences</h3>
+<p>The regular console supports ANSI escape sequences. They are special strings that can be sent to printf() and have special effects on the console. For example, <code>printf("\x1b[2J");</code> will clear the console.</p>
+<p>Note that in the following strings a <code>n</code> means that you can use any positive integer value. It doesn't need to be only one character long. <code>0</code> is valid, but <code>23</code> is also valid. Also, note that you can use <code>d</code> instead of a hardcoded number. That way you can pass the ANSI escape sequence parameter as an argument to <code>printf()</code>:</p>
+<div class="fragment"><div class="line">printf(<span class="stringliteral">&quot;\x1b[%d;%dm%c&quot;</span>, color, intensity, char_to_print);`</div>
+</div><!-- fragment --><p>The escape sequences supported by libnds are:</p>
+<ul>
+<li><code>[nA</code>: Move cursor up by <code>n</code> charrs (stops at the top row).</li>
+<li><code>[nB</code>: Move cursor down by <code>n</code> chars (stops at the bottom row).</li>
+<li><code>[nC</code>: Move cursor right by <code>n</code> chars (stops at the rightmost column).</li>
+<li><code>[nD</code>: Move cursor left by <code>n</code> chars (stops at the leftmost column).</li>
+<li><p class="startli"><code>[y;xH</code> and <code>[y;xf</code>: Set cursor to <code>(x, y)</code>.</p>
+<p class="startli">If the coordinates are too big, the cursor will stop at the rightmost column and the bottom row.</p>
+</li>
+<li><p class="startli"><code>[nJ</code>: Clear screen.</p>
+<p class="startli">If <code>n</code> is 0 or it is missing, it will clear from the cursor to the end of the screen. If <code>n</code> is 1, it will clear from the beginning of the screen to the cursor. If <code>n</code> is 2, it will clear the screen and reset the cursor to (0, 0).</p>
+</li>
+<li><p class="startli"><code>[nK</code>: Clear line.</p>
+<p class="startli">If <code>n</code> is 0 or it is missing, it will clear from the cursor to the end of the line. If <code>n</code> is 1, it will clear from the beginning of the line to the cursor. If <code>n</code> is 2, it will clear the line and reset the cursor to the start of the line.</p>
+</li>
+<li><code>[s</code>: Save current cursor position. It will overwrite the previously saved position.</li>
+<li><code>[u</code>: Restore saved cursor position. It will preserve the saved position in case you want to restore it later.</li>
+<li><p class="startli"><code>[c;im</code>: Change color of the text that will be printed after this.</p>
+<p class="startli">Parameter <code>c</code> is the color, and parameter <code>i</code> is the intensity. Colors go from 30 to 37 (black, red, green, yellow, blue, magenta, cyan, white), and intensity can be 0 or 1 (1 will make the colors brighter).</p>
+<p class="startli">Color 39 resets the color back to white: <code>printf("\x1b[39;0m");</code></p>
+</li>
+</ul>
+<p>A list of all ANSI escape sequences is available here: <a href="https://en.wikipedia.org/wiki/ANSI_escape_code#CSI_(Control_Sequence_Introducer)_sequences">https://en.wikipedia.org/wiki/ANSI_escape_code#CSI_(Control_Sequence_Introducer)_sequences</a> </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a0ec02350f21a7860d5190a463f011ee0" name="a0ec02350f21a7860d5190a463f011ee0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ec02350f21a7860d5190a463f011ee0">&#9670;&#160;</a></span>ConsoleFont</h2>
@@ -221,41 +252,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>consoleClear</b> (voi
 </div><div class="memdoc">
 
 <p>Console structure used to store the state of a console render context. </p>
-<p>Default values from <a class="el" href="console_8h.html#a75750f9ddbb62e857309d791e6fcf749" title="Gets a pointer to the console with the default values.">consoleGetDefault()</a>; </p><div class="fragment"><div class="line"><a class="code hl_struct" href="structPrintConsole.html">PrintConsole</a> defaultConsole =</div>
+<p>Default values from <a class="el" href="console_8h.html#aafd997504b46c79950e3f261475c6724" title="Gets a pointer to the console with the default values.">consoleGetDefault()</a>: </p><div class="fragment"><div class="line"><a class="code hl_struct" href="structPrintConsole.html">PrintConsole</a> defaultConsole =</div>
 <div class="line">{</div>
-<div class="line">    <span class="comment">// Font:</span></div>
+<div class="line">    .<a class="code hl_variable" href="structPrintConsole.html#ad717d7741f526d595d3103d5a4e28358">font</a> =</div>
 <div class="line">    {</div>
-<div class="line">        (<a class="code hl_typedef" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> *)default_font_bin, <span class="comment">// Font gfx</span></div>
-<div class="line">        0,      <span class="comment">// Font palette</span></div>
-<div class="line">        0,      <span class="comment">// Font color count</span></div>
-<div class="line">        4,      <span class="comment">// bpp</span></div>
-<div class="line">        0,      <span class="comment">// First ascii character in the set</span></div>
-<div class="line">        128,    <span class="comment">// Number of characters in the font set</span></div>
-<div class="line">        <span class="keyword">true</span>,   <span class="comment">// Convert to single color</span></div>
+<div class="line">        .<a class="code hl_variable" href="structConsoleFont.html#a4dc6997b016c9e05b2bdfbfa9d85f760">gfx</a> = default_fontTiles, <span class="comment">// font gfx</span></div>
+<div class="line">        .pal = NULL,              <span class="comment">// font palette</span></div>
+<div class="line">        .numColors = 0,           <span class="comment">// font color count</span></div>
+<div class="line">        .bpp = 1,</div>
+<div class="line">        .asciiOffset = 32,        <span class="comment">// first ascii character in the set</span></div>
+<div class="line">        .numChars = 96            <span class="comment">// number of characters in the font set</span></div>
 <div class="line">    },</div>
-<div class="line">    0,      <span class="comment">// Font background map</span></div>
-<div class="line">    0,      <span class="comment">// Font background gfx</span></div>
-<div class="line">    31,     <span class="comment">// Map base</span></div>
-<div class="line">    0,      <span class="comment">// Char base</span></div>
-<div class="line">    0,      <span class="comment">// BG layer in use</span></div>
-<div class="line">    -1,     <span class="comment">// BG id</span></div>
-<div class="line">    0, 0,   <span class="comment">// CursorX cursorY</span></div>
-<div class="line">    0, 0,   <span class="comment">// PrevcursorX prevcursorY</span></div>
-<div class="line">    32,     <span class="comment">// Console width</span></div>
-<div class="line">    24,     <span class="comment">// Console height</span></div>
-<div class="line">    0,      <span class="comment">// Window x</span></div>
-<div class="line">    0,      <span class="comment">// Window y</span></div>
-<div class="line">    32,     <span class="comment">// Window width</span></div>
-<div class="line">    24,     <span class="comment">// Window height</span></div>
-<div class="line">    3,      <span class="comment">// Tab size</span></div>
-<div class="line">    0,      <span class="comment">// Font character offset</span></div>
-<div class="line">    0,      <span class="comment">// Selected palette</span></div>
-<div class="line">    0,      <span class="comment">// Print callback</span></div>
-<div class="line">    <span class="keyword">false</span>,  <span class="comment">// Console initialized</span></div>
-<div class="line">    <span class="keyword">true</span>,   <span class="comment">// Load graphics</span></div>
+<div class="line"> </div>
+<div class="line">    .consoleWidth = 32,</div>
+<div class="line">    .consoleHeight = 24,</div>
+<div class="line">    .windowX = 0,</div>
+<div class="line">    .windowY = 0,</div>
+<div class="line">    .windowWidth = 32,</div>
+<div class="line">    .windowHeight = 24,</div>
+<div class="line">    .tabSize = 3,</div>
+<div class="line">    .fontCharOffset = 0,</div>
+<div class="line">    .fontCurPal = 0,</div>
+<div class="line">    .PrintChar = NULL,</div>
 <div class="line">};</div>
-<div class="ttc" id="andstypes_8h_html_ace9d960e74685e2cd84b36132dbbf8aa"><div class="ttname"><a href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a></div><div class="ttdeci">uint16_t u16</div><div class="ttdoc">16 bit unsigned integer.</div><div class="ttdef"><b>Definition</b> ndstypes.h:113</div></div>
-<div class="ttc" id="astructPrintConsole_html"><div class="ttname"><a href="structPrintConsole.html">PrintConsole</a></div><div class="ttdoc">Console structure used to store the state of a console render context.</div><div class="ttdef"><b>Definition</b> console.h:113</div></div>
+<div class="ttc" id="astructConsoleFont_html_a4dc6997b016c9e05b2bdfbfa9d85f760"><div class="ttname"><a href="structConsoleFont.html#a4dc6997b016c9e05b2bdfbfa9d85f760">ConsoleFont::gfx</a></div><div class="ttdeci">const void * gfx</div><div class="ttdoc">Pointer to the font graphics.</div><div class="ttdef"><b>Definition</b> console.h:134</div></div>
+<div class="ttc" id="astructPrintConsole_html"><div class="ttname"><a href="structPrintConsole.html">PrintConsole</a></div><div class="ttdoc">Console structure used to store the state of a console render context.</div><div class="ttdef"><b>Definition</b> console.h:176</div></div>
+<div class="ttc" id="astructPrintConsole_html_ad717d7741f526d595d3103d5a4e28358"><div class="ttname"><a href="structPrintConsole.html#ad717d7741f526d595d3103d5a4e28358">PrintConsole::font</a></div><div class="ttdeci">ConsoleFont font</div><div class="ttdoc">Font of the console.</div><div class="ttdef"><b>Definition</b> console.h:177</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -329,18 +351,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>consoleClear</b> (voi
 
 <p>Initialize the console to a default state for prototyping. </p>
 <p>This function sets the console to use sub display, VRAM_C, and BG0 and enables MODE_0_2D on the sub display. It is intended for use in prototyping applications which need print ability and not actual game use. Print functionality can be utilized with just this call.</p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the current <a class="el" href="structPrintConsole.html" title="Console structure used to store the state of a console render context.">PrintConsole</a>. </dd></dl>
+<p>The console initialization is equivalent to: </p><div class="fragment"><div class="line"><a class="code hl_function" href="console_8h.html#a64085e7df82b8db93d3bdab5e444568b">consoleInit</a>(NULL, 0, <a class="code hl_enumvalue" href="group__background__api__group.html#gga421d43ca799fd0c471335846da06cae1ae7509222f1b7bc4a35bdd59882f078ae">BgType_Text4bpp</a>, <a class="code hl_enumvalue" href="group__background__api__group.html#gga6bd2253ebf93a399fa956a2a7b8b6b3bad0ae6d5acf41d75db8bc77fcb0cbb2d2">BgSize_T_256x256</a>, 22, 3, <span class="keyword">false</span>, <span class="keyword">true</span>);</div>
+<div class="ttc" id="aconsole_8h_html_a64085e7df82b8db93d3bdab5e444568b"><div class="ttname"><a href="console_8h.html#a64085e7df82b8db93d3bdab5e444568b">consoleInit</a></div><div class="ttdeci">PrintConsole * consoleInit(PrintConsole *console, int layer, BgType type, BgSize size, int mapBase, int tileBase, bool mainDisplay, bool loadGraphics)</div><div class="ttdoc">Initialise the console.</div></div>
+<div class="ttc" id="agroup__background__api__group_html_gga421d43ca799fd0c471335846da06cae1ae7509222f1b7bc4a35bdd59882f078ae"><div class="ttname"><a href="group__background__api__group.html#gga421d43ca799fd0c471335846da06cae1ae7509222f1b7bc4a35bdd59882f078ae">BgType_Text4bpp</a></div><div class="ttdeci">@ BgType_Text4bpp</div><div class="ttdoc">4bpp Tiled background with 16 bit tile indexes and no allowed rotation or scaling</div><div class="ttdef"><b>Definition</b> background.h:453</div></div>
+<div class="ttc" id="agroup__background__api__group_html_gga6bd2253ebf93a399fa956a2a7b8b6b3bad0ae6d5acf41d75db8bc77fcb0cbb2d2"><div class="ttname"><a href="group__background__api__group.html#gga6bd2253ebf93a399fa956a2a7b8b6b3bad0ae6d5acf41d75db8bc77fcb0cbb2d2">BgSize_T_256x256</a></div><div class="ttdeci">@ BgSize_T_256x256</div><div class="ttdoc">256 x 256 pixel text background</div><div class="ttdef"><b>Definition</b> background.h:473</div></div>
+</div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>A pointer to the current <a class="el" href="structPrintConsole.html" title="Console structure used to store the state of a console render context.">PrintConsole</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a75750f9ddbb62e857309d791e6fcf749" name="a75750f9ddbb62e857309d791e6fcf749"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75750f9ddbb62e857309d791e6fcf749">&#9670;&#160;</a></span>consoleGetDefault()</h2>
+<a id="aafd997504b46c79950e3f261475c6724" name="aafd997504b46c79950e3f261475c6724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafd997504b46c79950e3f261475c6724">&#9670;&#160;</a></span>consoleGetDefault()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structPrintConsole.html">PrintConsole</a> * consoleGetDefault </td>
+          <td class="memname">const <a class="el" href="structPrintConsole.html">PrintConsole</a> * consoleGetDefault </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -351,7 +377,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>consoleClear</b> (voi
 
 <p>Gets a pointer to the console with the default values. </p>
 <p>This should only be used when using a single console or without changing the console that is returned, otherwise use <a class="el" href="console_8h.html#a64085e7df82b8db93d3bdab5e444568b" title="Initialise the console.">consoleInit()</a>.</p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the console with the default values. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A read-only pointer to the console with the default values. </dd></dl>
 
 </div>
 </div>
@@ -640,7 +666,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>consoleClear</b> (voi
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 5 2024 22:40:23 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Wed Aug 7 2024 02:55:28 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

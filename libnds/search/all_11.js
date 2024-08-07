@@ -60,8 +60,8 @@ var searchData=
   ['objsize_5f32_57',['OBJSIZE_32',['../sprite_8h.html#ad4f73caa22e905bda813773a4ca78fa0ab01e45e31f4675681b5addced858321f',1,'sprite.h']]],
   ['objsize_5f64_58',['OBJSIZE_64',['../sprite_8h.html#ad4f73caa22e905bda813773a4ca78fa0a0e8cc5c7b39eab1b610a0b6229ebabe7',1,'sprite.h']]],
   ['objsize_5f8_59',['OBJSIZE_8',['../sprite_8h.html#ad4f73caa22e905bda813773a4ca78fa0a6bf4fb4f7f555ab45f5d45d5ef06db43',1,'sprite.h']]],
-  ['offset_5fx_60',['offset_x',['../structKeyboard.html#a77e27d0fac6c8d508f8fbbc7a1577122',1,'Keyboard']]],
-  ['offset_5fy_61',['offset_y',['../structKeyboard.html#abef2c1d757940e7e0847bf6882c907a5',1,'Keyboard']]],
+  ['offset_5fx_60',['offset_x',['../structKeyboard.html#a8f553bd21a1bcaad1c960132168f26ea',1,'Keyboard']]],
+  ['offset_5fy_61',['offset_y',['../structKeyboard.html#aa72b45c4fc595376f9d89161ba0feebe',1,'Keyboard']]],
   ['onkeypressed_62',['OnKeyPressed',['../structKeyboard.html#a4770f2accee0bd41fca0d0c3dc738025',1,'Keyboard']]],
   ['onkeyreleased_63',['OnKeyReleased',['../structKeyboard.html#acfdbd3d80f388d52f623f0c7e2f5e2c8',1,'Keyboard']]],
   ['ouput_64',['User Input/ouput',['../index.html#user_io_api',1,'']]]

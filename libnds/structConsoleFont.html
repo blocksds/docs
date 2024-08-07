@@ -101,10 +101,9 @@ Data Fields</h2></td></tr>
 <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bpp</b></td></tr>
 <tr class="memdesc:a47f4879f419f06cbb3f75c98660548f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bits per pixel in the font graphics. <br /></td></tr>
 <tr class="separator:a47f4879f419f06cbb3f75c98660548f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39b04d261a92b436dc1b5ceccabcb629" id="r_a39b04d261a92b436dc1b5ceccabcb629"><td class="memItemLeft" align="right" valign="top"><a id="a39b04d261a92b436dc1b5ceccabcb629" name="a39b04d261a92b436dc1b5ceccabcb629"></a>
-<a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>gfx</b></td></tr>
-<tr class="memdesc:a39b04d261a92b436dc1b5ceccabcb629"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the font graphics (will be loaded by <a class="el" href="console_8h.html#a64085e7df82b8db93d3bdab5e444568b" title="Initialise the console.">consoleInit()</a> if loadGraphics is true) <br /></td></tr>
-<tr class="separator:a39b04d261a92b436dc1b5ceccabcb629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc6997b016c9e05b2bdfbfa9d85f760" id="r_a4dc6997b016c9e05b2bdfbfa9d85f760"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConsoleFont.html#a4dc6997b016c9e05b2bdfbfa9d85f760">gfx</a></td></tr>
+<tr class="memdesc:a4dc6997b016c9e05b2bdfbfa9d85f760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the font graphics.  <br /></td></tr>
+<tr class="separator:a4dc6997b016c9e05b2bdfbfa9d85f760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a741f70973f2dd71acdd7153ef3f7336d" id="r_a741f70973f2dd71acdd7153ef3f7336d"><td class="memItemLeft" align="right" valign="top"><a id="a741f70973f2dd71acdd7153ef3f7336d" name="a741f70973f2dd71acdd7153ef3f7336d"></a>
 <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><b>numChars</b></td></tr>
 <tr class="memdesc:a741f70973f2dd71acdd7153ef3f7336d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of characters in the font graphics. <br /></td></tr>
@@ -113,21 +112,55 @@ Data Fields</h2></td></tr>
 <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><b>numColors</b></td></tr>
 <tr class="memdesc:a37dd89d9e2831d0a1f4091e4591544f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of colors in the font palette. <br /></td></tr>
 <tr class="separator:a37dd89d9e2831d0a1f4091e4591544f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab323814d01d30bbf0376d4ba6f6d913e" id="r_ab323814d01d30bbf0376d4ba6f6d913e"><td class="memItemLeft" align="right" valign="top"><a id="ab323814d01d30bbf0376d4ba6f6d913e" name="ab323814d01d30bbf0376d4ba6f6d913e"></a>
-<a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pal</b></td></tr>
-<tr class="memdesc:ab323814d01d30bbf0376d4ba6f6d913e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the font palette (will be loaded by <a class="el" href="console_8h.html#a64085e7df82b8db93d3bdab5e444568b" title="Initialise the console.">consoleInit()</a> if loadGraphics is true) <br /></td></tr>
-<tr class="separator:ab323814d01d30bbf0376d4ba6f6d913e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a9e57e6b372f994a342f41e9018fcd" id="r_a17a9e57e6b372f994a342f41e9018fcd"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConsoleFont.html#a17a9e57e6b372f994a342f41e9018fcd">pal</a></td></tr>
+<tr class="memdesc:a17a9e57e6b372f994a342f41e9018fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the font palette.  <br /></td></tr>
+<tr class="separator:a17a9e57e6b372f994a342f41e9018fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A font struct for the console. </p>
 <p>If convertSingleColor is true, the font is treated as a single color font where all non zero pixels are set to a value of 15 or 255 (4bpp / 8bpp respectivly). This ensures only one palette entry is utilized for font rendering. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a4dc6997b016c9e05b2bdfbfa9d85f760" name="a4dc6997b016c9e05b2bdfbfa9d85f760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dc6997b016c9e05b2bdfbfa9d85f760">&#9670;&#160;</a></span>gfx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* ConsoleFont::gfx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to the font graphics. </p>
+<p>They will be loaded by <a class="el" href="console_8h.html#a64085e7df82b8db93d3bdab5e444568b" title="Initialise the console.">consoleInit()</a> if loadGraphics is true. </p>
+
+</div>
+</div>
+<a id="a17a9e57e6b372f994a342f41e9018fcd" name="a17a9e57e6b372f994a342f41e9018fcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a9e57e6b372f994a342f41e9018fcd">&#9670;&#160;</a></span>pal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* ConsoleFont::pal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to the font palette. </p>
+<p>They will be loaded by <a class="el" href="console_8h.html#a64085e7df82b8db93d3bdab5e444568b" title="Initialise the console.">consoleInit()</a> if loadGraphics is true. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="console_8h.html">console.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 5 2024 22:40:23 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Wed Aug 7 2024 02:55:28 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

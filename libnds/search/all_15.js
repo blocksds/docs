@@ -2,7 +2,7 @@ var searchData=
 [
   ['t16_0',['t16',['../videoGL_8h.html#ae5f96f1b78a6d76787a9f0a9fe9d3164',1,'videoGL.h']]],
   ['t16toint_1',['t16toint',['../videoGL_8h.html#ab09e0ebfc8d99979fd1cd8861a7fb20e',1,'videoGL.h']]],
-  ['tabsize_2',['tabSize',['../structPrintConsole.html#a4bd05d4de8d7869489891cbaee90c782',1,'PrintConsole']]],
+  ['tabsize_2',['tabSize',['../structPrintConsole.html#a3b472372f5d6d00697838b2607a190a7',1,'PrintConsole']]],
   ['tanlerp_3',['tanLerp',['../trig__lut_8h.html#a35e0c5ac03c0432c1451cb86782fb6a0',1,'trig_lut.h']]],
   ['tdecompressionstream_4',['TDecompressionStream',['../bios_8h.html#aacbe87e6875682d4b96cbed3febbb993',1,'bios.h']]],
   ['teak_20dsp_20utilities_5',['DSi Teak DSP Utilities',['../index.html#dsp_api',1,'']]],
@@ -28,7 +28,7 @@ var searchData=
   ['tile_5fflip_5fh_25',['TILE_FLIP_H',['../group__background__register__group.html#ga9def605bc300e2606b1750f02f5a519d',1,'background.h']]],
   ['tile_5fflip_5fv_26',['TILE_FLIP_V',['../group__background__register__group.html#gaddbaf228929b4fb9956c4a04c328763b',1,'background.h']]],
   ['tile_5fpalette_27',['TILE_PALETTE',['../group__background__register__group.html#gad091147d769bce11dd6181e1fca80c47',1,'background.h']]],
-  ['tilebase_28',['tileBase',['../structKeyboard.html#af79b82a4d65f186ede71b418e4398aaf',1,'Keyboard']]],
+  ['tilebase_28',['tileBase',['../structKeyboard.html#a3d37eef43f4a16d73a3c661597896cd3',1,'Keyboard']]],
   ['tileheight_29',['tileHeight',['../structGRFHeader.html#a1cd327d39e5a2b271b0d5ae443bfa29d',1,'GRFHeader']]],
   ['tilelen_30',['tileLen',['../structKeyboard.html#ae3f7a266156e8d6b5aac077c8261d8fe',1,'Keyboard']]],
   ['tilemapentry16_31',['tilemapentry16',['../group__background__register__group.html#ga9a73fd5675aaf60bff27087395abff7e',1,'TileMapEntry16:&#160;background.h'],['../structTileMapEntry16.html',1,'TileMapEntry16']]],

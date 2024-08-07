@@ -1,7 +1,7 @@
 var searchData=
 [
   ['scroll_0',['scroll',['../structbg__attribute.html#af5299d72efb7432ece382a21ed87b211',1,'bg_attribute']]],
-  ['scrollspeed_1',['scrollSpeed',['../structKeyboard.html#aee212ff8fb3df04764e89caff51a9269',1,'Keyboard']]],
+  ['scrollspeed_1',['scrollSpeed',['../structKeyboard.html#ada15e51416ad096bfa85517205e857ac',1,'Keyboard']]],
   ['seconds_2',['seconds',['../structRTCtime.html#a871aad99859feba2e075e95fea0ed281',1,'RTCtime::seconds'],['../structrtcTimeAndDate.html#a9d16c9c9a98a1087f8e1649783758d5c',1,'rtcTimeAndDate::seconds'],['../structrtcTime.html#a91fcbf46a518d63bfc7c26601c80b2e4',1,'rtcTime::seconds']]],
   ['section_3',['section',['../structtlf__header.html#a38b8d700fd855bd6992762280be9d283',1,'tlf_header']]],
   ['securecrc16_4',['secureCRC16',['../structsNDSHeader.html#af271300fdb4ff595d06e71be2fa25ff3',1,'sNDSHeader']]],

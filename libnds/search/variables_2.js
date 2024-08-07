@@ -13,12 +13,11 @@ var searchData=
   ['checksum_10',['checksum',['../structsGBAHeader.html#ad530f49482025065bfa9ce945cc2244a',1,'sGBAHeader']]],
   ['colormode_11',['colorMode',['../unionSpriteEntry.html#af0778707695d3aa5044b4c27a6523d1c',1,'SpriteEntry']]],
   ['complement_12',['complement',['../structsGBAHeader.html#a9fe572d37fb76cd4239251282bbc6284',1,'sGBAHeader']]],
-  ['consoleheight_13',['consoleHeight',['../structPrintConsole.html#a6caefb88745fe180a9d59096d40b052a',1,'PrintConsole']]],
-  ['consoleinitialised_14',['consoleInitialised',['../structPrintConsole.html#abeb3c904af0e353bec10603044a4f705',1,'PrintConsole']]],
-  ['consolewidth_15',['consoleWidth',['../structPrintConsole.html#a12228047de6d55e25c7bed9427bfeda7',1,'PrintConsole']]],
-  ['control_16',['control',['../structbg__attribute.html#a202638501e109407451181526a891488',1,'bg_attribute']]],
-  ['crc_17',['crc',['../structsNDSBanner.html#a1ba7be5cccf63e2639fc3d036491c39e',1,'sNDSBanner']]],
-  ['cur_5fsize_18',['cur_size',['../structDynamicArray.html#abee0228e3ca1cc2aed369fbd7bb6f0ba',1,'DynamicArray']]],
-  ['cursorx_19',['cursorX',['../structPrintConsole.html#a0b3c99b23f2b228279c0b080d4bbf73f',1,'PrintConsole']]],
-  ['cursory_20',['cursorY',['../structPrintConsole.html#a5170137741dc034414b516aebf6716d9',1,'PrintConsole']]]
+  ['consoleheight_13',['consoleHeight',['../structPrintConsole.html#a771f244cda52c24c2af4878191014957',1,'PrintConsole']]],
+  ['consolewidth_14',['consoleWidth',['../structPrintConsole.html#a6a437539b6034abd52fda7cab40c2bc9',1,'PrintConsole']]],
+  ['control_15',['control',['../structbg__attribute.html#a202638501e109407451181526a891488',1,'bg_attribute']]],
+  ['crc_16',['crc',['../structsNDSBanner.html#a1ba7be5cccf63e2639fc3d036491c39e',1,'sNDSBanner']]],
+  ['cur_5fsize_17',['cur_size',['../structDynamicArray.html#abee0228e3ca1cc2aed369fbd7bb6f0ba',1,'DynamicArray']]],
+  ['cursorx_18',['cursorX',['../structPrintConsole.html#abcad7ee90d50a45a6eadec7f8f5d423e',1,'PrintConsole']]],
+  ['cursory_19',['cursorY',['../structPrintConsole.html#ab22665999911266033a317b1a48998e9',1,'PrintConsole']]]
 ];

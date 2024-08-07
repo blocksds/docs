@@ -67,7 +67,7 @@ var searchData=
   ['swirsadecryptpgp_64',['swiRSADecryptPGP',['../rsa_8h.html#a155f4f86d8ba609b62a9635ced450d6c',1,'rsa.h']]],
   ['swirsadecryptraw_65',['swiRSADecryptRAW',['../rsa_8h.html#ade61f672a4b99ab943174a365424da64',1,'rsa.h']]],
   ['swirsainitheap_66',['swiRSAInitHeap',['../rsa_8h.html#a8973a81a7e89113918375f03c9f18413',1,'rsa.h']]],
-  ['swisethaltcr_67',['swisethaltcr',['../bios_8h.html#a50d373540a8b5f4247d3d445a55870c4',1,'swiSetHaltCR(uint32_t data):&#160;bios.h'],['../bios_8h.html#af3147c23ee955aa9b7873b5572acf375',1,'swiSetHaltCR(uint8_t data):&#160;bios.h']]],
+  ['swisethaltcr_67',['swisethaltcr',['../bios_8h.html#af3147c23ee955aa9b7873b5572acf375',1,'swiSetHaltCR(uint8_t data):&#160;bios.h'],['../bios_8h.html#a50d373540a8b5f4247d3d445a55870c4',1,'swiSetHaltCR(uint32_t data):&#160;bios.h']]],
   ['swisha1calc_68',['swiSHA1Calc',['../sha1_8h.html#a913caf9b180b306546c80adecf97044b',1,'sha1.h']]],
   ['swisha1final_69',['swiSHA1Final',['../sha1_8h.html#aeee23c95a8c1fee89bf3b9edad071d73',1,'sha1.h']]],
   ['swisha1init_70',['swiSHA1Init',['../sha1_8h.html#ae857961335e6fdce8b52f7fc7e14ea42',1,'sha1.h']]],
@@ -80,9 +80,11 @@ var searchData=
   ['swiunpackbits_77',['swiUnpackBits',['../bios_8h.html#a3b5b51048258159d8ba251a508aafd95',1,'bios.h']]],
   ['swiwaitforirq_78',['swiWaitForIRQ',['../bios_8h.html#ab1596447b5e802eb802e670ef727ba19',1,'bios.h']]],
   ['swiwaitforvblank_79',['swiWaitForVBlank',['../interrupts_8h.html#ab5fa1f196cafaeba9c69a766a63a90f9',1,'interrupts.h']]],
-  ['syssetbusowners_80',['sysSetBusOwners',['../memory_8h.html#ac06c2c3031bf0e84bcfb63d965bef6a3',1,'memory.h']]],
-  ['syssetcardowner_81',['sysSetCardOwner',['../memory_8h.html#a77c27dec145f9aaa9f888fc154915881',1,'memory.h']]],
-  ['syssetcartowner_82',['sysSetCartOwner',['../memory_8h.html#a216b41b201524495165f06421c55ec03',1,'memory.h']]],
-  ['systemshutdown_83',['systemShutDown',['../system_8h.html#a6b9bc5e031c28c2cbce5a32bbf404f38',1,'system.h']]],
-  ['systemsleep_84',['systemSleep',['../system_8h.html#a8772531b04f636936864a5ade04b27c1',1,'system.h']]]
+  ['sysgetcardowner_80',['sysGetCardOwner',['../memory_8h.html#a313c7dcef245a51c52b8d95d5719747d',1,'memory.h']]],
+  ['sysgetcartowner_81',['sysGetCartOwner',['../memory_8h.html#a743344e077290426c49d1fcf68b09500',1,'memory.h']]],
+  ['syssetbusowners_82',['sysSetBusOwners',['../memory_8h.html#ac06c2c3031bf0e84bcfb63d965bef6a3',1,'memory.h']]],
+  ['syssetcardowner_83',['sysSetCardOwner',['../memory_8h.html#a77c27dec145f9aaa9f888fc154915881',1,'memory.h']]],
+  ['syssetcartowner_84',['sysSetCartOwner',['../memory_8h.html#a216b41b201524495165f06421c55ec03',1,'memory.h']]],
+  ['systemshutdown_85',['systemShutDown',['../system_8h.html#a6b9bc5e031c28c2cbce5a32bbf404f38',1,'system.h']]],
+  ['systemsleep_86',['systemSleep',['../system_8h.html#a8772531b04f636936864a5ade04b27c1',1,'system.h']]]
 ];

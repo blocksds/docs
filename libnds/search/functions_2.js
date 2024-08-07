@@ -27,7 +27,7 @@ var searchData=
   ['consoleclear_24',['consoleClear',['../console_8h.html#ac62c34a3fa2a6403c690dd80022b3e34',1,'console.h']]],
   ['consoledebuginit_25',['consoleDebugInit',['../console_8h.html#afcafd6f7742f32542245b568c450815f',1,'console.h']]],
   ['consoledemoinit_26',['consoleDemoInit',['../console_8h.html#a228e8e59be4ed57849a56494c36c5c2d',1,'console.h']]],
-  ['consolegetdefault_27',['consoleGetDefault',['../console_8h.html#a75750f9ddbb62e857309d791e6fcf749',1,'console.h']]],
+  ['consolegetdefault_27',['consoleGetDefault',['../console_8h.html#aafd997504b46c79950e3f261475c6724',1,'console.h']]],
   ['consoleinit_28',['consoleInit',['../console_8h.html#a64085e7df82b8db93d3bdab5e444568b',1,'console.h']]],
   ['consoleprintchar_29',['consolePrintChar',['../console_8h.html#aaf3d618dbbe3762fc8c697f8bcb223e4',1,'console.h']]],
   ['consoleselect_30',['consoleSelect',['../console_8h.html#a8ca43733c23082493ee102331db6f875',1,'console.h']]],

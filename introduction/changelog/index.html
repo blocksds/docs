@@ -12,8 +12,8 @@
 <meta name="generator" content="Hugo 0.123.7">
 
 
-  <meta name="description" content="Version 1.3.1 (2024-07-26) libnds:
-Added memory barriers to libnds functions which remap user-accessible memory. consolePrintChar() has been exposed in the public API. Coupled with internal refactors, this allows using the built-in console without pulling in printf/scanf as a dependency. Fixed function parameters and improved parameters for BIOS RSA functions. Fixed potential memory corruption when micStopRecording() was called twice. Fixed regression in new touchscreen driver on CDC (TWL). Improved documentation for the BIOS CRC-16 calculation function." />
+  <meta name="description" content="Version DEV (2024-XX-XX) libnds:
+Make custom keyboards work. This seems to have never worked because libnds overwrote the custom keyboard struct with the default keyboard struct. Keyboard struct fields have been refactored. Some field sizes are now smaller, some fields are now const. The order has been changed to reduce padding between fields and save even more RAM. Ensure that the keyboard is always initialized to the right state with keyboardShow()." />
 
     <title>Changelog | BlocksDS</title>
 
@@ -39,8 +39,8 @@ Added memory barriers to libnds functions which remap user-accessible memory. co
     content="Changelog"
   />
   <meta property="og:site_name" content="BlocksDS" />
-  <meta property="og:description" content="Version 1.3.1 (2024-07-26) libnds:
-Added memory barriers to libnds functions which remap user-accessible memory. consolePrintChar() has been exposed in the public API. Coupled with internal refactors, this allows using the built-in console without pulling in printf/scanf as a dependency. Fixed function parameters and improved parameters for BIOS RSA functions. Fixed potential memory corruption when micStopRecording() was called twice. Fixed regression in new touchscreen driver on CDC (TWL). Improved documentation for the BIOS CRC-16 calculation function." />
+  <meta property="og:description" content="Version DEV (2024-XX-XX) libnds:
+Make custom keyboards work. This seems to have never worked because libnds overwrote the custom keyboard struct with the default keyboard struct. Keyboard struct fields have been refactored. Some field sizes are now smaller, some fields are now const. The order has been changed to reduce padding between fields and save even more RAM. Ensure that the keyboard is always initialized to the right state with keyboardShow()." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blocksds.github.io/docs/introduction/changelog/" />
 
@@ -49,8 +49,8 @@ Added memory barriers to libnds functions which remap user-accessible memory. co
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Changelog" />
-  <meta name="twitter:description" content="Version 1.3.1 (2024-07-26) libnds:
-Added memory barriers to libnds functions which remap user-accessible memory. consolePrintChar() has been exposed in the public API. Coupled with internal refactors, this allows using the built-in console without pulling in printf/scanf as a dependency. Fixed function parameters and improved parameters for BIOS RSA functions. Fixed potential memory corruption when micStopRecording() was called twice. Fixed regression in new touchscreen driver on CDC (TWL). Improved documentation for the BIOS CRC-16 calculation function." />
+  <meta name="twitter:description" content="Version DEV (2024-XX-XX) libnds:
+Make custom keyboards work. This seems to have never worked because libnds overwrote the custom keyboard struct with the default keyboard struct. Keyboard struct fields have been refactored. Some field sizes are now smaller, some fields are now const. The order has been changed to reduce padding between fields and save even more RAM. Ensure that the keyboard is always initialized to the right state with keyboardShow()." />
 
 
   <script type="application/ld+json">
@@ -61,8 +61,8 @@ Added memory barriers to libnds functions which remap user-accessible memory. co
       "name": "Changelog",
       "url" : "https://blocksds.github.io/docs/introduction/changelog/",
       "headline": "Changelog",
-      "description": "Version 1.3.1 (2024-07-26) libnds:\nAdded memory barriers to libnds functions which remap user-accessible memory. consolePrintChar() has been exposed in the public API. Coupled with internal refactors, this allows using the built-in console without pulling in printf\/scanf as a dependency. Fixed function parameters and improved parameters for BIOS RSA functions. Fixed potential memory corruption when micStopRecording() was called twice. Fixed regression in new touchscreen driver on CDC (TWL). Improved documentation for the BIOS CRC-16 calculation function.",
-      "wordCount" : "6056",
+      "description": "Version DEV (2024-XX-XX) libnds:\nMake custom keyboards work. This seems to have never worked because libnds overwrote the custom keyboard struct with the default keyboard struct. Keyboard struct fields have been refactored. Some field sizes are now smaller, some fields are now const. The order has been changed to reduce padding between fields and save even more RAM. Ensure that the keyboard is always initialized to the right state with keyboardShow().",
+      "wordCount" : "6363",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1658,6 +1658,94 @@ Added memory barriers to libnds functions which remap user-accessible memory. co
   >
     <h1>Changelog</h1>
     <div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-dev-2024-xx-xx"
+    >
+        Version DEV (2024-XX-XX)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-dev-2024-xx-xx" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version DEV (2024-XX-XX)" aria-label="Anchor to: Version DEV (2024-XX-XX)" href="#version-dev-2024-xx-xx">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>libnds:</p>
+<ul>
+<li>Make custom keyboards work. This seems to have never worked because libnds
+overwrote the custom keyboard struct with the default keyboard struct.</li>
+<li>Keyboard struct fields have been refactored. Some field sizes are now
+smaller, some fields are now const. The order has been changed to reduce
+padding between fields and save even more RAM.</li>
+<li>Ensure that the keyboard is always initialized to the right state with
+<code>keyboardShow()</code>. This lets you make a keyboard start in uppercase or
+lowercase state depending on your preferences.</li>
+<li>Prevent keyboard functions from hanging if no keyboard is actually visible.</li>
+<li>Add helper to tell the GPU to apply fog to the clear buffer.</li>
+<li>Flush RAM before copying console graphics to VRAM.</li>
+<li>Implement <code>assert()</code> in the ARM9 and ARM7. In the ARM9 it works like
+<code>sassert()</code>, in the ARM7 it prints a no$gba debug message.</li>
+<li>Clarify some comments about decompression routines of the BIOS.</li>
+</ul>
+</li>
+<li>
+<p>dswifi:</p>
+<ul>
+<li>Stop generating <code>dswifi_version.h</code> as part of the build process.</li>
+<li>Some warnings have been fixed.</li>
+</ul>
+</li>
+<li>
+<p>LibXM7:</p>
+<ul>
+<li>Fix a crash when unloading MOD files.</li>
+</ul>
+</li>
+<li>
+<p>ndstool:</p>
+<ul>
+<li>FIx NitroFS filesystem corruption when no banner is generated.</li>
+</ul>
+</li>
+<li>
+<p>grit:</p>
+<ul>
+<li>Fix <code>libplum</code> build error with LLVM.</li>
+</ul>
+</li>
+<li>
+<p>mmutil:</p>
+<ul>
+<li>Fix some incorrect types.</li>
+</ul>
+</li>
+<li>
+<p>SDK:</p>
+<ul>
+<li>
+<p>New examples:</p>
+<ul>
+<li>Using fog in a 3D scene.</li>
+<li>Sorting 3D translucent objects based on their distance to the camera and
+drawing them in the correct order.</li>
+<li>How to use maxmod song events.</li>
+<li>How to use the sound API of libnds to play PSG, noise and PCM audio.</li>
+<li>How to use custom keyboards with libnds.</li>
+<li>The basic Maxmod example now also shows how to play sound effects.</li>
+</ul>
+</li>
+<li>
+<p>Other:</p>
+<ul>
+<li>Add page to the documentation about how to debug programs with libnds.</li>
+<li>dlditool: Use <code>stdbool.h</code> instead of a custom boolean type.</li>
+<li>Doxygen comments have been reorganized in all repositories so that they
+are uniform across all the codebase.</li>
+<li>All Doxyfiles have been updated.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="version-131-2024-07-26"
     >
         Version 1.3.1 (2024-07-26)
@@ -1694,7 +1782,7 @@ twice.</li>
 <li>Added a 3D two-pass rendering example.</li>
 <li>Added a BIOS bit unpacking example.</li>
 <li>Added a BIOS CRC-16 calculation example.</li>
-<li>Added a BIOS RSA decruption example.</li>
+<li>Added a BIOS RSA decryption example.</li>
 <li>Added a microphone recording example.</li>
 <li>Added a Maxmod audio modes example.</li>
 <li>Added a Maxmod reverb example.</li>

@@ -155,6 +155,12 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a313c7dcef245a51c52b8d95d5719747d" id="r_a313c7dcef245a51c52b8d95d5719747d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memory_8h.html#a313c7dcef245a51c52b8d95d5719747d">sysGetCardOwner</a> (void)</td></tr>
+<tr class="memdesc:a313c7dcef245a51c52b8d95d5719747d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the owner of the DS card bus.  <br /></td></tr>
+<tr class="separator:a313c7dcef245a51c52b8d95d5719747d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743344e077290426c49d1fcf68b09500" id="r_a743344e077290426c49d1fcf68b09500"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memory_8h.html#a743344e077290426c49d1fcf68b09500">sysGetCartOwner</a> (void)</td></tr>
+<tr class="memdesc:a743344e077290426c49d1fcf68b09500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the owner of the GBA cart.  <br /></td></tr>
+<tr class="separator:a743344e077290426c49d1fcf68b09500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac06c2c3031bf0e84bcfb63d965bef6a3" id="r_ac06c2c3031bf0e84bcfb63d965bef6a3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memory_8h.html#ac06c2c3031bf0e84bcfb63d965bef6a3">sysSetBusOwners</a> (bool arm9rom, bool arm9card)</td></tr>
 <tr class="memdesc:ac06c2c3031bf0e84bcfb63d965bef6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the owner of the DS card bus (slot 1) and GBA cart bus (slot 2).  <br /></td></tr>
 <tr class="separator:ac06c2c3031bf0e84bcfb63d965bef6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,6 +226,66 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a313c7dcef245a51c52b8d95d5719747d" name="a313c7dcef245a51c52b8d95d5719747d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a313c7dcef245a51c52b8d95d5719747d">&#9670;&#160;</a></span>sysGetCardOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool sysGetCardOwner </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves the owner of the DS card bus. </p>
+<p>Both CPUs cannot have access to the DS card bus at the same time (slot 1).</p>
+<dl class="section return"><dt>Returns</dt><dd>The current owner of the DS card bus (true if ARM9 is the owner). </dd></dl>
+
+</div>
+</div>
+<a id="a743344e077290426c49d1fcf68b09500" name="a743344e077290426c49d1fcf68b09500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a743344e077290426c49d1fcf68b09500">&#9670;&#160;</a></span>sysGetCartOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool sysGetCartOwner </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves the owner of the GBA cart. </p>
+<p>Both CPUs cannot have access to the GBA cart at the same time (slot 2).</p>
+<dl class="section return"><dt>Returns</dt><dd>The current owner of the GBA cart bus (true if ARM9 is the owner). </dd></dl>
+
+</div>
+</div>
 <a id="ac06c2c3031bf0e84bcfb63d965bef6a3" name="ac06c2c3031bf0e84bcfb63d965bef6a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac06c2c3031bf0e84bcfb63d965bef6a3">&#9670;&#160;</a></span>sysSetBusOwners()</h2>
 
@@ -339,7 +405,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 5 2024 22:40:23 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Wed Aug 7 2024 02:55:28 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
