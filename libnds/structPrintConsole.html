@@ -127,11 +127,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>bgId</b></td></tr>
 <tr class="separator:afbf082bab0501a3864c6698d93c56973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1eabbfa0ad03392f6229315ea95790e" id="r_aa1eabbfa0ad03392f6229315ea95790e"><td class="memItemLeft" align="right" valign="top"><a id="aa1eabbfa0ad03392f6229315ea95790e" name="aa1eabbfa0ad03392f6229315ea95790e"></a>
 <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fontCharOffset</b></td></tr>
-<tr class="memdesc:aa1eabbfa0ad03392f6229315ea95790e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset to the first graphics tile in background memory (in case your font is not loaded at a graphics base boundary) <br /></td></tr>
+<tr class="memdesc:aa1eabbfa0ad03392f6229315ea95790e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset to the first graphics tile in background memory (in case your font is not loaded at a graphics base boundary). Initialized by <a class="el" href="console_8h.html#a64085e7df82b8db93d3bdab5e444568b" title="Initialise the console.">consoleInit()</a>. <br /></td></tr>
 <tr class="separator:aa1eabbfa0ad03392f6229315ea95790e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f0b3d2127dbf6de321414e60d4faf20" id="r_a4f0b3d2127dbf6de321414e60d4faf20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPrintConsole.html#a4f0b3d2127dbf6de321414e60d4faf20">fontCurPal</a></td></tr>
-<tr class="memdesc:a4f0b3d2127dbf6de321414e60d4faf20"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current palette used by the engine.  <br /></td></tr>
+<tr class="memitem:a4f0b3d2127dbf6de321414e60d4faf20" id="r_a4f0b3d2127dbf6de321414e60d4faf20"><td class="memItemLeft" align="right" valign="top"><a id="a4f0b3d2127dbf6de321414e60d4faf20" name="a4f0b3d2127dbf6de321414e60d4faf20"></a>
+<a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fontCurPal</b></td></tr>
+<tr class="memdesc:a4f0b3d2127dbf6de321414e60d4faf20"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current palette used by the engine. Initialized by <a class="el" href="console_8h.html#a64085e7df82b8db93d3bdab5e444568b" title="Initialise the console.">consoleInit()</a>. <br /></td></tr>
 <tr class="separator:a4f0b3d2127dbf6de321414e60d4faf20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f41b9a8e0bd03fd8c3eb444b45c1ed0" id="r_a8f41b9a8e0bd03fd8c3eb444b45c1ed0"><td class="memItemLeft" align="right" valign="top"><a id="a8f41b9a8e0bd03fd8c3eb444b45c1ed0" name="a8f41b9a8e0bd03fd8c3eb444b45c1ed0"></a>
+<a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fontPalIndex</b></td></tr>
+<tr class="memdesc:a8f41b9a8e0bd03fd8c3eb444b45c1ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Palette index where a custom palette is loaded. Initialized by <a class="el" href="console_8h.html#a64085e7df82b8db93d3bdab5e444568b" title="Initialise the console.">consoleInit()</a>. <br /></td></tr>
+<tr class="separator:a8f41b9a8e0bd03fd8c3eb444b45c1ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3bcb68b4450277821bfd2c20326d7a1" id="r_af3bcb68b4450277821bfd2c20326d7a1"><td class="memItemLeft" align="right" valign="top"><a id="af3bcb68b4450277821bfd2c20326d7a1" name="af3bcb68b4450277821bfd2c20326d7a1"></a>
 <a class="el" href="ndstypes_8h.html#aa980e2c02ba2305e0f489d5650655425">s16</a>&#160;</td><td class="memItemRight" valign="bottom"><b>prevCursorX</b></td></tr>
 <tr class="memdesc:af3bcb68b4450277821bfd2c20326d7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal. Used by "\x1b[s" and "\x1b[u". Initialized by <a class="el" href="console_8h.html#a64085e7df82b8db93d3bdab5e444568b" title="Initialise the console.">consoleInit()</a>. <br /></td></tr>
@@ -145,7 +150,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>bgId</b></td></tr>
 <tr class="separator:ac2a6a9e9c3adda6c2e6ac11e4ebb7d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b472372f5d6d00697838b2607a190a7" id="r_a3b472372f5d6d00697838b2607a190a7"><td class="memItemLeft" align="right" valign="top"><a id="a3b472372f5d6d00697838b2607a190a7" name="a3b472372f5d6d00697838b2607a190a7"></a>
 <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tabSize</b></td></tr>
-<tr class="memdesc:a3b472372f5d6d00697838b2607a190a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of a tab. <br /></td></tr>
+<tr class="memdesc:a3b472372f5d6d00697838b2607a190a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of a TAB character. <br /></td></tr>
 <tr class="separator:a3b472372f5d6d00697838b2607a190a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fd431830357c35c2fede31dfb4f735e" id="r_a1fd431830357c35c2fede31dfb4f735e"><td class="memItemLeft" align="right" valign="top"><a id="a1fd431830357c35c2fede31dfb4f735e" name="a1fd431830357c35c2fede31dfb4f735e"></a>
 <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><b>windowHeight</b></td></tr>
@@ -166,16 +171,17 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>bgId</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Console structure used to store the state of a console render context. </p>
+<p>Many of the values in this struct are actually initialized by libnds, and the user should leave them as 0 when <a class="el" href="console_8h.html#a64085e7df82b8db93d3bdab5e444568b" title="Initialise the console.">consoleInit()</a> is called.</p>
 <p>Default values from <a class="el" href="console_8h.html#aafd997504b46c79950e3f261475c6724" title="Gets a pointer to the console with the default values.">consoleGetDefault()</a>: </p><div class="fragment"><div class="line"><a class="code hl_struct" href="structPrintConsole.html">PrintConsole</a> defaultConsole =</div>
 <div class="line">{</div>
 <div class="line">    .<a class="code hl_variable" href="structPrintConsole.html#ad717d7741f526d595d3103d5a4e28358">font</a> =</div>
 <div class="line">    {</div>
-<div class="line">        .<a class="code hl_variable" href="structConsoleFont.html#a4dc6997b016c9e05b2bdfbfa9d85f760">gfx</a> = default_fontTiles, <span class="comment">// font gfx</span></div>
-<div class="line">        .pal = NULL,              <span class="comment">// font palette</span></div>
-<div class="line">        .numColors = 0,           <span class="comment">// font color count</span></div>
+<div class="line">        .<a class="code hl_variable" href="structConsoleFont.html#a4dc6997b016c9e05b2bdfbfa9d85f760">gfx</a> = default_fontTiles, <span class="comment">// Font tiles</span></div>
+<div class="line">        .pal = NULL,              <span class="comment">// No font palette (use the default palettes)</span></div>
+<div class="line">        .numColors = 0,</div>
 <div class="line">        .bpp = 1,</div>
-<div class="line">        .asciiOffset = 32,        <span class="comment">// first ascii character in the set</span></div>
-<div class="line">        .numChars = 96            <span class="comment">// number of characters in the font set</span></div>
+<div class="line">        .asciiOffset = 32,        <span class="comment">// First ASCII character in the set</span></div>
+<div class="line">        .numChars = 96            <span class="comment">// Number of characters in the font set</span></div>
 <div class="line">    },</div>
 <div class="line"> </div>
 <div class="line">    .consoleWidth = 32,</div>
@@ -185,31 +191,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>bgId</b></td></tr>
 <div class="line">    .windowWidth = 32,</div>
 <div class="line">    .windowHeight = 24,</div>
 <div class="line">    .tabSize = 3,</div>
-<div class="line">    .fontCharOffset = 0,</div>
-<div class="line">    .fontCurPal = 0,</div>
 <div class="line">    .PrintChar = NULL,</div>
 <div class="line">};</div>
-<div class="ttc" id="astructConsoleFont_html_a4dc6997b016c9e05b2bdfbfa9d85f760"><div class="ttname"><a href="structConsoleFont.html#a4dc6997b016c9e05b2bdfbfa9d85f760">ConsoleFont::gfx</a></div><div class="ttdeci">const void * gfx</div><div class="ttdoc">Pointer to the font graphics.</div><div class="ttdef"><b>Definition</b> console.h:134</div></div>
-<div class="ttc" id="astructPrintConsole_html"><div class="ttname"><a href="structPrintConsole.html">PrintConsole</a></div><div class="ttdoc">Console structure used to store the state of a console render context.</div><div class="ttdef"><b>Definition</b> console.h:176</div></div>
-<div class="ttc" id="astructPrintConsole_html_ad717d7741f526d595d3103d5a4e28358"><div class="ttname"><a href="structPrintConsole.html#ad717d7741f526d595d3103d5a4e28358">PrintConsole::font</a></div><div class="ttdeci">ConsoleFont font</div><div class="ttdoc">Font of the console.</div><div class="ttdef"><b>Definition</b> console.h:177</div></div>
+<div class="ttc" id="astructConsoleFont_html_a4dc6997b016c9e05b2bdfbfa9d85f760"><div class="ttname"><a href="structConsoleFont.html#a4dc6997b016c9e05b2bdfbfa9d85f760">ConsoleFont::gfx</a></div><div class="ttdeci">const void * gfx</div><div class="ttdoc">Pointer to the font graphics.</div><div class="ttdef"><b>Definition</b> console.h:137</div></div>
+<div class="ttc" id="astructPrintConsole_html"><div class="ttname"><a href="structPrintConsole.html">PrintConsole</a></div><div class="ttdoc">Console structure used to store the state of a console render context.</div><div class="ttdef"><b>Definition</b> console.h:196</div></div>
+<div class="ttc" id="astructPrintConsole_html_ad717d7741f526d595d3103d5a4e28358"><div class="ttname"><a href="structPrintConsole.html#ad717d7741f526d595d3103d5a4e28358">PrintConsole::font</a></div><div class="ttdeci">ConsoleFont font</div><div class="ttdoc">Font of the console.</div><div class="ttdef"><b>Definition</b> console.h:197</div></div>
 </div><!-- fragment --> </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a4f0b3d2127dbf6de321414e60d4faf20" name="a4f0b3d2127dbf6de321414e60d4faf20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f0b3d2127dbf6de321414e60d4faf20">&#9670;&#160;</a></span>fontCurPal</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> PrintConsole::fontCurPal</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The current palette used by the engine. </p>
-<p>This only applies to 4 BPP text backgrounds. For that type of backgrounds, when the graphics of a <a class="el" href="structPrintConsole.html" title="Console structure used to store the state of a console render context.">PrintConsole</a> are loaded, if the console font comes with a palette, this is the palette index where the palette is loaded. </p>
-
-</div>
-</div>
 <a id="ac2a6a9e9c3adda6c2e6ac11e4ebb7d14" name="ac2a6a9e9c3adda6c2e6ac11e4ebb7d14"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2a6a9e9c3adda6c2e6ac11e4ebb7d14">&#9670;&#160;</a></span>PrintChar</h2>
 
@@ -223,7 +210,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>bgId</b></td></tr>
 </div><div class="memdoc">
 
 <p>Callback for printing a character. </p>
-<p>It should return true if it has handled rendering the graphics. If not, the print engine will attempt to render via tiles) </p>
+<p>It should return true if it has handled rendering the graphics. If not, the print engine will attempt to render via tiles). </p>
 
 </div>
 </div>
@@ -233,7 +220,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>bgId</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 7 2024 03:03:26 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Thu Aug 8 2024 19:01:35 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

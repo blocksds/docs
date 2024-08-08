@@ -12,8 +12,9 @@
 <meta name="generator" content="Hugo 0.123.7">
 
 
-  <meta name="description" content="Version DEV (2024-XX-XX) libnds:
-Make custom keyboards work. This seems to have never worked because libnds overwrote the custom keyboard struct with the default keyboard struct. Keyboard struct fields have been refactored. Some field sizes are now smaller, some fields are now const. The order has been changed to reduce padding between fields and save even more RAM. Ensure that the keyboard is always initialized to the right state with keyboardShow()." />
+  <meta name="description" content="Version 1.4.0 (2024-08-08) libnds:
+Console:
+Fix &lsquo;D&rsquo; ANSI escape code, which was broken in version 1.3.1. Document console struct fields. Some of them are only meant to be used by libnds, which has been documented. The size of some fields in the console struct has been reduced, and the fields have been reordered to reduce padding in the struct. Some fields were unused, and they have been removed. Now it&rsquo;s possible to specify the 16-color palette to be used when loading custom fonts with their own palette." />
 
     <title>Changelog | BlocksDS</title>
 
@@ -39,8 +40,9 @@ Make custom keyboards work. This seems to have never worked because libnds overw
     content="Changelog"
   />
   <meta property="og:site_name" content="BlocksDS" />
-  <meta property="og:description" content="Version DEV (2024-XX-XX) libnds:
-Make custom keyboards work. This seems to have never worked because libnds overwrote the custom keyboard struct with the default keyboard struct. Keyboard struct fields have been refactored. Some field sizes are now smaller, some fields are now const. The order has been changed to reduce padding between fields and save even more RAM. Ensure that the keyboard is always initialized to the right state with keyboardShow()." />
+  <meta property="og:description" content="Version 1.4.0 (2024-08-08) libnds:
+Console:
+Fix ‘D’ ANSI escape code, which was broken in version 1.3.1. Document console struct fields. Some of them are only meant to be used by libnds, which has been documented. The size of some fields in the console struct has been reduced, and the fields have been reordered to reduce padding in the struct. Some fields were unused, and they have been removed. Now it’s possible to specify the 16-color palette to be used when loading custom fonts with their own palette." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blocksds.github.io/docs/introduction/changelog/" />
 
@@ -49,8 +51,9 @@ Make custom keyboards work. This seems to have never worked because libnds overw
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Changelog" />
-  <meta name="twitter:description" content="Version DEV (2024-XX-XX) libnds:
-Make custom keyboards work. This seems to have never worked because libnds overwrote the custom keyboard struct with the default keyboard struct. Keyboard struct fields have been refactored. Some field sizes are now smaller, some fields are now const. The order has been changed to reduce padding between fields and save even more RAM. Ensure that the keyboard is always initialized to the right state with keyboardShow()." />
+  <meta name="twitter:description" content="Version 1.4.0 (2024-08-08) libnds:
+Console:
+Fix ‘D’ ANSI escape code, which was broken in version 1.3.1. Document console struct fields. Some of them are only meant to be used by libnds, which has been documented. The size of some fields in the console struct has been reduced, and the fields have been reordered to reduce padding in the struct. Some fields were unused, and they have been removed. Now it’s possible to specify the 16-color palette to be used when loading custom fonts with their own palette." />
 
 
   <script type="application/ld+json">
@@ -61,8 +64,8 @@ Make custom keyboards work. This seems to have never worked because libnds overw
       "name": "Changelog",
       "url" : "https://blocksds.github.io/docs/introduction/changelog/",
       "headline": "Changelog",
-      "description": "Version DEV (2024-XX-XX) libnds:\nMake custom keyboards work. This seems to have never worked because libnds overwrote the custom keyboard struct with the default keyboard struct. Keyboard struct fields have been refactored. Some field sizes are now smaller, some fields are now const. The order has been changed to reduce padding between fields and save even more RAM. Ensure that the keyboard is always initialized to the right state with keyboardShow().",
-      "wordCount" : "6363",
+      "description": "Version 1.4.0 (2024-08-08) libnds:\nConsole:\nFix ‘D’ ANSI escape code, which was broken in version 1.3.1. Document console struct fields. Some of them are only meant to be used by libnds, which has been documented. The size of some fields in the console struct has been reduced, and the fields have been reordered to reduce padding in the struct. Some fields were unused, and they have been removed. Now it’s possible to specify the 16-color palette to be used when loading custom fonts with their own palette.",
+      "wordCount" : "6739",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1658,17 +1661,49 @@ Make custom keyboards work. This seems to have never worked because libnds overw
   >
     <h1>Changelog</h1>
     <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="version-dev-2024-xx-xx"
+    <h2 id="version-140-2024-08-08"
     >
-        Version DEV (2024-XX-XX)
+        Version 1.4.0 (2024-08-08)
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-dev-2024-xx-xx" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version DEV (2024-XX-XX)" aria-label="Anchor to: Version DEV (2024-XX-XX)" href="#version-dev-2024-xx-xx">
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-140-2024-08-08" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 1.4.0 (2024-08-08)" aria-label="Anchor to: Version 1.4.0 (2024-08-08)" href="#version-140-2024-08-08">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
 <ul>
 <li>
 <p>libnds:</p>
+<ul>
+<li>
+<p>Console:</p>
+<ul>
+<li>Fix &lsquo;D&rsquo; ANSI escape code, which was broken in version 1.3.1.</li>
+<li>Document console struct fields. Some of them are only meant to be used by
+libnds, which has been documented.</li>
+<li>The size of some fields in the console struct has been reduced, and the
+fields have been reordered to reduce padding in the struct. Some fields
+were unused, and they have been removed.</li>
+<li>Now it&rsquo;s possible to specify the 16-color palette to be used when loading
+custom fonts with their own palette.</li>
+<li><code>fontCharOffset</code> now works, which means that it is possible to specify
+that a font should be loaded after another font, so that two fonts can use
+the same tile block and save VRAM.</li>
+<li>In order to be able to specify the palette and the <code>fontCharOffset</code>, a new
+function has been created: <code>consoleInitEx()</code>.</li>
+<li>Mark the defaultConsole struct as const. It is needed to keep that data
+untouched because the user may initialize the default console several
+times in a program, and it&rsquo;s important to be able to return to the right
+initial state.</li>
+<li>Some variables have been made private.</li>
+<li>When a character outside of the character set of the font is printed, a
+space is now printed instead. Previously, it printed tiles outside of the
+font, which could result in garbage being printed on the screen.</li>
+<li>New functions have been added to control the console without using awkward
+ANSI escape sequences: <code>consoleSetCursor()</code>, <code>consoleGetCursor()</code>,
+<code>consoleAddToCursor()</code> and <code>consoleSetColor()</code>.</li>
+</ul>
+</li>
+<li>
+<p>Keyboard:</p>
 <ul>
 <li>Make custom keyboards work. This seems to have never worked because libnds
 overwrote the custom keyboard struct with the default keyboard struct.</li>
@@ -1678,16 +1713,32 @@ padding between fields and save even more RAM.</li>
 <li>Ensure that the keyboard is always initialized to the right state with
 <code>keyboardShow()</code>. This lets you make a keyboard start in uppercase or
 lowercase state depending on your preferences.</li>
-<li>Prevent keyboard functions from hanging if no keyboard is actually visible.</li>
+<li>Prevent keyboard functions from hanging if no keyboard is actually
+visible.</li>
+</ul>
+</li>
+<li>
+<p>Other:</p>
+<ul>
+<li>Fix crash when calling <code>peripheralSlot2InitDefault()</code> in a DSi retail
+unit. This didn&rsquo;t happen in DS, or in debugger DSi units.</li>
 <li>Add helper to tell the GPU to apply fog to the clear buffer.</li>
 <li>Flush RAM before copying console graphics to VRAM.</li>
 <li>Implement <code>assert()</code> in the ARM9 and ARM7. In the ARM9 it works like
 <code>sassert()</code>, in the ARM7 it prints a no$gba debug message.</li>
 <li>Clarify some comments about decompression routines of the BIOS.</li>
+<li>Stop using ANSI escape sequences everywhere. Use direct console API
+functions instead, which are more self-explanatory.</li>
+<li>The functions <code>sysGetCartOwner()</code> and <code>sysGetCardOwner()</code> have been added
+to be able to check the CPU owner of the Slot-1 and Slot-2 buses.</li>
+<li>Add documentation to some functions without it, and fix some Doxygen
+comments.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
-<p>dswifi:</p>
+<p>DSWiFi:</p>
 <ul>
 <li>Stop generating <code>dswifi_version.h</code> as part of the build process.</li>
 <li>Some warnings have been fixed.</li>
@@ -1702,7 +1753,7 @@ lowercase state depending on your preferences.</li>
 <li>
 <p>ndstool:</p>
 <ul>
-<li>FIx NitroFS filesystem corruption when no banner is generated.</li>
+<li>Fix NitroFS filesystem corruption when no banner is generated.</li>
 </ul>
 </li>
 <li>
@@ -1726,10 +1777,21 @@ lowercase state depending on your preferences.</li>
 <li>Using fog in a 3D scene.</li>
 <li>Sorting 3D translucent objects based on their distance to the camera and
 drawing them in the correct order.</li>
-<li>How to use maxmod song events.</li>
+<li>How to use Maxmod song events.</li>
+<li>How to stream a WAV file from the filesystem using Maxmod.</li>
 <li>How to use the sound API of libnds to play PSG, noise and PCM audio.</li>
 <li>How to use custom keyboards with libnds.</li>
+</ul>
+</li>
+<li>
+<p>Changes to examples:</p>
+<ul>
 <li>The basic Maxmod example now also shows how to play sound effects.</li>
+<li>The example that loads custom fonts with the libnds console has been
+improved to load 2 fonts with custom 16-color graphics on one screen and
+one font with 256-color graphics on the other one.</li>
+<li>Examples and test now don&rsquo;t use ANSI escape sequences. This makes the code
+a lot harder to understand.</li>
 </ul>
 </li>
 <li>

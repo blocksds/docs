@@ -110,7 +110,7 @@ Functions</h2></td></tr>
 <p>On the ARM7 stderr is setup to print to the no$gba debug console: </p><div class="fragment"><div class="line">fprintf(stderr,<span class="stringliteral">&quot;ARM7 %%scanline%%\n&quot;</span>);</div>
 </div><!-- fragment --><p> On the ARM9 stderr is directed to the console by default, but it's possible to direct it to the no$gba debug console: </p><div class="fragment"><div class="line"><a class="code hl_function" href="console_8h.html#afcafd6f7742f32542245b568c450815f">consoleDebugInit</a>(<a class="code hl_enumvalue" href="console_8h.html#af012f4b6708bcac38466e98ac58f9bd0a07eb91a84bc4934adce44b8674c9be08">DebugDevice_NOCASH</a>);</div>
 <div class="line">fprintf(stderr, <span class="stringliteral">&quot;ARM9 %%scanline%%\n&quot;</span>);</div>
-<div class="ttc" id="aconsole_8h_html_af012f4b6708bcac38466e98ac58f9bd0a07eb91a84bc4934adce44b8674c9be08"><div class="ttname"><a href="console_8h.html#af012f4b6708bcac38466e98ac58f9bd0a07eb91a84bc4934adce44b8674c9be08">DebugDevice_NOCASH</a></div><div class="ttdeci">@ DebugDevice_NOCASH</div><div class="ttdoc">Directs stderr to the no$gba debug window.</div><div class="ttdef"><b>Definition</b> console.h:230</div></div>
+<div class="ttc" id="aconsole_8h_html_af012f4b6708bcac38466e98ac58f9bd0a07eb91a84bc4934adce44b8674c9be08"><div class="ttname"><a href="console_8h.html#af012f4b6708bcac38466e98ac58f9bd0a07eb91a84bc4934adce44b8674c9be08">DebugDevice_NOCASH</a></div><div class="ttdeci">@ DebugDevice_NOCASH</div><div class="ttdoc">Directs stderr to the no$gba debug window.</div><div class="ttdef"><b>Definition</b> console.h:248</div></div>
 <div class="ttc" id="aconsole_8h_html_afcafd6f7742f32542245b568c450815f"><div class="ttname"><a href="console_8h.html#afcafd6f7742f32542245b568c450815f">consoleDebugInit</a></div><div class="ttdeci">void consoleDebugInit(DebugDevice device)</div><div class="ttdoc">Initializes the debug console output on stderr to the specified device.</div></div>
 </div><!-- fragment --><p>Messages can be up to 120 characters long. They can also use special parameters: </p><pre class="fragment">r0,r1,r2,...,r15  show register content (displayed as 32bit Hex number)
 sp,lr,pc          alias for r13,r14,r15
@@ -186,7 +186,7 @@ zeroclks          resets the 'lastclks' counter
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 7 2024 03:03:26 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Thu Aug 8 2024 19:01:35 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

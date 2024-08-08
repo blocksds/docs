@@ -19,7 +19,7 @@
       <link>https://blocksds.github.io/docs/introduction/changelog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blocksds.github.io/docs/introduction/changelog/</guid>
-      <description>Version DEV (2024-XX-XX) libnds:&#xA;Make custom keyboards work. This seems to have never worked because libnds overwrote the custom keyboard struct with the default keyboard struct. Keyboard struct fields have been refactored. Some field sizes are now smaller, some fields are now const. The order has been changed to reduce padding between fields and save even more RAM. Ensure that the keyboard is always initialized to the right state with keyboardShow().</description>
+      <description>Version 1.4.0 (2024-08-08) libnds:&#xA;Console:&#xA;Fix &amp;lsquo;D&amp;rsquo; ANSI escape code, which was broken in version 1.3.1. Document console struct fields. Some of them are only meant to be used by libnds, which has been documented. The size of some fields in the console struct has been reduced, and the fields have been reordered to reduce padding in the struct. Some fields were unused, and they have been removed. Now it&amp;rsquo;s possible to specify the 16-color palette to be used when loading custom fonts with their own palette.</description>
     </item>
     <item>
       <title>Windows</title>

@@ -134,13 +134,11 @@ Functions</h2></td></tr>
 <tr class="memitem:acabc22bc1fce5f1bf5ec6e0163a8eb4a" id="r_acabc22bc1fce5f1bf5ec6e0163a8eb4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndstypes_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tsc_8h.html#acabc22bc1fce5f1bf5ec6e0163a8eb4a">tscReadTemperature</a> (void)</td></tr>
 <tr class="memdesc:acabc22bc1fce5f1bf5ec6e0163a8eb4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read temperature from the NDS-mode TSC.  <br /></td></tr>
 <tr class="separator:acabc22bc1fce5f1bf5ec6e0163a8eb4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab744b97bda124edd52fef1184295a1e3" id="r_ab744b97bda124edd52fef1184295a1e3"><td class="memItemLeft" align="right" valign="top"><a id="ab744b97bda124edd52fef1184295a1e3" name="ab744b97bda124edd52fef1184295a1e3"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>tscTouchPenDown</b> (void)</td></tr>
-<tr class="memdesc:ab744b97bda124edd52fef1184295a1e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the NDS-mode TSC is registering pen input. <br /></td></tr>
+<tr class="memitem:ab744b97bda124edd52fef1184295a1e3" id="r_ab744b97bda124edd52fef1184295a1e3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tsc_8h.html#ab744b97bda124edd52fef1184295a1e3">tscTouchPenDown</a> (void)</td></tr>
+<tr class="memdesc:ab744b97bda124edd52fef1184295a1e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the NDS-mode TSC is registering pen input.  <br /></td></tr>
 <tr class="separator:ab744b97bda124edd52fef1184295a1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeda21846aa608a3ed3aa6662f94f217" id="r_aeeda21846aa608a3ed3aa6662f94f217"><td class="memItemLeft" align="right" valign="top"><a id="aeeda21846aa608a3ed3aa6662f94f217" name="aeeda21846aa608a3ed3aa6662f94f217"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>tscTouchReadData</b> (touchRawArray *data)</td></tr>
-<tr class="memdesc:aeeda21846aa608a3ed3aa6662f94f217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read raw touch data from the NDS-mode TSC. <br /></td></tr>
+<tr class="memitem:aeeda21846aa608a3ed3aa6662f94f217" id="r_aeeda21846aa608a3ed3aa6662f94f217"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tsc_8h.html#aeeda21846aa608a3ed3aa6662f94f217">tscTouchReadData</a> (touchRawArray *data)</td></tr>
+<tr class="memdesc:aeeda21846aa608a3ed3aa6662f94f217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read raw touch data from the NDS-mode TSC.  <br /></td></tr>
 <tr class="separator:aeeda21846aa608a3ed3aa6662f94f217"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -239,10 +237,66 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>tscTouchReadData</b> 
 
 </div>
 </div>
+<a id="ab744b97bda124edd52fef1184295a1e3" name="ab744b97bda124edd52fef1184295a1e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab744b97bda124edd52fef1184295a1e3">&#9670;&#160;</a></span>tscTouchPenDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool tscTouchPenDown </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the NDS-mode TSC is registering pen input. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if the TSC registers that the pen is down. </dd></dl>
+
+</div>
+</div>
+<a id="aeeda21846aa608a3ed3aa6662f94f217" name="aeeda21846aa608a3ed3aa6662f94f217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeda21846aa608a3ed3aa6662f94f217">&#9670;&#160;</a></span>tscTouchReadData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tscTouchReadData </td>
+          <td>(</td>
+          <td class="paramtype">touchRawArray *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read raw touch data from the NDS-mode TSC. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Struct to hold the read data.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>On success, true. On failure, false. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 7 2024 03:03:26 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Thu Aug 8 2024 19:01:35 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
