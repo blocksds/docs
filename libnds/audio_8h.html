@@ -85,6 +85,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">audio.h File Reference</div></div>
 </div><!--header-->
@@ -96,6 +97,12 @@ $(function() {
 <code>#include &lt;<a class="el" href="system_8h.html">nds/system.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="timers_8h.html">nds/timers.h</a>&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a8dc8058c888efec1e3d0921b782baffc" id="r_a8dc8058c888efec1e3d0921b782baffc"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audio_8h.html#a8dc8058c888efec1e3d0921b782baffc">MIC_BUF_SWAP_CB</a>) (<a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *completedBuffer, int length)</td></tr>
+<tr class="memdesc:a8dc8058c888efec1e3d0921b782baffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback called whenever one buffer used <a class="el" href="audio_8h.html#ab50c0479c8499206d058c84bb133bd04" title="Start recording data from the microphone.">micStartRecording()</a> is full.  <br /></td></tr>
+<tr class="separator:a8dc8058c888efec1e3d0921b782baffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aeb3b446cf4fb35e6ae62b9fe4a85b93f" id="r_aeb3b446cf4fb35e6ae62b9fe4a85b93f"><td class="memItemLeft" align="right" valign="top"><a id="aeb3b446cf4fb35e6ae62b9fe4a85b93f" name="aeb3b446cf4fb35e6ae62b9fe4a85b93f"></a>
@@ -130,7 +137,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>micOn</b> (voi
 <tr class="memitem:ad88ae28e39f48e79401da952c9a3d4b0" id="r_ad88ae28e39f48e79401da952c9a3d4b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audio_8h.html#ad88ae28e39f48e79401da952c9a3d4b0">micSetAmp</a> (<a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> control, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> gain)</td></tr>
 <tr class="memdesc:ad88ae28e39f48e79401da952c9a3d4b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn amplifier on or off and set the gain in db.  <br /></td></tr>
 <tr class="separator:ad88ae28e39f48e79401da952c9a3d4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab50c0479c8499206d058c84bb133bd04" id="r_ab50c0479c8499206d058c84bb133bd04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audio_8h.html#ab50c0479c8499206d058c84bb133bd04">micStartRecording</a> (<a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *buffer, int length, int freq, int timer, bool eightBitSample, MIC_BUF_SWAP_CB bufferSwapCallback)</td></tr>
+<tr class="memitem:ab50c0479c8499206d058c84bb133bd04" id="r_ab50c0479c8499206d058c84bb133bd04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audio_8h.html#ab50c0479c8499206d058c84bb133bd04">micStartRecording</a> (<a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *buffer, int length, int freq, int timer, bool eightBitSample, <a class="el" href="audio_8h.html#a8dc8058c888efec1e3d0921b782baffc">MIC_BUF_SWAP_CB</a> bufferSwapCallback)</td></tr>
 <tr class="memdesc:ab50c0479c8499206d058c84bb133bd04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start recording data from the microphone.  <br /></td></tr>
 <tr class="separator:ab50c0479c8499206d058c84bb133bd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8e32d75493313589f528f6ff92885b1" id="r_ae8e32d75493313589f528f6ff92885b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audio_8h.html#ae8e32d75493313589f528f6ff92885b1">micStopRecording</a> (void)</td></tr>
@@ -146,7 +153,31 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>micTimerHandler</b> (
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions to use the audio channels and microphone from the ARM7. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a8dc8058c888efec1e3d0921b782baffc" name="a8dc8058c888efec1e3d0921b782baffc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dc8058c888efec1e3d0921b782baffc">&#9670;&#160;</a></span>MIC_BUF_SWAP_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* MIC_BUF_SWAP_CB) (<a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *completedBuffer, int length)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback called whenever one buffer used <a class="el" href="audio_8h.html#ab50c0479c8499206d058c84bb133bd04" title="Start recording data from the microphone.">micStartRecording()</a> is full. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">completedBuffer</td><td>Pointer to the buffer that has been filled. </td></tr>
+    <tr><td class="paramname">length</td><td>Size of the buffer in bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="af1e5d7ab253403ec3ae7b1728422c100" name="af1e5d7ab253403ec3ae7b1728422c100"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af1e5d7ab253403ec3ae7b1728422c100">&#9670;&#160;</a></span>micReadData12()</h2>
 
@@ -286,7 +317,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>micTimerHandler</b> (
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">MIC_BUF_SWAP_CB&#160;</td>
+          <td class="paramtype"><a class="el" href="audio_8h.html#a8dc8058c888efec1e3d0921b782baffc">MIC_BUF_SWAP_CB</a>&#160;</td>
           <td class="paramname"><em>bufferSwapCallback</em>&#160;</td>
         </tr>
         <tr>
@@ -364,7 +395,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>micTimerHandler</b> (
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 9 2024 01:46:15 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sat Aug 10 2024 16:44:50 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

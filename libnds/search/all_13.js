@@ -103,7 +103,7 @@ var searchData=
   ['rsa_2eh_100',['rsa.h',['../rsa_8h.html',1,'']]],
   ['rtcclockadjust_101',['rtcClockAdjust',['../structtPERSONAL__DATA.html#a46f97da624bd2638b723ffb5dde281eb',1,'tPERSONAL_DATA']]],
   ['rtcoffset_102',['rtcOffset',['../structtPERSONAL__DATA.html#a6d6027b850086c751e62dc14a53c2813',1,'tPERSONAL_DATA']]],
-  ['rtctime_103',['rtctime',['../structrtcTime.html',1,'rtcTime'],['../structRTCtime.html',1,'RTCtime']]],
+  ['rtctime_103',['rtctime',['../structRTCtime.html',1,'RTCtime'],['../structrtcTime.html',1,'rtcTime']]],
   ['rtctimeanddate_104',['rtcTimeAndDate',['../structrtcTimeAndDate.html',1,'']]],
   ['rtctimeanddateget_105',['rtcTimeAndDateGet',['../clock_8h.html#ab6588061973364066ef8c18878938da6',1,'clock.h']]],
   ['rtctimeanddateset_106',['rtcTimeAndDateSet',['../clock_8h.html#a369fe445c69213c0175747f95dbdf1c8',1,'clock.h']]],

@@ -125,6 +125,14 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ae957d7aa743dbc70f3fad4db1098e137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Microphone recording formats DS.  <a href="sound_8h.html#ae957d7aa743dbc70f3fad4db1098e137">More...</a><br /></td></tr>
 <tr class="separator:ae957d7aa743dbc70f3fad4db1098e137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f1ead06c9b3b0db2fe2d62be385fd32" id="r_a8f1ead06c9b3b0db2fe2d62be385fd32"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound_8h.html#a8f1ead06c9b3b0db2fe2d62be385fd32">SoundCaptureFormat</a> { <br />
+&#160;&#160;<a class="el" href="sound_8h.html#a8f1ead06c9b3b0db2fe2d62be385fd32a7d64cfd674c15c31eb38acac1d67c31c">SoundCaptureFormat_16Bit</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="sound_8h.html#a8f1ead06c9b3b0db2fe2d62be385fd32aeda190a56a53bbb1cf9af036d753f5aa">SoundCaptureFormat_8Bit</a> = 1
+<br />
+ }</td></tr>
+<tr class="memdesc:a8f1ead06c9b3b0db2fe2d62be385fd32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sound formats used by the audio capture unit.  <a href="sound_8h.html#a8f1ead06c9b3b0db2fe2d62be385fd32">More...</a><br /></td></tr>
+<tr class="separator:a8f1ead06c9b3b0db2fe2d62be385fd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7471966c3d382c3d1b69ad3a397ace02" id="r_a7471966c3d382c3d1b69ad3a397ace02"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound_8h.html#a7471966c3d382c3d1b69ad3a397ace02">SoundFormat</a> { <br />
 &#160;&#160;<a class="el" href="sound_8h.html#a7471966c3d382c3d1b69ad3a397ace02a72ff2702cebc07d5a4095eed57f5e8e7">SoundFormat_16Bit</a> = 1
 , <br />
@@ -140,6 +148,12 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a029791ef42a3fa9313a1ff5383e64e76" id="r_a029791ef42a3fa9313a1ff5383e64e76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound_8h.html#a029791ef42a3fa9313a1ff5383e64e76">soundCaptureStart</a> (void *buffer, <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> bufferLen, int sndcapChannel, bool addCapToChannel, bool sourceIsMixer, bool repeat, <a class="el" href="sound_8h.html#a8f1ead06c9b3b0db2fe2d62be385fd32">SoundCaptureFormat</a> format)</td></tr>
+<tr class="memdesc:a029791ef42a3fa9313a1ff5383e64e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">This starts a sound capture channel.  <br /></td></tr>
+<tr class="separator:a029791ef42a3fa9313a1ff5383e64e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed2100faa8f7cb4b47d5d097b5b2612" id="r_abed2100faa8f7cb4b47d5d097b5b2612"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound_8h.html#abed2100faa8f7cb4b47d5d097b5b2612">soundCaptureStop</a> (int sndcapChannel)</td></tr>
+<tr class="memdesc:abed2100faa8f7cb4b47d5d097b5b2612"><td class="mdescLeft">&#160;</td><td class="mdescRight">This stops a sound capture channel.  <br /></td></tr>
+<tr class="separator:abed2100faa8f7cb4b47d5d097b5b2612"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a272e47bce080a1f9fc7f693f254929c7" id="r_a272e47bce080a1f9fc7f693f254929c7"><td class="memItemLeft" align="right" valign="top"><a id="a272e47bce080a1f9fc7f693f254929c7" name="a272e47bce080a1f9fc7f693f254929c7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>soundDisable</b> (void)</td></tr>
 <tr class="memdesc:a272e47bce080a1f9fc7f693f254929c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables Sound on the DS. <br /></td></tr>
@@ -173,15 +187,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>soundMicPowerOff</b> 
 <tr class="memitem:a9bca074827f79853815a453db92fe5f9" id="r_a9bca074827f79853815a453db92fe5f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound_8h.html#a9bca074827f79853815a453db92fe5f9">soundPause</a> (int soundId)</td></tr>
 <tr class="memdesc:a9bca074827f79853815a453db92fe5f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause the sound specified by soundId.  <br /></td></tr>
 <tr class="separator:a9bca074827f79853815a453db92fe5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0fe26fafbf23de7ae95c8024ebfa7b5" id="r_aa0fe26fafbf23de7ae95c8024ebfa7b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound_8h.html#aa0fe26fafbf23de7ae95c8024ebfa7b5">soundPlayNoise</a> (<a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> freq, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> volume, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> pan)</td></tr>
-<tr class="memdesc:aa0fe26fafbf23de7ae95c8024ebfa7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays white noise with the specified parameters.  <br /></td></tr>
-<tr class="separator:aa0fe26fafbf23de7ae95c8024ebfa7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b14c2b5642b7f6e17a3328d61a64a65" id="r_a2b14c2b5642b7f6e17a3328d61a64a65"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound_8h.html#a2b14c2b5642b7f6e17a3328d61a64a65">soundPlayPSG</a> (<a class="el" href="sound_8h.html#a61ec8d74fc75ac43ee72430671e0a6c5">DutyCycle</a> cycle, <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> freq, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> volume, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> pan)</td></tr>
-<tr class="memdesc:a2b14c2b5642b7f6e17a3328d61a64a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause a tone with the specified properties.  <br /></td></tr>
-<tr class="separator:a2b14c2b5642b7f6e17a3328d61a64a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e30e926376cc528bdf168b7eeffc1ed" id="r_a3e30e926376cc528bdf168b7eeffc1ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound_8h.html#a3e30e926376cc528bdf168b7eeffc1ed">soundPlaySample</a> (const void *data, <a class="el" href="sound_8h.html#a7471966c3d382c3d1b69ad3a397ace02">SoundFormat</a> format, <a class="el" href="ndstypes_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> dataSize, <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> freq, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> volume, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> pan, bool loop, <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> loopPoint)</td></tr>
-<tr class="memdesc:a3e30e926376cc528bdf168b7eeffc1ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a sound in the specified format at the specified frequency.  <br /></td></tr>
-<tr class="separator:a3e30e926376cc528bdf168b7eeffc1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4b2a63bdbe4c2372c8f0919b20a266" id="r_a6a4b2a63bdbe4c2372c8f0919b20a266"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound_8h.html#a6a4b2a63bdbe4c2372c8f0919b20a266">soundPlayNoise</a> (<a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> freq, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> volume, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> pan)</td></tr>
+<tr class="memdesc:a6a4b2a63bdbe4c2372c8f0919b20a266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays white noise with the specified parameters.  <br /></td></tr>
+<tr class="separator:a6a4b2a63bdbe4c2372c8f0919b20a266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d412ad8622761a8ed3b4fd500b9402e" id="r_a1d412ad8622761a8ed3b4fd500b9402e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound_8h.html#a1d412ad8622761a8ed3b4fd500b9402e">soundPlayNoiseChannel</a> (int channel, <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> freq, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> volume, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> pan)</td></tr>
+<tr class="memdesc:a1d412ad8622761a8ed3b4fd500b9402e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays white noise with the specified parameters.  <br /></td></tr>
+<tr class="separator:a1d412ad8622761a8ed3b4fd500b9402e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18bb5507055727115b0ad98daf8c69e0" id="r_a18bb5507055727115b0ad98daf8c69e0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound_8h.html#a18bb5507055727115b0ad98daf8c69e0">soundPlayPSG</a> (<a class="el" href="sound_8h.html#a61ec8d74fc75ac43ee72430671e0a6c5">DutyCycle</a> cycle, <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> freq, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> volume, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> pan)</td></tr>
+<tr class="memdesc:a18bb5507055727115b0ad98daf8c69e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause a tone with the specified properties.  <br /></td></tr>
+<tr class="separator:a18bb5507055727115b0ad98daf8c69e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02262c0f199526c5937a0edd36c48281" id="r_a02262c0f199526c5937a0edd36c48281"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound_8h.html#a02262c0f199526c5937a0edd36c48281">soundPlayPSGChannel</a> (int channel, <a class="el" href="sound_8h.html#a61ec8d74fc75ac43ee72430671e0a6c5">DutyCycle</a> cycle, <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> freq, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> volume, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> pan)</td></tr>
+<tr class="memdesc:a02262c0f199526c5937a0edd36c48281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause a tone with the specified properties.  <br /></td></tr>
+<tr class="separator:a02262c0f199526c5937a0edd36c48281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4128e922b1f22dac2bed5ba66c2ead" id="r_afa4128e922b1f22dac2bed5ba66c2ead"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound_8h.html#afa4128e922b1f22dac2bed5ba66c2ead">soundPlaySample</a> (const void *data, <a class="el" href="sound_8h.html#a7471966c3d382c3d1b69ad3a397ace02">SoundFormat</a> format, <a class="el" href="ndstypes_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> dataSize, <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> freq, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> volume, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> pan, bool loop, <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> loopPoint)</td></tr>
+<tr class="memdesc:afa4128e922b1f22dac2bed5ba66c2ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a sound in the specified format at the specified frequency.  <br /></td></tr>
+<tr class="separator:afa4128e922b1f22dac2bed5ba66c2ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28ba1333b755ae80bded007fe1f84fb" id="r_ae28ba1333b755ae80bded007fe1f84fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound_8h.html#ae28ba1333b755ae80bded007fe1f84fb">soundPlaySampleChannel</a> (int channel, const void *data, <a class="el" href="sound_8h.html#a7471966c3d382c3d1b69ad3a397ace02">SoundFormat</a> format, <a class="el" href="ndstypes_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> dataSize, <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> freq, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> volume, <a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> pan, bool loop, <a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> loopPoint)</td></tr>
+<tr class="memdesc:ae28ba1333b755ae80bded007fe1f84fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a sound in the specified format at the specified frequency.  <br /></td></tr>
+<tr class="separator:ae28ba1333b755ae80bded007fe1f84fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37dc124cfd4c75d1ccc96979b6c2fcbf" id="r_a37dc124cfd4c75d1ccc96979b6c2fcbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sound_8h.html#a37dc124cfd4c75d1ccc96979b6c2fcbf">soundResume</a> (int soundId)</td></tr>
 <tr class="memdesc:a37dc124cfd4c75d1ccc96979b6c2fcbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resumes a paused sound.  <br /></td></tr>
 <tr class="separator:a37dc124cfd4c75d1ccc96979b6c2fcbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,6 +281,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>soundMicPowerOff</b> 
 
 </div>
 </div>
+<a id="a8f1ead06c9b3b0db2fe2d62be385fd32" name="a8f1ead06c9b3b0db2fe2d62be385fd32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f1ead06c9b3b0db2fe2d62be385fd32">&#9670;&#160;</a></span>SoundCaptureFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="sound_8h.html#a8f1ead06c9b3b0db2fe2d62be385fd32">SoundCaptureFormat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sound formats used by the audio capture unit. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8f1ead06c9b3b0db2fe2d62be385fd32a7d64cfd674c15c31eb38acac1d67c31c" name="a8f1ead06c9b3b0db2fe2d62be385fd32a7d64cfd674c15c31eb38acac1d67c31c"></a>SoundCaptureFormat_16Bit&#160;</td><td class="fielddoc"><p>16-bit PCM </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8f1ead06c9b3b0db2fe2d62be385fd32aeda190a56a53bbb1cf9af036d753f5aa" name="a8f1ead06c9b3b0db2fe2d62be385fd32aeda190a56a53bbb1cf9af036d753f5aa"></a>SoundCaptureFormat_8Bit&#160;</td><td class="fielddoc"><p>8-bit PCM </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a7471966c3d382c3d1b69ad3a397ace02" name="a7471966c3d382c3d1b69ad3a397ace02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7471966c3d382c3d1b69ad3a397ace02">&#9670;&#160;</a></span>SoundFormat</h2>
 
@@ -285,6 +330,118 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>soundMicPowerOff</b> 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a029791ef42a3fa9313a1ff5383e64e76" name="a029791ef42a3fa9313a1ff5383e64e76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a029791ef42a3fa9313a1ff5383e64e76">&#9670;&#160;</a></span>soundCaptureStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int soundCaptureStart </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
+          <td class="paramname"><em>bufferLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sndcapChannel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>addCapToChannel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sourceIsMixer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>repeat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sound_8h.html#a8f1ead06c9b3b0db2fe2d62be385fd32">SoundCaptureFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This starts a sound capture channel. </p>
+<p>Audio capture channel 0 requires the frequency of sound channel 1 to be set with <a class="el" href="sound_8h.html#a1bd9f04ddbeef95635de380b9b0e0739" title="Sets the sound frequency.">soundSetFreq()</a>, for example. For audio capture channel 1, you need to do the same to sound channel 3. The sample rate of the capture circuit matches the one of its corresponding sound channel because the channels are the ones that can output the captured audio. Even if the channel is disabled, as long as the frequency is set, audio capture will work.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Buffer to store the captured audio. </td></tr>
+    <tr><td class="paramname">bufferLen</td><td>Size of the buffer in words. A value of 0 will be treated as 1. </td></tr>
+    <tr><td class="paramname">sndcapChannel</td><td>The audio capture channel to use. </td></tr>
+    <tr><td class="paramname">addCapToChannel</td><td>For audio capture channel 0:<ul>
+<li>If false, nothing special is done with the output of sound channel 1.</li>
+<li>If true, the output of sound channel 1 is added to sound channel 0. For audio capture channel 1:</li>
+<li>If false, nothing special is done with the output of sound channel 3.</li>
+<li>If true, the output of sound channel 3 is added to sound channel 2. </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">sourceIsMixer</td><td>For audio capture channel 0:<ul>
+<li>If true, the capture source is the output of the left mixer.</li>
+<li>If false, the capture source is sound channel 0. For audio capture channel 1:</li>
+<li>If true, the capture source is the output of the right mixer.</li>
+<li>If false, the capture source is sound channel 2. </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">repeat</td><td>If true, the capture will continue even after the buffer is full (it will go back to the start). </td></tr>
+    <tr><td class="paramname">format</td><td>The audio format that will be used to store data in the provided buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>It returns the capture channel index on success, -1 on error. </dd></dl>
+
+</div>
+</div>
+<a id="abed2100faa8f7cb4b47d5d097b5b2612" name="abed2100faa8f7cb4b47d5d097b5b2612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abed2100faa8f7cb4b47d5d097b5b2612">&#9670;&#160;</a></span>soundCaptureStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void soundCaptureStop </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sndcapChannel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This stops a sound capture channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sndcapChannel</td><td>The channel to stop. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a4084a2ecd0c663ff6b1d9fbf36cb78a6" name="a4084a2ecd0c663ff6b1d9fbf36cb78a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4084a2ecd0c663ff6b1d9fbf36cb78a6">&#9670;&#160;</a></span>soundEnable()</h2>
 
@@ -492,15 +649,75 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>soundMicPowerOff</b> 
 
 </div>
 </div>
-<a id="aa0fe26fafbf23de7ae95c8024ebfa7b5" name="aa0fe26fafbf23de7ae95c8024ebfa7b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0fe26fafbf23de7ae95c8024ebfa7b5">&#9670;&#160;</a></span>soundPlayNoise()</h2>
+<a id="a6a4b2a63bdbe4c2372c8f0919b20a266" name="a6a4b2a63bdbe4c2372c8f0919b20a266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a4b2a63bdbe4c2372c8f0919b20a266">&#9670;&#160;</a></span>soundPlayNoise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int soundPlayNoise </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
+          <td class="paramname"><em>freq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>pan</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Plays white noise with the specified parameters. </p>
+<p>libnds will select a free channel to play the sound.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">freq</td><td>The frequency in Hz of the sample. </td></tr>
+    <tr><td class="paramname">volume</td><td>The channel volume. 0 to 127 (min to max). </td></tr>
+    <tr><td class="paramname">pan</td><td>The channel pan 0 to 127 (left to right with 64 being centered).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer id coresponding to the channel of playback. This value can be used to pause, resume, or kill the sound as well as adjust volume, pan, and frequency. </dd></dl>
+
+</div>
+</div>
+<a id="a1d412ad8622761a8ed3b4fd500b9402e" name="a1d412ad8622761a8ed3b4fd500b9402e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d412ad8622761a8ed3b4fd500b9402e">&#9670;&#160;</a></span>soundPlayNoiseChannel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int soundPlayNoise </td>
+          <td class="memname">int soundPlayNoiseChannel </td>
           <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
           <td class="paramname"><em>freq</em>, </td>
         </tr>
@@ -527,6 +744,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>soundMicPowerOff</b> 
 <p>Plays white noise with the specified parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">channel</td><td>Channel to be used for this sound. If -1 is used, libnds will select a free channel and use it. </td></tr>
     <tr><td class="paramname">freq</td><td>The frequency in Hz of the sample. </td></tr>
     <tr><td class="paramname">volume</td><td>The channel volume. 0 to 127 (min to max). </td></tr>
     <tr><td class="paramname">pan</td><td>The channel pan 0 to 127 (left to right with 64 being centered).</td></tr>
@@ -537,15 +755,82 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>soundMicPowerOff</b> 
 
 </div>
 </div>
-<a id="a2b14c2b5642b7f6e17a3328d61a64a65" name="a2b14c2b5642b7f6e17a3328d61a64a65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b14c2b5642b7f6e17a3328d61a64a65">&#9670;&#160;</a></span>soundPlayPSG()</h2>
+<a id="a18bb5507055727115b0ad98daf8c69e0" name="a18bb5507055727115b0ad98daf8c69e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18bb5507055727115b0ad98daf8c69e0">&#9670;&#160;</a></span>soundPlayPSG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int soundPlayPSG </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="sound_8h.html#a61ec8d74fc75ac43ee72430671e0a6c5">DutyCycle</a>&#160;</td>
+          <td class="paramname"><em>cycle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
+          <td class="paramname"><em>freq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>pan</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pause a tone with the specified properties. </p>
+<p>libnds will select a free channel to play the sound.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cycle</td><td>The DutyCycle of the sound wave. </td></tr>
+    <tr><td class="paramname">freq</td><td>The frequency in Hz of the sample. </td></tr>
+    <tr><td class="paramname">volume</td><td>The channel volume. 0 to 127 (min to max) </td></tr>
+    <tr><td class="paramname">pan</td><td>The channel pan 0 to 127 (left to right with 64 being centered).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer id coresponding to the channel of playback. This value can be used to pause, resume, or kill the sound as well as adjust volume, pan, and frequency. </dd></dl>
+
+</div>
+</div>
+<a id="a02262c0f199526c5937a0edd36c48281" name="a02262c0f199526c5937a0edd36c48281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02262c0f199526c5937a0edd36c48281">&#9670;&#160;</a></span>soundPlayPSGChannel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int soundPlayPSG </td>
+          <td class="memname">int soundPlayPSGChannel </td>
           <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="sound_8h.html#a61ec8d74fc75ac43ee72430671e0a6c5">DutyCycle</a>&#160;</td>
           <td class="paramname"><em>cycle</em>, </td>
         </tr>
@@ -578,6 +863,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>soundMicPowerOff</b> 
 <p>Pause a tone with the specified properties. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">channel</td><td>Channel to be used for this sound. If -1 is used, libnds will select a free channel and use it. </td></tr>
     <tr><td class="paramname">cycle</td><td>The DutyCycle of the sound wave. </td></tr>
     <tr><td class="paramname">freq</td><td>The frequency in Hz of the sample. </td></tr>
     <tr><td class="paramname">volume</td><td>The channel volume. 0 to 127 (min to max) </td></tr>
@@ -589,15 +875,110 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>soundMicPowerOff</b> 
 
 </div>
 </div>
-<a id="a3e30e926376cc528bdf168b7eeffc1ed" name="a3e30e926376cc528bdf168b7eeffc1ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e30e926376cc528bdf168b7eeffc1ed">&#9670;&#160;</a></span>soundPlaySample()</h2>
+<a id="afa4128e922b1f22dac2bed5ba66c2ead" name="afa4128e922b1f22dac2bed5ba66c2ead"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa4128e922b1f22dac2bed5ba66c2ead">&#9670;&#160;</a></span>soundPlaySample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int soundPlaySample </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sound_8h.html#a7471966c3d382c3d1b69ad3a397ace02">SoundFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ndstypes_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>dataSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
+          <td class="paramname"><em>freq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ndstypes_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>pan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>loop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ndstypes_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
+          <td class="paramname"><em>loopPoint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Plays a sound in the specified format at the specified frequency. </p>
+<p>libnds will select a free channel to play the sound.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>A pointer to the sound data. </td></tr>
+    <tr><td class="paramname">format</td><td>The format of the data (only 16-bit and 8-bit pcm and ADPCM formats are supported by this function). </td></tr>
+    <tr><td class="paramname">dataSize</td><td>The size in bytes of the sound data. </td></tr>
+    <tr><td class="paramname">freq</td><td>The frequency in Hz of the sample. </td></tr>
+    <tr><td class="paramname">volume</td><td>The channel volume. 0 to 127 (min to max). </td></tr>
+    <tr><td class="paramname">pan</td><td>The channel pan 0 to 127 (left to right with 64 being centered). </td></tr>
+    <tr><td class="paramname">loop</td><td>If true, the sample will loop playing once then repeating starting at the offset stored in loopPoint. </td></tr>
+    <tr><td class="paramname">loopPoint</td><td>The offset for the sample loop to restart when repeating.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer id coresponding to the channel of playback. This value can be used to pause, resume, or kill the sound as well as adjust volume, pan, and frequency </dd></dl>
+
+</div>
+</div>
+<a id="ae28ba1333b755ae80bded007fe1f84fb" name="ae28ba1333b755ae80bded007fe1f84fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae28ba1333b755ae80bded007fe1f84fb">&#9670;&#160;</a></span>soundPlaySampleChannel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int soundPlaySample </td>
+          <td class="memname">int soundPlaySampleChannel </td>
           <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
@@ -654,6 +1035,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>soundMicPowerOff</b> 
 <p>Plays a sound in the specified format at the specified frequency. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">channel</td><td>Channel to be used for this sound. If -1 is used, libnds will select a free channel and use it. </td></tr>
     <tr><td class="paramname">data</td><td>A pointer to the sound data. </td></tr>
     <tr><td class="paramname">format</td><td>The format of the data (only 16-bit and 8-bit pcm and ADPCM formats are supported by this function). </td></tr>
     <tr><td class="paramname">dataSize</td><td>The size in bytes of the sound data. </td></tr>
@@ -846,7 +1228,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>soundMicPowerOff</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 9 2024 01:46:15 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sat Aug 10 2024 16:44:50 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -65,7 +65,7 @@ It’s very easy to setup libnds so that the output of printf() is sent to a tex
       "url" : "https://blocksds.github.io/docs/usage/debugging/",
       "headline": "How to debug programs",
       "description": "While developing applications with BlocksDS you will reach situations where you need to debug your code. There are different ways to do this with BlocksDS, and they are described below.\n1. Regular text console printf-debugging is the most basic way to debug code, but it’s still very useful so it’s worth mentioning it.\nIt’s very easy to setup libnds so that the output of printf() is sent to a text console on the screen.",
-      "wordCount" : "1804",
+      "wordCount" : "2132",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1931,19 +1931,89 @@ from.</p>
 >this example</a>
 to see it in action.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
-    <h2 id="8-gdb-with-melonds"
+    <h2 id="8-gdb-with-melonds-and-desmume"
     >
-        8. GDB with melonDS
+        8. GDB with melonDS and DeSmuME
     </h2>
-    <a data-clipboard-text="https://blocksds.github.io/docs/usage/debugging/#8-gdb-with-melonds" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 8. GDB with melonDS" aria-label="Anchor to: 8. GDB with melonDS" href="#8-gdb-with-melonds">
+    <a data-clipboard-text="https://blocksds.github.io/docs/usage/debugging/#8-gdb-with-melonds-and-desmume" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 8. GDB with melonDS and DeSmuME" aria-label="Anchor to: 8. GDB with melonDS and DeSmuME" href="#8-gdb-with-melonds-and-desmume">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>melonDS has a GDB stub, so you can connect to it and debug your programs with
-any command line or GUI tool that supports the GDB protocol</p>
-<p>This section needs to be expanded in the future to add more information of how
-to use it.</p>
-
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h3 id="81-introduction"
+    >
+        8.1 Introduction
+    </h3>
+    <a data-clipboard-text="https://blocksds.github.io/docs/usage/debugging/#81-introduction" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 8.1 Introduction" aria-label="Anchor to: 8.1 Introduction" href="#81-introduction">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>DeSmuME has support for GDB. MelonDS also has (experimental) support for GDB.
+You can use this to connect to the emulator from a debugger and debug your
+programs with any command line or GUI tool that supports GDB.</p>
+<p>You need a version of GDB that supports the 32 bit ARM architecture, like
+<code>gdb-multiarch</code>. If you&rsquo;re in Ubuntu, you can install it with:</p>
+<pre tabindex="0"><code>sudo apt install gdb-multiarch
+</code></pre><div class="flex align-center gdoc-page__anchorwrap">
+    <h3 id="82-desmume"
+    >
+        8.2 DeSmuME
+    </h3>
+    <a data-clipboard-text="https://blocksds.github.io/docs/usage/debugging/#82-desmume" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 8.2 DeSmuME" aria-label="Anchor to: 8.2 DeSmuME" href="#82-desmume">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>Start DeSmuME from the command line like this to start GDB and tell the emulator
+which ports to use for the GDB server:</p>
+<pre tabindex="0"><code>desmume --arm9gdb 3333 --arm7gdb 3334 your_project.nds
+</code></pre><p>You can start GDB in one core or in both of them.</p>
+<p>Emulation will start stopped so that you can debug your program from the start.</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h3 id="83-melonds"
+    >
+        8.3 melonDS
+    </h3>
+    <a data-clipboard-text="https://blocksds.github.io/docs/usage/debugging/#83-melonds" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 8.3 melonDS" aria-label="Anchor to: 8.3 melonDS" href="#83-melonds">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>In melonDS, go to: &ldquo;Config&rdquo; &gt; &ldquo;Emu settings&rdquo; &gt; &ldquo;Devtools&rdquo;</p>
+<p>From there, make sure that &ldquo;Enable GDB stub&rdquo; is checked.</p>
+<p>You can decide to start the debugging session from the start of the program by
+checking &ldquo;Break on startup&rdquo;. If you don&rsquo;t check it, the emulator will run until
+GDB connects to it.</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h3 id="84-connecting-from-gdb"
+    >
+        8.4 Connecting from GDB
+    </h3>
+    <a data-clipboard-text="https://blocksds.github.io/docs/usage/debugging/#84-connecting-from-gdb" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 8.4 Connecting from GDB" aria-label="Anchor to: 8.4 Connecting from GDB" href="#84-connecting-from-gdb">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>If you&rsquo;re using a graphical debugger, you will need to point it to the elf file
+of your program. Check the <code>build</code> folder after building your program. If your
+program is an ARM9-only program, there will only be one elf file there, which
+has the symbols for the ARM9. If your program is a combined ARM7+ARM9 program,
+you will see two elf files, one for each CPU.</p>
+<p>If you want to debug the ARM7 in an ARM9-only project, the elf file that you
+need to use is in <code>$(BLOCKSDS)/sys/default_arm7/arm7.elf</code>.</p>
+<p>You will need a different GDB session for each CPU you want to debug (open GDB
+once per CPU).</p>
+<p>If you&rsquo;re using the command line version of GDB, you can load the elf file with:</p>
+<pre tabindex="0"><code>file build/your_project.elf
+</code></pre><p>Then, connect to the emulator with this (use the correct port specified in the
+melonDS GUI):</p>
+<pre tabindex="0"><code>target remote localhost:3333
+</code></pre><p>If you are using DeSmuME or you used the &ldquo;Break on startup&rdquo; option in melonDS,
+type:</p>
+<pre tabindex="0"><code>run
+</code></pre><p>If you haven&rsquo;t used that option, GDB will stop the emulation when it connects.
+To resume it, type:</p>
+<pre tabindex="0"><code>continue
+</code></pre><p>You can exit GDB with:</p>
+<pre tabindex="0"><code>exit
+</code></pre>
   </article>
 
 
