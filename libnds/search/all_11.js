@@ -3,7 +3,7 @@ var searchData=
   ['oam_0',['OAM',['../video_8h.html#a5797c8a19b428c6a97cd9b4f4324dafe',1,'video.h']]],
   ['oam_5fsub_1',['OAM_SUB',['../video_8h.html#adf411d6fca761fb6a0139c91e7a057fe',1,'video.h']]],
   ['oamaffinetransformation_2',['oamAffineTransformation',['../sprite_8h.html#ae4e2d7125be6c10008d92596e8119fe8',1,'sprite.h']]],
-  ['oamallocategfx_3',['oamAllocateGfx',['../sprite_8h.html#ad7bab0e9a12a2cada8c3dfb369b2af3a',1,'sprite.h']]],
+  ['oamallocategfx_3',['oamAllocateGfx',['../sprite_8h.html#ae5f8a8a1c778e45fe5d28f7955fe4f11',1,'sprite.h']]],
   ['oamclear_4',['oamClear',['../sprite_8h.html#af1344d69f95d16c68a4f0ceeb00f2557',1,'sprite.h']]],
   ['oamclearsprite_5',['oamClearSprite',['../sprite_8h.html#a2930d56abf0f92dacadbea8e33b0a4cf',1,'sprite.h']]],
   ['oamcountfragments_6',['oamCountFragments',['../sprite_8h.html#a5fcdae212169678f4921acf8fe8f77fa',1,'sprite.h']]],

@@ -65,7 +65,7 @@ It’s very easy to setup libnds so that the output of printf() is sent to a tex
       "url" : "https://blocksds.github.io/docs/usage/debugging/",
       "headline": "How to debug programs",
       "description": "While developing applications with BlocksDS you will reach situations where you need to debug your code. There are different ways to do this with BlocksDS, and they are described below.\n1. Regular text console printf-debugging is the most basic way to debug code, but it’s still very useful so it’s worth mentioning it.\nIt’s very easy to setup libnds so that the output of printf() is sent to a text console on the screen.",
-      "wordCount" : "2132",
+      "wordCount" : "2234",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1831,7 +1831,12 @@ followed by a lot of information:</p>
 <p>You can enable it by calling this function, preferably right at the start of
 <code>main()</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="nf">defaultExceptionHandler</span><span class="p">();</span>
-</span></span></code></pre></div><p>The exception handler is used whenever:</p>
+</span></span></code></pre></div><p>If you are using the debug build of libnds, this exception handler is setup by
+default, so you don&rsquo;t need to call this function. However, you need to call it
+in release builds.</p>
+<p>Release builds have a much basic exception handler that will only print an error
+message on the screen, with no additional information.</p>
+<p>The exception handler is used whenever:</p>
 <ul>
 <li>
 <p>The CPU tries to execute an <code>undefined instruction</code>.</p>
@@ -1853,6 +1858,13 @@ programs to crash if they haven&rsquo;t been tested on a DSi before. You can sol
 this issue by checking <code>isDSiMode()</code> before accessing the GBA slot memory.</p>
 <p>Normally this error means that you have a pointer that doesn&rsquo;t point to valid
 memory and you have tried to access it.</p>
+</li>
+<li>
+<p>There is a critical internal error in libnds.</p>
+<p>In some situations it is possible that libnds detects an error that the code
+can&rsquo;t recover from. In this kind of cases, the exception handler will be
+shown with an error message appropriate for the situation (like &ldquo;Stack
+corruption&rdquo;).</p>
 </li>
 </ul>
 <p>Check <a

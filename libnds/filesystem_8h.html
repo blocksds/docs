@@ -95,16 +95,16 @@ $(function() {
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="ndstypes_8h.html">nds/ndstypes.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acc3429ca38ef6f032a4a8bff6c1ca990" id="r_acc3429ca38ef6f032a4a8bff6c1ca990"><td class="memItemLeft" align="right" valign="top"><a id="acc3429ca38ef6f032a4a8bff6c1ca990" name="acc3429ca38ef6f032a4a8bff6c1ca990"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>nitroFSExit</b> (void)</td></tr>
-<tr class="memdesc:acc3429ca38ef6f032a4a8bff6c1ca990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exits NitroFS. <br /></td></tr>
-<tr class="separator:acc3429ca38ef6f032a4a8bff6c1ca990"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12560ef780308d61bfa69fcc8fb2d3bc" id="r_a12560ef780308d61bfa69fcc8fb2d3bc"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filesystem_8h.html#a12560ef780308d61bfa69fcc8fb2d3bc">nitroFSFopenById</a> (uint16_t id, const char *mode)</td></tr>
-<tr class="memdesc:a12560ef780308d61bfa69fcc8fb2d3bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a NitroFS file directly by its FAT offset ID.  <br /></td></tr>
-<tr class="separator:a12560ef780308d61bfa69fcc8fb2d3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75928950cfdfa7227aa289c7cfb700b9" id="r_a75928950cfdfa7227aa289c7cfb700b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filesystem_8h.html#a75928950cfdfa7227aa289c7cfb700b9">nitroFSExit</a> (void)</td></tr>
+<tr class="memdesc:a75928950cfdfa7227aa289c7cfb700b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exits NitroFS.  <br /></td></tr>
+<tr class="separator:a75928950cfdfa7227aa289c7cfb700b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050f810ef771754092309eabaa46113e" id="r_a050f810ef771754092309eabaa46113e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndstypes_8h.html#a4e0e2d9e1ee0f401844b5b6ff8338f82">WARN_UNUSED_RESULT</a> FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filesystem_8h.html#a050f810ef771754092309eabaa46113e">nitroFSFopenById</a> (uint16_t id, const char *mode)</td></tr>
+<tr class="memdesc:a050f810ef771754092309eabaa46113e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a NitroFS file directly by its FAT offset ID.  <br /></td></tr>
+<tr class="separator:a050f810ef771754092309eabaa46113e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a695c8355c30f7f276f1e125031f04cb8" id="r_a695c8355c30f7f276f1e125031f04cb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filesystem_8h.html#a695c8355c30f7f276f1e125031f04cb8">nitroFSInit</a> (const char *basepath)</td></tr>
 <tr class="memdesc:a695c8355c30f7f276f1e125031f04cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes NitroFS.  <br /></td></tr>
 <tr class="separator:a695c8355c30f7f276f1e125031f04cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,14 +118,35 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>nitroFSExit</b> (void
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NitroFS filesystem embedded in a NDS ROM. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a12560ef780308d61bfa69fcc8fb2d3bc" name="a12560ef780308d61bfa69fcc8fb2d3bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12560ef780308d61bfa69fcc8fb2d3bc">&#9670;&#160;</a></span>nitroFSFopenById()</h2>
+<a id="a75928950cfdfa7227aa289c7cfb700b9" name="a75928950cfdfa7227aa289c7cfb700b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75928950cfdfa7227aa289c7cfb700b9">&#9670;&#160;</a></span>nitroFSExit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">FILE * nitroFSFopenById </td>
+          <td class="memname">bool nitroFSExit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exits NitroFS. </p>
+<dl class="section return"><dt>Returns</dt><dd>It returns true on success, false on error. If NitroFS hadn't been initialized before, it will also return true. </dd></dl>
+
+</div>
+</div>
+<a id="a050f810ef771754092309eabaa46113e" name="a050f810ef771754092309eabaa46113e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a050f810ef771754092309eabaa46113e">&#9670;&#160;</a></span>nitroFSFopenById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ndstypes_8h.html#a4e0e2d9e1ee0f401844b5b6ff8338f82">WARN_UNUSED_RESULT</a> FILE * nitroFSFopenById </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -255,7 +276,7 @@ readdir - it is equivalent to the st_ino/d_ino value.</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 10 2024 16:44:50 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Tue Sep 10 2024 18:33:00 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

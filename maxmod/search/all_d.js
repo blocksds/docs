@@ -82,7 +82,7 @@ var searchData=
   ['mmgetpositionrow_79',['mmGetPositionRow',['../group__gba__module__playback.html#ga20d5571ed3ca0ec6ad1e6a63613a0e0e',1,'maxmod.h']]],
   ['mmgetpositiontick_80',['mmGetPositionTick',['../group__gba__module__playback.html#gaca779c5dc60fe606fac20acf9ffde4f1',1,'maxmod.h']]],
   ['mminit_81',['mminit',['../group__gba__init.html#ga404fcee6268da774b88a3db0b916b0b2',1,'mmInit(mm_gba_system *setup):&#160;maxmod.h'],['../group__nds__arm9__init.html#ga59e6487493475253894dd6288764a0bf',1,'mmInit(mm_ds_system *system):&#160;maxmod9.h']]],
-  ['mminitdefault_82',['mminitdefault',['../group__nds__arm9__init.html#gad9138deff9e45dd29221a7910417ea18',1,'mmInitDefault(char *soundbank_file):&#160;maxmod9.h'],['../group__gba__init.html#ga4251040397d41f138320020845be5dcc',1,'mmInitDefault(mm_addr soundbank, mm_word number_of_channels):&#160;maxmod.h']]],
+  ['mminitdefault_82',['mminitdefault',['../group__nds__arm9__init.html#ga686f477ff28ac5e619d823922a5bd87e',1,'mmInitDefault(const char *soundbank_file):&#160;maxmod9.h'],['../group__gba__init.html#ga4251040397d41f138320020845be5dcc',1,'mmInitDefault(mm_addr soundbank, mm_word number_of_channels):&#160;maxmod.h']]],
   ['mminitdefaultmem_83',['mmInitDefaultMem',['../group__nds__arm9__init.html#ga5c9b30bdb3894d504766895bd7ef2d71',1,'maxmod9.h']]],
   ['mminstall_84',['mmInstall',['../group__nds__arm7__init.html#gaaccff5b63671679b9877455b8ce083b1',1,'maxmod7.h']]],
   ['mmisinitialized_85',['mmIsInitialized',['../group__nds__arm7__init.html#ga751dc03829ac25b66f69ed0a8263d49d',1,'maxmod7.h']]],

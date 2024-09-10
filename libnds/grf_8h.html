@@ -114,15 +114,17 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306a9a89c8f275ac2c150c7b009f62819e6f">GRF_FILE_NOT_READ</a> = -3
 , <br />
-&#160;&#160;<a class="el" href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306af84ead7f2abdf1bc40d4726811f43a21">GRF_INVALID_ID_RIFF</a> = -4
+&#160;&#160;<a class="el" href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306a4602f54669e3d9b28e44697ae7952058">GRF_FILE_NOT_CLOSED</a> = -4
 , <br />
-&#160;&#160;<a class="el" href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306aac43e4ae8c7c8a40b5aba35095c8c2a2">GRF_INVALID_ID_GRF</a> = -5
+&#160;&#160;<a class="el" href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306af84ead7f2abdf1bc40d4726811f43a21">GRF_INVALID_ID_RIFF</a> = -5
 , <br />
-&#160;&#160;<a class="el" href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306a0971c6d0bf8a3bfb8d93e25b4c832aa3">GRF_INCONSISTENT_SIZES</a> = -6
+&#160;&#160;<a class="el" href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306aac43e4ae8c7c8a40b5aba35095c8c2a2">GRF_INVALID_ID_GRF</a> = -6
 , <br />
-&#160;&#160;<a class="el" href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306ad1183f3fd9edc669f95b20b6c4eb1f0b">GRF_NOT_ENOUGH_MEMORY</a> = -7
+&#160;&#160;<a class="el" href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306a0971c6d0bf8a3bfb8d93e25b4c832aa3">GRF_INCONSISTENT_SIZES</a> = -7
 , <br />
-&#160;&#160;<a class="el" href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306a52e34d17a7f9fbc01498a3c05368b55b">GRF_UNKNOWN_COMPRESSION</a> = -8
+&#160;&#160;<a class="el" href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306ad1183f3fd9edc669f95b20b6c4eb1f0b">GRF_NOT_ENOUGH_MEMORY</a> = -8
+, <br />
+&#160;&#160;<a class="el" href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306a52e34d17a7f9fbc01498a3c05368b55b">GRF_UNKNOWN_COMPRESSION</a> = -9
 <br />
  }</td></tr>
 <tr class="memdesc:aebce6e3f5306dd050a2a987f86636306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible errors that can happen while reading GRF files.  <a href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306">More...</a><br /></td></tr>
@@ -179,6 +181,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="aebce6e3f5306dd050a2a987f86636306aa23a689d7f2bb370cbc86a63607fdb73" name="aebce6e3f5306dd050a2a987f86636306aa23a689d7f2bb370cbc86a63607fdb73"></a>GRF_FILE_NOT_OPENED&#160;</td><td class="fielddoc"><p>Failed to open file with fopen() </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aebce6e3f5306dd050a2a987f86636306a9a89c8f275ac2c150c7b009f62819e6f" name="aebce6e3f5306dd050a2a987f86636306a9a89c8f275ac2c150c7b009f62819e6f"></a>GRF_FILE_NOT_READ&#160;</td><td class="fielddoc"><p>Failed to read file. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aebce6e3f5306dd050a2a987f86636306a4602f54669e3d9b28e44697ae7952058" name="aebce6e3f5306dd050a2a987f86636306a4602f54669e3d9b28e44697ae7952058"></a>GRF_FILE_NOT_CLOSED&#160;</td><td class="fielddoc"><p>Failed to close file with fclose() </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aebce6e3f5306dd050a2a987f86636306af84ead7f2abdf1bc40d4726811f43a21" name="aebce6e3f5306dd050a2a987f86636306af84ead7f2abdf1bc40d4726811f43a21"></a>GRF_INVALID_ID_RIFF&#160;</td><td class="fielddoc"><p>Chunk ID "RIFF" not found. </p>
 </td></tr>
@@ -797,7 +801,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 10 2024 16:44:50 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Tue Sep 10 2024 18:33:00 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

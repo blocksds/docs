@@ -56,13 +56,14 @@ var searchData=
   ['gl_5ftriangle_5fstrip_53',['GL_TRIANGLE_STRIP',['../videoGL_8h.html#a0e589918d10f56cda0c48e6f1dd389e9a0c07566e449c47ae5847410f0b69c3e4',1,'videoGL.h']]],
   ['gl_5ftriangles_54',['GL_TRIANGLES',['../videoGL_8h.html#a0e589918d10f56cda0c48e6f1dd389e9acc7d680eddc73989e6650e72ad0b6ac7',1,'videoGL.h']]],
   ['gl_5fwbuffering_55',['GL_WBUFFERING',['../videoGL_8h.html#ac6f5f93f80676219b8b5ac6c5b378948a6ac4d6a0ad65376825badd031bd224a4',1,'videoGL.h']]],
-  ['grf_5ffile_5fnot_5fopened_56',['GRF_FILE_NOT_OPENED',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306aa23a689d7f2bb370cbc86a63607fdb73',1,'grf.h']]],
-  ['grf_5ffile_5fnot_5fread_57',['GRF_FILE_NOT_READ',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306a9a89c8f275ac2c150c7b009f62819e6f',1,'grf.h']]],
-  ['grf_5finconsistent_5fsizes_58',['GRF_INCONSISTENT_SIZES',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306a0971c6d0bf8a3bfb8d93e25b4c832aa3',1,'grf.h']]],
-  ['grf_5finvalid_5fid_5fgrf_59',['GRF_INVALID_ID_GRF',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306aac43e4ae8c7c8a40b5aba35095c8c2a2',1,'grf.h']]],
-  ['grf_5finvalid_5fid_5friff_60',['GRF_INVALID_ID_RIFF',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306af84ead7f2abdf1bc40d4726811f43a21',1,'grf.h']]],
-  ['grf_5fno_5ferror_61',['GRF_NO_ERROR',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306a93af58ccbf132e500afabdd980099222',1,'grf.h']]],
-  ['grf_5fnot_5fenough_5fmemory_62',['GRF_NOT_ENOUGH_MEMORY',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306ad1183f3fd9edc669f95b20b6c4eb1f0b',1,'grf.h']]],
-  ['grf_5fnull_5fpointer_63',['GRF_NULL_POINTER',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306ad3cbcaba57de2dfb1ae17471251586ff',1,'grf.h']]],
-  ['grf_5funknown_5fcompression_64',['GRF_UNKNOWN_COMPRESSION',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306a52e34d17a7f9fbc01498a3c05368b55b',1,'grf.h']]]
+  ['grf_5ffile_5fnot_5fclosed_56',['GRF_FILE_NOT_CLOSED',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306a4602f54669e3d9b28e44697ae7952058',1,'grf.h']]],
+  ['grf_5ffile_5fnot_5fopened_57',['GRF_FILE_NOT_OPENED',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306aa23a689d7f2bb370cbc86a63607fdb73',1,'grf.h']]],
+  ['grf_5ffile_5fnot_5fread_58',['GRF_FILE_NOT_READ',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306a9a89c8f275ac2c150c7b009f62819e6f',1,'grf.h']]],
+  ['grf_5finconsistent_5fsizes_59',['GRF_INCONSISTENT_SIZES',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306a0971c6d0bf8a3bfb8d93e25b4c832aa3',1,'grf.h']]],
+  ['grf_5finvalid_5fid_5fgrf_60',['GRF_INVALID_ID_GRF',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306aac43e4ae8c7c8a40b5aba35095c8c2a2',1,'grf.h']]],
+  ['grf_5finvalid_5fid_5friff_61',['GRF_INVALID_ID_RIFF',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306af84ead7f2abdf1bc40d4726811f43a21',1,'grf.h']]],
+  ['grf_5fno_5ferror_62',['GRF_NO_ERROR',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306a93af58ccbf132e500afabdd980099222',1,'grf.h']]],
+  ['grf_5fnot_5fenough_5fmemory_63',['GRF_NOT_ENOUGH_MEMORY',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306ad1183f3fd9edc669f95b20b6c4eb1f0b',1,'grf.h']]],
+  ['grf_5fnull_5fpointer_64',['GRF_NULL_POINTER',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306ad3cbcaba57de2dfb1ae17471251586ff',1,'grf.h']]],
+  ['grf_5funknown_5fcompression_65',['GRF_UNKNOWN_COMPRESSION',['../grf_8h.html#aebce6e3f5306dd050a2a987f86636306a52e34d17a7f9fbc01498a3c05368b55b',1,'grf.h']]]
 ];

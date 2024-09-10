@@ -12,9 +12,9 @@
 <meta name="generator" content="Hugo 0.123.7">
 
 
-  <meta name="description" content="Version 1.4.0 (2024-08-08) libnds:
-Console:
-Fix &lsquo;D&rsquo; ANSI escape code, which was broken in version 1.3.1. Document console struct fields. Some of them are only meant to be used by libnds, which has been documented. The size of some fields in the console struct has been reduced, and the fields have been reordered to reduce padding in the struct. Some fields were unused, and they have been removed. Now it&rsquo;s possible to specify the 16-color palette to be used when loading custom fonts with their own palette." />
+  <meta name="description" content="Version 1.5.0 (2024-09-10) libnds:
+Exception handling:
+Add trivial crash handler to inform the user of unrecoverable error conditions, such as stack corruptions with stack smash protection enabled. Add trivial release exception handler to inform the user of data aborts and other exception conditions even in release builds. This is enabled by default; this implementation omits stack and register dumps, making the .nds size increase negligible. Tweak default exception handler to use a darker red for the background." />
 
     <title>Changelog | BlocksDS</title>
 
@@ -40,9 +40,9 @@ Fix &lsquo;D&rsquo; ANSI escape code, which was broken in version 1.3.1. Documen
     content="Changelog"
   />
   <meta property="og:site_name" content="BlocksDS" />
-  <meta property="og:description" content="Version 1.4.0 (2024-08-08) libnds:
-Console:
-Fix ‘D’ ANSI escape code, which was broken in version 1.3.1. Document console struct fields. Some of them are only meant to be used by libnds, which has been documented. The size of some fields in the console struct has been reduced, and the fields have been reordered to reduce padding in the struct. Some fields were unused, and they have been removed. Now it’s possible to specify the 16-color palette to be used when loading custom fonts with their own palette." />
+  <meta property="og:description" content="Version 1.5.0 (2024-09-10) libnds:
+Exception handling:
+Add trivial crash handler to inform the user of unrecoverable error conditions, such as stack corruptions with stack smash protection enabled. Add trivial release exception handler to inform the user of data aborts and other exception conditions even in release builds. This is enabled by default; this implementation omits stack and register dumps, making the .nds size increase negligible. Tweak default exception handler to use a darker red for the background." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blocksds.github.io/docs/introduction/changelog/" />
 
@@ -51,9 +51,9 @@ Fix ‘D’ ANSI escape code, which was broken in version 1.3.1. Document consol
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Changelog" />
-  <meta name="twitter:description" content="Version 1.4.0 (2024-08-08) libnds:
-Console:
-Fix ‘D’ ANSI escape code, which was broken in version 1.3.1. Document console struct fields. Some of them are only meant to be used by libnds, which has been documented. The size of some fields in the console struct has been reduced, and the fields have been reordered to reduce padding in the struct. Some fields were unused, and they have been removed. Now it’s possible to specify the 16-color palette to be used when loading custom fonts with their own palette." />
+  <meta name="twitter:description" content="Version 1.5.0 (2024-09-10) libnds:
+Exception handling:
+Add trivial crash handler to inform the user of unrecoverable error conditions, such as stack corruptions with stack smash protection enabled. Add trivial release exception handler to inform the user of data aborts and other exception conditions even in release builds. This is enabled by default; this implementation omits stack and register dumps, making the .nds size increase negligible. Tweak default exception handler to use a darker red for the background." />
 
 
   <script type="application/ld+json">
@@ -64,8 +64,8 @@ Fix ‘D’ ANSI escape code, which was broken in version 1.3.1. Document consol
       "name": "Changelog",
       "url" : "https://blocksds.github.io/docs/introduction/changelog/",
       "headline": "Changelog",
-      "description": "Version 1.4.0 (2024-08-08) libnds:\nConsole:\nFix ‘D’ ANSI escape code, which was broken in version 1.3.1. Document console struct fields. Some of them are only meant to be used by libnds, which has been documented. The size of some fields in the console struct has been reduced, and the fields have been reordered to reduce padding in the struct. Some fields were unused, and they have been removed. Now it’s possible to specify the 16-color palette to be used when loading custom fonts with their own palette.",
-      "wordCount" : "6739",
+      "description": "Version 1.5.0 (2024-09-10) libnds:\nException handling:\nAdd trivial crash handler to inform the user of unrecoverable error conditions, such as stack corruptions with stack smash protection enabled. Add trivial release exception handler to inform the user of data aborts and other exception conditions even in release builds. This is enabled by default; this implementation omits stack and register dumps, making the .nds size increase negligible. Tweak default exception handler to use a darker red for the background.",
+      "wordCount" : "7116",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1661,6 +1661,119 @@ Fix ‘D’ ANSI escape code, which was broken in version 1.3.1. Document consol
   >
     <h1>Changelog</h1>
     <div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-150-2024-09-10"
+    >
+        Version 1.5.0 (2024-09-10)
+    </h2>
+    <a data-clipboard-text="https://blocksds.github.io/docs/introduction/changelog/#version-150-2024-09-10" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 1.5.0 (2024-09-10)" aria-label="Anchor to: Version 1.5.0 (2024-09-10)" href="#version-150-2024-09-10">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>libnds:</p>
+<ul>
+<li>
+<p>Exception handling:</p>
+<ul>
+<li>Add trivial crash handler to inform the user of unrecoverable error
+conditions, such as stack corruptions with stack smash protection
+enabled.</li>
+<li>Add trivial release exception handler to inform the user of data aborts
+and other exception conditions even in release builds. This is enabled
+by default; this implementation omits stack and register dumps, making
+the <code>.nds</code> size increase negligible.</li>
+<li>Tweak default exception handler to use a darker red for the background.</li>
+</ul>
+</li>
+<li>
+<p>Filesystem:</p>
+<ul>
+<li>Fix using Slot-2 direct access on <code>.nds</code> files over 32 MB. In particular,
+this fixes accessing large NitroFS filesystems under NO$GBA.</li>
+</ul>
+</li>
+<li>
+<p>GRF loader:</p>
+<ul>
+<li>Improve performance by using fast <code>memcpy()</code> over <code>swiCopy()</code>.</li>
+<li>Rework loader to only read requested chunks from the filesystem,
+as opposed to reading all chunks and filtering them at a later stage.</li>
+</ul>
+</li>
+<li>
+<p>Sound:</p>
+<ul>
+<li>Add functions to play PSG, noise and sound samples on specific channels.</li>
+<li>Add <code>soundCaptureStart</code> and <code>soundCaptureStop</code> high-level helpers for
+the sound capture functionality.</li>
+</ul>
+</li>
+<li>
+<p>Other:</p>
+<ul>
+<li>Add additional error checks to NitroFS and GRF functions.</li>
+<li>Add unused result warnings to functions which can cause memory leaks if
+their result is not deallocated.</li>
+<li>Document high-level DSi camera functions.</li>
+<li>Fix console &lsquo;K&rsquo; ANSI escape code not clearing characters on the line.</li>
+<li>Fix includes for the latest picolibc commits.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>SDK:</p>
+<ul>
+<li>
+<p>New examples:</p>
+<ul>
+<li>Add ANSI escape code tests.</li>
+<li>Add sound capture example.</li>
+</ul>
+</li>
+<li>
+<p>Changes to examples:</p>
+<ul>
+<li>Add <code>.MOD</code> files to LibXM7 examples.</li>
+<li>Add missing <code>fclose()</code> error checks.</li>
+<li>Adjust examples using GRF files to showcase the loader&rsquo;s built-in
+asset decompression functionality.</li>
+<li>Clean up camera and LibXM7 examples.</li>
+</ul>
+</li>
+<li>
+<p>picolibc:</p>
+<ul>
+<li>Add support for C11 Annex K functions (<code>_s</code>-suffixed functions).</li>
+<li>Deprecate BSD-specific <code>&lt;sys/tree.h&gt;</code>.</li>
+<li>Fix handling <code>NaN</code> in <code>scanf()</code> and <code>strtod()</code>.</li>
+<li>Fix return values for <code>glob()</code>.</li>
+<li>Fix the <code>FD_ZERO()</code> macro.</li>
+<li>Initial support for POSIX.1-2024 in header files.</li>
+<li>Other minor header file cleanups.</li>
+<li>Replace <code>&lt;_ansi.h&gt;</code> with <code>&lt;sys/cdefs.h&gt;</code>.</li>
+</ul>
+</li>
+<li>
+<p>Other:</p>
+<ul>
+<li>Fix support for placing the Maxmod soundbank file in the NitroFS
+file system.</li>
+<li>Make the SD card root directory configurable in default Makefile
+templates.</li>
+<li>Remove Teak LLVM from the <code>-slim</code> Docker image. Most people don&rsquo;t need
+this toolchain, as it is in a highly experimental and unmaintained
+state; in addition, removing it from the image does not prevent people
+from installing it on top, but significantly reduces the download size
+for everyone else.</li>
+<li>Remove usage of <code>__DATE__</code> in teaktool.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="version-140-2024-08-08"
     >
         Version 1.4.0 (2024-08-08)
