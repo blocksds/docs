@@ -569,8 +569,8 @@ Functions</h2></td></tr>
 <div class="line">}</div>
 <div class="line">free(gfxDst);</div>
 <div class="ttc" id="agrf_8h_html_a71451a922017783495e2fe612bd74fd8"><div class="ttname"><a href="grf_8h.html#a71451a922017783495e2fe612bd74fd8">grfLoadMemEx</a></div><div class="ttdeci">GRFError grfLoadMemEx(const void *src, GRFHeader *header, void **gfxDst, size_t *gfxSize, void **mapDst, size_t *mapSize, void **palDst, size_t *palSize, void **mtilDst, size_t *mtilSize, void **mmapDst, size_t *mmapSize)</div><div class="ttdoc">From a GRF file in RAM, extract all data and allocate memory for it.</div></div>
-<div class="ttc" id="agrf_8h_html_aebce6e3f5306dd050a2a987f86636306"><div class="ttname"><a href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306">GRFError</a></div><div class="ttdeci">GRFError</div><div class="ttdoc">Possible errors that can happen while reading GRF files.</div><div class="ttdef"><b>Definition</b> grf.h:53</div></div>
-<div class="ttc" id="agrf_8h_html_aebce6e3f5306dd050a2a987f86636306a93af58ccbf132e500afabdd980099222"><div class="ttname"><a href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306a93af58ccbf132e500afabdd980099222">GRF_NO_ERROR</a></div><div class="ttdeci">@ GRF_NO_ERROR</div><div class="ttdoc">No error happened.</div><div class="ttdef"><b>Definition</b> grf.h:54</div></div>
+<div class="ttc" id="agrf_8h_html_aebce6e3f5306dd050a2a987f86636306"><div class="ttname"><a href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306">GRFError</a></div><div class="ttdeci">GRFError</div><div class="ttdoc">Possible errors that can happen while reading GRF files.</div><div class="ttdef"><b>Definition</b> grf.h:54</div></div>
+<div class="ttc" id="agrf_8h_html_aebce6e3f5306dd050a2a987f86636306a93af58ccbf132e500afabdd980099222"><div class="ttname"><a href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306a93af58ccbf132e500afabdd980099222">GRF_NO_ERROR</a></div><div class="ttdeci">@ GRF_NO_ERROR</div><div class="ttdoc">No error happened.</div><div class="ttdef"><b>Definition</b> grf.h:55</div></div>
 </div><!-- fragment --><p>Hardcode destination address, ignore resulting size: </p><div class="fragment"><div class="line">uint16_t palette[256];</div>
 <div class="line"><span class="keywordtype">void</span> *palDst = (<span class="keywordtype">void</span> *)&amp;palette[0]; <span class="comment">// Load data to the array</span></div>
 <div class="line"><a class="code hl_enumeration" href="grf_8h.html#aebce6e3f5306dd050a2a987f86636306">GRFError</a> ret = <a class="code hl_function" href="grf_8h.html#a71451a922017783495e2fe612bd74fd8">grfLoadMemEx</a>(grf_file, NULL, NULL, NULL, NULL, NULL,</div>
@@ -801,7 +801,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 10 2024 18:33:00 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Tue Oct 15 2024 18:42:13 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

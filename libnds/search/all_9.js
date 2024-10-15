@@ -1,7 +1,7 @@
 var searchData=
 [
   ['g_0',['g',['../structRGB__24.html#af00d6510d77622d83128570e39762ac8',1,'RGB_24']]],
-  ['gamecode_1',['gamecode',['../structsNDSHeader.html#aa44acf92bedd876518b0e586e4d1c1c8',1,'sNDSHeader::gameCode'],['../structsGBAHeader.html#a852e6c12a992f5876c49295610777755',1,'sGBAHeader::gamecode']]],
+  ['gamecode_1',['gamecode',['../structsGBAHeader.html#a852e6c12a992f5876c49295610777755',1,'sGBAHeader::gamecode'],['../structsNDSHeader.html#aa44acf92bedd876518b0e586e4d1c1c8',1,'sNDSHeader::gameCode']]],
   ['gametitle_2',['gameTitle',['../structsNDSHeader.html#acd9308627483035d587c9ff95ff4a7fb',1,'sNDSHeader']]],
   ['gba_5fbus_3',['GBA_BUS',['../memory_8h.html#acb7210eaefd659e5612b14d3e202f65d',1,'memory.h']]],
   ['gbalogo_4',['gbaLogo',['../structsNDSHeader.html#a2e24ac00f6db0107edfc39d7e114989d',1,'sNDSHeader']]],

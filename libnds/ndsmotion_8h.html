@@ -85,6 +85,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">ndsmotion.h File Reference</div></div>
 </div><!--header-->
@@ -93,6 +94,20 @@ $(function() {
 <p>DS Motion Card/DS Motion Pak functionality.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a7b8892d80c7e8cd50caa51861e6f4424" id="r_a7b8892d80c7e8cd50caa51861e6f4424"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#a7b8892d80c7e8cd50caa51861e6f4424">MotionType</a> { <br />
+&#160;&#160;<a class="el" href="ndsmotion_8h.html#a7b8892d80c7e8cd50caa51861e6f4424ab1a4843a89bcc7d78a72cf852d56dfd8">MOTION_TYPE_NONE</a>
+, <br />
+&#160;&#160;<a class="el" href="ndsmotion_8h.html#a7b8892d80c7e8cd50caa51861e6f4424a77066237a8550637562fc98a4f5acdf9">MOTION_TYPE_PAK</a>
+, <br />
+&#160;&#160;<a class="el" href="ndsmotion_8h.html#a7b8892d80c7e8cd50caa51861e6f4424a8960399d78948038b318eafd81c9eb9d">MOTION_TYPE_CARD</a>
+, <br />
+&#160;&#160;<a class="el" href="ndsmotion_8h.html#a7b8892d80c7e8cd50caa51861e6f4424a38551b603e094166cde2932b9ee0b020">MOTION_TYPE_MK6</a>
+<br />
+ }</td></tr>
+<tr class="separator:a7b8892d80c7e8cd50caa51861e6f4424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a95271309d5f26ba058b9a6ae48fd14b2" id="r_a95271309d5f26ba058b9a6ae48fd14b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#a95271309d5f26ba058b9a6ae48fd14b2">motion_acceleration_x</a> (void)</td></tr>
@@ -117,27 +132,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>motion_deinit</b> (vo
 <tr class="memitem:a5d54281931f45b233d77fa5efe9335d4" id="r_a5d54281931f45b233d77fa5efe9335d4"><td class="memItemLeft" align="right" valign="top">MotionCalibration *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#a5d54281931f45b233d77fa5efe9335d4">motion_get_calibration</a> (void)</td></tr>
 <tr class="memdesc:a5d54281931f45b233d77fa5efe9335d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the current calibration settings for saving.  <br /></td></tr>
 <tr class="separator:a5d54281931f45b233d77fa5efe9335d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf1f7f95ca4f7075729e296405a83f43" id="r_aaf1f7f95ca4f7075729e296405a83f43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#aaf1f7f95ca4f7075729e296405a83f43">motion_init</a> (void)</td></tr>
-<tr class="memdesc:aaf1f7f95ca4f7075729e296405a83f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the DS Motion Sensor.  <br /></td></tr>
-<tr class="separator:aaf1f7f95ca4f7075729e296405a83f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a031e6fa0ce15c893c1adc5e33a152f4d" id="r_a031e6fa0ce15c893c1adc5e33a152f4d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#a031e6fa0ce15c893c1adc5e33a152f4d">motion_get_name</a> (<a class="el" href="ndsmotion_8h.html#a7b8892d80c7e8cd50caa51861e6f4424">MotionType</a> type)</td></tr>
+<tr class="memdesc:a031e6fa0ce15c893c1adc5e33a152f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of a given motion sensor type, or "None".  <br /></td></tr>
+<tr class="separator:a031e6fa0ce15c893c1adc5e33a152f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a198dfe0c700bae9235e63036940b15ad" id="r_a198dfe0c700bae9235e63036940b15ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndsmotion_8h.html#a7b8892d80c7e8cd50caa51861e6f4424">MotionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#a198dfe0c700bae9235e63036940b15ad">motion_get_type</a> (void)</td></tr>
+<tr class="memdesc:a198dfe0c700bae9235e63036940b15ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of the current initialized DS Motion Sensor.  <br /></td></tr>
+<tr class="separator:a198dfe0c700bae9235e63036940b15ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a149ac6d770dcb1f09664037d2e7c2e2f" id="r_a149ac6d770dcb1f09664037d2e7c2e2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndsmotion_8h.html#a7b8892d80c7e8cd50caa51861e6f4424">MotionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#a149ac6d770dcb1f09664037d2e7c2e2f">motion_init</a> (void)</td></tr>
+<tr class="memdesc:a149ac6d770dcb1f09664037d2e7c2e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the DS Motion Sensor.  <br /></td></tr>
+<tr class="separator:a149ac6d770dcb1f09664037d2e7c2e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7ae68eb8137405a39010deb7129b841" id="r_ab7ae68eb8137405a39010deb7129b841"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#ab7ae68eb8137405a39010deb7129b841">motion_read_ain_1</a> (void)</td></tr>
 <tr class="memdesc:ab7ae68eb8137405a39010deb7129b841"><td class="mdescLeft">&#160;</td><td class="mdescRight">This reads the analog input number 1.  <br /></td></tr>
 <tr class="separator:ab7ae68eb8137405a39010deb7129b841"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a8929fefd1e75b5c0633c69d36832e5" id="r_a9a8929fefd1e75b5c0633c69d36832e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#a9a8929fefd1e75b5c0633c69d36832e5">motion_read_ain_2</a> (void)</td></tr>
 <tr class="memdesc:a9a8929fefd1e75b5c0633c69d36832e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This reads the analog input number 2.  <br /></td></tr>
 <tr class="separator:a9a8929fefd1e75b5c0633c69d36832e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a233dc3964df89913721fc66a00e26" id="r_a93a233dc3964df89913721fc66a00e26"><td class="memItemLeft" align="right" valign="top">signed int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#a93a233dc3964df89913721fc66a00e26">motion_read_gyro</a> (void)</td></tr>
-<tr class="memdesc:a93a233dc3964df89913721fc66a00e26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the Z rotational speed.  <br /></td></tr>
-<tr class="separator:a93a233dc3964df89913721fc66a00e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab46977b52e9402ce4f2dd6e9f5fd91db" id="r_ab46977b52e9402ce4f2dd6e9f5fd91db"><td class="memItemLeft" align="right" valign="top">signed int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#ab46977b52e9402ce4f2dd6e9f5fd91db">motion_read_x</a> (void)</td></tr>
-<tr class="memdesc:ab46977b52e9402ce4f2dd6e9f5fd91db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the X acceleration.  <br /></td></tr>
-<tr class="separator:ab46977b52e9402ce4f2dd6e9f5fd91db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0b8556b5fc8852e1a38f55360a35b07" id="r_ad0b8556b5fc8852e1a38f55360a35b07"><td class="memItemLeft" align="right" valign="top">signed int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#ad0b8556b5fc8852e1a38f55360a35b07">motion_read_y</a> (void)</td></tr>
-<tr class="memdesc:ad0b8556b5fc8852e1a38f55360a35b07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the Y acceleration.  <br /></td></tr>
-<tr class="separator:ad0b8556b5fc8852e1a38f55360a35b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69a5ad037f837667a68ea2111d5a591c" id="r_a69a5ad037f837667a68ea2111d5a591c"><td class="memItemLeft" align="right" valign="top">signed int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#a69a5ad037f837667a68ea2111d5a591c">motion_read_z</a> (void)</td></tr>
-<tr class="memdesc:a69a5ad037f837667a68ea2111d5a591c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the Z acceleration.  <br /></td></tr>
-<tr class="separator:a69a5ad037f837667a68ea2111d5a591c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e1692122003fc28aee5f834d0bd5fec" id="r_a4e1692122003fc28aee5f834d0bd5fec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#a4e1692122003fc28aee5f834d0bd5fec">motion_read_gyro</a> (void)</td></tr>
+<tr class="memdesc:a4e1692122003fc28aee5f834d0bd5fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the Z rotational speed.  <br /></td></tr>
+<tr class="separator:a4e1692122003fc28aee5f834d0bd5fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af28b6ba636e5643ca9a189f79d53811b" id="r_af28b6ba636e5643ca9a189f79d53811b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#af28b6ba636e5643ca9a189f79d53811b">motion_read_x</a> (void)</td></tr>
+<tr class="memdesc:af28b6ba636e5643ca9a189f79d53811b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the X acceleration.  <br /></td></tr>
+<tr class="separator:af28b6ba636e5643ca9a189f79d53811b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4c021f8315031b4453f651f308be33" id="r_a0d4c021f8315031b4453f651f308be33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#a0d4c021f8315031b4453f651f308be33">motion_read_y</a> (void)</td></tr>
+<tr class="memdesc:a0d4c021f8315031b4453f651f308be33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the Y acceleration.  <br /></td></tr>
+<tr class="separator:a0d4c021f8315031b4453f651f308be33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af692f000a3b0c09215b5990dc0317037" id="r_af692f000a3b0c09215b5990dc0317037"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#af692f000a3b0c09215b5990dc0317037">motion_read_z</a> (void)</td></tr>
+<tr class="memdesc:af692f000a3b0c09215b5990dc0317037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the Z acceleration.  <br /></td></tr>
+<tr class="separator:af692f000a3b0c09215b5990dc0317037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a582bf51b47bf1c9db18399c04936f2a4" id="r_a582bf51b47bf1c9db18399c04936f2a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndsmotion_8h.html#a582bf51b47bf1c9db18399c04936f2a4">motion_rotation</a> (void)</td></tr>
 <tr class="memdesc:a582bf51b47bf1c9db18399c04936f2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts raw rotation to degrees per second.  <br /></td></tr>
 <tr class="separator:a582bf51b47bf1c9db18399c04936f2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,7 +193,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>motion_deinit</b> (vo
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DS Motion Card/DS Motion Pak functionality. </p>
 <p>Interface code for the ds motion card, ds motion pak, MK6. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a7b8892d80c7e8cd50caa51861e6f4424" name="a7b8892d80c7e8cd50caa51861e6f4424"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b8892d80c7e8cd50caa51861e6f4424">&#9670;&#160;</a></span>MotionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="ndsmotion_8h.html#a7b8892d80c7e8cd50caa51861e6f4424">MotionType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7b8892d80c7e8cd50caa51861e6f4424ab1a4843a89bcc7d78a72cf852d56dfd8" name="a7b8892d80c7e8cd50caa51861e6f4424ab1a4843a89bcc7d78a72cf852d56dfd8"></a>MOTION_TYPE_NONE&#160;</td><td class="fielddoc"><p>No sensor present. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7b8892d80c7e8cd50caa51861e6f4424a77066237a8550637562fc98a4f5acdf9" name="a7b8892d80c7e8cd50caa51861e6f4424a77066237a8550637562fc98a4f5acdf9"></a>MOTION_TYPE_PAK&#160;</td><td class="fielddoc"><p>DS Motion Pak. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7b8892d80c7e8cd50caa51861e6f4424a8960399d78948038b318eafd81c9eb9d" name="a7b8892d80c7e8cd50caa51861e6f4424a8960399d78948038b318eafd81c9eb9d"></a>MOTION_TYPE_CARD&#160;</td><td class="fielddoc"><p>DS Motion Card. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7b8892d80c7e8cd50caa51861e6f4424a38551b603e094166cde2932b9ee0b020" name="a7b8892d80c7e8cd50caa51861e6f4424a38551b603e094166cde2932b9ee0b020"></a>MOTION_TYPE_MK6&#160;</td><td class="fielddoc"><p>MK6. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a95271309d5f26ba058b9a6ae48fd14b2" name="a95271309d5f26ba058b9a6ae48fd14b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95271309d5f26ba058b9a6ae48fd14b2">&#9670;&#160;</a></span>motion_acceleration_x()</h2>
 
@@ -299,14 +345,56 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>motion_deinit</b> (vo
 
 </div>
 </div>
-<a id="aaf1f7f95ca4f7075729e296405a83f43" name="aaf1f7f95ca4f7075729e296405a83f43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf1f7f95ca4f7075729e296405a83f43">&#9670;&#160;</a></span>motion_init()</h2>
+<a id="a031e6fa0ce15c893c1adc5e33a152f4d" name="a031e6fa0ce15c893c1adc5e33a152f4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a031e6fa0ce15c893c1adc5e33a152f4d">&#9670;&#160;</a></span>motion_get_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int motion_init </td>
+          <td class="memname">const char * motion_get_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ndsmotion_8h.html#a7b8892d80c7e8cd50caa51861e6f4424">MotionType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the name of a given motion sensor type, or "None". </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the string. Don't call free() with this pointer. </dd></dl>
+
+</div>
+</div>
+<a id="a198dfe0c700bae9235e63036940b15ad" name="a198dfe0c700bae9235e63036940b15ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a198dfe0c700bae9235e63036940b15ad">&#9670;&#160;</a></span>motion_get_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ndsmotion_8h.html#a7b8892d80c7e8cd50caa51861e6f4424">MotionType</a> motion_get_type </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the type of the current initialized DS Motion Sensor. </p>
+<dl class="section return"><dt>Returns</dt><dd>The motion sensor type, or 0 if there is no sensor initialized or present. </dd></dl>
+
+</div>
+</div>
+<a id="a149ac6d770dcb1f09664037d2e7c2e2f" name="a149ac6d770dcb1f09664037d2e7c2e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a149ac6d770dcb1f09664037d2e7c2e2f">&#9670;&#160;</a></span>motion_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ndsmotion_8h.html#a7b8892d80c7e8cd50caa51861e6f4424">MotionType</a> motion_init </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -365,14 +453,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>motion_deinit</b> (vo
 
 </div>
 </div>
-<a id="a93a233dc3964df89913721fc66a00e26" name="a93a233dc3964df89913721fc66a00e26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93a233dc3964df89913721fc66a00e26">&#9670;&#160;</a></span>motion_read_gyro()</h2>
+<a id="a4e1692122003fc28aee5f834d0bd5fec" name="a4e1692122003fc28aee5f834d0bd5fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e1692122003fc28aee5f834d0bd5fec">&#9670;&#160;</a></span>motion_read_gyro()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">signed int motion_read_gyro </td>
+          <td class="memname">int motion_read_gyro </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -386,14 +474,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>motion_deinit</b> (vo
 
 </div>
 </div>
-<a id="ab46977b52e9402ce4f2dd6e9f5fd91db" name="ab46977b52e9402ce4f2dd6e9f5fd91db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab46977b52e9402ce4f2dd6e9f5fd91db">&#9670;&#160;</a></span>motion_read_x()</h2>
+<a id="af28b6ba636e5643ca9a189f79d53811b" name="af28b6ba636e5643ca9a189f79d53811b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af28b6ba636e5643ca9a189f79d53811b">&#9670;&#160;</a></span>motion_read_x()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">signed int motion_read_x </td>
+          <td class="memname">int motion_read_x </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -407,14 +495,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>motion_deinit</b> (vo
 
 </div>
 </div>
-<a id="ad0b8556b5fc8852e1a38f55360a35b07" name="ad0b8556b5fc8852e1a38f55360a35b07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0b8556b5fc8852e1a38f55360a35b07">&#9670;&#160;</a></span>motion_read_y()</h2>
+<a id="a0d4c021f8315031b4453f651f308be33" name="a0d4c021f8315031b4453f651f308be33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d4c021f8315031b4453f651f308be33">&#9670;&#160;</a></span>motion_read_y()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">signed int motion_read_y </td>
+          <td class="memname">int motion_read_y </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -428,14 +516,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>motion_deinit</b> (vo
 
 </div>
 </div>
-<a id="a69a5ad037f837667a68ea2111d5a591c" name="a69a5ad037f837667a68ea2111d5a591c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69a5ad037f837667a68ea2111d5a591c">&#9670;&#160;</a></span>motion_read_z()</h2>
+<a id="af692f000a3b0c09215b5990dc0317037" name="af692f000a3b0c09215b5990dc0317037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af692f000a3b0c09215b5990dc0317037">&#9670;&#160;</a></span>motion_read_z()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">signed int motion_read_z </td>
+          <td class="memname">int motion_read_z </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -692,7 +780,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>motion_deinit</b> (vo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 10 2024 18:33:00 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Tue Oct 15 2024 18:42:13 for libnds by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -103,7 +103,7 @@
       <link>https://blocksds.github.io/docs/introduction/credits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blocksds.github.io/docs/introduction/credits/</guid>
-      <description>This project wouldn&amp;rsquo;t have been possible without:&#xA;Many thanks to asie for his help and advice, and for Wonderful Toolchain devkitPro picolibc libnds DSWiFi Maxmod (and mmutil) grit GCC make And many others! </description>
+      <description>BlocksDS, as with any open-source development kit for a complex embedded device, was only possible thanks to the work of hundreds of free software developers. This page serves as our way of acknowledging their efforts.&#xA;libnds Auby, Christian (DesktopMan) bakawun Belton, Forest chee Chisholm, Michael (Chishm) CTurt Discostew Double, Chris (doublec) eKid Epstein, Keith (KeithE) Eric M. Lope BSN RN, Richard (Relminator) fincs Ghearing, Gabe (gabebear) ichfly Justburn Kuder, David Lee, Sunguk (d3m3vilurr) Murphy, Dave (WinterMute) neimod Noland, Michael (joat) Nuna, Liran (LiraNuna) Padrinator Parks, Mike (BigRedPimp) Raleigh Cross Rasky Rogers, Jason (dovoto) Rorex, David Seidel, Tim (MightyMax) Theall, Michael (mtheall) Vance, Kevin (kvance) vuurrobin Weyand, Tobias (0xtob) Wiebe, Abram (awiebe) Zagórowski, Stanisław (Duckonaut) zeromus Additional contributions to the BlocksDS-provided version of libnds have been provided by:</description>
     </item>
     <item>
       <title>Legacy device/launcher support</title>
