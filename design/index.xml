@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Additional information on BlocksDS</title>
-    <link>https://blocksds.github.io/docs/design/</link>
+    <link>https://blocksds.skylyrac.net/docs/design/</link>
     <description>Recent content in Additional information on BlocksDS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://blocksds.github.io/docs/design/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blocksds.skylyrac.net/docs/design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exit to loader protocol</title>
-      <link>https://blocksds.github.io/docs/design/exit_to_loader/</link>
+      <link>https://blocksds.skylyrac.net/docs/design/exit_to_loader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://blocksds.github.io/docs/design/exit_to_loader/</guid>
+      <guid>https://blocksds.skylyrac.net/docs/design/exit_to_loader/</guid>
       <description>1. Introduction Normally, the only way to exit a DS application is to switch the console off and turn it on again. It can get annoying to do this if you&amp;rsquo;re, for example, testing many applications. libnds supports a protocol that allows an application loader (such as the menu of a flashcart) to setup an exit routine that allows the application to return to the loader. This is needed because the DS doesn&amp;rsquo;t have an OS, so the protocol is managed manually.</description>
     </item>
     <item>
       <title>Design choices</title>
-      <link>https://blocksds.github.io/docs/design/design_guide/</link>
+      <link>https://blocksds.skylyrac.net/docs/design/design_guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://blocksds.github.io/docs/design/design_guide/</guid>
+      <guid>https://blocksds.skylyrac.net/docs/design/design_guide/</guid>
       <description>This guide serves as a loose explanation of some design choices made during the development of BlocksDS.&#xA;A supplementary good source for understanding its design choices is the BlocksDS issue tracker, where many were and continue to be openly discussed.&#xA;1. Standardized binary build of the GCC compiler Existing builds of GCC used for embedded development come with various, often not fully matching C/C++ standard libraries. The compatibility issues and added support headache make relying on user-provided GCC a non-viable option.</description>
     </item>
   </channel>

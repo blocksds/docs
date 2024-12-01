@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Usage on BlocksDS</title>
-    <link>https://blocksds.github.io/docs/usage/</link>
+    <link>https://blocksds.skylyrac.net/docs/usage/</link>
     <description>Recent content in Usage on BlocksDS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://blocksds.github.io/docs/usage/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blocksds.skylyrac.net/docs/usage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to debug programs</title>
-      <link>https://blocksds.github.io/docs/usage/debugging/</link>
+      <link>https://blocksds.skylyrac.net/docs/usage/debugging/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://blocksds.github.io/docs/usage/debugging/</guid>
+      <guid>https://blocksds.skylyrac.net/docs/usage/debugging/</guid>
       <description>While developing applications with BlocksDS you will reach situations where you need to debug your code. There are different ways to do this with BlocksDS, and they are described below.&#xA;1. Regular text console printf-debugging is the most basic way to debug code, but it&amp;rsquo;s still very useful so it&amp;rsquo;s worth mentioning it.&#xA;It&amp;rsquo;s very easy to setup libnds so that the output of printf() is sent to a text console on the screen.</description>
     </item>
     <item>
       <title>Frequently asked questions</title>
-      <link>https://blocksds.github.io/docs/usage/faq/</link>
+      <link>https://blocksds.skylyrac.net/docs/usage/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://blocksds.github.io/docs/usage/faq/</guid>
+      <guid>https://blocksds.skylyrac.net/docs/usage/faq/</guid>
       <description>General questions I&amp;rsquo;ve just installed BlocksDS, now what? The first step is to build one of the examples included with BlocksDS. If you have installed the thirdparty-blocksds-docs package with wf-pacman, the examples are located in /opt/wonderful/thirdparty/blocksds/core/examples/. From there, for example, go to graphics_3d/volumetric_shadow and type make. This will generate a NDS ROM that you can try with an emulator or a flashcart.&#xA;You can also try one of the open source projects made with BlocksDS that are listed here.</description>
     </item>
     <item>
       <title>Legacy device/launcher support</title>
-      <link>https://blocksds.github.io/docs/usage/legacy_support/</link>
+      <link>https://blocksds.skylyrac.net/docs/usage/legacy_support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://blocksds.github.io/docs/usage/legacy_support/</guid>
+      <guid>https://blocksds.skylyrac.net/docs/usage/legacy_support/</guid>
       <description>ROMs built with BlocksDS are designed first and foremost to support modern execution environments and maximize the amount of free memory available to the application. Unfortunately, some changes end up breaking compatibility with legacy homebrew execution methods.&#xA;Known loaders which cause issues include:&#xA;the PassMe/WifiMe methods, the MoonShell launcher, the Unlaunch launcher, many legacy cartridge devices. Workarounds exist to run affected homebrew software on these platforms, both from the user and developer&amp;rsquo;s perspective.</description>
     </item>
   </channel>
