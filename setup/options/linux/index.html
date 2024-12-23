@@ -71,7 +71,7 @@ wf-pacman -S blocksds-toolchain To install the documentation and examples you ca
       "url" : "https://blocksds.skylyrac.net/docs/setup/options/linux/",
       "headline": "Linux",
       "description": "This is the easiest option, but you may not get the latest version of the SDK right away.\nYou will also need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https:\/\/wonderful.asie.pl\/docs\/getting-started\/#linux\nAdd the BlocksDS repository to wf-pacman:\nexport PATH=\/opt\/wonderful\/bin:$PATH wf-pacman -Syu wf-tools wf-config repo enable blocksds wf-pacman -Syu Now, install the ARM toolchain of Wonderful Toolchains, as well as BlocksDS:\nwf-pacman -S blocksds-toolchain To install the documentation and examples you can install:",
-      "wordCount" : "247",
+      "wordCount" : "288",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1833,6 +1833,14 @@ generate a NDS ROM that you can try with an emulator or a flashcart.</p>
 listed <a
   class="gdoc-markdown__link"
   href="https://github.com/blocksds/awesome-blocksds"
+>here</a>.</p>
+<p>If you get an error like &ldquo;command not found: make&rdquo;, you need to install it
+from the packages of your system:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get install -y --no-install-recommends build-essential
+</span></span></code></pre></div><p>If you want to know how to debug your programs, check the guide
+<a
+  class="gdoc-markdown__link"
+  href="../../../usage/debugging"
 >here</a>.</p>
 </li>
 </ol>
