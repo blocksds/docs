@@ -12,10 +12,8 @@
 <meta name="generator" content="Hugo 0.123.7">
 
 
-  <meta name="description" content="Version 1.6.3 (2024-11-11) libnds:
-Add compile-time warnings about unused result values to various library methods. Ensure nitroFSInit() checks for successful FAT initialization. Protect the alternate vector base region (0x0000000 onwards) from writing and, if said base is not explicitly enabled, reading. This allows catching null pointer accesses at runtime as data aborts. SDK:
-crt0:
-Fix thread-local storage not being initialized properly during global constructor initialization. Fix thread-local storage not being initialized at all on ARM7." />
+  <meta name="description" content="Version 1.7.0 (2024-12-23) libnds:
+An exception handler has been added to the ARM7. This one is a lot less useful than the ARM9 one because it&rsquo;s only called on undefined instructions and internal libnds errors. Add dldiRelocate(), which allows relocating a DLDI driver to a different memory address. Fix DLDI memory pointers not being relocated for non-BSS/noinit areas. Update FatFs to R0.15a. glColorSubTableEXT() now supports allocating empty palettes by passing a NULL pointer in the table argument." />
 
     <title>Changelog | BlocksDS</title>
 
@@ -41,10 +39,8 @@ Fix thread-local storage not being initialized properly during global constructo
     content="Changelog"
   />
   <meta property="og:site_name" content="BlocksDS" />
-  <meta property="og:description" content="Version 1.6.3 (2024-11-11) libnds:
-Add compile-time warnings about unused result values to various library methods. Ensure nitroFSInit() checks for successful FAT initialization. Protect the alternate vector base region (0x0000000 onwards) from writing and, if said base is not explicitly enabled, reading. This allows catching null pointer accesses at runtime as data aborts. SDK:
-crt0:
-Fix thread-local storage not being initialized properly during global constructor initialization. Fix thread-local storage not being initialized at all on ARM7." />
+  <meta property="og:description" content="Version 1.7.0 (2024-12-23) libnds:
+An exception handler has been added to the ARM7. This one is a lot less useful than the ARM9 one because it’s only called on undefined instructions and internal libnds errors. Add dldiRelocate(), which allows relocating a DLDI driver to a different memory address. Fix DLDI memory pointers not being relocated for non-BSS/noinit areas. Update FatFs to R0.15a. glColorSubTableEXT() now supports allocating empty palettes by passing a NULL pointer in the table argument." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blocksds.skylyrac.net/docs/introduction/changelog/" />
 
@@ -53,10 +49,8 @@ Fix thread-local storage not being initialized properly during global constructo
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Changelog" />
-  <meta name="twitter:description" content="Version 1.6.3 (2024-11-11) libnds:
-Add compile-time warnings about unused result values to various library methods. Ensure nitroFSInit() checks for successful FAT initialization. Protect the alternate vector base region (0x0000000 onwards) from writing and, if said base is not explicitly enabled, reading. This allows catching null pointer accesses at runtime as data aborts. SDK:
-crt0:
-Fix thread-local storage not being initialized properly during global constructor initialization. Fix thread-local storage not being initialized at all on ARM7." />
+  <meta name="twitter:description" content="Version 1.7.0 (2024-12-23) libnds:
+An exception handler has been added to the ARM7. This one is a lot less useful than the ARM9 one because it’s only called on undefined instructions and internal libnds errors. Add dldiRelocate(), which allows relocating a DLDI driver to a different memory address. Fix DLDI memory pointers not being relocated for non-BSS/noinit areas. Update FatFs to R0.15a. glColorSubTableEXT() now supports allocating empty palettes by passing a NULL pointer in the table argument." />
 
 
   <script type="application/ld+json">
@@ -67,8 +61,8 @@ Fix thread-local storage not being initialized properly during global constructo
       "name": "Changelog",
       "url" : "https://blocksds.skylyrac.net/docs/introduction/changelog/",
       "headline": "Changelog",
-      "description": "Version 1.6.3 (2024-11-11) libnds:\nAdd compile-time warnings about unused result values to various library methods. Ensure nitroFSInit() checks for successful FAT initialization. Protect the alternate vector base region (0x0000000 onwards) from writing and, if said base is not explicitly enabled, reading. This allows catching null pointer accesses at runtime as data aborts. SDK:\ncrt0:\nFix thread-local storage not being initialized properly during global constructor initialization. Fix thread-local storage not being initialized at all on ARM7.",
-      "wordCount" : "7745",
+      "description": "Version 1.7.0 (2024-12-23) libnds:\nAn exception handler has been added to the ARM7. This one is a lot less useful than the ARM9 one because it’s only called on undefined instructions and internal libnds errors. Add dldiRelocate(), which allows relocating a DLDI driver to a different memory address. Fix DLDI memory pointers not being relocated for non-BSS\/noinit areas. Update FatFs to R0.15a. glColorSubTableEXT() now supports allocating empty palettes by passing a NULL pointer in the table argument.",
+      "wordCount" : "8257",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1752,6 +1746,141 @@ Fix thread-local storage not being initialized properly during global constructo
   >
     <h1>Changelog</h1>
     <div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="version-170-2024-12-23"
+    >
+        Version 1.7.0 (2024-12-23)
+    </h2>
+    <a data-clipboard-text="https://blocksds.skylyrac.net/docs/introduction/changelog/#version-170-2024-12-23" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Version 1.7.0 (2024-12-23)" aria-label="Anchor to: Version 1.7.0 (2024-12-23)" href="#version-170-2024-12-23">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p>libnds:</p>
+<ul>
+<li>An exception handler has been added to the ARM7. This one is a lot less
+useful than the ARM9 one because it&rsquo;s only called on undefined instructions
+and internal libnds errors.</li>
+<li>Add <code>dldiRelocate()</code>, which allows relocating a DLDI driver to a different
+memory address.</li>
+<li>Fix DLDI memory pointers not being relocated for non-BSS/noinit areas.</li>
+<li>Update FatFs to R0.15a.</li>
+<li><code>glColorSubTableEXT()</code> now supports allocating empty palettes by passing a
+NULL pointer in the <code>table</code> argument. This is a small compatibility break
+because this used to free the palette. However, the old behaviour stays as
+long as <code>width</code> is 0. In most cases, <code>table</code> would be NULL and <code>width</code> would
+be 0, so this change is only a problem in unusual cases.</li>
+<li>Disable MPU safely before calling the exit-to-loader ARM9 hook in case the
+hook doesn&rsquo;t do it properly.</li>
+</ul>
+</li>
+<li>
+<p>maxmod:</p>
+<ul>
+<li>Remove non-standard <code>.struct</code> directives.</li>
+</ul>
+</li>
+<li>
+<p>SDK:</p>
+<ul>
+<li>
+<p>picolibc:</p>
+<ul>
+<li>Add <code>asnprintf()</code> and <code>vasnprintf()</code>, matching newlib.</li>
+<li>Fix memory leak in <code>asprintf()</code> and <code>vasprintf()</code>.</li>
+</ul>
+</li>
+<li>
+<p>Docker:</p>
+<ul>
+<li>curl has been added to both the development and slim images.</li>
+<li>Add new BlocksDS pacman repository during setup.</li>
+</ul>
+</li>
+<li>
+<p>pacman:</p>
+<ul>
+<li>
+<p>The pacman server of BlocksDS is now independent from Wonderful Toolchain.</p>
+<ul>
+<li>
+<p>The repository with the package build files is now in the BlocksDS
+GitHub organization in this URL: <a
+  class="gdoc-markdown__link"
+  href="https://github.com/blocksds/packages"
+>https://github.com/blocksds/packages</a></p>
+</li>
+<li>
+<p>BlocksDS still uses Wonderful Toolchain as source for the compiler and
+the standard C and C++ libraries. It will keep using wf-pacman for the
+forseeable future as well.</p>
+</li>
+<li>
+<p>Special thanks to asie for all his help.</p>
+</li>
+<li>
+<p>Updating old installations requires the user to run the following
+command twice instead of once:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -Syu
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>New libraries are now available as pacman packages (µLibrary, libwoopsi,
+dsmi) as well as the tool ptexconv.</p>
+</li>
+<li>
+<p>The GitHub pipeline of the SDK repository has been removed and added to
+the packages repository.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Documentation:</p>
+<ul>
+<li>Update documentation with the instructions to use the new pacman
+repository.</li>
+<li>Some outdated licensing information has been updated.</li>
+<li>The docs generation script has been split into a script that generates it
+and a script that pushes the built documentation to the repository.</li>
+<li>The updating guide has been updated for versions between 1.3.0 and 1.7.0.</li>
+</ul>
+</li>
+<li>
+<p>Examples:</p>
+<ul>
+<li>New example of gesture recognition using the $N Multistroke Recognizer.</li>
+<li>New example of how to use CMake to build a project with BlocksDS.</li>
+<li>Update the exception handler example to also support triggering ARM7
+exceptions.</li>
+</ul>
+</li>
+<li>
+<p>Other:</p>
+<ul>
+<li>BlocksDS now has a dedicated URL (<a
+  class="gdoc-markdown__link"
+  href="https://blocksds.skylyrac.net/"
+>https://blocksds.skylyrac.net/</a>) which
+means that it doesn&rsquo;t rely on GitHub URLs anymore. This main page
+redirects to the documentation, GitHub organization, and a NDS homebrew
+development manual.</li>
+<li>A new prototype CMake build system has been added to the repository.</li>
+<li><code>CC</code> makefile variables have been renamed to <code>HOSTCC</code> when they refer to
+building host tools. This will make it possible to overwrite the host
+toolchain without also overwriting the ARM toolchain.</li>
+<li>Use standard C types and fix includes in mkfatimg.</li>
+<li>bin2c now has an option (<code>--noext</code>) that lets it export files excluding
+the extension from the name, the way some very old homebrew projects
+expect it.</li>
+<li>Some sample defines have been added to the makefiles of the templates to
+clarify its syntax.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="version-163-2024-11-11"
     >
         Version 1.6.3 (2024-11-11)
@@ -2117,8 +2246,8 @@ for everyone else.</li>
 <p>Console:</p>
 <ul>
 <li>Fix &lsquo;D&rsquo; ANSI escape code, which was broken in version 1.3.1.</li>
-<li>Document console struct fields. Some of them are only meant to be used by
-libnds, which has been documented.</li>
+<li>Document PrintConsole struct fields. Some of them are only meant to be
+used by libnds, which has been documented.</li>
 <li>The size of some fields in the console struct has been reduced, and the
 fields have been reordered to reduce padding in the struct. Some fields
 were unused, and they have been removed.</li>

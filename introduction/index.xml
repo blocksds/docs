@@ -19,7 +19,7 @@
       <link>https://blocksds.skylyrac.net/docs/introduction/changelog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blocksds.skylyrac.net/docs/introduction/changelog/</guid>
-      <description>Version 1.6.3 (2024-11-11) libnds:&#xA;Add compile-time warnings about unused result values to various library methods. Ensure nitroFSInit() checks for successful FAT initialization. Protect the alternate vector base region (0x0000000 onwards) from writing and, if said base is not explicitly enabled, reading. This allows catching null pointer accesses at runtime as data aborts. SDK:&#xA;crt0:&#xA;Fix thread-local storage not being initialized properly during global constructor initialization. Fix thread-local storage not being initialized at all on ARM7.</description>
+      <description>Version 1.7.0 (2024-12-23) libnds:&#xA;An exception handler has been added to the ARM7. This one is a lot less useful than the ARM9 one because it&amp;rsquo;s only called on undefined instructions and internal libnds errors. Add dldiRelocate(), which allows relocating a DLDI driver to a different memory address. Fix DLDI memory pointers not being relocated for non-BSS/noinit areas. Update FatFs to R0.15a. glColorSubTableEXT() now supports allocating empty palettes by passing a NULL pointer in the table argument.</description>
     </item>
     <item>
       <title>Getting support</title>

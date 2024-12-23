@@ -14,9 +14,7 @@
 
   <meta name="description" content="Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.
 Please refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.
-Upgrading to BlocksDS 1.3.0 General changes:
-The ConsoleFont struct no longer takes a convertSingleColor argument.
-It is recommended to instead provide 1bpp font tile data, which will be automatically unpacked to use color indices 0 and 15." />
+Upgrading to BlocksDS 1.7.0 glColorSubTableEXT() now supports allocating empty palettes by passing a NULL pointer in the table argument. This is a small compatibility break because this used to free the palette." />
 
     <title>Upgrade guide | BlocksDS</title>
 
@@ -44,9 +42,7 @@ It is recommended to instead provide 1bpp font tile data, which will be automati
   <meta property="og:site_name" content="BlocksDS" />
   <meta property="og:description" content="Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.
 Please refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.
-Upgrading to BlocksDS 1.3.0 General changes:
-The ConsoleFont struct no longer takes a convertSingleColor argument.
-It is recommended to instead provide 1bpp font tile data, which will be automatically unpacked to use color indices 0 and 15." />
+Upgrading to BlocksDS 1.7.0 glColorSubTableEXT() now supports allocating empty palettes by passing a NULL pointer in the table argument. This is a small compatibility break because this used to free the palette." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blocksds.skylyrac.net/docs/technical/updating_guide/" />
 
@@ -57,9 +53,7 @@ It is recommended to instead provide 1bpp font tile data, which will be automati
 <meta name="twitter:title" content="Upgrade guide" />
   <meta name="twitter:description" content="Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.
 Please refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.
-Upgrading to BlocksDS 1.3.0 General changes:
-The ConsoleFont struct no longer takes a convertSingleColor argument.
-It is recommended to instead provide 1bpp font tile data, which will be automatically unpacked to use color indices 0 and 15." />
+Upgrading to BlocksDS 1.7.0 glColorSubTableEXT() now supports allocating empty palettes by passing a NULL pointer in the table argument. This is a small compatibility break because this used to free the palette." />
 
 
   <script type="application/ld+json">
@@ -70,8 +64,8 @@ It is recommended to instead provide 1bpp font tile data, which will be automati
       "name": "Upgrade guide",
       "url" : "https://blocksds.skylyrac.net/docs/technical/updating_guide/",
       "headline": "Upgrade guide",
-      "description": "Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.\nPlease refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.\nUpgrading to BlocksDS 1.3.0 General changes:\nThe ConsoleFont struct no longer takes a convertSingleColor argument.\nIt is recommended to instead provide 1bpp font tile data, which will be automatically unpacked to use color indices 0 and 15.",
-      "wordCount" : "703",
+      "description": "Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.\nPlease refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.\nUpgrading to BlocksDS 1.7.0 glColorSubTableEXT() now supports allocating empty palettes by passing a NULL pointer in the table argument. This is a small compatibility break because this used to free the palette.",
+      "wordCount" : "932",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1759,6 +1753,58 @@ developer action, as well as non-breaking changes which developers are encourage
 to implement. These are documented here.</p>
 <p>Please refer to the changelog for a full list of changes, including additions
 and enhancements to the SDK which are not listed here.</p>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="upgrading-to-blocksds-170"
+    >
+        Upgrading to BlocksDS 1.7.0
+    </h2>
+    <a data-clipboard-text="https://blocksds.skylyrac.net/docs/technical/updating_guide/#upgrading-to-blocksds-170" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Upgrading to BlocksDS 1.7.0" aria-label="Anchor to: Upgrading to BlocksDS 1.7.0" href="#upgrading-to-blocksds-170">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li><code>glColorSubTableEXT()</code> now supports allocating empty palettes by passing a
+NULL pointer in the <code>table</code> argument. This is a small compatibility break
+because this used to free the palette. However, the old behaviour stays as
+long as <code>width</code> is 0. In most cases, <code>table</code> would be NULL and <code>width</code> would
+be 0, so this change is only a problem in unusual cases.</li>
+<li>Upgrading from previous installations of BlocksDS requires running the command
+<code>wf-pacman -Syu</code> twice instead of once.</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="upgrading-to-blocksds-160"
+    >
+        Upgrading to BlocksDS 1.6.0
+    </h2>
+    <a data-clipboard-text="https://blocksds.skylyrac.net/docs/technical/updating_guide/#upgrading-to-blocksds-160" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Upgrading to BlocksDS 1.6.0" aria-label="Anchor to: Upgrading to BlocksDS 1.6.0" href="#upgrading-to-blocksds-160">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>The GRF format has been slightly modified. This has been done to add a version
+field to the header. The GRF functions of libnds have been updated as well as
+grit, so you will have to rebuild your GRF files and update any GRF loader
+that you have implemented.</li>
+</ul>
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="upgrading-to-blocksds-140"
+    >
+        Upgrading to BlocksDS 1.4.0
+    </h2>
+    <a data-clipboard-text="https://blocksds.skylyrac.net/docs/technical/updating_guide/#upgrading-to-blocksds-140" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Upgrading to BlocksDS 1.4.0" aria-label="Anchor to: Upgrading to BlocksDS 1.4.0" href="#upgrading-to-blocksds-140">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>Custom libnds keyboards now work. This seems to have never worked because
+libnds overwrote the custom keyboard struct with the default keyboard struct.
+Keyboard struct fields have been refactored. Some field sizes are now smaller,
+some fields are now const. The order has been changed to reduce padding
+between fields and save even more RAM. In order to see how to use custom
+keyboards, please, check the examples.</li>
+<li>Some fields of the <code>PrintConsole</code> have been modified to reduce the size of the
+struct. Please, check the examples to get more information.</li>
+</ul>
 <div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="upgrading-to-blocksds-130"
     >

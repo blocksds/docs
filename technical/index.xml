@@ -47,14 +47,14 @@
       <link>https://blocksds.skylyrac.net/docs/technical/updating_guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blocksds.skylyrac.net/docs/technical/updating_guide/</guid>
-      <description>Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.&#xA;Please refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.&#xA;Upgrading to BlocksDS 1.3.0 General changes:&#xA;The ConsoleFont struct no longer takes a convertSingleColor argument.&#xA;It is recommended to instead provide 1bpp font tile data, which will be automatically unpacked to use color indices 0 and 15.</description>
+      <description>Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.&#xA;Please refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.&#xA;Upgrading to BlocksDS 1.7.0 glColorSubTableEXT() now supports allocating empty palettes by passing a NULL pointer in the table argument. This is a small compatibility break because this used to free the palette.</description>
     </item>
     <item>
       <title>Migrating from devkitARM</title>
       <link>https://blocksds.skylyrac.net/docs/technical/devkitarm_porting_guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blocksds.skylyrac.net/docs/technical/devkitarm_porting_guide/</guid>
-      <description>1. Introduction In most cases, porting devkitARM projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.&#xA;2. New build system This is the biggest difference between devkitARM and BlocksDS. Makefiles provided by devkitARM are more complicated: they call themselves recursively from the build directory. They also hide a lot of compilation rules from the user, as they are provided by sub-makefiles in the devkitARM system directory.</description>
+      <description>1. Introduction This guide applies to projects that don&amp;rsquo;t use Calico or devkitARM&amp;rsquo;s libnds 2.0. Migrating projects that use Calico is outside of scope for BlocksDS.&#xA;For older devkitARM projects, porting them projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.&#xA;2. New build system This is the biggest difference between devkitARM and BlocksDS.</description>
     </item>
     <item>
       <title>C/C&#43;&#43; support</title>

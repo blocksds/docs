@@ -14,8 +14,9 @@
 
   <meta name="description" content="This is the easiest option, but you may not get the latest version of the SDK right away.
 You will also need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https://wonderful.asie.pl/docs/getting-started/#linux
-Now, install the ARM toolchain of Wonderful Toolchains, as well as the BlocksDS packages.
-export PATH=/opt/wonderful/bin:$PATH wf-pacman -Syu wf-pacman -S toolchain-gcc-arm-none-eabi Install the following if you plan to develop binaries for the DSP of the DSi:" />
+Add the BlocksDS repository to wf-pacman:
+export PATH=/opt/wonderful/bin:$PATH wf-pacman -Syu wf-tools wf-config repo enable blocksds wf-pacman -Syu Now, install the ARM toolchain of Wonderful Toolchains, as well as BlocksDS:
+wf-pacman -S blocksds-toolchain To install the documentation and examples you can install:" />
 
     <title>Linux | BlocksDS</title>
 
@@ -43,8 +44,9 @@ export PATH=/opt/wonderful/bin:$PATH wf-pacman -Syu wf-pacman -S toolchain-gcc-a
   <meta property="og:site_name" content="BlocksDS" />
   <meta property="og:description" content="This is the easiest option, but you may not get the latest version of the SDK right away.
 You will also need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https://wonderful.asie.pl/docs/getting-started/#linux
-Now, install the ARM toolchain of Wonderful Toolchains, as well as the BlocksDS packages.
-export PATH=/opt/wonderful/bin:$PATH wf-pacman -Syu wf-pacman -S toolchain-gcc-arm-none-eabi Install the following if you plan to develop binaries for the DSP of the DSi:" />
+Add the BlocksDS repository to wf-pacman:
+export PATH=/opt/wonderful/bin:$PATH wf-pacman -Syu wf-tools wf-config repo enable blocksds wf-pacman -Syu Now, install the ARM toolchain of Wonderful Toolchains, as well as BlocksDS:
+wf-pacman -S blocksds-toolchain To install the documentation and examples you can install:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blocksds.skylyrac.net/docs/setup/options/linux/" />
 
@@ -55,8 +57,9 @@ export PATH=/opt/wonderful/bin:$PATH wf-pacman -Syu wf-pacman -S toolchain-gcc-a
 <meta name="twitter:title" content="Linux" />
   <meta name="twitter:description" content="This is the easiest option, but you may not get the latest version of the SDK right away.
 You will also need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https://wonderful.asie.pl/docs/getting-started/#linux
-Now, install the ARM toolchain of Wonderful Toolchains, as well as the BlocksDS packages.
-export PATH=/opt/wonderful/bin:$PATH wf-pacman -Syu wf-pacman -S toolchain-gcc-arm-none-eabi Install the following if you plan to develop binaries for the DSP of the DSi:" />
+Add the BlocksDS repository to wf-pacman:
+export PATH=/opt/wonderful/bin:$PATH wf-pacman -Syu wf-tools wf-config repo enable blocksds wf-pacman -Syu Now, install the ARM toolchain of Wonderful Toolchains, as well as BlocksDS:
+wf-pacman -S blocksds-toolchain To install the documentation and examples you can install:" />
 
 
   <script type="application/ld+json">
@@ -67,8 +70,8 @@ export PATH=/opt/wonderful/bin:$PATH wf-pacman -Syu wf-pacman -S toolchain-gcc-a
       "name": "Linux",
       "url" : "https://blocksds.skylyrac.net/docs/setup/options/linux/",
       "headline": "Linux",
-      "description": "This is the easiest option, but you may not get the latest version of the SDK right away.\nYou will also need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https:\/\/wonderful.asie.pl\/docs\/getting-started\/#linux\nNow, install the ARM toolchain of Wonderful Toolchains, as well as the BlocksDS packages.\nexport PATH=\/opt\/wonderful\/bin:$PATH wf-pacman -Syu wf-pacman -S toolchain-gcc-arm-none-eabi Install the following if you plan to develop binaries for the DSP of the DSi:",
-      "wordCount" : "251",
+      "description": "This is the easiest option, but you may not get the latest version of the SDK right away.\nYou will also need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https:\/\/wonderful.asie.pl\/docs\/getting-started\/#linux\nAdd the BlocksDS repository to wf-pacman:\nexport PATH=\/opt\/wonderful\/bin:$PATH wf-pacman -Syu wf-tools wf-config repo enable blocksds wf-pacman -Syu Now, install the ARM toolchain of Wonderful Toolchains, as well as BlocksDS:\nwf-pacman -S blocksds-toolchain To install the documentation and examples you can install:",
+      "wordCount" : "247",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1771,20 +1774,20 @@ Follow the instructions in this link:
 >https://wonderful.asie.pl/docs/getting-started/#linux</a></p>
 </li>
 <li>
-<p>Now, install the ARM toolchain of Wonderful Toolchains, as well as the
-BlocksDS packages.</p>
+<p>Add the BlocksDS repository to <code>wf-pacman</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>/opt/wonderful/bin:<span class="nv">$PATH</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">wf-pacman -Syu wf-tools
+</span></span><span class="line"><span class="cl">wf-config repo <span class="nb">enable</span> blocksds
 </span></span><span class="line"><span class="cl">wf-pacman -Syu
-</span></span><span class="line"><span class="cl">wf-pacman -S toolchain-gcc-arm-none-eabi
+</span></span></code></pre></div></li>
+<li>
+<p>Now, install the ARM toolchain of Wonderful Toolchains, as well as BlocksDS:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -S blocksds-toolchain
+</span></span></code></pre></div><p>To install the documentation and examples you can install:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -S blocksds-docs
 </span></span></code></pre></div><p>Install the following if you plan to develop binaries for the DSP of the DSi:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -S toolchain-llvm-teak-llvm
-</span></span></code></pre></div><p>For the latest stable version of BlocksDS, run:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -S thirdparty-blocksds-toolchain
-</span></span></code></pre></div><p>To install the documentation and examples you can install:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -S thirdparty-blocksds-docs
-</span></span></code></pre></div><p>For the latest unstable version, install the following packages instead:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -S thirdparty-blocksds-git-toolchain <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>             thirdparty-blocksds-git-docs
 </span></span></code></pre></div></li>
 <li>
 <p>(Optional step) You can also install some third party libraries like
@@ -1797,8 +1800,9 @@ BlocksDS packages.</p>
   href="https://github.com/AntonioND/nitro-engine"
 >Nitro Engine</a> using
 <code>wf-pacman</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -S thirdparty-blocksds-nflib <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>             thirdparty-blocksds-nitroengine
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -S blocksds-nflib blocksds-nitroengine
+</span></span></code></pre></div><p>You can get a full list of packages by running:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -Sl
 </span></span></code></pre></div></li>
 <li>
 <p><code>wf-pacman</code> installs BlocksDS in <code>/opt/wonderful/thirdparty/blocksds/</code>.

@@ -19,14 +19,14 @@
       <link>https://blocksds.skylyrac.net/docs/introduction/changelog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blocksds.skylyrac.net/docs/introduction/changelog/</guid>
-      <description>Version 1.6.3 (2024-11-11) libnds:&#xA;Add compile-time warnings about unused result values to various library methods. Ensure nitroFSInit() checks for successful FAT initialization. Protect the alternate vector base region (0x0000000 onwards) from writing and, if said base is not explicitly enabled, reading. This allows catching null pointer accesses at runtime as data aborts. SDK:&#xA;crt0:&#xA;Fix thread-local storage not being initialized properly during global constructor initialization. Fix thread-local storage not being initialized at all on ARM7.</description>
+      <description>Version 1.7.0 (2024-12-23) libnds:&#xA;An exception handler has been added to the ARM7. This one is a lot less useful than the ARM9 one because it&amp;rsquo;s only called on undefined instructions and internal libnds errors. Add dldiRelocate(), which allows relocating a DLDI driver to a different memory address. Fix DLDI memory pointers not being relocated for non-BSS/noinit areas. Update FatFs to R0.15a. glColorSubTableEXT() now supports allocating empty palettes by passing a NULL pointer in the table argument.</description>
     </item>
     <item>
       <title>Windows</title>
       <link>https://blocksds.skylyrac.net/docs/setup/options/windows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blocksds.skylyrac.net/docs/setup/options/windows/</guid>
-      <description>The following instructions describe how to install BlocksDS on Windows natively. If you want to use it in WSL, follow the instructions for Linux instead.&#xA;You will need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https://wonderful.asie.pl/docs/getting-started/#windows-via-msys2&#xA;Install the ARM toolchain of Wonderful Toolchain:&#xA;wf-pacman -Syu wf-pacman -S toolchain-gcc-arm-none-eabi Now, install BlocksDS itself. For the latest stable version of BlocksDS, run:&#xA;wf-pacman -S thirdparty-blocksds-toolchain To install the documentation and examples you can install:</description>
+      <description>The following instructions describe how to install BlocksDS on Windows natively. If you want to use it in WSL, follow the instructions for Linux instead.&#xA;You will need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https://wonderful.asie.pl/docs/getting-started/#windows-via-msys2&#xA;Add the BlocksDS repository to wf-pacman:&#xA;wf-pacman -Syu wf-tools wf-config repo enable blocksds wf-pacman -Syu Now, install the ARM toolchain of Wonderful Toolchains, as well as BlocksDS:</description>
     </item>
     <item>
       <title>Build from source</title>
@@ -131,14 +131,14 @@
       <link>https://blocksds.skylyrac.net/docs/technical/updating_guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blocksds.skylyrac.net/docs/technical/updating_guide/</guid>
-      <description>Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.&#xA;Please refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.&#xA;Upgrading to BlocksDS 1.3.0 General changes:&#xA;The ConsoleFont struct no longer takes a convertSingleColor argument.&#xA;It is recommended to instead provide 1bpp font tile data, which will be automatically unpacked to use color indices 0 and 15.</description>
+      <description>Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.&#xA;Please refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.&#xA;Upgrading to BlocksDS 1.7.0 glColorSubTableEXT() now supports allocating empty palettes by passing a NULL pointer in the table argument. This is a small compatibility break because this used to free the palette.</description>
     </item>
     <item>
       <title>Migrating from devkitARM</title>
       <link>https://blocksds.skylyrac.net/docs/technical/devkitarm_porting_guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blocksds.skylyrac.net/docs/technical/devkitarm_porting_guide/</guid>
-      <description>1. Introduction In most cases, porting devkitARM projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.&#xA;2. New build system This is the biggest difference between devkitARM and BlocksDS. Makefiles provided by devkitARM are more complicated: they call themselves recursively from the build directory. They also hide a lot of compilation rules from the user, as they are provided by sub-makefiles in the devkitARM system directory.</description>
+      <description>1. Introduction This guide applies to projects that don&amp;rsquo;t use Calico or devkitARM&amp;rsquo;s libnds 2.0. Migrating projects that use Calico is outside of scope for BlocksDS.&#xA;For older devkitARM projects, porting them projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.&#xA;2. New build system This is the biggest difference between devkitARM and BlocksDS.</description>
     </item>
     <item>
       <title>C/C&#43;&#43; support</title>
@@ -173,7 +173,7 @@
       <link>https://blocksds.skylyrac.net/docs/setup/options/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blocksds.skylyrac.net/docs/setup/options/linux/</guid>
-      <description>This is the easiest option, but you may not get the latest version of the SDK right away.&#xA;You will also need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https://wonderful.asie.pl/docs/getting-started/#linux&#xA;Now, install the ARM toolchain of Wonderful Toolchains, as well as the BlocksDS packages.&#xA;export PATH=/opt/wonderful/bin:$PATH wf-pacman -Syu wf-pacman -S toolchain-gcc-arm-none-eabi Install the following if you plan to develop binaries for the DSP of the DSi:</description>
+      <description>This is the easiest option, but you may not get the latest version of the SDK right away.&#xA;You will also need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https://wonderful.asie.pl/docs/getting-started/#linux&#xA;Add the BlocksDS repository to wf-pacman:&#xA;export PATH=/opt/wonderful/bin:$PATH wf-pacman -Syu wf-tools wf-config repo enable blocksds wf-pacman -Syu Now, install the ARM toolchain of Wonderful Toolchains, as well as BlocksDS:&#xA;wf-pacman -S blocksds-toolchain To install the documentation and examples you can install:</description>
     </item>
     <item>
       <title>Usage notes</title>

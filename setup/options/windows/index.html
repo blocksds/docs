@@ -14,9 +14,8 @@
 
   <meta name="description" content="The following instructions describe how to install BlocksDS on Windows natively. If you want to use it in WSL, follow the instructions for Linux instead.
 You will need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https://wonderful.asie.pl/docs/getting-started/#windows-via-msys2
-Install the ARM toolchain of Wonderful Toolchain:
-wf-pacman -Syu wf-pacman -S toolchain-gcc-arm-none-eabi Now, install BlocksDS itself. For the latest stable version of BlocksDS, run:
-wf-pacman -S thirdparty-blocksds-toolchain To install the documentation and examples you can install:" />
+Add the BlocksDS repository to wf-pacman:
+wf-pacman -Syu wf-tools wf-config repo enable blocksds wf-pacman -Syu Now, install the ARM toolchain of Wonderful Toolchains, as well as BlocksDS:" />
 
     <title>Windows | BlocksDS</title>
 
@@ -44,9 +43,8 @@ wf-pacman -S thirdparty-blocksds-toolchain To install the documentation and exam
   <meta property="og:site_name" content="BlocksDS" />
   <meta property="og:description" content="The following instructions describe how to install BlocksDS on Windows natively. If you want to use it in WSL, follow the instructions for Linux instead.
 You will need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https://wonderful.asie.pl/docs/getting-started/#windows-via-msys2
-Install the ARM toolchain of Wonderful Toolchain:
-wf-pacman -Syu wf-pacman -S toolchain-gcc-arm-none-eabi Now, install BlocksDS itself. For the latest stable version of BlocksDS, run:
-wf-pacman -S thirdparty-blocksds-toolchain To install the documentation and examples you can install:" />
+Add the BlocksDS repository to wf-pacman:
+wf-pacman -Syu wf-tools wf-config repo enable blocksds wf-pacman -Syu Now, install the ARM toolchain of Wonderful Toolchains, as well as BlocksDS:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blocksds.skylyrac.net/docs/setup/options/windows/" />
 
@@ -57,9 +55,8 @@ wf-pacman -S thirdparty-blocksds-toolchain To install the documentation and exam
 <meta name="twitter:title" content="Windows" />
   <meta name="twitter:description" content="The following instructions describe how to install BlocksDS on Windows natively. If you want to use it in WSL, follow the instructions for Linux instead.
 You will need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https://wonderful.asie.pl/docs/getting-started/#windows-via-msys2
-Install the ARM toolchain of Wonderful Toolchain:
-wf-pacman -Syu wf-pacman -S toolchain-gcc-arm-none-eabi Now, install BlocksDS itself. For the latest stable version of BlocksDS, run:
-wf-pacman -S thirdparty-blocksds-toolchain To install the documentation and examples you can install:" />
+Add the BlocksDS repository to wf-pacman:
+wf-pacman -Syu wf-tools wf-config repo enable blocksds wf-pacman -Syu Now, install the ARM toolchain of Wonderful Toolchains, as well as BlocksDS:" />
 
 
   <script type="application/ld+json">
@@ -70,8 +67,8 @@ wf-pacman -S thirdparty-blocksds-toolchain To install the documentation and exam
       "name": "Windows",
       "url" : "https://blocksds.skylyrac.net/docs/setup/options/windows/",
       "headline": "Windows",
-      "description": "The following instructions describe how to install BlocksDS on Windows natively. If you want to use it in WSL, follow the instructions for Linux instead.\nYou will need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https:\/\/wonderful.asie.pl\/docs\/getting-started\/#windows-via-msys2\nInstall the ARM toolchain of Wonderful Toolchain:\nwf-pacman -Syu wf-pacman -S toolchain-gcc-arm-none-eabi Now, install BlocksDS itself. For the latest stable version of BlocksDS, run:\nwf-pacman -S thirdparty-blocksds-toolchain To install the documentation and examples you can install:",
-      "wordCount" : "230",
+      "description": "The following instructions describe how to install BlocksDS on Windows natively. If you want to use it in WSL, follow the instructions for Linux instead.\nYou will need to install the ARM toolchain of Wonderful Toolchains. Follow the instructions in this link: https:\/\/wonderful.asie.pl\/docs\/getting-started\/#windows-via-msys2\nAdd the BlocksDS repository to wf-pacman:\nwf-pacman -Syu wf-tools wf-config repo enable blocksds wf-pacman -Syu Now, install the ARM toolchain of Wonderful Toolchains, as well as BlocksDS:",
+      "wordCount" : "225",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1774,17 +1771,16 @@ the instructions in this link:
 >https://wonderful.asie.pl/docs/getting-started/#windows-via-msys2</a></p>
 </li>
 <li>
-<p>Install the ARM toolchain of Wonderful Toolchain:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -Syu
-</span></span><span class="line"><span class="cl">wf-pacman -S toolchain-gcc-arm-none-eabi
-</span></span></code></pre></div><p>Now, install BlocksDS itself. For the latest stable version of BlocksDS, run:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -S thirdparty-blocksds-toolchain
+<p>Add the BlocksDS repository to <code>wf-pacman</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -Syu wf-tools
+</span></span><span class="line"><span class="cl">wf-config repo <span class="nb">enable</span> blocksds
+</span></span><span class="line"><span class="cl">wf-pacman -Syu
+</span></span></code></pre></div></li>
+<li>
+<p>Now, install the ARM toolchain of Wonderful Toolchains, as well as BlocksDS:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -S blocksds-toolchain
 </span></span></code></pre></div><p>To install the documentation and examples you can install:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -S thirdparty-blocksds-docs
-</span></span></code></pre></div><p>For the latest unstable version, install the following packages instead of
-the previous ones:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -S thirdparty-blocksds-git-toolchain <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>             thirdparty-blocksds-git-docs
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -S blocksds-docs
 </span></span></code></pre></div></li>
 <li>
 <p>(Optional step) You can also install some third party libraries like
@@ -1797,8 +1793,9 @@ the previous ones:</p>
   href="https://github.com/AntonioND/nitro-engine"
 >Nitro Engine</a> using
 <code>wf-pacman</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -S thirdparty-blocksds-nflib <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>             thirdparty-blocksds-nitroengine
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -S blocksds-nflib blocksds-nitroengine
+</span></span></code></pre></div><p>You can get a full list of packages by running:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -Sl
 </span></span></code></pre></div></li>
 <li>
 <p>Whenever you need to update the SDK, run:</p>

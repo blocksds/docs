@@ -12,8 +12,9 @@
 <meta name="generator" content="Hugo 0.123.7">
 
 
-  <meta name="description" content="1. Introduction In most cases, porting devkitARM projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.
-2. New build system This is the biggest difference between devkitARM and BlocksDS. Makefiles provided by devkitARM are more complicated: they call themselves recursively from the build directory. They also hide a lot of compilation rules from the user, as they are provided by sub-makefiles in the devkitARM system directory." />
+  <meta name="description" content="1. Introduction This guide applies to projects that don&rsquo;t use Calico or devkitARM&rsquo;s libnds 2.0. Migrating projects that use Calico is outside of scope for BlocksDS.
+For older devkitARM projects, porting them projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.
+2. New build system This is the biggest difference between devkitARM and BlocksDS." />
 
     <title>Migrating from devkitARM | BlocksDS</title>
 
@@ -39,8 +40,9 @@
     content="Migrating from devkitARM"
   />
   <meta property="og:site_name" content="BlocksDS" />
-  <meta property="og:description" content="1. Introduction In most cases, porting devkitARM projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.
-2. New build system This is the biggest difference between devkitARM and BlocksDS. Makefiles provided by devkitARM are more complicated: they call themselves recursively from the build directory. They also hide a lot of compilation rules from the user, as they are provided by sub-makefiles in the devkitARM system directory." />
+  <meta property="og:description" content="1. Introduction This guide applies to projects that don’t use Calico or devkitARM’s libnds 2.0. Migrating projects that use Calico is outside of scope for BlocksDS.
+For older devkitARM projects, porting them projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.
+2. New build system This is the biggest difference between devkitARM and BlocksDS." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blocksds.skylyrac.net/docs/technical/devkitarm_porting_guide/" />
 
@@ -49,8 +51,9 @@
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Migrating from devkitARM" />
-  <meta name="twitter:description" content="1. Introduction In most cases, porting devkitARM projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.
-2. New build system This is the biggest difference between devkitARM and BlocksDS. Makefiles provided by devkitARM are more complicated: they call themselves recursively from the build directory. They also hide a lot of compilation rules from the user, as they are provided by sub-makefiles in the devkitARM system directory." />
+  <meta name="twitter:description" content="1. Introduction This guide applies to projects that don’t use Calico or devkitARM’s libnds 2.0. Migrating projects that use Calico is outside of scope for BlocksDS.
+For older devkitARM projects, porting them projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.
+2. New build system This is the biggest difference between devkitARM and BlocksDS." />
 
 
   <script type="application/ld+json">
@@ -61,8 +64,8 @@
       "name": "Migrating from devkitARM",
       "url" : "https://blocksds.skylyrac.net/docs/technical/devkitarm_porting_guide/",
       "headline": "Migrating from devkitARM",
-      "description": "1. Introduction In most cases, porting devkitARM projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.\n2. New build system This is the biggest difference between devkitARM and BlocksDS. Makefiles provided by devkitARM are more complicated: they call themselves recursively from the build directory. They also hide a lot of compilation rules from the user, as they are provided by sub-makefiles in the devkitARM system directory.",
-      "wordCount" : "1841",
+      "description": "1. Introduction This guide applies to projects that don’t use Calico or devkitARM’s libnds 2.0. Migrating projects that use Calico is outside of scope for BlocksDS.\nFor older devkitARM projects, porting them projects to BlocksDS should be relatively easy. BlocksDS includes most of the NDS functionality provided by devkitARM. For simple projects, only minor changes should be required.\n2. New build system This is the biggest difference between devkitARM and BlocksDS.",
+      "wordCount" : "1866",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1754,9 +1757,11 @@
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
-<p>In most cases, porting devkitARM projects to BlocksDS should be relatively easy.
-BlocksDS includes most of the NDS functionality provided by devkitARM. For simple
-projects, only minor changes should be required.</p>
+<p>This guide applies to projects that don&rsquo;t use Calico or devkitARM&rsquo;s libnds 2.0.
+Migrating projects that use Calico is outside of scope for BlocksDS.</p>
+<p>For older devkitARM projects, porting them projects to BlocksDS should be
+relatively easy. BlocksDS includes most of the NDS functionality provided by
+devkitARM. For simple projects, only minor changes should be required.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="2-new-build-system"
     >
