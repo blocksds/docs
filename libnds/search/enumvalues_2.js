@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['debugdevice_5fconsole_0',['DebugDevice_CONSOLE',['../console_8h.html#af012f4b6708bcac38466e98ac58f9bd0a1d90508a3b756bcd9790671afca62835',1,'console.h']]],
-  ['debugdevice_5fnocash_1',['DebugDevice_NOCASH',['../console_8h.html#af012f4b6708bcac38466e98ac58f9bd0a07eb91a84bc4934adce44b8674c9be08',1,'console.h']]],
-  ['debugdevice_5fnull_2',['DebugDevice_NULL',['../console_8h.html#af012f4b6708bcac38466e98ac58f9bd0a8ab8bbfe5bbcf9245aca28007e53cd4a',1,'console.h']]],
+  ['debugdevice_5fconsole_0',['DebugDevice_CONSOLE',['../arm9_2console_8h.html#af012f4b6708bcac38466e98ac58f9bd0a1d90508a3b756bcd9790671afca62835',1,'console.h']]],
+  ['debugdevice_5fnocash_1',['DebugDevice_NOCASH',['../arm9_2console_8h.html#af012f4b6708bcac38466e98ac58f9bd0a07eb91a84bc4934adce44b8674c9be08',1,'console.h']]],
+  ['debugdevice_5fnull_2',['DebugDevice_NULL',['../arm9_2console_8h.html#af012f4b6708bcac38466e98ac58f9bd0a8ab8bbfe5bbcf9245aca28007e53cd4a',1,'console.h']]],
   ['disp_5fhblank_5firq_3',['DISP_HBLANK_IRQ',['../system_8h.html#aa1b49f8cb6b3fc8438bd3ed79f5b6393a9d0a91859b4f79b1df99527325c3f308',1,'system.h']]],
   ['disp_5fin_5fhblank_4',['DISP_IN_HBLANK',['../system_8h.html#aa1b49f8cb6b3fc8438bd3ed79f5b6393a1caa60d756b140cfabf2280ebea584be',1,'system.h']]],
   ['disp_5fin_5fvblank_5',['DISP_IN_VBLANK',['../system_8h.html#aa1b49f8cb6b3fc8438bd3ed79f5b6393af84f51da4aa9ed873049be02f2e221f9',1,'system.h']]],

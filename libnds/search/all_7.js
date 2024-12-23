@@ -9,7 +9,7 @@ var searchData=
   ['entercriticalsection_6',['enterCriticalSection',['../interrupts_8h.html#a207b4abf77a1fd96865dcb172dec1e05',1,'interrupts.h']]],
   ['enterexception_7',['enterException',['../exceptions_8h.html#ad07019ec386a9a45d15f769293ce44d0',1,'exceptions.h']]],
   ['entrypoint_8',['entryPoint',['../structsGBAHeader.html#a56a8a98a355541e861a3202459e2d024',1,'sGBAHeader']]],
-  ['excape_20sequences_9',['ANSI excape sequences',['../console_8h.html#autotoc_md2',1,'']]],
+  ['excape_20sequences_9',['ANSI excape sequences',['../arm9_2console_8h.html#autotoc_md2',1,'']]],
   ['exception_5fstack_5ftop_10',['EXCEPTION_STACK_TOP',['../exceptions_8h.html#a859ae013314305aa7e7213a8441ff9e8',1,'exceptions.h']]],
   ['exception_5fvector_11',['EXCEPTION_VECTOR',['../exceptions_8h.html#a6cc1666bfee71c36b88cbc333eb5058c',1,'exceptions.h']]],
   ['exceptionc_12',['exceptionC',['../exceptions_8h.html#ad7f9828b319ce37b752a9fd87bc307d2',1,'exceptions.h']]],

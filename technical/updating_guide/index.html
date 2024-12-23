@@ -65,7 +65,7 @@ Upgrading to BlocksDS 1.7.0 glColorSubTableEXT() now supports allocating empty p
       "url" : "https://blocksds.skylyrac.net/docs/technical/updating_guide/",
       "headline": "Upgrade guide",
       "description": "Newer BlocksDS versions occasionally introduce breaking changes which require developer action, as well as non-breaking changes which developers are encouraged to implement. These are documented here.\nPlease refer to the changelog for a full list of changes, including additions and enhancements to the SDK which are not listed here.\nUpgrading to BlocksDS 1.7.0 glColorSubTableEXT() now supports allocating empty palettes by passing a NULL pointer in the table argument. This is a small compatibility break because this used to free the palette.",
-      "wordCount" : "932",
+      "wordCount" : "934",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1763,13 +1763,20 @@ and enhancements to the SDK which are not listed here.</p>
     </a>
 </div>
 <ul>
-<li><code>glColorSubTableEXT()</code> now supports allocating empty palettes by passing a
+<li>
+<p><code>glColorSubTableEXT()</code> now supports allocating empty palettes by passing a
 NULL pointer in the <code>table</code> argument. This is a small compatibility break
 because this used to free the palette. However, the old behaviour stays as
 long as <code>width</code> is 0. In most cases, <code>table</code> would be NULL and <code>width</code> would
-be 0, so this change is only a problem in unusual cases.</li>
-<li>Upgrading from previous installations of BlocksDS requires running the command
-<code>wf-pacman -Syu</code> twice instead of once.</li>
+be 0, so this change is only a problem in unusual cases.</p>
+</li>
+<li>
+<p>Upgrading from previous installations of BlocksDS requires running the
+following commands:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -Sy wf-pacman
+</span></span><span class="line"><span class="cl">wf-pacman -Syu
+</span></span><span class="line"><span class="cl">wf-pacman -Syu
+</span></span></code></pre></div></li>
 </ul>
 <div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="upgrading-to-blocksds-160"

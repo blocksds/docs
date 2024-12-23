@@ -62,7 +62,7 @@ An exception handler has been added to the ARM7. This one is a lot less useful t
       "url" : "https://blocksds.skylyrac.net/docs/introduction/changelog/",
       "headline": "Changelog",
       "description": "Version 1.7.0 (2024-12-23) libnds:\nAn exception handler has been added to the ARM7. This one is a lot less useful than the ARM9 one because it’s only called on undefined instructions and internal libnds errors. Add dldiRelocate(), which allows relocating a DLDI driver to a different memory address. Fix DLDI memory pointers not being relocated for non-BSS\/noinit areas. Update FatFs to R0.15a. glColorSubTableEXT() now supports allocating empty palettes by passing a NULL pointer in the table argument.",
-      "wordCount" : "8257",
+      "wordCount" : "8258",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1820,8 +1820,10 @@ forseeable future as well.</p>
 </li>
 <li>
 <p>Updating old installations requires the user to run the following
-command twice instead of once:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -Syu
+commands:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wf-pacman -Sy wf-pacman
+</span></span><span class="line"><span class="cl">wf-pacman -Syu
+</span></span><span class="line"><span class="cl">wf-pacman -Syu
 </span></span></code></pre></div></li>
 </ul>
 </li>

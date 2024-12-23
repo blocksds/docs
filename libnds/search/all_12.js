@@ -109,7 +109,7 @@ var searchData=
   ['prevcursorx_106',['prevCursorX',['../structPrintConsole.html#af3bcb68b4450277821bfd2c20326d7a1',1,'PrintConsole']]],
   ['prevcursory_107',['prevCursorY',['../structPrintConsole.html#a8fe0d69601f682e8097cc86ffc7ff126',1,'PrintConsole']]],
   ['printchar_108',['PrintChar',['../structPrintConsole.html#ac2a6a9e9c3adda6c2e6ac11e4ebb7d14',1,'PrintConsole']]],
-  ['printconsole_109',['printconsole',['../console_8h.html#a0f2e91bda6609a6985803ab9d008d8f0',1,'PrintConsole:&#160;console.h'],['../structPrintConsole.html',1,'PrintConsole']]],
+  ['printconsole_109',['printconsole',['../arm9_2console_8h.html#a0f2e91bda6609a6985803ab9d008d8f0',1,'PrintConsole:&#160;console.h'],['../structPrintConsole.html',1,'PrintConsole']]],
   ['priority_110',['priority',['../unionSpriteEntry.html#a4ddc041c50e12ab6de91a6ff48402d84',1,'SpriteEntry']]],
   ['px_111',['px',['../structtouchPosition.html#a0c42630911c33ca134f04ded5d1aafba',1,'touchPosition']]],
   ['py_112',['py',['../structtouchPosition.html#a4a437ac7c0e754fe59638541b4d314e1',1,'touchPosition']]]

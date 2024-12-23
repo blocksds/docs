@@ -18,7 +18,7 @@ var searchData=
   ['seconds_15',['seconds',['../structrtcTime.html#a91fcbf46a518d63bfc7c26601c80b2e4',1,'rtcTime::seconds'],['../structrtcTimeAndDate.html#a9d16c9c9a98a1087f8e1649783758d5c',1,'rtcTimeAndDate::seconds'],['../structRTCtime.html#a871aad99859feba2e075e95fea0ed281',1,'RTCtime::seconds']]],
   ['section_16',['section',['../structtlf__header.html#a38b8d700fd855bd6992762280be9d283',1,'tlf_header']]],
   ['securecrc16_17',['secureCRC16',['../structsNDSHeader.html#af271300fdb4ff595d06e71be2fa25ff3',1,'sNDSHeader']]],
-  ['sequences_18',['ANSI excape sequences',['../console_8h.html#autotoc_md2',1,'']]],
+  ['sequences_18',['ANSI excape sequences',['../arm9_2console_8h.html#autotoc_md2',1,'']]],
   ['serial_2eh_19',['serial.h',['../serial_8h.html',1,'']]],
   ['setbackdropcolor_20',['setBackdropColor',['../video_8h.html#a3a7931c3fd300648a07579a3e9bbc6ea',1,'video.h']]],
   ['setbackdropcolorsub_21',['setBackdropColorSub',['../video_8h.html#a3adab4308391d900f5b583d1a7a8f94d',1,'video.h']]],

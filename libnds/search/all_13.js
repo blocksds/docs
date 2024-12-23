@@ -89,7 +89,7 @@ var searchData=
   ['reg_5fpowercnt_86',['REG_POWERCNT',['../system_8h.html#a2fe30910a50e49c4da855d0fb9d68411',1,'system.h']]],
   ['reg_5fvcount_87',['REG_VCOUNT',['../system_8h.html#a8ca8fe6da31795ce045366a65b042d02',1,'system.h']]],
   ['register_20access_88',['&quot;Background Register Access&quot;',['../group__background__register__group.html',1,'']]],
-  ['regular_20console_89',['Regular console',['../console_8h.html#autotoc_md0',1,'']]],
+  ['regular_20console_89',['Regular console',['../arm9_2console_8h.html#autotoc_md0',1,'']]],
   ['releaseexceptionhandler_90',['releaseExceptionHandler',['../exceptions_8h.html#a1a5a4cca4e895c624a844f985fe2b3a0',1,'exceptions.h']]],
   ['reset_91',['reset',['../structsysVectors.html#aba8b8256993562f49a6c1cc86ae2807b',1,'sysVectors']]],
   ['resyncclock_92',['resyncClock',['../clock_8h.html#a557a468eeed9db757553e37d1b7534c5',1,'clock.h']]],
